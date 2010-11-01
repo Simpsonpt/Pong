@@ -1,0 +1,16 @@
+In file included from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.protocols.h:1,
+                 from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.classes.h:1,
+                 from /Users/Simpson/Desktop/Project/Pong/Pad.h:11,
+                 from /Users/Simpson/Desktop/Project/Pong/Pad.m:9:
+/Users/Simpson/Desktop/Project/Pong/Position.h:13: error: expected specifier-qualifier-list before 'Vector2'
+In file included from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.h:3,
+                 from /Users/Simpson/Desktop/Project/Pong/Pad.m:10:
+/Users/Simpson/Desktop/Project/Pong/Ball.h:15: error: expected specifier-qualifier-list before 'Vector2'
+/Users/Simpson/Desktop/Project/Pong/Pad.m: In function '-[Pad init]':
+/Users/Simpson/Desktop/Project/Pong/Pad.m:18: error: 'position' undeclared (first use in this function)
+/Users/Simpson/Desktop/Project/Pong/Pad.m:18: error: (Each undeclared identifier is reported only once
+/Users/Simpson/Desktop/Project/Pong/Pad.m:18: error: for each function it appears in.)
+/Users/Simpson/Desktop/Project/Pong/Pad.m: At top level:
+/Users/Simpson/Desktop/Project/Pong/Pad.m:23: error: no declaration of property 'position' found in the interface
+/Users/Simpson/Desktop/Project/Pong/Pad.m: In function '-[Pad dealloc]':
+/Users/Simpson/Desktop/Project/Pong/Pad.m:27: error: 'position' undeclared (first use in this function)

@@ -1,0 +1,12 @@
+In file included from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.protocols.h:1,
+                 from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.classes.h:1,
+                 from /Users/Simpson/Desktop/Project/Pong/Scene.h:11,
+                 from /Users/Simpson/Desktop/Project/Pong/Scene.m:9:
+/Users/Simpson/Desktop/Project/Pong/Position.h:13: error: expected specifier-qualifier-list before 'Vector2'
+In file included from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.h:3,
+                 from /Users/Simpson/Desktop/Project/Pong/Scene.m:10:
+/Users/Simpson/Desktop/Project/Pong/Ball.h:13: error: no type or storage class may be specified here before 'interface'
+In file included from /Users/Simpson/Desktop/Project/Pong/Retronator.Pong.h:4,
+                 from /Users/Simpson/Desktop/Project/Pong/Scene.m:10:
+/Users/Simpson/Desktop/Project/Pong/Pad.h:13: error: no type or storage class may be specified here before 'interface'
+/Users/Simpson/Desktop/Project/Pong/Level.h:24: confused by earlier errors, bailing out
