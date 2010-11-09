@@ -7,22 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GameCore.Scene.h"
 
 #import "Retronator.Pong.classes.h"
 
-@interface Level : NSObject {
+@interface Level : GameComponent {
 	
 	Scene *scene;
 	
 	Bg *background;
 	Middle *md;
 	
-	Pad *player1pad;
-	Pad *player2pad;
+	Pad *topPlayer;
+	Pad *bottomPlayer;
 	
 	Ball *ball;
 	Bonus *bonus;
 }
-@property (nonatomic, readonly) Scene *scene;
+//@property (nonatomic, readonly) Scene *scene;
+@property (nonatomic, readonly) id<IScene> scene;
+@property (nonatomic, readonly) Pad *topPlayer;
+@property (nonatomic, readonly) Pad *bottomPlayer;
+@property (nonatomic, readonly) Ball *ball;
 
 @end

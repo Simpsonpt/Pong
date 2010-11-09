@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IScene.h"
 
-#import "Retronator.Pong.classes.h"
-
-@interface Scene : NSObject <NSFastEnumeration> {
+@interface Scene : NSObject <IScene> {
 	NSMutableArray *items;
 }
 
-- (void) addItem:(id)item;
+//- (void) addItem:(id)item;
 
 @end

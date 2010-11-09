@@ -20,7 +20,7 @@
 	return self;
 }
 
-@synthesize position;
+@synthesize position, velocity, mass, radius;
 
 - (void) dealloc
 {

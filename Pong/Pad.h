@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "GameCore.Scene.Objects.h"
 #import "Retronator.Pong.classes.h"
-#import "Position.h"
 
-@interface Pad : NSObject <Position> {
-	
+@interface Pad : NSObject <IParticle> {
 	Vector2 *position;
+	Vector2 *velocity;
+	float radius;
+	float mass;
 }
 
 @end

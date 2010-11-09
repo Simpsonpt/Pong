@@ -1,5 +1,0 @@
-/Users/Simpson/Desktop/Project/Pong/Level.m: In function '-[Level init]':
-/Users/Simpson/Desktop/Project/Pong/Level.m:23: error: 'md' undeclared (first use in this function)
-/Users/Simpson/Desktop/Project/Pong/Level.m:23: error: (Each undeclared identifier is reported only once
-/Users/Simpson/Desktop/Project/Pong/Level.m:23: error: for each function it appears in.)
-/Users/Simpson/Desktop/Project/Pong/Level.m:23: error: 'Middle' undeclared (first use in this function)

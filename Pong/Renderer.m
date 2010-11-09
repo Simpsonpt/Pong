@@ -7,6 +7,8 @@
 //
 
 #import "Renderer.h"
+#import "GameCore.Scene.h"
+#import "GameCore.Scene.Objects.h"
 #import "Retronator.Pong.h"
 
 @implementation Renderer
@@ -14,6 +16,8 @@
 - (id) initWithGame:(Game *)theGame level:(Level *)theLevel {
 	if (self = [super initWithGame:theGame]) {
 		level = theLevel;
+		content = [[ContentManager alloc] initWithServiceProvider:self.game.services];
+		lightPosition = [[Vector2 alloc] initWithX:160 y:230];
 	}
 	return self;
 }
@@ -63,18 +67,25 @@
 - (void) drawWithGameTime:(GameTime *)gameTime {
 	[self.graphicsDevice clearWithColor:[Color green]];
 	
-	[spriteBatch begin];
+	//[spriteBatch begin];
+	[spriteBatch beginWithSortMode:SpriteSortModeBackToFront BlendState:nil];
 	
-	for (id<NSObject> item in level.scene) {
+	for (id item in level.scene) {
 		
-		id<Position> itemWithPosition;
-		if ([item conformsToProtocol:@protocol(Position)]) {
-			itemWithPosition = (id<Position>)item;
+		id<IPosition> itemWithPosition;
+		if ([item conformsToProtocol:@protocol(IPosition)]) {
+			itemWithPosition = (id<IPosition>)item;
 		}
 		
-		Sprite *sprite;		
+		Sprite *sprite = nil;
+		SpriteEffects effects = SpriteEffectsNone;
 		if ([item isKindOfClass:[Pad class]]) {
 			sprite = padSprite;
+			Pad *pad = (Pad*)item;
+			if (pad.position.y > 230) {
+				effects = SpriteEffectsFlipVertically;
+			}
+			
 		} else if ([item isKindOfClass:[Ball class]]) {
 			sprite = ballSprite;
 		} else if ([item isKindOfClass:[Bonus class]]) {
@@ -100,6 +111,10 @@
 	}
 	
 	[spriteBatch end];
+}
+
+- (void) unloadContent {
+	[content unload];
 }
 
 - (void) dealloc

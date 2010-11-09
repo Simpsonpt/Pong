@@ -1,7 +1,6 @@
 #import "System.h"
 
-//No need using XNI 0.1.3
-//#import "Retronator.Xni.Framework.Graphics.classes.h"
+#import "Retronator.Xni.Framework.Graphics.classes.h"
 
 @protocol IGraphicsDeviceService
 

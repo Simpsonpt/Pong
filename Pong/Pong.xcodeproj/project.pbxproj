@@ -11,17 +11,20 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		DA1AAB0A127F4E6E006E769D /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB09127F4E6E006E769D /* Gameplay.m */; };
+		DA1AAB39127F4FBA006E769D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB38127F4FBA006E769D /* Player.m */; };
+		DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB6F127F5AFF006E769D /* PhysicsEngine.m */; };
 		DA1E00CA1275548300441AC2 /* libXNI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1E00C91275548300441AC2 /* libXNI.a */; };
 		DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65D00A12764CDF0052AF85 /* Bonus.m */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
 		DA80C90512752B0000E0BF5A /* MyPong.png in Resources */ = {isa = PBXBuildFile; fileRef = DA80C90412752B0000E0BF5A /* MyPong.png */; };
 		DA80C90F12752B7E00E0BF5A /* Pong.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C90E12752B7E00E0BF5A /* Pong.m */; };
 		DA80C91712752BAB00E0BF5A /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91612752BAB00E0BF5A /* Level.m */; };
-		DA80C91A12752BB200E0BF5A /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91912752BB200E0BF5A /* Scene.m */; };
 		DA80C91D12752BBF00E0BF5A /* PongLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91C12752BBF00E0BF5A /* PongLevel.m */; };
 		DA80C92012752BCA00E0BF5A /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91F12752BCA00E0BF5A /* Ball.m */; };
 		DA80C92312752BD200E0BF5A /* Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C92212752BD200E0BF5A /* Pad.m */; };
 		DA80C92812752C2A00E0BF5A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C92712752C2A00E0BF5A /* Renderer.m */; };
+		DA82C672128A0FC900026869 /* HumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AABEF127F615A006E769D /* HumanPlayer.m */; };
 		DA8EAD5A127717090098E373 /* Middle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8EAD59127717090098E373 /* Middle.m */; };
 		DAAFE82712752A1F003CF29B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAFE82612752A1F003CF29B /* OpenGLES.framework */; };
 		DAAFE82B12752A26003CF29B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAFE82A12752A26003CF29B /* QuartzCore.framework */; };
@@ -40,7 +43,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = DA6AB676127F3AE000FC4684 /* GameCore.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* GameCore */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = GameCore;
 		};
 /* End PBXContainerItemProxy section */
@@ -53,6 +56,15 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Pong_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pong-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pong-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DA1AAB08127F4E6E006E769D /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
+		DA1AAB09127F4E6E006E769D /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
+		DA1AAB37127F4FBA006E769D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		DA1AAB38127F4FBA006E769D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		DA1AAB66127F56C9006E769D /* PlayerPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerPosition.h; sourceTree = "<group>"; };
+		DA1AAB6E127F5AFF006E769D /* PhysicsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsEngine.h; sourceTree = "<group>"; };
+		DA1AAB6F127F5AFF006E769D /* PhysicsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicsEngine.m; sourceTree = "<group>"; };
+		DA1AABEE127F615A006E769D /* HumanPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanPlayer.h; sourceTree = "<group>"; };
+		DA1AABEF127F615A006E769D /* HumanPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanPlayer.m; sourceTree = "<group>"; };
 		DA1E00C91275548300441AC2 /* libXNI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXNI.a; path = ../XNI/libXNI.a; sourceTree = SOURCE_ROOT; };
 		DA65D00912764CDF0052AF85 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
 		DA65D00A12764CDF0052AF85 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bonus.m; sourceTree = "<group>"; };
@@ -64,16 +76,12 @@
 		DA80C90E12752B7E00E0BF5A /* Pong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pong.m; sourceTree = "<group>"; };
 		DA80C91512752BAB00E0BF5A /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		DA80C91612752BAB00E0BF5A /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
-		DA80C91812752BB200E0BF5A /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
-		DA80C91912752BB200E0BF5A /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 		DA80C91B12752BBF00E0BF5A /* PongLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PongLevel.h; sourceTree = "<group>"; };
 		DA80C91C12752BBF00E0BF5A /* PongLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PongLevel.m; sourceTree = "<group>"; };
 		DA80C91E12752BCA00E0BF5A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		DA80C91F12752BCA00E0BF5A /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		DA80C92112752BD200E0BF5A /* Pad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pad.h; sourceTree = "<group>"; };
 		DA80C92212752BD200E0BF5A /* Pad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pad.m; sourceTree = "<group>"; };
-		DA80C92412752BF100E0BF5A /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Position.h; sourceTree = "<group>"; };
-		DA80C92512752C0D00E0BF5A /* Retronator.Pong.protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.protocols.h; sourceTree = "<group>"; };
 		DA80C92612752C2A00E0BF5A /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
 		DA80C92712752C2A00E0BF5A /* Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
 		DA8EAD58127717090098E373 /* Middle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Middle.h; sourceTree = "<group>"; };
@@ -154,6 +162,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA1AAB33127F4F7A006E769D /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AAB35127F4F89006E769D /* AI */,
+				DA1AAB36127F4F91006E769D /* Human */,
+				DA1AAB37127F4FBA006E769D /* Player.h */,
+				DA1AAB38127F4FBA006E769D /* Player.m */,
+				DA1AAB66127F56C9006E769D /* PlayerPosition.h */,
+			);
+			name = Players;
+			sourceTree = "<group>";
+		};
+		DA1AAB35127F4F89006E769D /* AI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AI;
+			sourceTree = "<group>";
+		};
+		DA1AAB36127F4F91006E769D /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AABEE127F615A006E769D /* HumanPlayer.h */,
+				DA1AABEF127F615A006E769D /* HumanPlayer.m */,
+			);
+			name = Human;
+			sourceTree = "<group>";
+		};
+		DA1AAB6D127F5AEF006E769D /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AAB6E127F5AFF006E769D /* PhysicsEngine.h */,
+				DA1AAB6F127F5AFF006E769D /* PhysicsEngine.m */,
+			);
+			name = Physics;
+			sourceTree = "<group>";
+		};
 		DA6AB677127F3AE000FC4684 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,41 +210,27 @@
 		DA80C90612752B0400E0BF5A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DA80C90712752B1300E0BF5A /* Componemts */,
-				DA80C90812752B2300E0BF5A /* Graphics */,
-				DA80C90912752B2D00E0BF5A /* Protocols */,
-				DA80C90A12752B3500E0BF5A /* Scene */,
 				DA80C90C12752B6700E0BF5A /* Retronator.Pong.classes.h */,
 				DA80C90B12752B5400E0BF5A /* Retronator.Pong.h */,
+				DA1AAB6D127F5AEF006E769D /* Physics */,
+				DA80C90812752B2300E0BF5A /* Graphics */,
+				DA80C90A12752B3500E0BF5A /* Scene */,
+				DA1AAB33127F4F7A006E769D /* Players */,
 				DA80C90D12752B7E00E0BF5A /* Pong.h */,
 				DA80C90E12752B7E00E0BF5A /* Pong.m */,
+				DA1AAB08127F4E6E006E769D /* Gameplay.h */,
+				DA1AAB09127F4E6E006E769D /* Gameplay.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		DA80C90712752B1300E0BF5A /* Componemts */ = {
-			isa = PBXGroup;
-			children = (
-				DA80C92612752C2A00E0BF5A /* Renderer.h */,
-				DA80C92712752C2A00E0BF5A /* Renderer.m */,
-			);
-			name = Componemts;
 			sourceTree = "<group>";
 		};
 		DA80C90812752B2300E0BF5A /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				DA80C92612752C2A00E0BF5A /* Renderer.h */,
+				DA80C92712752C2A00E0BF5A /* Renderer.m */,
 			);
 			name = Graphics;
-			sourceTree = "<group>";
-		};
-		DA80C90912752B2D00E0BF5A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				DA80C92412752BF100E0BF5A /* Position.h */,
-				DA80C92512752C0D00E0BF5A /* Retronator.Pong.protocols.h */,
-			);
-			name = Protocols;
 			sourceTree = "<group>";
 		};
 		DA80C90A12752B3500E0BF5A /* Scene */ = {
@@ -209,8 +240,6 @@
 				DA80C91412752B9E00E0BF5A /* Levels */,
 				DA80C91512752BAB00E0BF5A /* Level.h */,
 				DA80C91612752BAB00E0BF5A /* Level.m */,
-				DA80C91812752BB200E0BF5A /* Scene.h */,
-				DA80C91912752BB200E0BF5A /* Scene.m */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -318,10 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA82C672128A0FC900026869 /* HumanPlayer.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				DA80C90F12752B7E00E0BF5A /* Pong.m in Sources */,
 				DA80C91712752BAB00E0BF5A /* Level.m in Sources */,
-				DA80C91A12752BB200E0BF5A /* Scene.m in Sources */,
 				DA80C91D12752BBF00E0BF5A /* PongLevel.m in Sources */,
 				DA80C92012752BCA00E0BF5A /* Ball.m in Sources */,
 				DA80C92312752BD200E0BF5A /* Pad.m in Sources */,
@@ -329,6 +358,9 @@
 				DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */,
 				DAC8DC2D12764F6F00B2E374 /* Bg.m in Sources */,
 				DA8EAD5A127717090098E373 /* Middle.m in Sources */,
+				DA1AAB0A127F4E6E006E769D /* Gameplay.m in Sources */,
+				DA1AAB39127F4FBA006E769D /* Player.m in Sources */,
+				DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +390,7 @@
 					"\"$(SRCROOT)/../ XNI\"",
 					"\"$(SRCROOT)/../XNI\"",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = Pong;
 			};
 			name = Debug;
@@ -389,6 +422,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";

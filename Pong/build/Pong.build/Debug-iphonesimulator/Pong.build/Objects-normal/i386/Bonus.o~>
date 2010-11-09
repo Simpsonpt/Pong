@@ -1,8 +1,0 @@
-/Users/Simpson/Desktop/Project/Pong/Bonus.m: In function '-[Bonus init]':
-/Users/Simpson/Desktop/Project/Pong/Bonus.m:18: error: 'position' undeclared (first use in this function)
-/Users/Simpson/Desktop/Project/Pong/Bonus.m:18: error: (Each undeclared identifier is reported only once
-/Users/Simpson/Desktop/Project/Pong/Bonus.m:18: error: for each function it appears in.)
-/Users/Simpson/Desktop/Project/Pong/Bonus.m: At top level:
-/Users/Simpson/Desktop/Project/Pong/Bonus.m:24: error: no declaration of property 'position' found in the interface
-/Users/Simpson/Desktop/Project/Pong/Bonus.m: In function '-[Bonus dealloc]':
-/Users/Simpson/Desktop/Project/Pong/Bonus.m:28: error: 'position' undeclared (first use in this function)

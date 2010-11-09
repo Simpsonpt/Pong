@@ -16,15 +16,18 @@
 	self = [super init];
 	if (self != nil) {
 		position = [[Vector2 alloc] init];
+		velocity = [[Vector2 alloc] init];
+		mass = 1;
+		radius = 20;
 	}
 	return self;
 }
 
-//Auto Generate the Get & Set 
-@synthesize position;
+@synthesize position, velocity, mass, radius;
 
 - (void) dealloc
 {
+	[velocity release];
 	[position release];
 	[super dealloc];
 }

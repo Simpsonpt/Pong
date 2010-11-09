@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "Retronator.Pong.classes.h"
+#import "Retronator.Xni.Framework.Graphics.h"
+#import "Everywhere.h"
 #import "Texture.h"
 
 @interface Sprite : NSObject {

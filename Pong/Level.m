@@ -11,31 +11,31 @@
 
 @implementation Level
 
-- (id) init
+- (id) initWithGame:(Game *)theGame
 {
-	self = [super init];
-	if(self != nil) {
+	self = [super initWithGame:theGame];
+	if (self != nil) {
+
+		scene = [[Scene alloc] init];
 		
 		//Background
 		background = [[Bg alloc] init];
 		
 		//Middle Bar
-		md = [[Middle alloc] init];
+		md = [[Middle alloc] init];		
 		
 		//Players Bar
-		player1pad = [[Pad alloc] init];
-		player2pad = [[Pad alloc] init];
+		topPlayer = [[Pad alloc] init];
+		bottomPlayer = [[Pad alloc] init];
 		//Game Ball
 		ball = [[Ball alloc] init];
 		//Random Objects
 		bonus = [[Bonus alloc] init];
-		
-		
-		scene = [[Scene alloc] init];
+			
 		[scene addItem:background];
 		[scene addItem:md];
-		[scene addItem:player1pad];
-		[scene addItem:player2pad];
+		[scene addItem:topPlayer];
+		[scene addItem:bottomPlayer];
 		[scene addItem:ball];
 		[scene addItem:bonus];
 		
@@ -43,13 +43,20 @@
 	return self;
 }
 
-@synthesize scene;
+@synthesize scene, topPlayer, bottomPlayer, ball;
+
+- (void) initialize {
+	[self reset];
+	[super initialize];
+}
+
+- (void) reset {}
 
 - (void) dealloc
 {
 	[background release];
-	[player1pad release];
-	[player2pad release];
+	[topPlayer release];
+	[bottomPlayer release];
 	[ball release];
 	[bonus release];
 	[scene release];

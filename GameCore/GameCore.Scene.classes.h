@@ -1,0 +1,3 @@
+@protocol IScene;
+
+@class Scene;

@@ -6,7 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-//#import "Pong.h"
+#import "Pong.h"
 #import "Retronator.Pong.h"
 
 @implementation Pong
@@ -20,11 +20,15 @@
 
 - (void) initialize {
 	// Create all levels.
-	levels = [[NSMutableArray alloc] init];
-	[levels addObject:[[[PongLevel alloc] init] autorelease]];
+	//levels = [[NSMutableArray alloc] init];
+	//[levels addObject:[[[PongLevel alloc] init] autorelease]];
+	levelClasses = [[NSMutableArray alloc] init];
+	[levelClasses addObject:[PongLevel class]];
+
 	
 	// Start in first level.
-	[self loadLevel:[levels objectAtIndex:0]];
+	//[self loadLevel:[levels objectAtIndex:0]];
+	[self loadMultiplayerLevel:[levelClasses objectAtIndex:0]];
 	
 	// Initialize all components.
 	[super initialize];
@@ -43,9 +47,22 @@
 	[self.components addComponent:renderer];
 }
 
+- (void) loadMultiplayerLevel:(Class)levelClass {	
+	// Unload the current gameplay.
+	if (currentGameplay) {
+		[self.components removeComponent:currentGameplay];
+		[currentGameplay release];
+	}
+	
+	// Allocate and initialize new gameplay object and add it to components.
+	currentGameplay = [[Gameplay alloc] initMultiplayerWithGame:self levelClass:levelClass];
+	[self.components addComponent:currentGameplay];
+}
+
 - (void) dealloc
 {
-	[levels release];
+	//[levels release];
+	[levelClasses release];
     [graphics release];
     [super dealloc];
 }

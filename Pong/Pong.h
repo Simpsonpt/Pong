@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 #import "Retronator.Xni.Framework.Graphics.h"
-
 #import "Retronator.Xni.Framework.h"
 #import "Retronator.Xni.Framework.Content.h"
 #import "Retronator.Xni.Framework.Input.Touch.h"
@@ -21,13 +20,18 @@
 	
 	Renderer *renderer;
 	
-	Level *currentLevel;
+	// Gameplay
+	Gameplay *currentGameplay;
+	
+	//Level *currentLevel;
 	
 	// Levels
-	NSMutableArray *levels;
+	//NSMutableArray *levels;
+	NSMutableArray *levelClasses;
 }
 
-- (void) loadLevel:(Level*) level;
+//- (void) loadLevel:(Level*) level;
+- (void) loadMultiplayerLevel:(Class) levelClass;
 
 @end
 

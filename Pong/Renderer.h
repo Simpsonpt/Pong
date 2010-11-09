@@ -15,10 +15,18 @@
 #import "GameCore.Graphics.h"
 
 @interface Renderer : DrawableGameComponent {
+	// Resources
+	ContentManager *content;
+	Sprite *padSprite; //*malletShadow;
+	Sprite *ballSprite; //*puckShadow;
+	
+	//Texture2D *background;
+	Vector2 *lightPosition;
+	
 	Sprite *backgroundSprite;
 	Sprite *middleSprite;
-	Sprite *padSprite;
-	Sprite *ballSprite;
+	//Sprite *padSprite;
+	//Sprite *ballSprite;
 	Sprite *bonusSprite;
 	
 	//Graphics 

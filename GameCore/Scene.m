@@ -7,7 +7,6 @@
 //
 
 #import "Scene.h"
-#import "Retronator.Pong.h"
 
 @implementation Scene
 
@@ -37,4 +36,3 @@
 }
 
 @end
-

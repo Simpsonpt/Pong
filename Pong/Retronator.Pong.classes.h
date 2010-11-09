@@ -1,6 +1,6 @@
-#import "Retronator.Pong.protocols.h"
+//#import "Retronator.Pong.protocols.h"
 
-@class Scene;
+//@class Scene;
 
 @class Bg;
 @class Middle;
@@ -8,10 +8,14 @@
 @class Pad;
 @class Bonus;
 
+#import "PlayerPosition.h"
+@class Player, HumanPlayer;
+
 @class Level;
 @class PongLevel;
+@class Gameplay;
 
 @class Pong;
 
 //@class Sprite;
-@class Renderer;
+@class Renderer, PhysicsEngine;
