@@ -1,2 +1,13 @@
 
-Pong for IPhone (XNI Framework) By Renato Rodrigues 2010  
+Project Name: Pong
+Type: Clone
+Why: Project for Game Technology and Virtual Reality
+Platform: IPhone
+Development: 
+- Objective-C
+- XNI Framework (IPhone/IPad XNA port)
+
+Credits:
+- Retronator (XNI creator and base code)
+- Renato Rodrigues
+
