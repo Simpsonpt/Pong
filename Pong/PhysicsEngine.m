@@ -9,6 +9,8 @@
 #import "GameCore.Physics.h"
 #import "Retronator.Pong.h"
 #import "PhysicsEngine.h"
+#import "GameCore.Graphics.h"
+#import "GameCore.Physics.h"
 
 @implementation PhysicsEngine
 
@@ -20,20 +22,24 @@
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime {
-	
-	// First we move the puck.
+
+	// Physics
+	Vector2 *gravity = [Vector2 vectorWithX:0 y:500 * gameTime.elapsedGameTime];
 	[MovementPhysics simulateMovementOn:level.ball withElapsed:gameTime.elapsedGameTime];
+		
+	id <IVelocity> itemWithVelocity = [level.ball conformsToProtocol:@protocol(IVelocity)] ? level.ball : nil;
+	if (itemWithVelocity)
+		// Simulate gravity.
+		[itemWithVelocity.velocity add:gravity];
 	
-	// Now we do collision detection. We compare all pairs of items.
 	for (id item1 in level.scene) {
 		for (id item2 in level.scene) {
+			if([item1 isKindOfClass:[Bg class]] || [item2 isKindOfClass:[Bg class]])
+				continue;
+			if([item1 isKindOfClass:[Bg class]] && [item2 isKindOfClass:[Pad class]] || [item1 isKindOfClass:[Pad class]] || [item2 isKindOfClass:[Bg class]])
+				continue;
 			if (item1 != item2) {
-				id <IParticle> particleCollider1 = [item1 conformsToProtocol:@protocol(IParticleCollider)] ? item1 : nil;
-				id <IParticle> particleCollider2 = [item2 conformsToProtocol:@protocol(IParticleCollider)] ? item2 : nil;
-				
-				if (particleCollider1 && particleCollider2) {
-					[ParticleParticleCollision collisionBetween:particleCollider1 and:particleCollider2];
-				}
+				[Collision collisionBetween:item1 and:item2];
 			}
 		}
 	}

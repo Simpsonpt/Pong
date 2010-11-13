@@ -1,6 +1,0 @@
-/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m: In function '-[HumanPlayer updateWithGameTime:]':
-/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m:45: warning: assignment makes pointer from integer without a cast
-/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m: In function '-[HumanPlayer getbonusCheck]':
-/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m:74: warning: conflicting types for '-(BOOL)getbonusCheck'
-/Users/Simpson/Desktop/Project/Pong/HumanPlayer.h:21: warning: previous declaration of '-(BOOL *)getbonusCheck'
-/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m:75: warning: return makes integer from pointer without a cast

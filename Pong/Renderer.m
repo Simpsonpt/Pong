@@ -17,7 +17,6 @@
 	if (self = [super initWithGame:theGame]) {
 		level = theLevel;
 		content = [[ContentManager alloc] initWithServiceProvider:self.game.services];
-		//lightPosition = [[Vector2 alloc] initWithX:160 y:230];
 	}
 	return self;
 }
@@ -49,8 +48,6 @@
 	padSprite.sourceRectangle = [Rectangle rectangleWithX:500 y:90 width:130 height:100];
 	//padSprite.origin = [Vector2 vectorWithX:90 y:30];
 	padSprite.origin = [Vector2 vectorWithX:0 y:0];
-//	padSprite.scaleUniform = 0.85;
-//	[padSprite scaleUniform:0.85];
 	
 	//Ball
 	ballSprite = [[Sprite alloc] init];
@@ -81,14 +78,8 @@
 		}
 		
 		Sprite *sprite = nil;
-		//SpriteEffects effects = SpriteEffectsNone;
 		if ([item isKindOfClass:[Pad class]]) {
 			sprite = padSprite;
-			//Pad *pad = (Pad*)item;
-			//if (pad.position.y > 230) {
-			//	printf("Entrei no PAd.y 230\n");
-			//	effects = SpriteEffectsFlipVertically;
-			//}
 		} else if ([item isKindOfClass:[Ball class]]) {
 			sprite = ballSprite;
 		} else if ([item isKindOfClass:[Bonus class]]) {

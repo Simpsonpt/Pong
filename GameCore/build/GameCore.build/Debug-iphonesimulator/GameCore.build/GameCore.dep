@@ -1,4 +1,3 @@
-840d5a2b8fd4a80b5c7bbbf49628de28 791fd6d3435b4b97eee411b84a46f606 ffffffffffffffffffffffffffffffff 203168 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a
 1d8494115e7175bc26fefe0b50d4068a f6b21f1e46a4f7d8eabee5904e1822f3 ffffffffffffffffffffffffffffffff 13052 /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleAxisAlignedHalfPlaneCollision.o
 1d8494115e49474d26fefe0b50d41156 7709e038b0babb9dd9f1b2e168dbbf14 ffffffffffffffffffffffffffffffff 5148 /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleConvexCollision.o
 1d8494115e71715e26fefe0b50d41a2a 9ab9017031f1debd89f503517e6e50a2 ffffffffffffffffffffffffffffffff 19280 /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Collision.o
@@ -17,6 +16,7 @@
 00000000000000000000000000000000 33b146db769ea6eefd2a04de25c2b456 ffffffffffffffffffffffffffffffff 232 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/include/GameCore.Graphics.h
 00000000000000000000000000000000 302b962a355ad9d18dbc9596ba24e114 ffffffffffffffffffffffffffffffff 226 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/include/GameCore.Graphics.classes.h
 00000000000000000000000000000000 9dfcac7889e5a4358f98e3fccd3a2125 ffffffffffffffffffffffffffffffff 523 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/include/Sprite.h
+840d5a2b8fd4a80b5c7bbbf49628de28 791fd6d3435b4b97eee411b84a46f606 ffffffffffffffffffffffffffffffff 203168 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a
 000000004c4fdb2b0000000000000eed 1d8494115e5cd1c726fefe0b50d40bd7 ffffffffffffffffffffffffffffffff 11524864 /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch.gch
 ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/IAxisAlignedHalfPlaneCollider.o
 ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MathEnum.o

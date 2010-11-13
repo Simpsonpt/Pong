@@ -1,0 +1,7 @@
+/Users/Simpson/Desktop/Project/Pong/Ball.m: In function '-[Ball init]':
+/Users/Simpson/Desktop/Project/Pong/Ball.m:22: error: 'coefficientOfRestitution' undeclared (first use in this function)
+/Users/Simpson/Desktop/Project/Pong/Ball.m:22: error: (Each undeclared identifier is reported only once
+/Users/Simpson/Desktop/Project/Pong/Ball.m:22: error: for each function it appears in.)
+/Users/Simpson/Desktop/Project/Pong/Ball.m: At top level:
+/Users/Simpson/Desktop/Project/Pong/Ball.m:27: error: no declaration of property 'coefficientOfRestitution' found in the interface
+/Users/Simpson/Desktop/Project/Pong/Ball.m:34: warning: '@end' missing in implementation context

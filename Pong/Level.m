@@ -9,6 +9,8 @@
 #import "Level.h"
 #import "Retronator.Pong.h"
 
+#import "GameCore.Scene.Objects.h"
+
 @implementation Level
 
 - (id) initWithGame:(Game *)theGame
@@ -38,6 +40,17 @@
 		[scene addItem:bottomPlayer];
 		[scene addItem:ball];
 		[scene addItem:bonus];
+		
+		//Physic for Game Table
+		AALimit *floor = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionNegativeY distance:-470]] autorelease];
+		[scene addItem: floor];
+		AALimit *leftWall = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionPositiveX distance:-5]] autorelease];
+		[scene addItem: leftWall];
+		AALimit *rightWall = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionNegativeX distance:-320]] autorelease];
+		[scene addItem: rightWall];
+		AALimit *ceiling = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionPositiveY distance:75]] autorelease];
+		[scene addItem: ceiling];
+		
 		
 	}
 	return self;

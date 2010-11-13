@@ -10,6 +10,8 @@
 #import "Retronator.Pong.h"
 #import "HumanPlayer.h"
 
+#import "GameCore.Physics.h"
+
 @implementation HumanPlayer
 
 - (id) initWithPad:(Pad *)thePad scene:(id <IScene>)theScene position:(PlayerPosition)thePosition game:(Game*)game
@@ -17,6 +19,7 @@
 	self = [super initWithPad:thePad scene:theScene position:thePosition];
 	if (self != nil) {
 		inputArea = [[Rectangle alloc] initWithRectangle:game.window.clientBounds];
+		//170
 		inputArea.height = 170;
 		if (position == PlayerPositionBottom) {
 			inputArea.y = game.window.clientBounds.height - inputArea.height;
@@ -49,8 +52,9 @@
 			}
 			
 			if (grabbed) {
-				[[pad.position set:touch.position] add:touchOffset];
-				
+				//[[pad.position set:touch.position] add:touchOffset];
+				//No need to change y, Pong just moves in X
+				pad.position.x = touch.position.x;
 			}
 		}
 	}

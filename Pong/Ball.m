@@ -19,11 +19,12 @@
 		velocity = [[Vector2 alloc] init];
 		mass = 1;
 		radius = 20;
+		coefficientOfRestitution = 1;
 	}
 	return self;
 }
 
-@synthesize position, velocity, mass, radius;
+@synthesize position, velocity, mass, radius, coefficientOfRestitution;
 
 - (void) dealloc
 {
@@ -31,6 +32,4 @@
 	[position release];
 	[super dealloc];
 }
-
-@end
 

@@ -29,7 +29,7 @@
 		ball.position.y = 230;
 		
 		bonus.position.x = 120;
-		bonus.position.y = 100;
+		bonus.position.y = 120;
 }
 
 @end

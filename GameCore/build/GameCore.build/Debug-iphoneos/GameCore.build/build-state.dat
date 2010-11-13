@@ -82,6 +82,60 @@ c000000004C6241ED00000000000009CD
 t1281507821
 s2509
 
+N/Users/Simpson/Desktop/Project/GameCore/AALimit.h
+c000000004CDEF4A6000000000000018B
+t1289680038
+s395
+i<Foundation/Foundation.h>
+i"GameCore.Scene.Objects.h"
+i"GameCore.Math.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/AALimit.m
+c000000004CDEF2330000000000000202
+t1289679411
+s514
+i"AALimit.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.h
+c000000004CDEF6B6000000000000021D
+t1289680566
+s541
+i<Foundation/Foundation.h>
+i"HalfPlane.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m
+c000000004CDEF6B600000000000007AC
+t1289680566
+s1964
+i"AxisAlignedHalfPlane.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/Collision.h
+c000000004CDEF72400000000000001C1
+t1289680676
+s449
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/Collision.m
+c000000004CDEF72400000000000016AF
+t1289680676
+s5807
+i"GameCore.Scene.Objects.h"
+i"GameCore.Physics.h"
+i"Collision.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.h
+c000000004CDEF45300000000000000FA
+t1289679955
+s250
+i<Foundation/Foundation.h>
+i"Polygon.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m
+c000000004CDEF45000000000000000D4
+t1289679952
+s212
+i"ConvexPolygon.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/Everywhere.h
 c000000004CD9D4260000000000000042
 t1289344038
@@ -99,25 +153,54 @@ c000000004CCEFBC900000000000000E8
 t1288633289
 s232
 
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Math.classes.h
+c000000004CDEF4690000000000000056
+t1289679977
+s86
+i"MathEnum.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Math.h
+c000000004CDEF594000000000000007B
+t1289680276
+s123
+i"MathEnum.h"
+i"HalfPlane.h"
+i"AxisAlignedHalfPlane.h"
+i"Polygon.h"
+i"ConvexPolygon.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Physics.h
+c000000004CDEF7D100000000000000AE
+t1289680849
+s174
+i"MovementPhysics.h"
+i"Collision.h"
+i"ParticleParticleCollision.h"
+i"ParticleAxisAlignedHalfPlaneCollision.h"
+i"ParticleConvexCollision.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.Objects.classes.h
-c000000004CCF28C300000000000000B6
-t1288644803
-s182
+c000000004CDEF57A00000000000000FC
+t1289680250
+s252
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.Objects.h
-c000000004CCF267C00000000000000F0
-t1288644220
-s240
+c000000004CDEF57B000000000000014E
+t1289680251
+s334
 i"IPosition.h"
 i"IVelocity.h"
 i"IMovable.h"
 i"IRadius.h"
 i"IParticleCollider.h"
 i"IParticle.h"
+i"IHalfPlaneCollider.h"
+i"IAxisAlignedHalfPlaneCollider.h"
 i"IMass.h"
 i"ICoefficientOfRestitution.h"
 i"ILifetime.h"
 i"Lifetime.h"
+i"AALimit.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.classes.h
 c000000004CCF1B910000000000000020
@@ -138,11 +221,38 @@ s226
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/HalfPlane.h
+c000000004CDEF4530000000000000215
+t1289679955
+s533
+i<Foundation/Foundation.h>
+i"GameCore.Math.classes.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/HalfPlane.m
+c000000004CDEF685000000000000032E
+t1289680517
+s814
+i"HalfPlane.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/IAxisAlignedHalfPlaneCollider.h
+c000000004CDEF4F3000000000000016C
+t1289680115
+s364
+i<UIKit/UIKit.h>
+i"IHalfPlaneCollider.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/ICoefficientOfRestitution.h
 c000000004CCF28680000000000000119
 t1288644712
 s281
 i<UIKit/UIKit.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/IHalfPlaneCollider.h
+c000000004CDEF5130000000000000137
+t1289680147
+s311
+i<UIKit/UIKit.h>
+i"GameCore.Math.classes.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/ILifetime.h
 c000000004CCF2922000000000000012B
@@ -218,6 +328,11 @@ t1288644635
 s703
 i"Lifetime.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/MathEnum.h
+c000000004CDEF3930000000000000083
+t1289679763
+s131
+
 N/Users/Simpson/Desktop/Project/GameCore/MovementPhysics.h
 c000000004CCF24940000000000000161
 t1288643732
@@ -233,6 +348,33 @@ i"GameCore.Scene.h"
 i"GameCore.Scene.Objects.h"
 i"MovementPhysics.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.h
+c000000004CDEF7D6000000000000028C
+t1289680854
+s652
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m
+c000000004CDEF7D60000000000000B5D
+t1289680854
+s2909
+i"GameCore.Scene.Objects.h"
+i"GameCore.Physics.h"
+i"GameCore.Math.h"
+i"ParticleAxisAlignedHalfPlaneCollision.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.h
+c000000004CDEF7D700000000000000FB
+t1289680855
+s251
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m
+c000000004CDEF7D700000000000000F1
+t1289680855
+s241
+i"ParticleConvexCollision.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.h
 c000000004CCF28F0000000000000025B
 t1288644848
@@ -246,6 +388,18 @@ t1288644846
 s5363
 i"GameCore.Scene.Objects.h"
 i"ParticleParticleCollision.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/Polygon.h
+c000000004CDEF45300000000000000DB
+t1289679955
+s219
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/Polygon.m
+c000000004CDEF45300000000000000C1
+t1289679955
+s193
+i"Polygon.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/Random.h
 c000000004CD9CA340000000000000170
@@ -319,8 +473,28 @@ N/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore
 t1288635757
 s10864
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/AALimit.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/AxisAlignedHalfPlane.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Collision.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ConvexPolygon.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/GameCore.LinkFileList
 c00000000000000000000000000000000
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/HalfPlane.o
 t2
 s0
 
@@ -332,7 +506,19 @@ N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/Gam
 t2
 s0
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleAxisAlignedHalfPlaneCollision.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleConvexCollision.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleParticleCollision.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Polygon.o
 t2
 s0
 
@@ -356,8 +542,28 @@ N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/Gam
 t2
 s0
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/AALimit.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/AxisAlignedHalfPlane.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Collision.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ConvexPolygon.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/GameCore.LinkFileList
 c00000000000000000000000000000000
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/HalfPlane.o
 t2
 s0
 
@@ -369,7 +575,19 @@ N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/Gam
 t2
 s0
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleAxisAlignedHalfPlaneCollision.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleConvexCollision.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleParticleCollision.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Polygon.o
 t2
 s0
 
@@ -1002,13 +1220,37 @@ CCheck dependencies
 r0
 lSLF07#2@18"Check dependencies310328555#310328555#0(0"0(0#1#0"542832#0"0#
 
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/AALimit.o /Users/Simpson/Desktop/Project/GameCore/AALimit.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/AxisAlignedHalfPlane.o /Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Collision.o /Users/Simpson/Desktop/Project/GameCore/Collision.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ConvexPolygon.o /Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/HalfPlane.o /Users/Simpson/Desktop/Project/GameCore/HalfPlane.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Lifetime.o /Users/Simpson/Desktop/Project/GameCore/Lifetime.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/MovementPhysics.o /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleAxisAlignedHalfPlaneCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleConvexCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleParticleCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Polygon.o /Users/Simpson/Desktop/Project/GameCore/Polygon.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Random.o /Users/Simpson/Desktop/Project/GameCore/Random.m normal armv6 objective-c com.apple.compilers.gcc.4_2
@@ -1023,13 +1265,37 @@ r0
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Sprite.o /Users/Simpson/Desktop/Project/GameCore/Sprite.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/AALimit.o /Users/Simpson/Desktop/Project/GameCore/AALimit.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/AxisAlignedHalfPlane.o /Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Collision.o /Users/Simpson/Desktop/Project/GameCore/Collision.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ConvexPolygon.o /Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/HalfPlane.o /Users/Simpson/Desktop/Project/GameCore/HalfPlane.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Lifetime.o /Users/Simpson/Desktop/Project/GameCore/Lifetime.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/MovementPhysics.o /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleAxisAlignedHalfPlaneCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleConvexCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleParticleCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Polygon.o /Users/Simpson/Desktop/Project/GameCore/Polygon.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Random.o /Users/Simpson/Desktop/Project/GameCore/Random.m normal armv7 objective-c com.apple.compilers.gcc.4_2
