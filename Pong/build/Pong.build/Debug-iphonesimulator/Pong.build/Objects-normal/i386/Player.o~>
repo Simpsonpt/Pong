@@ -1,0 +1,4 @@
+/Users/Simpson/Desktop/Project/Pong/Player.m: In function '-[Player getbonusCheck]':
+/Users/Simpson/Desktop/Project/Pong/Player.m:26: warning: conflicting types for '-(BOOL)getbonusCheck'
+/Users/Simpson/Desktop/Project/Pong/Player.h:23: warning: previous declaration of '-(id)getbonusCheck'
+/Users/Simpson/Desktop/Project/Pong/Player.m:26: warning: control reaches end of non-void function

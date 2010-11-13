@@ -42,6 +42,26 @@
 		DA82C57F128A017600026869 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = DA82C57D128A017600026869 /* Random.h */; };
 		DA82C580128A017600026869 /* Random.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82C57E128A017600026869 /* Random.m */; };
 		DA82C614128A0B7400026869 /* Everywhere.h in Headers */ = {isa = PBXBuildFile; fileRef = DA82C612128A0B7400026869 /* Everywhere.h */; };
+		DA9AA1F1128F29360096CFC5 /* AALimit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA1EF128F29360096CFC5 /* AALimit.h */; };
+		DA9AA1F2128F29360096CFC5 /* AALimit.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA1F0128F29360096CFC5 /* AALimit.m */; };
+		DA9AA208128F2AA80096CFC5 /* GameCore.Math.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA206128F2AA80096CFC5 /* GameCore.Math.h */; };
+		DA9AA20C128F2ABD0096CFC5 /* GameCore.Math.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA20A128F2ABD0096CFC5 /* GameCore.Math.classes.h */; };
+		DA9AA212128F2AFF0096CFC5 /* MathEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA210128F2AFF0096CFC5 /* MathEnum.h */; };
+		DA9AA216128F2B250096CFC5 /* HalfPlane.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA214128F2B250096CFC5 /* HalfPlane.h */; };
+		DA9AA217128F2B250096CFC5 /* HalfPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA215128F2B250096CFC5 /* HalfPlane.m */; };
+		DA9AA21A128F2B6E0096CFC5 /* AxisAlignedHalfPlane.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA218128F2B6E0096CFC5 /* AxisAlignedHalfPlane.h */; };
+		DA9AA21B128F2B6E0096CFC5 /* AxisAlignedHalfPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA219128F2B6E0096CFC5 /* AxisAlignedHalfPlane.m */; };
+		DA9AA21E128F2B920096CFC5 /* Polygon.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA21C128F2B920096CFC5 /* Polygon.h */; };
+		DA9AA21F128F2B920096CFC5 /* Polygon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA21D128F2B920096CFC5 /* Polygon.m */; };
+		DA9AA222128F2BB80096CFC5 /* ConvexPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA220128F2BB80096CFC5 /* ConvexPolygon.h */; };
+		DA9AA223128F2BB80096CFC5 /* ConvexPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA221128F2BB80096CFC5 /* ConvexPolygon.m */; };
+		DA9AA232128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA230128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h */; };
+		DA9AA29E128F2E6B0096CFC5 /* Collision.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA29C128F2E6B0096CFC5 /* Collision.h */; };
+		DA9AA29F128F2E6B0096CFC5 /* Collision.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA29D128F2E6B0096CFC5 /* Collision.m */; };
+		DA9AA2A8128F2EED0096CFC5 /* ParticleConvexCollision.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA2A6128F2EED0096CFC5 /* ParticleConvexCollision.h */; };
+		DA9AA2A9128F2EED0096CFC5 /* ParticleConvexCollision.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA2A7128F2EED0096CFC5 /* ParticleConvexCollision.m */; };
+		DA9AA2AD128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9AA2AB128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h */; };
+		DA9AA2AE128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9AA2AC128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +103,26 @@
 		DA82C57D128A017600026869 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
 		DA82C57E128A017600026869 /* Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Random.m; sourceTree = "<group>"; };
 		DA82C612128A0B7400026869 /* Everywhere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Everywhere.h; sourceTree = "<group>"; };
+		DA9AA1EF128F29360096CFC5 /* AALimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALimit.h; sourceTree = "<group>"; };
+		DA9AA1F0128F29360096CFC5 /* AALimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALimit.m; sourceTree = "<group>"; };
+		DA9AA206128F2AA80096CFC5 /* GameCore.Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Math.h; sourceTree = "<group>"; };
+		DA9AA20A128F2ABD0096CFC5 /* GameCore.Math.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Math.classes.h; sourceTree = "<group>"; };
+		DA9AA210128F2AFF0096CFC5 /* MathEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathEnum.h; sourceTree = "<group>"; };
+		DA9AA214128F2B250096CFC5 /* HalfPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfPlane.h; sourceTree = "<group>"; };
+		DA9AA215128F2B250096CFC5 /* HalfPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfPlane.m; sourceTree = "<group>"; };
+		DA9AA218128F2B6E0096CFC5 /* AxisAlignedHalfPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxisAlignedHalfPlane.h; sourceTree = "<group>"; };
+		DA9AA219128F2B6E0096CFC5 /* AxisAlignedHalfPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxisAlignedHalfPlane.m; sourceTree = "<group>"; };
+		DA9AA21C128F2B920096CFC5 /* Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polygon.h; sourceTree = "<group>"; };
+		DA9AA21D128F2B920096CFC5 /* Polygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polygon.m; sourceTree = "<group>"; };
+		DA9AA220128F2BB80096CFC5 /* ConvexPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvexPolygon.h; sourceTree = "<group>"; };
+		DA9AA221128F2BB80096CFC5 /* ConvexPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvexPolygon.m; sourceTree = "<group>"; };
+		DA9AA230128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAxisAlignedHalfPlaneCollider.h; sourceTree = "<group>"; };
+		DA9AA29C128F2E6B0096CFC5 /* Collision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collision.h; sourceTree = "<group>"; };
+		DA9AA29D128F2E6B0096CFC5 /* Collision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collision.m; sourceTree = "<group>"; };
+		DA9AA2A6128F2EED0096CFC5 /* ParticleConvexCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleConvexCollision.h; sourceTree = "<group>"; };
+		DA9AA2A7128F2EED0096CFC5 /* ParticleConvexCollision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleConvexCollision.m; sourceTree = "<group>"; };
+		DA9AA2AB128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleAxisAlignedHalfPlaneCollision.h; sourceTree = "<group>"; };
+		DA9AA2AC128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleAxisAlignedHalfPlaneCollision.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +203,12 @@
 			children = (
 				DA1AAB7C127F5C5F006E769D /* ParticleParticleCollision.h */,
 				DA1AAB7D127F5C5F006E769D /* ParticleParticleCollision.m */,
+				DA9AA29C128F2E6B0096CFC5 /* Collision.h */,
+				DA9AA29D128F2E6B0096CFC5 /* Collision.m */,
+				DA9AA2A6128F2EED0096CFC5 /* ParticleConvexCollision.h */,
+				DA9AA2A7128F2EED0096CFC5 /* ParticleConvexCollision.m */,
+				DA9AA2AB128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h */,
+				DA9AA2AC128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m */,
 			);
 			name = Collision;
 			sourceTree = "<group>";
@@ -185,6 +231,9 @@
 				DA1AABB2127F5EFD006E769D /* IConvexCollider.h */,
 				DA1AABB6127F5F16006E769D /* IHalfPlaneCollider.h */,
 				DA1AABBA127F5F39006E769D /* ICoefficientOfRestitution.h */,
+				DA9AA1EF128F29360096CFC5 /* AALimit.h */,
+				DA9AA1F0128F29360096CFC5 /* AALimit.m */,
+				DA9AA230128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -224,8 +273,19 @@
 		DA82C57C128A016700026869 /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				DA9AA20A128F2ABD0096CFC5 /* GameCore.Math.classes.h */,
+				DA9AA206128F2AA80096CFC5 /* GameCore.Math.h */,
+				DA9AA210128F2AFF0096CFC5 /* MathEnum.h */,
 				DA82C57D128A017600026869 /* Random.h */,
 				DA82C57E128A017600026869 /* Random.m */,
+				DA9AA214128F2B250096CFC5 /* HalfPlane.h */,
+				DA9AA215128F2B250096CFC5 /* HalfPlane.m */,
+				DA9AA218128F2B6E0096CFC5 /* AxisAlignedHalfPlane.h */,
+				DA9AA219128F2B6E0096CFC5 /* AxisAlignedHalfPlane.m */,
+				DA9AA21C128F2B920096CFC5 /* Polygon.h */,
+				DA9AA21D128F2B920096CFC5 /* Polygon.m */,
+				DA9AA220128F2BB80096CFC5 /* ConvexPolygon.h */,
+				DA9AA221128F2BB80096CFC5 /* ConvexPolygon.m */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -264,6 +324,18 @@
 				DA82C57A128A012D00026869 /* Rectangle+Extensions.h in Headers */,
 				DA82C57F128A017600026869 /* Random.h in Headers */,
 				DA82C614128A0B7400026869 /* Everywhere.h in Headers */,
+				DA9AA1F1128F29360096CFC5 /* AALimit.h in Headers */,
+				DA9AA208128F2AA80096CFC5 /* GameCore.Math.h in Headers */,
+				DA9AA20C128F2ABD0096CFC5 /* GameCore.Math.classes.h in Headers */,
+				DA9AA212128F2AFF0096CFC5 /* MathEnum.h in Headers */,
+				DA9AA216128F2B250096CFC5 /* HalfPlane.h in Headers */,
+				DA9AA21A128F2B6E0096CFC5 /* AxisAlignedHalfPlane.h in Headers */,
+				DA9AA21E128F2B920096CFC5 /* Polygon.h in Headers */,
+				DA9AA222128F2BB80096CFC5 /* ConvexPolygon.h in Headers */,
+				DA9AA232128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h in Headers */,
+				DA9AA29E128F2E6B0096CFC5 /* Collision.h in Headers */,
+				DA9AA2A8128F2EED0096CFC5 /* ParticleConvexCollision.h in Headers */,
+				DA9AA2AD128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +396,14 @@
 				DA1AABA3127F5E96006E769D /* Lifetime.m in Sources */,
 				DA82C57B128A012D00026869 /* Rectangle+Extensions.m in Sources */,
 				DA82C580128A017600026869 /* Random.m in Sources */,
+				DA9AA1F2128F29360096CFC5 /* AALimit.m in Sources */,
+				DA9AA217128F2B250096CFC5 /* HalfPlane.m in Sources */,
+				DA9AA21B128F2B6E0096CFC5 /* AxisAlignedHalfPlane.m in Sources */,
+				DA9AA21F128F2B920096CFC5 /* Polygon.m in Sources */,
+				DA9AA223128F2BB80096CFC5 /* ConvexPolygon.m in Sources */,
+				DA9AA29F128F2E6B0096CFC5 /* Collision.m in Sources */,
+				DA9AA2A9128F2EED0096CFC5 /* ParticleConvexCollision.m in Sources */,
+				DA9AA2AE128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

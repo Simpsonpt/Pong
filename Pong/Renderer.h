@@ -17,11 +17,11 @@
 @interface Renderer : DrawableGameComponent {
 	// Resources
 	ContentManager *content;
-	Sprite *padSprite; //*malletShadow;
-	Sprite *ballSprite; //*puckShadow;
+	Sprite *padSprite;
+	Sprite *ballSprite;
 	
 	//Texture2D *background;
-	Vector2 *lightPosition;
+	//Vector2 *lightPosition;
 	
 	Sprite *backgroundSprite;
 	Sprite *middleSprite;

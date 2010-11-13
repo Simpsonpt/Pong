@@ -1,7 +1,7 @@
 TPong
 v7
 r0
-t311039525.105120
+t311371999.995273
 cCheck dependencies
 cProcessInfoPlistFile /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist Pong-Info.plist
 cCpResource build/Debug-iphonesimulator/Pong.app/MyPong.png ../Images/MyPong.png
@@ -528,8 +528,8 @@ i<Foundation/Foundation.h>
 i"Texture.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a
-c000000004CD9D4A2000000000001C610
-t1289344162
+c000000004CDEED15000000000001C610
+t1289678101
 s116240
 
 N/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/include/GameCore.Graphics.h
@@ -655,9 +655,9 @@ t1288101216
 s34729
 
 N/Users/Simpson/Desktop/Project/Pong/../XNI/libXNI.a
-c000000004CD123C1000000000055DDE4
-t1288774593
-s5627364
+c000000004CDA93CC000000000055E094
+t1289393100
+s5628052
 
 N/Users/Simpson/Desktop/Project/Pong/Ball.h
 c000000004CCF34E70000000000000166
@@ -719,16 +719,16 @@ i"Gameplay.h"
 i"Retronator.Pong.h"
 
 N/Users/Simpson/Desktop/Project/Pong/HumanPlayer.h
-c000000004CD9CBBD00000000000001A3
-t1289341885
-s419
+c000000004CDEF14D00000000000001D0
+t1289679181
+s464
 i<Foundation/Foundation.h>
 i"Player.h"
 
 N/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m
-c000000004CD9DD3100000000000007A3
-t1289346353
-s1955
+c000000004CDEF08F000000000000083E
+t1289678991
+s2110
 i"Retronator.Xni.Framework.Input.Touch.h"
 i"Retronator.Pong.h"
 i"HumanPlayer.h"
@@ -772,8 +772,8 @@ i"GameCore.Scene.Objects.h"
 i"Retronator.Pong.classes.h"
 
 N/Users/Simpson/Desktop/Project/Pong/Pad.m
-c000000004CD9D04B00000000000001FF
-t1289343051
+c000000004CDED80D00000000000001FF
+t1289672717
 s511
 i"Pad.h"
 i"Retronator.Pong.h"
@@ -793,17 +793,17 @@ i"Retronator.Pong.h"
 i"PhysicsEngine.h"
 
 N/Users/Simpson/Desktop/Project/Pong/Player.h
-c000000004CD9CBBD00000000000001DD
-t1289341885
-s477
+c000000004CDEF14D00000000000001F8
+t1289679181
+s504
 i<Foundation/Foundation.h>
 i"GameCore.Scene.h"
 i"Retronator.Pong.classes.h"
 
 N/Users/Simpson/Desktop/Project/Pong/Player.m
-c000000004CCF1F0C00000000000001CE
-t1288642316
-s462
+c000000004CDEF14E00000000000001E9
+t1289679182
+s489
 i"Player.h"
 
 N/Users/Simpson/Desktop/Project/Pong/PlayerPosition.h
@@ -843,9 +843,9 @@ i<Foundation/Foundation.h>
 i"Level.h"
 
 N/Users/Simpson/Desktop/Project/Pong/PongLevel.m
-c000000004CD9CFE50000000000000246
-t1289342949
-s582
+c000000004CDED80D000000000000024A
+t1289672717
+s586
 i"Level.h"
 i"Retronator.Pong.h"
 
@@ -866,9 +866,9 @@ i"Retronator.Pong.classes.h"
 i"Vector2.h"
 
 N/Users/Simpson/Desktop/Project/Pong/Renderer.h
-c000000004CCF233F0000000000000342
-t1288643391
-s834
+c000000004CDEEDBA0000000000000324
+t1289678266
+s804
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Content.h"
 i"Retronator.Xni.Framework.Graphics.h"
@@ -877,9 +877,9 @@ i"DrawableGameComponent.h"
 i"GameCore.Graphics.h"
 
 N/Users/Simpson/Desktop/Project/Pong/Renderer.m
-c000000004CD9D99E0000000000000D8D
-t1289345438
-s3469
+c000000004CDEEF2D0000000000000E3D
+t1289678637
+s3645
 i"Renderer.h"
 i"GameCore.Scene.h"
 i"GameCore.Scene.Objects.h"
@@ -953,89 +953,89 @@ i"Sprite.h"
 i"Retronator.Pong.h"
 
 N/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app
-t1289346360
+t1289679199
 s204
 
 N/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM
-t1289346360
+t1289679199
 s102
 
 N/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist
-t1289340897
+t1289668517
 s808
 
 N/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/MyPong.png
-t1289340898
+t1289668517
 s34729
 
 N/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/PkgInfo
-t1289340897
+t1289668517
 s8
 
 N/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong
-t1289346359
-s502868
+t1289679199
+s503204
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Ball.o
-t1289344744
+t1289679189
 s16004
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bg.o
-t1289344747
+t1289679194
 s15412
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bonus.o
-t1289344746
+t1289679193
 s16056
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Gameplay.o
-t1289344749
-s60544
+t1289679196
+s60520
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/HumanPlayer.o
-t1289346358
-s50412
+t1289679184
+s50008
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o
-t1289345605
+t1289679186
 s49940
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Middle.o
-t1289344748
+t1289679195
 s15608
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o
-t1289344745
+t1289679190
 s15956
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PhysicsEngine.o
-t1289344751
+t1289679198
 s49260
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Player.o
-t1289344750
-s7936
+t1289679197
+s8256
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PlayerPosition.o
 t2
 s0
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.LinkFileList
-c000000004CD9D84D000000000000064E
-t1289345101
+c000000004CDEC7A5000000000000064E
+t1289668517
 s1614
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.o
-t1289344741
-s58564
+t1289679185
+s58516
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o
-t1289344743
-s45136
+t1289679187
+s45128
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o
-t1289345446
-s67276
+t1289679192
+s66540
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Scene.o
 t2
@@ -1046,7 +1046,7 @@ t1288102051
 s50324
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/main.o
-t1289344740
+t1289678106
 s40792
 
 N/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/StaticAnalyzer/normal/i386/Ball.plist
@@ -1102,36 +1102,36 @@ t2
 s0
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/AdaptiveArray.h
-c000000004CD123C10000000000000217
-t1288774593
+c000000004CDA93CC0000000000000217
+t1289393100
 s535
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/BasicEffect.h
-c000000004CD123C1000000000000078E
-t1288774593
+c000000004CDA93CC000000000000078E
+t1289393100
 s1934
 i<Foundation/Foundation.h>
 i"Effect.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/BlendState.h
-c000000004CD123C100000000000005A0
-t1288774593
+c000000004CDA93CC00000000000005A0
+t1289393100
 s1440
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Color.h
-c000000004CD123C10000000000001121
-t1288774593
+c000000004CDA93CC0000000000001121
+t1289393100
 s4385
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ContentManager.h
-c000000004CD123C10000000000000393
-t1288774593
+c000000004CDA93CC0000000000000393
+t1289393100
 s915
 i<Foundation/Foundation.h>
 i"System.h"
@@ -1139,50 +1139,50 @@ i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ContentReader.h
-c000000004CD123C100000000000001FB
-t1288774593
+c000000004CDA93CC00000000000001FB
+t1289393100
 s507
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ContentTypeReader.h
-c000000004CD123C10000000000000156
-t1288774593
+c000000004CDA93CC0000000000000156
+t1289393100
 s342
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ContentTypeReaderManager.h
-c000000004CD123C10000000000000191
-t1288774593
+c000000004CDA93CC0000000000000191
+t1289393100
 s401
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Delegate.h
-c000000004CD123C100000000000001F9
-t1288774593
+c000000004CDA93CC00000000000001F9
+t1289393100
 s505
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DepthStencilState.h
-c000000004CD123C100000000000006E5
-t1288774593
+c000000004CDA93CC00000000000006E5
+t1289393100
 s1765
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DirectionalLight.h
-c000000004CD123C10000000000000277
-t1288774593
+c000000004CDA93CC0000000000000277
+t1289393100
 s631
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DrawableGameComponent.h
-c000000004CD123C10000000000000276
-t1288774593
+c000000004CDA93CC0000000000000276
+t1289393100
 s630
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
@@ -1190,46 +1190,46 @@ i"GameComponent.h"
 i"IDrawable.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Effect.h
-c000000004CD123C100000000000001A8
-t1288774593
+c000000004CDA93CC00000000000001A8
+t1289393100
 s424
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EffectPass.h
-c000000004CD123C100000000000001D3
-t1288774593
+c000000004CDA93CC00000000000001D3
+t1289393100
 s467
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EffectTechnique.h
-c000000004CD123C100000000000001A3
-t1288774593
+c000000004CDA93CC00000000000001A3
+t1289393100
 s419
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Event.h
-c000000004CD123C100000000000001BE
-t1288774593
+c000000004CDA93CC00000000000001BE
+t1289393100
 s446
 i<Foundation/Foundation.h>
 i"System.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EventArgs.h
-c000000004CD123C100000000000000D9
-t1288774593
+c000000004CDA93CC00000000000000D9
+t1289393100
 s217
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/FrameworkEnums.h
-c000000004CD123C100000000000000B1
-t1288774593
+c000000004CDA93CC00000000000000B1
+t1289393100
 s177
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Game.h
-c000000004CD123C100000000000007B5
-t1288774593
+c000000004CDA93CC00000000000007B5
+t1289393100
 s1973
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -1238,8 +1238,8 @@ i"Retronator.Xni.Framework.Graphics.classes.h"
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponent.h
-c000000004CD123C1000000000000022D
-t1288774593
+c000000004CDA93CC000000000000022D
+t1289393100
 s557
 i<Foundation/Foundation.h>
 i"System.classes.h"
@@ -1248,39 +1248,39 @@ i"IGameComponent.h"
 i"IUpdatable.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponentCollection.h
-c000000004CD123C10000000000000270
-t1288774593
+c000000004CDA93CC0000000000000270
+t1289393100
 s624
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponentCollectionEventArgs.h
-c000000004CD123C1000000000000022E
-t1288774593
+c000000004CDA93CC000000000000022E
+t1289393100
 s558
 i<Foundation/Foundation.h>
 i"EventArgs.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameHost.h
-c000000004CD123C100000000000001A0
-t1288774593
+c000000004CDA93CC00000000000001A0
+t1289393100
 s416
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameServiceContainer.h
-c000000004CD123C10000000000000182
-t1288774593
+c000000004CDA93CC0000000000000182
+t1289393100
 s386
 i<Foundation/Foundation.h>
 i"System.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameTime.h
-c000000004CD123C100000000000003FE
-t1288774593
+c000000004CDA93CC00000000000003FE
+t1289393100
 s1022
 i<Foundation/Foundation.h>
 
@@ -1300,8 +1300,8 @@ i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameWindow.h
-c000000004CD123C100000000000003DA
-t1288774593
+c000000004CDA93CC00000000000003DA
+t1289393100
 s986
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -1309,16 +1309,16 @@ i"System.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GestureSample.h
-c000000004CD123C100000000000002F4
-t1288774593
+c000000004CDA93CC00000000000002F4
+t1289393100
 s756
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Input.Touch.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsDevice.h
-c000000004CD123C10000000000000F22
-t1288774593
+c000000004CDA93CC0000000000000F22
+t1289393100
 s3874
 i<Foundation/Foundation.h>
 i<QuartzCore/QuartzCore.h>
@@ -1329,8 +1329,8 @@ i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsDeviceManager.h
-c000000004CD123C10000000000000585
-t1288774593
+c000000004CDA93CC0000000000000585
+t1289393100
 s1413
 i<Foundation/Foundation.h>
 i"System.h"
@@ -1340,134 +1340,134 @@ i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsEnums.h
-c000000004CD123C100000000000017B5
-t1288774593
+c000000004CDA93CC00000000000017B5
+t1289393100
 s6069
 i<OpenGLES/ES1/gl.h>
 i<OpenGLES/ES2/gl.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsResource.h
-c000000004CD123C10000000000000299
-t1288774593
+c000000004CDA93CC0000000000000299
+t1289393100
 s665
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/HiDefGraphicsDevice.h
-c000000004CD123C100000000000000FF
-t1288774593
+c000000004CDA93CC00000000000000FF
+t1289393100
 s255
 i<Foundation/Foundation.h>
 i"GraphicsDevice.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IDrawable.h
-c000000004CD123C10000000000000132
-t1288774593
+c000000004CDA93CC0000000000000132
+t1289393100
 s306
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGameComponent.h
-c000000004CD123C1000000000000003F
-t1288774593
+c000000004CDA93CC000000000000003F
+t1289393100
 s63
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGraphicsDeviceManager.h
-c000000004CD123C10000000000000064
-t1288774593
+c000000004CDA93CC0000000000000064
+t1289393100
 s100
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGraphicsDeviceService.h
-c000000004CD123C1000000000000018D
-t1288774593
+c000000004CDA93CC000000000000018D
+t1289393100
 s397
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IServiceProvider.h
-c000000004CD123C10000000000000045
-t1288774593
+c000000004CDA93CC0000000000000045
+t1289393100
 s69
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IUpdatable.h
-c000000004CD123C10000000000000139
-t1288774593
+c000000004CDA93CC0000000000000139
+t1289393100
 s313
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IndexBuffer.h
-c000000004CD123C10000000000000132
-t1288774593
+c000000004CDA93CC0000000000000132
+t1289393100
 s306
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/InputEnums.h
-c000000004CD123C100000000000001D8
-t1288774593
+c000000004CDA93CC00000000000001D8
+t1289393100
 s472
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Matrix.h
-c000000004CD123C10000000000000BEA
-t1288774593
+c000000004CDA93CC0000000000000BEA
+t1289393100
 s3050
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/MatrixStruct.h
-c000000004CD123C10000000000002DC4
-t1288774593
+c000000004CDA93CC0000000000002DC4
+t1289393100
 s11716
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Protocols.h
-c000000004CD123C10000000000000115
-t1288774593
+c000000004CDA93CC0000000000000115
+t1289393100
 s277
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Quaternion.h
-c000000004CD123C10000000000000735
-t1288774593
+c000000004CDA93CC0000000000000735
+t1289393100
 s1845
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/RasterizerState.h
-c000000004CD123C1000000000000032C
-t1288774593
+c000000004CDA93CC000000000000032C
+t1289393100
 s812
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ReachGraphicsDevice.h
-c000000004CD123C100000000000000FF
-t1288774593
+c000000004CDA93CC00000000000000FF
+t1289393100
 s255
 i<Foundation/Foundation.h>
 i"GraphicsDevice.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Rectangle.h
-c000000004CD123C100000000000003E0
-t1288774593
+c000000004CDA93CC00000000000003E0
+t1289393100
 s992
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/RectangleStruct.h
-c000000004CD123C100000000000001EF
-t1288774593
+c000000004CDA93CC00000000000001EF
+t1289393100
 s495
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Content.classes.h
-c000000004CD123C10000000000000076
-t1288774593
+c000000004CDA93CC0000000000000076
+t1289393100
 s118
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Content.h
-c000000004CD123C1000000000000009F
-t1288774593
+c000000004CDA93CC000000000000009F
+t1289393100
 s159
 i"ContentManager.h"
 i"ContentReader.h"
@@ -1476,15 +1476,15 @@ i"ContentTypeReader.h"
 i"Texture2DContentTypeReader.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Graphics.classes.h
-c000000004CD123C100000000000002B6
-t1288774593
+c000000004CDA93CC00000000000002B6
+t1289393100
 s694
 i"GraphicsEnums.h"
 i"VertexStructs.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Graphics.h
-c000000004CD123C100000000000003D4
-t1288774593
+c000000004CDA93CC00000000000003D4
+t1289393100
 s980
 i"GraphicsEnums.h"
 i"GraphicsResource.h"
@@ -1522,14 +1522,14 @@ i"HiDefGraphicsDevice.h"
 i"SpriteBatch.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Input.Touch.classes.h
-c000000004CD123C10000000000000061
-t1288774593
+c000000004CDA93CC0000000000000061
+t1289393100
 s97
 i"InputEnums.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Input.Touch.h
-c000000004CD123C1000000000000007F
-t1288774593
+c000000004CDA93CC000000000000007F
+t1289393100
 s127
 i"InputEnums.h"
 i"TouchPanel.h"
@@ -1538,8 +1538,8 @@ i"TouchLocation.h"
 i"GestureSample.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.classes.h
-c000000004CD123C1000000000000026C
-t1288774593
+c000000004CDA93CC000000000000026C
+t1289393100
 s620
 i"FrameworkEnums.h"
 i"RectangleStruct.h"
@@ -1549,8 +1549,8 @@ i"Vector4Struct.h"
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.h
-c000000004CD123C1000000000000029D
-t1288774593
+c000000004CDA93CC000000000000029D
+t1289393100
 s669
 i"FrameworkEnums.h"
 i"Protocols.h"
@@ -1577,36 +1577,36 @@ i"Quaternion.h"
 i"Matrix.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SamplerState.h
-c000000004CD123C100000000000003E4
-t1288774593
+c000000004CDA93CC00000000000003E4
+t1289393100
 s996
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SamplerStateCollection.h
-c000000004CD123C100000000000001EE
-t1288774593
+c000000004CDA93CC00000000000001EE
+t1289393100
 s494
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SpriteBatch.h
-c000000004CD123C10000000000000B55
-t1288774593
-s2901
+c000000004CDA93CC0000000000000B43
+t1289393100
+s2883
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/System.classes.h
-c000000004CD123C10000000000000077
-t1288774593
+c000000004CDA93CC0000000000000077
+t1289393100
 s119
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/System.h
-c000000004CD123C10000000000000096
-t1288774593
+c000000004CDA93CC0000000000000096
+t1289393100
 s150
 i"IServiceProvider.h"
 i"Delegate.h"
@@ -1615,182 +1615,182 @@ i"EventArgs.h"
 i"AdaptiveArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture.h
-c000000004CD123C1000000000000022E
-t1288774593
+c000000004CDA93CC000000000000022E
+t1289393100
 s558
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture2D.h
-c000000004CD123C100000000000005BA
-t1288774593
+c000000004CDA93CC00000000000005BA
+t1289393100
 s1466
 i<Foundation/Foundation.h>
 i"Texture.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture2DContentTypeReader.h
-c000000004CD123C10000000000000113
-t1288774593
+c000000004CDA93CC0000000000000113
+t1289393100
 s275
 i<Foundation/Foundation.h>
 i"ContentTypeReader.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/TextureCollection.h
-c000000004CD123C100000000000001CA
-t1288774593
+c000000004CDA93CC00000000000001CA
+t1289393100
 s458
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/TouchCollection.h
-c000000004CD123C1000000000000021E
-t1288774593
+c000000004CDA93CC000000000000021E
+t1289393100
 s542
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Input.Touch.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/TouchLocation.h
-c000000004CD123C10000000000000313
-t1288774593
+c000000004CDA93CC0000000000000313
+t1289393100
 s787
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Input.Touch.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/TouchPanel.h
-c000000004CD123C10000000000000397
-t1288774593
-s919
+c000000004CDA93CC00000000000003DA
+t1289393100
+s986
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Input.Touch.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector2.h
-c000000004CD123C10000000000000607
-t1288774593
+c000000004CDA93CC0000000000000607
+t1289393100
 s1543
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector2Struct.h
-c000000004CD123C1000000000000081B
-t1288774593
+c000000004CDA93CC000000000000081B
+t1289393100
 s2075
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector3.h
-c000000004CD123C100000000000006EA
-t1288774593
+c000000004CDA93CC00000000000006EA
+t1289393100
 s1770
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector3Struct.h
-c000000004CD123C10000000000000BC3
-t1288774593
+c000000004CDA93CC0000000000000BC3
+t1289393100
 s3011
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector4.h
-c000000004CD123C100000000000005B4
-t1288774593
+c000000004CDA93CC00000000000005B4
+t1289393100
 s1460
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector4Struct.h
-c000000004CD123C10000000000000D2C
-t1288774593
+c000000004CDA93CC0000000000000D2C
+t1289393100
 s3372
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexArray.h
-c000000004CD123C10000000000000287
-t1288774593
+c000000004CDA93CC0000000000000287
+t1289393100
 s647
 i<Foundation/Foundation.h>
 i"System.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexBuffer.h
-c000000004CD123C100000000000001A4
-t1288774593
+c000000004CDA93CC00000000000001A4
+t1289393100
 s420
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexBufferBinding.h
-c000000004CD123C10000000000000326
-t1288774593
+c000000004CDA93CC0000000000000326
+t1289393100
 s806
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexDeclaration.h
-c000000004CD123C100000000000001CD
-t1288774593
+c000000004CDA93CC00000000000001CD
+t1289393100
 s461
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexElement.h
-c000000004CD123C100000000000004B6
-t1288774593
+c000000004CDA93CC00000000000004B6
+t1289393100
 s1206
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColor.h
-c000000004CD123C10000000000000128
-t1288774593
+c000000004CDA93CC0000000000000128
+t1289393100
 s296
 i<Foundation/Foundation.h>
 i"VertexElement.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorArray.h
-c000000004CD123C10000000000000171
-t1288774593
+c000000004CDA93CC0000000000000171
+t1289393100
 s369
 i<Foundation/Foundation.h>
 i"VertexArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorTexture.h
-c000000004CD123C10000000000000136
-t1288774593
+c000000004CDA93CC0000000000000136
+t1289393100
 s310
 i<Foundation/Foundation.h>
 i"VertexElement.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorTextureArray.h
-c000000004CD123C10000000000000186
-t1288774593
+c000000004CDA93CC0000000000000186
+t1289393100
 s390
 i<Foundation/Foundation.h>
 i"VertexArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionTexture.h
-c000000004CD123C1000000000000012C
-t1288774593
+c000000004CDA93CC000000000000012C
+t1289393100
 s300
 i<Foundation/Foundation.h>
 i"VertexElement.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionTextureArray.h
-c000000004CD123C10000000000000177
-t1288774593
+c000000004CDA93CC0000000000000177
+t1289393100
 s375
 i<Foundation/Foundation.h>
 i"VertexArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexStructs.h
-c000000004CD123C10000000000000263
-t1288774593
+c000000004CDA93CC0000000000000263
+t1289393100
 s611
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Viewport.h
-c000000004CD123C10000000000000276
-t1288774593
+c000000004CDA93CC0000000000000276
+t1289393100
 s630
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
@@ -1824,7 +1824,7 @@ t2
 s0
 
 N/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch.gch
-t1289344738
+t1289678103
 s11541248
 
 N/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-etbnmfwtvrvrbbdlsyechvafjlln/Pong_Prefix.pch.gch
@@ -2035,7 +2035,7 @@ lSLF07#2@57"Analyze /Users/Simpson/Desktop/Project/Pong/Shared/main.m311037551#3
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies311039525#311039525#0(0"0(0#1#0"542832#0"0#
+lSLF07#2@18"Check dependencies311371982#311371982#0(0"0(0#1#0"542832#0"0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/AppDelegate_iPad.o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/iPad/AppDelegate_iPad.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -2072,8 +2072,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@95"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309674806#309674807#0(2050"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:11,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h:1:45: error: Retronator.XniTemplate.protocols.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: cannot find protocol declaration for 'Position'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:15: error: expected specifier-qualifier-list before 'Vector2'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m: In function '-[Ball init]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:18: error: 'position' undeclared (first use in this function)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:18: error: (Each undeclared identifier is reported only once/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:18: error: for each function it appears in.)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:18: error: 'Vector2' undeclared (first use in this function)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m: At top level:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:24: error: no declaration of property 'position' found in the interface/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m: In function '-[Ball dealloc]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m:28: error: 'position' undeclared (first use in this function)8(4@61"Retronator.XniTemplate.protocols.h: No such file or directory309674806#227#182#3(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#9#0#9#0#0"0(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#11#0#11#0#0"0(13@171"Retronator.XniTemplate.protocols.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309674806#4294967295#0#0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#0"0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#28"*: No such file or directory0(4@47"Cannot find protocol declaration for 'Position'309674806#522#147#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#9#0#9#0#0"0(13@138"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@50"Expected specifier-qualifier-list before 'Vector2'309674806#669#150#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#9#0#9#0#0"0(13@141"Expected specifier-qualifier-list before 'Vector2' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#15#0#15#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#15#0#15#0#19"expected * before *0(4@50"'position' undeclared (first use in this function)309674806#936#150#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#18#0#18#0#43"'*' undeclared (first use in this function)0(4@49"'Vector2' undeclared (first use in this function)309674806#1368#149#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#18#0#18#0#43"'*' undeclared (first use in this function)0(23@13"At top level:309674806#1517#103#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#0#0#0#0#0"0(4@60"No declaration of property 'position' found in the interface309674806#1620#160#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#24#0#24#0#0"0(4@50"'position' undeclared (first use in this function)309674806#1900#150#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m309670223#28#0#28#0#43"'*' undeclared (first use in this function)0(0#0#87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m542832#2533"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Ball.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Ball.o /Users/Simpson/Desktop/Project/Pong/Ball.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037543.461989
-e311037544.371739
+s311371988.094171
+e311371989.230620
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Ball.o
@@ -2082,11 +2082,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/Simpson/Desktop/Project/Pong/Ball.m311037543#311037544#0(0"0(0#0#42"/Users/Simpson/Desktop/Project/Pong/Ball.m542832#2099"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Ball.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Ball.o0#
+lSLF07#2@50"Compile /Users/Simpson/Desktop/Project/Pong/Ball.m311371988#311371989#0(0"0(0#0#42"/Users/Simpson/Desktop/Project/Pong/Ball.m542832#2099"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Ball.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Ball.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bg.o /Users/Simpson/Desktop/Project/Pong/Bg.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037547.028651
-e311037547.887500
+s311371993.193185
+e311371994.391219
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bg.o
@@ -2095,11 +2095,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@48"Compile /Users/Simpson/Desktop/Project/Pong/Bg.m311037547#311037547#0(0"0(0#0#40"/Users/Simpson/Desktop/Project/Pong/Bg.m542832#2095"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Bg.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bg.o0#
+lSLF07#2@48"Compile /Users/Simpson/Desktop/Project/Pong/Bg.m311371993#311371994#0(0"0(0#0#40"/Users/Simpson/Desktop/Project/Pong/Bg.m542832#2095"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Bg.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bg.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bonus.o /Users/Simpson/Desktop/Project/Pong/Bonus.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037546.170642
-e311037547.028535
+s311371992.197422
+e311371993.192821
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bonus.o
@@ -2108,14 +2108,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@51"Compile /Users/Simpson/Desktop/Project/Pong/Bonus.m311037546#311037547#0(0"0(0#0#43"/Users/Simpson/Desktop/Project/Pong/Bonus.m542832#2101"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Bonus.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bonus.o0#
+lSLF07#2@51"Compile /Users/Simpson/Desktop/Project/Pong/Bonus.m311371992#311371993#0(0"0(0#0#43"/Users/Simpson/Desktop/Project/Pong/Bonus.m542832#2101"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Bonus.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Bonus.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Gameplay.o /Users/Simpson/Desktop/Project/Pong/../../friHockey_v1/friHockey/friHockey/Gameplay.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Gameplay.o /Users/Simpson/Desktop/Project/Pong/Gameplay.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037548.752794
-e311037549.698063
+s311371995.374230
+e311371996.583523
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Gameplay.o
@@ -2124,11 +2124,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/Simpson/Desktop/Project/Pong/Gameplay.m311037548#311037549#0(0"0(0#0#46"/Users/Simpson/Desktop/Project/Pong/Gameplay.m542832#2107"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Gameplay.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Gameplay.o0#
+lSLF07#2@54"Compile /Users/Simpson/Desktop/Project/Pong/Gameplay.m311371995#311371996#0(0"0(0#0#46"/Users/Simpson/Desktop/Project/Pong/Gameplay.m542832#2107"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Gameplay.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Gameplay.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/HumanPlayer.o /Users/Simpson/Desktop/Project/Pong/HumanPlayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311039157.035317
-e311039158.725911
+s311371982.185775
+e311371984.056092
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/HumanPlayer.o
@@ -2137,7 +2137,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/Simpson/Desktop/Project/Pong/HumanPlayer.m311039157#311039158#0(0"0(0#0#49"/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m542832#2113"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/HumanPlayer.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/HumanPlayer.o0#
+lSLF07#2@57"Compile /Users/Simpson/Desktop/Project/Pong/HumanPlayer.m311371982#311371984#0(0"0(0#0#49"/Users/Simpson/Desktop/Project/Pong/HumanPlayer.m542832#2113"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/HumanPlayer.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/HumanPlayer.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s309674804.701284
@@ -2166,8 +2166,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@96"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309674804#309674805#0(1769"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Scene.h:11,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:1,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m:11:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h:1:45: error: Retronator.XniTemplate.protocols.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:3,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m:11:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: no type or storage class may be specified here before 'interface'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: cannot find protocol declaration for 'Position'In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:4,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m:11:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: no type or storage class may be specified here before 'interface'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: cannot find protocol declaration for 'Position'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h:24: confused by earlier errors, bailing out6(4@61"Retronator.XniTemplate.protocols.h: No such file or directory309674805#354#182#4(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309674805#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309669295#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674805#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#1#0#1#0#0"0(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Scene.h309674805#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Scene.h309669935#11#0#11#0#0"0(13@171"Retronator.XniTemplate.protocols.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309674805#4294967295#0#0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#0"0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#28"*: No such file or directory0(4@65"No type or storage class may be specified here before 'interface'309674805#775#165#3(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309674805#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309669295#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674805#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#3#0#3#0#0"0(13@156"No type or storage class may be specified here before 'interface' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674805#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@47"Cannot find protocol declaration for 'Position'309674805#940#147#3(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309674805#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309669295#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674805#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#3#0#3#0#0"0(13@138"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674805#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@65"No type or storage class may be specified here before 'interface'309674805#1326#164#3(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309674805#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309669295#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674805#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#4#0#4#0#0"0(13@155"No type or storage class may be specified here before 'interface' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674805#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@47"Cannot find protocol declaration for 'Position'309674805#1490#146#3(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309674805#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m309669295#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674805#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#4#0#4#0#0"0(13@137"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674805#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@39"Confused by earlier errors, bailing out309674805#1636#133#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h309669211#24#0#24#0#39"confused by earlier errors, bailing out0(0#0#88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m542832#2535"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o /Users/Simpson/Desktop/Project/Pong/Level.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311038399.543668
-e311038405.509311
+s311371985.556325
+e311371986.588730
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o
@@ -2181,11 +2181,11 @@ o/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: 'Level' may not respon
 o/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: (Messages without a matching method signature
 o/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: will be assumed to return 'id' and accept
 o/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: '...' as arguments.)
-lSLF07#2@51"Compile /Users/Simpson/Desktop/Project/Pong/Level.m311038399#311038405#0(453"/Users/Simpson/Desktop/Project/Pong/Level.m: In function '-[Level initialize]':/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: 'Level' may not respond to '-reset'/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: (Messages without a matching method signature/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: will be assumed to return 'id' and accept/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: '...' as arguments.)2(22@35"'Level' may not respond to '-reset'311038403#80#93#0(6@43"/Users/Simpson/Desktop/Project/Pong/Level.m311038396#49#0#49#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)311038403#173#103#0(6@43"/Users/Simpson/Desktop/Project/Pong/Level.m311038396#49#0#49#0#0"0(0#0#43"/Users/Simpson/Desktop/Project/Pong/Level.m542832#2101"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Level.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o0#
+lSLF07#2@51"Compile /Users/Simpson/Desktop/Project/Pong/Level.m311371985#311371986#0(453"/Users/Simpson/Desktop/Project/Pong/Level.m: In function '-[Level initialize]':/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: 'Level' may not respond to '-reset'/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: (Messages without a matching method signature/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: will be assumed to return 'id' and accept/Users/Simpson/Desktop/Project/Pong/Level.m:49: warning: '...' as arguments.)2(22@35"'Level' may not respond to '-reset'311371986#80#93#0(6@43"/Users/Simpson/Desktop/Project/Pong/Level.m311038396#49#0#49#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)311371986#173#103#0(6@43"/Users/Simpson/Desktop/Project/Pong/Level.m311038396#49#0#49#0#0"0(0#0#43"/Users/Simpson/Desktop/Project/Pong/Level.m542832#2101"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Level.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Level.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Middle.o /Users/Simpson/Desktop/Project/Pong/Middle.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037547.887856
-e311037548.752676
+s311371994.391331
+e311371995.373864
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Middle.o
@@ -2194,7 +2194,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/Simpson/Desktop/Project/Pong/Middle.m311037547#311037548#0(0"0(0#0#44"/Users/Simpson/Desktop/Project/Pong/Middle.m542832#2103"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Middle.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Middle.o0#
+lSLF07#2@52"Compile /Users/Simpson/Desktop/Project/Pong/Middle.m311371994#311371995#0(0"0(0#0#44"/Users/Simpson/Desktop/Project/Pong/Middle.m542832#2103"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Middle.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Middle.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s309674807.552821
@@ -2216,8 +2216,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@94"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m309674807#309674808#0(824"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:11,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h:1:45: error: Retronator.XniTemplate.protocols.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: cannot find protocol declaration for 'Position'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m:13: error: no declaration of property 'position' found in the interface3(4@61"Retronator.XniTemplate.protocols.h: No such file or directory309674807#225#182#3(7@108"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m309674807#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m309670089#9#0#9#0#0"0(7@108"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674807#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#11#0#11#0#0"0(13@171"Retronator.XniTemplate.protocols.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309674807#4294967295#0#0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#0"0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#28"*: No such file or directory0(4@47"Cannot find protocol declaration for 'Position'309674807#519#146#2(7@108"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m309674807#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m309670089#9#0#9#0#0"0(13@137"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674807#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@60"No declaration of property 'position' found in the interface309674807#665#159#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m309670089#13#0#13#0#0"0(0#0#86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m542832#2531"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o /Users/Simpson/Desktop/Project/Pong/Pad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037544.372412
-e311037545.238266
+s311371989.230729
+e311371990.890685
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o
@@ -2226,11 +2226,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@49"Compile /Users/Simpson/Desktop/Project/Pong/Pad.m311037544#311037545#0(0"0(0#0#41"/Users/Simpson/Desktop/Project/Pong/Pad.m542832#2097"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Pad.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o0#
+lSLF07#2@49"Compile /Users/Simpson/Desktop/Project/Pong/Pad.m311371989#311371990#0(0"0(0#0#41"/Users/Simpson/Desktop/Project/Pong/Pad.m542832#2097"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Pad.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pad.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PhysicsEngine.o /Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037550.463971
-e311037551.363981
+s311371997.435880
+e311371998.454656
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PhysicsEngine.o
@@ -2239,11 +2239,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m311037550#311037551#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m542832#2117"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PhysicsEngine.o0#
+lSLF07#2@59"Compile /Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m311371997#311371998#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m542832#2117"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/PhysicsEngine.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PhysicsEngine.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Player.o /Users/Simpson/Desktop/Project/Pong/Player.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037549.698425
-e311037550.463854
+s311371996.583634
+e311371997.435521
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Player.o
@@ -2252,7 +2252,9 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/Simpson/Desktop/Project/Pong/Player.m311037549#311037550#0(0"0(0#0#44"/Users/Simpson/Desktop/Project/Pong/Player.m542832#2103"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Player.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Player.o0#
+o/Users/Simpson/Desktop/Project/Pong/Player.m: In function '-[Player getbonusCheck]':
+o/Users/Simpson/Desktop/Project/Pong/Player.m:26: warning: control reaches end of non-void function
+lSLF07#2@52"Compile /Users/Simpson/Desktop/Project/Pong/Player.m311371996#311371997#0(184"/Users/Simpson/Desktop/Project/Pong/Player.m: In function '-[Player getbonusCheck]':/Users/Simpson/Desktop/Project/Pong/Player.m:26: warning: control reaches end of non-void function1(22@40"Control reaches end of non-void function311371997#85#99#0(6@44"/Users/Simpson/Desktop/Project/Pong/Player.m311371982#26#0#26#0#40"control reaches end of non-void function0(0#0#44"/Users/Simpson/Desktop/Project/Pong/Player.m542832#2103"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Player.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Player.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PlayerPosition.o /Users/Simpson/Desktop/Project/Pong/PlayerPosition.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -2304,8 +2306,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@95"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#309674803#0(4664"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:11:37: error: Retronator.Xni.Framework.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:12:46: error: Retronator.Xni.Framework.Graphics.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:13:45: error: Retronator.Xni.Framework.Content.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:14:49: error: Retronator.Xni.Framework.Input.Touch.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:16,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h:1:45: error: Retronator.XniTemplate.protocols.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:18: error: cannot find interface declaration for 'Game', superclass of 'XniTemplate'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:20: error: expected specifier-qualifier-list before 'GraphicsDeviceManager'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:13: warning: cannot find interface declaration for 'Pong'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: In function '-[Pong init]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:15: error: no super class declared in @interface for 'Pong'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:17: error: 'graphics' undeclared (first use in this function)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:17: error: (Each undeclared identifier is reported only once/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:17: error: for each function it appears in.)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:17: error: 'GraphicsDeviceManager' undeclared (first use in this function)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: In function '-[Pong initialize]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:24: error: no super class declared in @interface for 'Pong'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: At top level:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:31: error: expected ')' before 'GameTime'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: In function '-[Pong updateWithGameTime:]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:33: error: no super class declared in @interface for 'Pong'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: At top level:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:36: error: expected ')' before 'GameTime'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: In function '-[Pong drawWithGameTime:]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:37: error: request for member 'graphicsDevice' in something not a structure or union/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:37: error: 'Color' undeclared (first use in this function)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:39: error: no super class declared in @interface for 'Pong'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m: In function '-[Pong dealloc]':/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:44: error: 'graphics' undeclared (first use in this function)/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m:45: error: no super class declared in @interface for 'Pong'22(4@53"Retronator.Xni.Framework.h: No such file or directory309674803#113#156#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(13@144"Retronator.Xni.Framework.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#11#0#11#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#11#0#11#0#28"*: No such file or directory0(4@62"Retronator.Xni.Framework.Graphics.h: No such file or directory309674803#269#165#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(13@153"Retronator.Xni.Framework.Graphics.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#12#0#12#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#12#0#12#0#28"*: No such file or directory0(4@61"Retronator.Xni.Framework.Content.h: No such file or directory309674803#434#164#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(13@152"Retronator.Xni.Framework.Content.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#13#0#13#0#28"*: No such file or directory0(4@65"Retronator.Xni.Framework.Input.Touch.h: No such file or directory309674803#598#168#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(13@156"Retronator.Xni.Framework.Input.Touch.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#14#0#14#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#14#0#14#0#28"*: No such file or directory0(4@61"Retronator.XniTemplate.protocols.h: No such file or directory309674803#993#182#3(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#16#0#16#0#0"0(13@171"Retronator.XniTemplate.protocols.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309674803#4294967295#0#0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#0"0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#28"*: No such file or directory0(4@73"Cannot find interface declaration for 'Game', superclass of 'XniTemplate'309674803#1288#173#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(13@164"Cannot find interface declaration for 'Game', superclass of 'XniTemplate' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#18#0#18#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#18#0#18#0#60"cannot find interface declaration for '*', superclass of '*'0(4@64"Expected specifier-qualifier-list before 'GraphicsDeviceManager'309674803#1461#164#2(7@109"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#9#0#9#0#0"0(13@155"Expected specifier-qualifier-list before 'GraphicsDeviceManager' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674803#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#20#0#20#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#20#0#20#0#19"expected * before *0(22@44"Cannot find interface declaration for 'Pong'309674803#1625#146#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#13#0#13#0#0"0(4@48"No super class declared in @interface for 'Pong'309674803#1888#148#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#15#0#15#0#0"0(4@50"'graphics' undeclared (first use in this function)309674803#2036#150#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#17#0#17#0#43"'*' undeclared (first use in this function)0(4@63"'GraphicsDeviceManager' undeclared (first use in this function)309674803#2468#163#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#17#0#17#0#43"'*' undeclared (first use in this function)0(4@48"No super class declared in @interface for 'Pong'309674803#2754#148#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#24#0#24#0#0"0(23@13"At top level:309674803#2902#103#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#0#0#0#0#0"0(4@30"Expected ')' before 'GameTime'309674803#3005#130#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#31#0#31#0#19"expected * before *0(4@48"No super class declared in @interface for 'Pong'309674803#3267#148#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#33#0#33#0#0"0(23@13"At top level:309674803#3415#103#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#0#0#0#0#0"0(4@30"Expected ')' before 'GameTime'309674803#3518#130#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#36#0#36#0#19"expected * before *0(4@73"Request for member 'graphicsDevice' in something not a structure or union309674803#3778#173#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#37#0#37#0#0"0(4@47"'Color' undeclared (first use in this function)309674803#3951#147#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#37#0#37#0#43"'*' undeclared (first use in this function)0(4@48"No super class declared in @interface for 'Pong'309674803#4098#148#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#39#0#39#0#0"0(4@50"'graphics' undeclared (first use in this function)309674803#4366#150#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#44#0#44#0#43"'*' undeclared (first use in this function)0(4@48"No super class declared in @interface for 'Pong'309674803#4516#148#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m309669155#45#0#45#0#0"0(0#0#87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m542832#2533"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.o /Users/Simpson/Desktop/Project/Pong/Pong.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037540.688037
-e311037541.595322
+s311371984.056663
+e311371985.556215
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.o
@@ -2314,7 +2316,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/Simpson/Desktop/Project/Pong/Pong.m311037540#311037541#0(0"0(0#0#42"/Users/Simpson/Desktop/Project/Pong/Pong.m542832#2099"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Pong.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.o0#
+lSLF07#2@50"Compile /Users/Simpson/Desktop/Project/Pong/Pong.m311371984#311371985#0(0"0(0#0#42"/Users/Simpson/Desktop/Project/Pong/Pong.m542832#2099"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Pong.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s309674805.930220
@@ -2349,8 +2351,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@100"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674805#309674806#0(2671"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h:11,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.h:11,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h:1:45: error: Retronator.XniTemplate.protocols.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:3,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m:10:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: no type or storage class may be specified here before 'interface'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: cannot find protocol declaration for 'Position'In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:4,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m:10:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: no type or storage class may be specified here before 'interface'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: cannot find protocol declaration for 'Position'In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:10,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m:10:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:11:37: error: Retronator.Xni.Framework.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:12:46: error: Retronator.Xni.Framework.Graphics.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:13:45: error: Retronator.Xni.Framework.Content.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:14:49: error: Retronator.Xni.Framework.Input.Touch.h: No such file or directory/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h:27: confused by earlier errors, bailing out10(4@61"Retronator.XniTemplate.protocols.h: No such file or directory309674806#352#182#4(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#9#0#9#0#0"0(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.h309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.h309670008#11#0#11#0#0"0(7@110"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h309674806#4294967295#0#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h309669211#11#0#11#0#0"0(13@171"Retronator.XniTemplate.protocols.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309674806#4294967295#0#0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#0"0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#28"*: No such file or directory0(4@65"No type or storage class may be specified here before 'interface'309674806#777#165#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#3#0#3#0#0"0(13@156"No type or storage class may be specified here before 'interface' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@47"Cannot find protocol declaration for 'Position'309674806#942#147#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#3#0#3#0#0"0(13@138"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@65"No type or storage class may be specified here before 'interface'309674806#1332#164#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#4#0#4#0#0"0(13@155"No type or storage class may be specified here before 'interface' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674806#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@47"Cannot find protocol declaration for 'Position'309674806#1496#146#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#4#0#4#0#0"0(13@137"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674806#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@53"Retronator.Xni.Framework.h: No such file or directory309674806#1886#156#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#10#0#10#0#0"0(13@144"Retronator.Xni.Framework.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#11#0#11#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#11#0#11#0#28"*: No such file or directory0(4@62"Retronator.Xni.Framework.Graphics.h: No such file or directory309674806#2042#165#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#10#0#10#0#0"0(13@153"Retronator.Xni.Framework.Graphics.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#12#0#12#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#12#0#12#0#28"*: No such file or directory0(4@61"Retronator.Xni.Framework.Content.h: No such file or directory309674806#2207#164#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#10#0#10#0#0"0(13@152"Retronator.Xni.Framework.Content.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#13#0#13#0#28"*: No such file or directory0(4@65"Retronator.Xni.Framework.Input.Touch.h: No such file or directory309674806#2371#168#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#10#0#10#0#0"0(13@156"Retronator.Xni.Framework.Input.Touch.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#14#0#14#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#14#0#14#0#28"*: No such file or directory0(4@39"Confused by earlier errors, bailing out309674806#2539#132#3(7@114"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309674806#4294967295#0#0(6@92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m309669984#10#0#10#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674806#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#10#0#10#0#0"0(13@130"Confused by earlier errors, bailing out in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309674806#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#27#0#27#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong.h309669092#27#0#27#0#39"confused by earlier errors, bailing out0(0#0#92"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m542832#2543"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/PongLevel.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o /Users/Simpson/Desktop/Project/Pong/PongLevel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037542.500529
-e311037543.461873
+s311371986.589121
+e311371988.093768
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o
@@ -2359,7 +2361,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/Simpson/Desktop/Project/Pong/PongLevel.m311037542#311037543#0(0"0(0#0#47"/Users/Simpson/Desktop/Project/Pong/PongLevel.m542832#2109"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/PongLevel.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o0#
+lSLF07#2@55"Compile /Users/Simpson/Desktop/Project/Pong/PongLevel.m311371986#311371988#0(0"0(0#0#47"/Users/Simpson/Desktop/Project/Pong/PongLevel.m542832#2109"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/PongLevel.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/PongLevel.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s309674808.295060
@@ -2390,8 +2392,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@99"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#309674808#0(2094"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h:11,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h:1:45: error: Retronator.XniTemplate.protocols.h: No such file or directoryIn file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m:9:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h:13: error: cannot find interface declaration for 'DrawableGameComponent', superclass of 'Renderer'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h:24: error: expected ')' before 'Game'In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:3,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m:11:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: no type or storage class may be specified here before 'interface'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h:13: error: cannot find protocol declaration for 'Position'In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h:4,                 from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m:11:/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: no type or storage class may be specified here before 'interface'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h:13: error: cannot find protocol declaration for 'Position'/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h:24: confused by earlier errors, bailing out8(4@61"Retronator.XniTemplate.protocols.h: No such file or directory309674808#235#182#3(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#9#0#9#0#0"0(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309670196#11#0#11#0#0"0(13@171"Retronator.XniTemplate.protocols.h: No such file or directory in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309674808#4294967295#0#0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#0"0(6@106"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.classes.h309668995#1#0#1#0#28"*: No such file or directory0(4@87"Cannot find interface declaration for 'DrawableGameComponent', superclass of 'Renderer'309674808#534#191#2(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#9#0#9#0#0"0(13@182"Cannot find interface declaration for 'DrawableGameComponent', superclass of 'Renderer' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309670196#13#0#13#0#0"0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309670196#13#0#13#0#60"cannot find interface declaration for '*', superclass of '*'0(4@26"Expected ')' before 'Game'309674808#725#130#2(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#9#0#9#0#0"0(13@121"Expected ')' before 'Game' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309670196#24#0#24#0#0"0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.h309670196#24#0#24#0#19"expected * before *0(4@65"No type or storage class may be specified here before 'interface'309674808#1097#165#3(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674808#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#3#0#3#0#0"0(13@156"No type or storage class may be specified here before 'interface' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674808#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@47"Cannot find protocol declaration for 'Position'309674808#1262#147#3(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674808#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#3#0#3#0#0"0(13@138"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309674808#4294967295#0#0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(6@87"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Ball.h309670036#13#0#13#0#0"0(4@65"No type or storage class may be specified here before 'interface'309674808#1651#164#3(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674808#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#4#0#4#0#0"0(13@155"No type or storage class may be specified here before 'interface' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674808#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@47"Cannot find protocol declaration for 'Position'309674808#1815#146#3(7@113"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309674808#4294967295#0#0(6@91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m309670189#11#0#11#0#0"0(7@120"In file included from /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309674808#4294967295#0#0(6@98"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Retronator.Pong.h309669027#4#0#4#0#0"0(13@137"Cannot find protocol declaration for 'Position' in /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309674808#4294967295#0#0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(6@86"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pad.h309670076#13#0#13#0#0"0(4@39"Confused by earlier errors, bailing out309674808#1961#133#0(6@88"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Level.h309669211#24#0#24#0#39"confused by earlier errors, bailing out0(0#0#91"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m542832#2541"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Renderer.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o /Users/Simpson/Desktop/Project/Pong/Renderer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311038242.804322
-e311038246.312748
+s311371990.891044
+e311371992.197314
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o
@@ -2400,7 +2402,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/Simpson/Desktop/Project/Pong/Renderer.m311038242#311038246#0(0"0(0#0#46"/Users/Simpson/Desktop/Project/Pong/Renderer.m542832#2107"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Renderer.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o0#
+lSLF07#2@54"Compile /Users/Simpson/Desktop/Project/Pong/Renderer.m311371990#311371992#0(0"0(0#0#46"/Users/Simpson/Desktop/Project/Pong/Renderer.m542832#2107"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Renderer.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Renderer.o0#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Scene.o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Scene.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s309674805.157005
@@ -2485,8 +2487,8 @@ o/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@102"Compile /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Shared/main.m309674802#309674803#0(163"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Shared/main.m:11:37: error: Retronator.Xni.Framework.h: No such file or directory1(4@53"Retronator.Xni.Framework.h: No such file or directory309674802#0#163#0(6@94"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Shared/main.m309668946#11#0#11#0#28"*: No such file or directory0(0#0#94"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Shared/main.m542832#2540"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap" -iquote "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -iquote/Users/Simpson/Desktop/Game -iquoteTechnology -iquoteand -iquoteVirtual -iquoteReality/Projecto/Project/XNI/usr/local/include "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/include" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386" "-I/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources" -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-byyyccklfnntncbgyanlrtyrrelb/Pong_Prefix.pch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Shared/main.m" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/main.o"1#
 
 CCompileC build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/main.o /Users/Simpson/Desktop/Project/Pong/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037539.909364
-e311037540.687648
+s311370905.208133
+e311370906.326481
 r1
 xCompileC
 xbuild/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/main.o
@@ -2495,7 +2497,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/Simpson/Desktop/Project/Pong/Shared/main.m311037539#311037540#0(0"0(0#0#49"/Users/Simpson/Desktop/Project/Pong/Shared/main.m542832#2106"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Shared/main.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/main.o0#
+lSLF07#2@57"Compile /Users/Simpson/Desktop/Project/Pong/Shared/main.m311370905#311370906#0(0"0(0#0#49"/Users/Simpson/Desktop/Project/Pong/Shared/main.m542832#2106"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch -c /Users/Simpson/Desktop/Project/Pong/Shared/main.m -o /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/main.o0#
 
 CCompileXIB "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/iPad/MainWindow_iPad.xib"
 r0
@@ -2504,13 +2506,13 @@ CCompileXIB "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto
 r0
 
 CCpResource build/Debug-iphonesimulator/Pong.app/MyPong.png ../Images/MyPong.png
-s311033697.475269
-e311033698.203244
+s311361317.137528
+e311361317.395249
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/Pong.app/MyPong.png
 x../Images/MyPong.png
-lSLF07#2@25"Copy ../Images/MyPong.png311033697#311033698#0(0"0(0#0#56"/Users/Simpson/Desktop/Project/Pong/../Images/MyPong.png542832#514"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Simpson/Desktop/Project/Pong/../Images/MyPong.png /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app0#
+lSLF07#2@25"Copy ../Images/MyPong.png311361317#311361317#0(0"0(0#0#56"/Users/Simpson/Desktop/Project/Pong/../Images/MyPong.png542832#514"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Simpson/Desktop/Project/Pong/../Images/MyPong.png /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app0#
 
 CGenerateDSYMFile "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM" "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong"
 s309668534.467115
@@ -2522,13 +2524,13 @@ x/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/Pong.app.dSYM build/Debug-iphonesimulator/Pong.app/Pong309668534#309668534#0(0"0(0#0#122"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong542832#568"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong" -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM"0#
 
 CGenerateDSYMFile /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong
-s311039159.430286
-e311039160.325545
+s311371999.045285
+e311371999.939946
 r1
 xGenerateDSYMFile
 x/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM
 x/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong
-lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/Pong.app.dSYM build/Debug-iphonesimulator/Pong.app/Pong311039159#311039160#0(0"0(0#0#77"/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong542832#427"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong -o /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM0#
+lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/Pong.app.dSYM build/Debug-iphonesimulator/Pong.app/Pong311371999#311371999#0(0"0(0#0#77"/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong542832#427"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong -o /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app.dSYM0#
 
 CLd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong" normal i386
 s309668534.180982
@@ -2541,15 +2543,15 @@ xi386
 lSLF07#2@127"Link /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong309668534#309668534#0(0"0(0#0#0"542832#1308"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk "-L/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" "-L/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/../ XNI" "-F/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator" -filelist "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -lXNI -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong"0#
 
 CLd /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong normal i386
-s311039158.727627
-e311039159.430175
+s311371998.454770
+e311371999.044926
 r1
 xLd
 x/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong
 xnormal
 xi386
 old: warning: directory '/Users/Simpson/Desktop/Project/Pong/../ XNI' following -L not found
-lSLF07#2@82"Link /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong311039158#311039159#0(92"ld: warning: directory '/Users/Simpson/Desktop/Project/Pong/../ XNI' following -L not found1(22@78"Directory '/Users/Simpson/Desktop/Project/Pong/../ XNI' following -L not found311039159#0#92#0(6@0"311039159#0#0#0#0#0"0(0#0#0"542832#1165"    cd /Users/Simpson/Desktop/Project/Pong    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator "-L/Users/Simpson/Desktop/Project/Pong/../ XNI" -L/Users/Simpson/Desktop/Project/Pong/../XNI -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -filelist /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.LinkFileList -mmacosx-version-min=10.6 -all_load -Xlinker -objc_abi_version -Xlinker 2 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -lXNI -o /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong0#
+lSLF07#2@82"Link /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong311371998#311371999#0(92"ld: warning: directory '/Users/Simpson/Desktop/Project/Pong/../ XNI' following -L not found1(22@78"Directory '/Users/Simpson/Desktop/Project/Pong/../ XNI' following -L not found311371999#0#92#0(6@0"311371999#0#0#0#0#0"0(0#0#0"542832#1165"    cd /Users/Simpson/Desktop/Project/Pong    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator "-L/Users/Simpson/Desktop/Project/Pong/../ XNI" -L/Users/Simpson/Desktop/Project/Pong/../XNI -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -filelist /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Objects-normal/i386/Pong.LinkFileList -mmacosx-version-min=10.6 -all_load -Xlinker -objc_abi_version -Xlinker 2 /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -lXNI -o /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Pong0#
 
 CProcessInfoPlistFile "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist" Pong-Info.plist
 s309668530.230750
@@ -2561,13 +2563,13 @@ xPong-Info.plist
 lSLF07#2@23"Process Pong-Info.plist309668530#309668530#0(0"0(0#0#96"/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/Pong-Info.plist24580168#664"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Pong-Info.plist -genpkginfo "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist"0#
 
 CProcessInfoPlistFile /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist Pong-Info.plist
-s311033697.450779
-e311033697.475160
+s311361317.094532
+e311361317.137426
 r1
 xProcessInfoPlistFile
 x/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist
 xPong-Info.plist
-lSLF07#2@23"Process Pong-Info.plist311033697#311033697#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/Pong/Pong-Info.plist542832#523"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Pong-Info.plist -genpkginfo /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist0#
+lSLF07#2@23"Process Pong-Info.plist311361317#311361317#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/Pong/Pong-Info.plist542832#523"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Pong-Info.plist -genpkginfo /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app/Info.plist0#
 
 CProcessPCH /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-adgtmiewjnvhvmfyuzslsahaynog/Pong_Prefix.pch.gch Pong_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s311036962.791271
@@ -2652,8 +2654,8 @@ o/Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch:8:38: error: Retronator.Xni
 lSLF07#2@26"Precompile Pong_Prefix.pch310328040#310328044#0(119"/Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch:8:38: error: Retronator.Xni.Framework.h: No such file or directory1(4@53"Retronator.Xni.Framework.h: No such file or directory310328041#0#119#0(6@51"/Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch310328039#8#0#8#0#28"*: No such file or directory0(0#0#51"/Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch542832#1945"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator "-iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include /Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include" -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -c /Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch -o /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-debjzphwsqlhilcziilivjioecyg/Pong_Prefix.pch.gch1#
 
 CProcessPCH /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch.gch Pong_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s311037536.712427
-e311037539.111630
+s311370901.204289
+e311370904.185647
 r1
 xProcessPCH
 x/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch.gch
@@ -2662,7 +2664,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@26"Precompile Pong_Prefix.pch311037536#311037539#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch542832#1997"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -c /Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch -o /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch.gch0#
+lSLF07#2@26"Precompile Pong_Prefix.pch311370901#311370904#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch542832#1997"    cd /Users/Simpson/Desktop/Project/Pong    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-generated-files.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/Pong-project-headers.hmap -F/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/Pong/../GameCore/build/Debug-iphonesimulator/usr/local/include -iquote/Users/Simpson/Desktop/Project/Pong/../XNI/usr/local/include -iquote/Users/Simpson/Desktop/Project/GameCore -I/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/Pong/build/Pong.build/Debug-iphonesimulator/Pong.build/DerivedSources -c /Users/Simpson/Desktop/Project/Pong/Pong_Prefix.pch -o /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-ergaqfrpgqcebwflxuusturpuljs/Pong_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pong_Prefix-etbnmfwtvrvrbbdlsyechvafjlln/Pong_Prefix.pch.gch Pong_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s309677697.394709
@@ -2830,10 +2832,10 @@ x/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pon
 lSLF07#2@123"Touch /Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app309668534#309668534#0(0"0(0#0#0"542832#425"    cd "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c "/Users/Simpson/Desktop/Game Technology and Virtual Reality/Projecto/Project/Pong/build/Debug-iphonesimulator/Pong.app"0#
 
 CTouch /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app
-s311039160.325994
-e311039160.447051
+s311371999.940045
+e311371999.995221
 r1
 xTouch
 x/Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app
-lSLF07#2@78"Touch /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app311039160#311039160#0(0"0(0#0#0"542832#331"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app0#
+lSLF07#2@78"Touch /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app311371999#311371999#0(0"0(0#0#0"542832#331"    cd /Users/Simpson/Desktop/Project/Pong    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/Simpson/Desktop/Project/Pong/build/Debug-iphonesimulator/Pong.app0#
 

@@ -18,11 +18,12 @@
 		md.position.x = 0;
 		md.position.y = 190;
 		
-		topPlayer.position.x = 200;
-		bottomPlayer.position.y = 105;
-		
-		topPlayer.position.x = 20;
-		bottomPlayer.position.y = 455;
+		topPlayer.position.x = 190;
+		topPlayer.position.y = 70;
+
+		bottomPlayer.position.x = 0;
+		//455
+		bottomPlayer.position.y = 430;
 		
 		ball.position.x = 160;
 		ball.position.y = 230;

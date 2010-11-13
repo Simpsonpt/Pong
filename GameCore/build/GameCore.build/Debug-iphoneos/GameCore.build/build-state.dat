@@ -27,10 +27,25 @@ c000000004C5A55040000000000009369
 t1280988420
 s37737
 
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004C5A55040000000000003C4A
+t1280988420
+s15434
+
 N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
 c000000004C5A550400000000000092AA
 t1280988420
 s37546
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
+c000000004C5A550400000000000026AA
+t1280988420
+s9898
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004C5A556300000000000000C4
+t1280988515
+s196
 
 N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
 c000000004C62427000000000000009CD
@@ -66,6 +81,13 @@ N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1
 c000000004C6241ED00000000000009CD
 t1281507821
 s2509
+
+N/Users/Simpson/Desktop/Project/GameCore/Everywhere.h
+c000000004CD9D4260000000000000042
+t1289344038
+s66
+i"Random.h"
+i"Rectangle+Extensions.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Graphics.classes.h
 c000000004CCEFB9000000000000000E2
@@ -225,6 +247,30 @@ s5363
 i"GameCore.Scene.Objects.h"
 i"ParticleParticleCollision.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/Random.h
+c000000004CD9CA340000000000000170
+t1289341492
+s368
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/Random.m
+c000000004CD9CA1D0000000000000271
+t1289341469
+s625
+i"Random.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.h
+c000000004CD9D304000000000000010F
+t1289343748
+s271
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m
+c000000004CD9D39B0000000000000191
+t1289343899
+s401
+i"Rectangle+Extensions.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/Scene.h
 c000000004CCF1BA50000000000000122
 t1288641445
@@ -239,10 +285,12 @@ s642
 i"Scene.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/Sprite.h
-c000000004CCF078A00000000000001EC
-t1288636298
-s492
+c000000004CD9D423000000000000020B
+t1289344035
+s523
 i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.h"
+i"Everywhere.h"
 i"Texture.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/Sprite.m
@@ -288,6 +336,14 @@ N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/Gam
 t2
 s0
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Random.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Rectangle+Extensions.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Scene.o
 t2
 s0
@@ -317,6 +373,14 @@ N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/Gam
 t2
 s0
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Random.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Rectangle+Extensions.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Scene.o
 t2
 s0
@@ -339,54 +403,104 @@ t1288635756
 s10476
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/AdaptiveArray.h
-c000000004CD123C10000000000000217
-t1288774593
+c000000004CDA93CC0000000000000217
+t1289393100
 s535
 i<Foundation/Foundation.h>
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/BasicEffect.h
+c000000004CDA93CC000000000000078E
+t1289393100
+s1934
+i<Foundation/Foundation.h>
+i"Effect.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/BlendState.h
+c000000004CDA93CC00000000000005A0
+t1289393100
+s1440
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+i"GraphicsResource.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Color.h
-c000000004CD123C10000000000001121
-t1288774593
+c000000004CDA93CC0000000000001121
+t1289393100
 s4385
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Delegate.h
-c000000004CD123C100000000000001F9
-t1288774593
+c000000004CDA93CC00000000000001F9
+t1289393100
 s505
 i<Foundation/Foundation.h>
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DepthStencilState.h
+c000000004CDA93CC00000000000006E5
+t1289393100
+s1765
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+i"GraphicsResource.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DirectionalLight.h
+c000000004CDA93CC0000000000000277
+t1289393100
+s631
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.classes.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DrawableGameComponent.h
-c000000004CD123C10000000000000276
-t1288774593
+c000000004CDA93CC0000000000000276
+t1289393100
 s630
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GameComponent.h"
 i"IDrawable.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Effect.h
+c000000004CDA93CC00000000000001A8
+t1289393100
+s424
+i<Foundation/Foundation.h>
+i"GraphicsResource.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EffectPass.h
+c000000004CDA93CC00000000000001D3
+t1289393100
+s467
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EffectTechnique.h
+c000000004CDA93CC00000000000001A3
+t1289393100
+s419
+i<Foundation/Foundation.h>
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Event.h
-c000000004CD123C100000000000001BE
-t1288774593
+c000000004CDA93CC00000000000001BE
+t1289393100
 s446
 i<Foundation/Foundation.h>
 i"System.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EventArgs.h
-c000000004CD123C100000000000000D9
-t1288774593
+c000000004CDA93CC00000000000000D9
+t1289393100
 s217
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/FrameworkEnums.h
-c000000004CD123C100000000000000B1
-t1288774593
+c000000004CDA93CC00000000000000B1
+t1289393100
 s177
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Game.h
-c000000004CD123C100000000000007B5
-t1288774593
+c000000004CDA93CC00000000000007B5
+t1289393100
 s1973
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -395,8 +509,8 @@ i"Retronator.Xni.Framework.Graphics.classes.h"
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponent.h
-c000000004CD123C1000000000000022D
-t1288774593
+c000000004CDA93CC000000000000022D
+t1289393100
 s557
 i<Foundation/Foundation.h>
 i"System.classes.h"
@@ -405,54 +519,66 @@ i"IGameComponent.h"
 i"IUpdatable.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponentCollection.h
-c000000004CD123C10000000000000270
-t1288774593
+c000000004CDA93CC0000000000000270
+t1289393100
 s624
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponentCollectionEventArgs.h
-c000000004CD123C1000000000000022E
-t1288774593
+c000000004CDA93CC000000000000022E
+t1289393100
 s558
 i<Foundation/Foundation.h>
 i"EventArgs.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameHost.h
-c000000004CD123C100000000000001A0
-t1288774593
+c000000004CDA93CC00000000000001A0
+t1289393100
 s416
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameServiceContainer.h
-c000000004CD123C10000000000000182
-t1288774593
+c000000004CDA93CC0000000000000182
+t1289393100
 s386
 i<Foundation/Foundation.h>
 i"System.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameTime.h
-c000000004CD123C100000000000003FE
-t1288774593
+c000000004CDA93CC00000000000003FE
+t1289393100
 s1022
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameWindow.h
-c000000004CD123C100000000000003DA
-t1288774593
+c000000004CDA93CC00000000000003DA
+t1289393100
 s986
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"System.h"
 i"Retronator.Xni.Framework.classes.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsDevice.h
+c000000004CDA93CC0000000000000F22
+t1289393100
+s3874
+i<Foundation/Foundation.h>
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/ES1/glext.h>
+i<OpenGLES/ES2/glext.h>
+i"System.classes.h"
+i"Retronator.Xni.Framework.classes.h"
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsDeviceManager.h
-c000000004CD123C10000000000000585
-t1288774593
+c000000004CDA93CC0000000000000585
+t1289393100
 s1413
 i<Foundation/Foundation.h>
 i"System.h"
@@ -462,107 +588,175 @@ i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsEnums.h
-c000000004CD123C100000000000017B5
-t1288774593
+c000000004CDA93CC00000000000017B5
+t1289393100
 s6069
 i<OpenGLES/ES1/gl.h>
 i<OpenGLES/ES2/gl.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsResource.h
-c000000004CD123C10000000000000299
-t1288774593
+c000000004CDA93CC0000000000000299
+t1289393100
 s665
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/HiDefGraphicsDevice.h
+c000000004CDA93CC00000000000000FF
+t1289393100
+s255
+i<Foundation/Foundation.h>
+i"GraphicsDevice.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IDrawable.h
-c000000004CD123C10000000000000132
-t1288774593
+c000000004CDA93CC0000000000000132
+t1289393100
 s306
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGameComponent.h
-c000000004CD123C1000000000000003F
-t1288774593
+c000000004CDA93CC000000000000003F
+t1289393100
 s63
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGraphicsDeviceManager.h
-c000000004CD123C10000000000000064
-t1288774593
+c000000004CDA93CC0000000000000064
+t1289393100
 s100
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGraphicsDeviceService.h
-c000000004CD123C1000000000000018D
-t1288774593
+c000000004CDA93CC000000000000018D
+t1289393100
 s397
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IServiceProvider.h
-c000000004CD123C10000000000000045
-t1288774593
+c000000004CDA93CC0000000000000045
+t1289393100
 s69
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IUpdatable.h
-c000000004CD123C10000000000000139
-t1288774593
+c000000004CDA93CC0000000000000139
+t1289393100
 s313
 i"Retronator.Xni.Framework.classes.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IndexBuffer.h
+c000000004CDA93CC0000000000000132
+t1289393100
+s306
+i<Foundation/Foundation.h>
+i"GraphicsResource.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Matrix.h
-c000000004CD123C10000000000000BEA
-t1288774593
+c000000004CDA93CC0000000000000BEA
+t1289393100
 s3050
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/MatrixStruct.h
-c000000004CD123C10000000000002DC4
-t1288774593
+c000000004CDA93CC0000000000002DC4
+t1289393100
 s11716
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Protocols.h
-c000000004CD123C10000000000000115
-t1288774593
+c000000004CDA93CC0000000000000115
+t1289393100
 s277
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Quaternion.h
-c000000004CD123C10000000000000735
-t1288774593
+c000000004CDA93CC0000000000000735
+t1289393100
 s1845
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/RasterizerState.h
+c000000004CDA93CC000000000000032C
+t1289393100
+s812
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+i"GraphicsResource.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ReachGraphicsDevice.h
+c000000004CDA93CC00000000000000FF
+t1289393100
+s255
+i<Foundation/Foundation.h>
+i"GraphicsDevice.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Rectangle.h
-c000000004CD123C100000000000003E0
-t1288774593
+c000000004CDA93CC00000000000003E0
+t1289393100
 s992
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/RectangleStruct.h
-c000000004CD123C100000000000001EF
-t1288774593
+c000000004CDA93CC00000000000001EF
+t1289393100
 s495
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Content.classes.h
-c000000004CD123C10000000000000076
-t1288774593
+c000000004CDA93CC0000000000000076
+t1289393100
 s118
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Graphics.classes.h
-c000000004CD123C100000000000002B6
-t1288774593
+c000000004CDA93CC00000000000002B6
+t1289393100
 s694
 i"GraphicsEnums.h"
 i"VertexStructs.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Graphics.h
+c000000004CDA93CC00000000000003D4
+t1289393100
+s980
+i"GraphicsEnums.h"
+i"GraphicsResource.h"
+i"Texture.h"
+i"Texture2D.h"
+i"Effect.h"
+i"EffectTechnique.h"
+i"EffectPass.h"
+i"BasicEffect.h"
+i"DirectionalLight.h"
+i"VertexStructs.h"
+i"VertexElement.h"
+i"VertexPositionColor.h"
+i"VertexPositionTexture.h"
+i"VertexPositionColorTexture.h"
+i"VertexDeclaration.h"
+i"VertexArray.h"
+i"VertexPositionColorArray.h"
+i"VertexPositionTextureArray.h"
+i"VertexPositionColorTextureArray.h"
+i"VertexBuffer.h"
+i"VertexBufferBinding.h"
+i"IndexBuffer.h"
+i"BlendState.h"
+i"DepthStencilState.h"
+i"RasterizerState.h"
+i"SamplerState.h"
+i"SamplerStateCollection.h"
+i"TextureCollection.h"
+i"Viewport.h"
+i"IGraphicsDeviceService.h"
+i"GraphicsDevice.h"
+i"ReachGraphicsDevice.h"
+i"HiDefGraphicsDevice.h"
+i"SpriteBatch.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.classes.h
-c000000004CD123C1000000000000026C
-t1288774593
+c000000004CDA93CC000000000000026C
+t1289393100
 s620
 i"FrameworkEnums.h"
 i"RectangleStruct.h"
@@ -572,8 +766,8 @@ i"Vector4Struct.h"
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.h
-c000000004CD123C1000000000000029D
-t1288774593
+c000000004CDA93CC000000000000029D
+t1289393100
 s669
 i"FrameworkEnums.h"
 i"Protocols.h"
@@ -599,14 +793,37 @@ i"Vector4.h"
 i"Quaternion.h"
 i"Matrix.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SamplerState.h
+c000000004CDA93CC00000000000003E4
+t1289393100
+s996
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+i"GraphicsResource.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SamplerStateCollection.h
+c000000004CDA93CC00000000000001EE
+t1289393100
+s494
+i<Foundation/Foundation.h>
+i"System.h"
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SpriteBatch.h
+c000000004CDA93CC0000000000000B43
+t1289393100
+s2883
+i<Foundation/Foundation.h>
+i"GraphicsResource.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/System.classes.h
-c000000004CD123C10000000000000077
-t1288774593
+c000000004CDA93CC0000000000000077
+t1289393100
 s119
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/System.h
-c000000004CD123C10000000000000096
-t1288774593
+c000000004CDA93CC0000000000000096
+t1289393100
 s150
 i"IServiceProvider.h"
 i"Delegate.h"
@@ -615,54 +832,154 @@ i"EventArgs.h"
 i"AdaptiveArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture.h
-c000000004CD123C1000000000000022E
-t1288774593
+c000000004CDA93CC000000000000022E
+t1289393100
 s558
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture2D.h
+c000000004CDA93CC00000000000005BA
+t1289393100
+s1466
+i<Foundation/Foundation.h>
+i"Texture.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/TextureCollection.h
+c000000004CDA93CC00000000000001CA
+t1289393100
+s458
+i<Foundation/Foundation.h>
+i"System.h"
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector2.h
-c000000004CD123C10000000000000607
-t1288774593
+c000000004CDA93CC0000000000000607
+t1289393100
 s1543
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector2Struct.h
-c000000004CD123C1000000000000081B
-t1288774593
+c000000004CDA93CC000000000000081B
+t1289393100
 s2075
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector3.h
-c000000004CD123C100000000000006EA
-t1288774593
+c000000004CDA93CC00000000000006EA
+t1289393100
 s1770
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector3Struct.h
-c000000004CD123C10000000000000BC3
-t1288774593
+c000000004CDA93CC0000000000000BC3
+t1289393100
 s3011
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector4.h
-c000000004CD123C100000000000005B4
-t1288774593
+c000000004CDA93CC00000000000005B4
+t1289393100
 s1460
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector4Struct.h
-c000000004CD123C10000000000000D2C
-t1288774593
+c000000004CDA93CC0000000000000D2C
+t1289393100
 s3372
 
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexArray.h
+c000000004CDA93CC0000000000000287
+t1289393100
+s647
+i<Foundation/Foundation.h>
+i"System.classes.h"
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexBuffer.h
+c000000004CDA93CC00000000000001A4
+t1289393100
+s420
+i<Foundation/Foundation.h>
+i"GraphicsResource.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexBufferBinding.h
+c000000004CDA93CC0000000000000326
+t1289393100
+s806
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexDeclaration.h
+c000000004CDA93CC00000000000001CD
+t1289393100
+s461
+i<Foundation/Foundation.h>
+i"GraphicsResource.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexElement.h
+c000000004CDA93CC00000000000004B6
+t1289393100
+s1206
+i<Foundation/Foundation.h>
+i"Retronator.Xni.Framework.Graphics.classes.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColor.h
+c000000004CDA93CC0000000000000128
+t1289393100
+s296
+i<Foundation/Foundation.h>
+i"VertexElement.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorArray.h
+c000000004CDA93CC0000000000000171
+t1289393100
+s369
+i<Foundation/Foundation.h>
+i"VertexArray.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorTexture.h
+c000000004CDA93CC0000000000000136
+t1289393100
+s310
+i<Foundation/Foundation.h>
+i"VertexElement.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorTextureArray.h
+c000000004CDA93CC0000000000000186
+t1289393100
+s390
+i<Foundation/Foundation.h>
+i"VertexArray.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionTexture.h
+c000000004CDA93CC000000000000012C
+t1289393100
+s300
+i<Foundation/Foundation.h>
+i"VertexElement.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionTextureArray.h
+c000000004CDA93CC0000000000000177
+t1289393100
+s375
+i<Foundation/Foundation.h>
+i"VertexArray.h"
+
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexStructs.h
-c000000004CD123C10000000000000263
-t1288774593
+c000000004CDA93CC0000000000000263
+t1289393100
 s611
+i"Retronator.Xni.Framework.classes.h"
+
+N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Viewport.h
+c000000004CDA93CC0000000000000276
+t1289393100
+s630
+i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-ckkgprcawjtcjygapejdecnyemyz/GameCore_Prefix.pch.gch
@@ -694,6 +1011,12 @@ r0
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/ParticleParticleCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Random.o /Users/Simpson/Desktop/Project/GameCore/Random.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Rectangle+Extensions.o /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv6/Scene.o /Users/Simpson/Desktop/Project/GameCore/Scene.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
@@ -707,6 +1030,12 @@ CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv
 r0
 
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/ParticleParticleCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Random.o /Users/Simpson/Desktop/Project/GameCore/Random.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Rectangle+Extensions.o /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphoneos/GameCore.build/Objects-normal/armv7/Scene.o /Users/Simpson/Desktop/Project/GameCore/Scene.m normal armv7 objective-c com.apple.compilers.gcc.4_2

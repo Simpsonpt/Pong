@@ -1,7 +1,7 @@
 TGameCore
 v7
 r0
-t311039525.075549
+t311373659.126195
 cCheck dependencies
 cCpHeader build/Debug-iphonesimulator/usr/local/include/Sprite.h Sprite.h
 cCpHeader build/Debug-iphonesimulator/usr/local/include/GameCore.Graphics.classes.h GameCore.Graphics.classes.h
@@ -14,6 +14,14 @@ cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-norm
 cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Lifetime.o /Users/Simpson/Desktop/Project/GameCore/Lifetime.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Rectangle+Extensions.o /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Random.o /Users/Simpson/Desktop/Project/GameCore/Random.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AALimit.o /Users/Simpson/Desktop/Project/GameCore/AALimit.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/HalfPlane.o /Users/Simpson/Desktop/Project/GameCore/HalfPlane.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AxisAlignedHalfPlane.o /Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Polygon.o /Users/Simpson/Desktop/Project/GameCore/Polygon.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ConvexPolygon.o /Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Collision.o /Users/Simpson/Desktop/Project/GameCore/Collision.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleConvexCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleAxisAlignedHalfPlaneCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLibtool /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a normal i386
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
@@ -61,6 +69,60 @@ c000000004C6241ED00000000000009CD
 t1281507821
 s2509
 
+N/Users/Simpson/Desktop/Project/GameCore/AALimit.h
+c000000004CDEF4A6000000000000018B
+t1289680038
+s395
+i<Foundation/Foundation.h>
+i"GameCore.Scene.Objects.h"
+i"GameCore.Math.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/AALimit.m
+c000000004CDEF2330000000000000202
+t1289679411
+s514
+i"AALimit.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.h
+c000000004CDEF6B6000000000000021D
+t1289680566
+s541
+i<Foundation/Foundation.h>
+i"HalfPlane.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m
+c000000004CDEF6B600000000000007AC
+t1289680566
+s1964
+i"AxisAlignedHalfPlane.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/Collision.h
+c000000004CDEF72400000000000001C1
+t1289680676
+s449
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/Collision.m
+c000000004CDEF72400000000000016AF
+t1289680676
+s5807
+i"GameCore.Scene.Objects.h"
+i"GameCore.Physics.h"
+i"Collision.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.h
+c000000004CDEF45300000000000000FA
+t1289679955
+s250
+i<Foundation/Foundation.h>
+i"Polygon.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m
+c000000004CDEF45000000000000000D4
+t1289679952
+s212
+i"ConvexPolygon.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/Everywhere.h
 c000000004CD9D4260000000000000042
 t1289344038
@@ -84,11 +146,43 @@ c000000004CCEFBC900000000000000E8
 t1288633289
 s232
 
-N/Users/Simpson/Desktop/Project/GameCore/GameCore.Physics.h
-c000000004CCF242D00000000000000EB
-t1288643629
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Math.classes.h
+c000000004CDEF4690000000000000056
+t1289679977
+s86
+i"MathEnum.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Math.classes.m
+c000000004CDEF33D00000000000000EB
+t1289679677
 s235
-i<Foundation/Foundation.h>
+i"GameCore.Math.classes.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Math.h
+c000000004CDEF594000000000000007B
+t1289680276
+s123
+i"MathEnum.h"
+i"HalfPlane.h"
+i"AxisAlignedHalfPlane.h"
+i"Polygon.h"
+i"ConvexPolygon.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Math.m
+c000000004CDEF32800000000000000D3
+t1289679656
+s211
+i"GameCore.Math.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/GameCore.Physics.h
+c000000004CDEF7D100000000000000AE
+t1289680849
+s174
+i"MovementPhysics.h"
+i"Collision.h"
+i"ParticleParticleCollision.h"
+i"ParticleAxisAlignedHalfPlaneCollision.h"
+i"ParticleConvexCollision.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Physics.m
 c000000004CCF242D00000000000000DB
@@ -97,9 +191,9 @@ s219
 i"GameCore.Physics.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.Objects.classes.h
-c000000004CCF28C300000000000000B6
-t1288644803
-s182
+c000000004CDEF57A00000000000000FC
+t1289680250
+s252
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.Objects.classes.m
 c000000004CCF26420000000000000105
@@ -108,19 +202,22 @@ s261
 i"GameCore.Scene.Objects.classes.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.Objects.h
-c000000004CCF267C00000000000000F0
-t1288644220
-s240
+c000000004CDEF57B000000000000014E
+t1289680251
+s334
 i"IPosition.h"
 i"IVelocity.h"
 i"IMovable.h"
 i"IRadius.h"
 i"IParticleCollider.h"
 i"IParticle.h"
+i"IHalfPlaneCollider.h"
+i"IAxisAlignedHalfPlaneCollider.h"
 i"IMass.h"
 i"ICoefficientOfRestitution.h"
 i"ILifetime.h"
 i"Lifetime.h"
+i"AALimit.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.Objects.m
 c000000004CCF265000000000000000ED
@@ -159,6 +256,32 @@ s226
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/HalfPlane.h
+c000000004CDEF4530000000000000215
+t1289679955
+s533
+i<Foundation/Foundation.h>
+i"GameCore.Math.classes.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/HalfPlane.m
+c000000004CDEF685000000000000032E
+t1289680517
+s814
+i"HalfPlane.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/IAxisAlignedHalfPlaneCollider.h
+c000000004CDEF4F3000000000000016C
+t1289680115
+s364
+i<UIKit/UIKit.h>
+i"IHalfPlaneCollider.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/IAxisAlignedHalfPlaneCollider.m
+c000000004CDEF4DF0000000000000103
+t1289680095
+s259
+i"IAxisAlignedHalfPlaneCollider.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/ICoefficientOfRestitution.h
 c000000004CCF28680000000000000119
 t1288644712
@@ -184,10 +307,11 @@ s216
 i"IConvexCollider.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/IHalfPlaneCollider.h
-c000000004CCF279600000000000000EF
-t1288644502
-s239
-i<Foundation/Foundation.h>
+c000000004CDEF5130000000000000137
+t1289680147
+s311
+i<UIKit/UIKit.h>
+i"GameCore.Math.classes.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/IHalfPlaneCollider.m
 c000000004CCF279600000000000000E1
@@ -317,6 +441,17 @@ t1288644635
 s703
 i"Lifetime.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/MathEnum.h
+c000000004CDEF3930000000000000083
+t1289679763
+s131
+
+N/Users/Simpson/Desktop/Project/GameCore/MathEnum.m
+c000000004CDEF37F00000000000000C4
+t1289679743
+s196
+i"MathEnum.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/MovementPhysics.h
 c000000004CCF24940000000000000161
 t1288643732
@@ -332,6 +467,33 @@ i"GameCore.Scene.h"
 i"GameCore.Scene.Objects.h"
 i"MovementPhysics.h"
 
+N/Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.h
+c000000004CDEF7D6000000000000028C
+t1289680854
+s652
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m
+c000000004CDEF7D60000000000000B5D
+t1289680854
+s2909
+i"GameCore.Scene.Objects.h"
+i"GameCore.Physics.h"
+i"GameCore.Math.h"
+i"ParticleAxisAlignedHalfPlaneCollision.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.h
+c000000004CDEF7D700000000000000FB
+t1289680855
+s251
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m
+c000000004CDEF7D700000000000000F1
+t1289680855
+s241
+i"ParticleConvexCollision.h"
+
 N/Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.h
 c000000004CCF28F0000000000000025B
 t1288644848
@@ -345,6 +507,18 @@ t1288644846
 s5363
 i"GameCore.Scene.Objects.h"
 i"ParticleParticleCollision.h"
+
+N/Users/Simpson/Desktop/Project/GameCore/Polygon.h
+c000000004CDEF45300000000000000DB
+t1289679955
+s219
+i<Foundation/Foundation.h>
+
+N/Users/Simpson/Desktop/Project/GameCore/Polygon.m
+c000000004CDEF45300000000000000C1
+t1289679955
+s193
+i"Polygon.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/Random.h
 c000000004CD9CA340000000000000170
@@ -399,8 +573,8 @@ s394
 i"Sprite.h"
 
 N/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a
-t1289344162
-s116240
+t1289680859
+s203168
 
 N/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/include/GameCore.Graphics.classes.h
 t1288636603
@@ -414,14 +588,38 @@ N/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/i
 t1289344038
 s523
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AALimit.o
+t1289680571
+s11308
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AxisAlignedHalfPlane.o
+t1289680572
+s13684
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Collision.o
+t1289680856
+s19280
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ConvexPolygon.o
+t1289680433
+s5108
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Everywhere.o
 t2
 s0
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.LinkFileList
-c000000004CD9CA3500000000000003A4
-t1289341493
-s932
+c000000004CDEF7D700000000000007E9
+t1289680855
+s2025
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Math.classes.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Math.o
+t2
+s0
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Physics.o
 t2
@@ -440,6 +638,14 @@ t2
 s0
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Scene.o
+t2
+s0
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/HalfPlane.o
+t1289680521
+s11072
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/IAxisAlignedHalfPlaneCollider.o
 t2
 s0
 
@@ -488,31 +694,47 @@ t2
 s0
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Lifetime.o
-t1289344161
+t1289680427
 s10464
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MathEnum.o
+t2
+s0
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MovementPhysics.o
-t1289344159
+t1289680568
 s10096
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleAxisAlignedHalfPlaneCollision.o
+t1289680859
+s13052
+
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleConvexCollision.o
+t1289680858
+s5148
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleParticleCollision.o
-t1289344160
+t1289680569
 s16572
 
+N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Polygon.o
+t1289680432
+s5020
+
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Random.o
-t1289344162
+t1289680429
 s8264
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Rectangle+Extensions.o
-t1289344161
+t1289680428
 s7332
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Scene.o
-t1289344158
+t1289680425
 s10220
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Sprite.o
-t1289344157
+t1289680424
 s50696
 
 N/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/StaticAnalyzer/normal/i386/Lifetime.plist
@@ -544,57 +766,57 @@ t2
 s0
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/AdaptiveArray.h
-c000000004CD123C10000000000000217
-t1288774593
+c000000004CDA93CC0000000000000217
+t1289393100
 s535
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/BasicEffect.h
-c000000004CD123C1000000000000078E
-t1288774593
+c000000004CDA93CC000000000000078E
+t1289393100
 s1934
 i<Foundation/Foundation.h>
 i"Effect.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/BlendState.h
-c000000004CD123C100000000000005A0
-t1288774593
+c000000004CDA93CC00000000000005A0
+t1289393100
 s1440
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Color.h
-c000000004CD123C10000000000001121
-t1288774593
+c000000004CDA93CC0000000000001121
+t1289393100
 s4385
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Delegate.h
-c000000004CD123C100000000000001F9
-t1288774593
+c000000004CDA93CC00000000000001F9
+t1289393100
 s505
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DepthStencilState.h
-c000000004CD123C100000000000006E5
-t1288774593
+c000000004CDA93CC00000000000006E5
+t1289393100
 s1765
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DirectionalLight.h
-c000000004CD123C10000000000000277
-t1288774593
+c000000004CDA93CC0000000000000277
+t1289393100
 s631
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/DrawableGameComponent.h
-c000000004CD123C10000000000000276
-t1288774593
+c000000004CDA93CC0000000000000276
+t1289393100
 s630
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
@@ -602,46 +824,46 @@ i"GameComponent.h"
 i"IDrawable.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Effect.h
-c000000004CD123C100000000000001A8
-t1288774593
+c000000004CDA93CC00000000000001A8
+t1289393100
 s424
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EffectPass.h
-c000000004CD123C100000000000001D3
-t1288774593
+c000000004CDA93CC00000000000001D3
+t1289393100
 s467
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EffectTechnique.h
-c000000004CD123C100000000000001A3
-t1288774593
+c000000004CDA93CC00000000000001A3
+t1289393100
 s419
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Event.h
-c000000004CD123C100000000000001BE
-t1288774593
+c000000004CDA93CC00000000000001BE
+t1289393100
 s446
 i<Foundation/Foundation.h>
 i"System.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/EventArgs.h
-c000000004CD123C100000000000000D9
-t1288774593
+c000000004CDA93CC00000000000000D9
+t1289393100
 s217
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/FrameworkEnums.h
-c000000004CD123C100000000000000B1
-t1288774593
+c000000004CDA93CC00000000000000B1
+t1289393100
 s177
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Game.h
-c000000004CD123C100000000000007B5
-t1288774593
+c000000004CDA93CC00000000000007B5
+t1289393100
 s1973
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -650,8 +872,8 @@ i"Retronator.Xni.Framework.Graphics.classes.h"
 i"Retronator.Xni.Framework.Content.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponent.h
-c000000004CD123C1000000000000022D
-t1288774593
+c000000004CDA93CC000000000000022D
+t1289393100
 s557
 i<Foundation/Foundation.h>
 i"System.classes.h"
@@ -660,45 +882,45 @@ i"IGameComponent.h"
 i"IUpdatable.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponentCollection.h
-c000000004CD123C10000000000000270
-t1288774593
+c000000004CDA93CC0000000000000270
+t1289393100
 s624
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameComponentCollectionEventArgs.h
-c000000004CD123C1000000000000022E
-t1288774593
+c000000004CDA93CC000000000000022E
+t1289393100
 s558
 i<Foundation/Foundation.h>
 i"EventArgs.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameHost.h
-c000000004CD123C100000000000001A0
-t1288774593
+c000000004CDA93CC00000000000001A0
+t1289393100
 s416
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameServiceContainer.h
-c000000004CD123C10000000000000182
-t1288774593
+c000000004CDA93CC0000000000000182
+t1289393100
 s386
 i<Foundation/Foundation.h>
 i"System.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameTime.h
-c000000004CD123C100000000000003FE
-t1288774593
+c000000004CDA93CC00000000000003FE
+t1289393100
 s1022
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GameWindow.h
-c000000004CD123C100000000000003DA
-t1288774593
+c000000004CDA93CC00000000000003DA
+t1289393100
 s986
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
@@ -706,8 +928,8 @@ i"System.h"
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsDevice.h
-c000000004CD123C10000000000000F22
-t1288774593
+c000000004CDA93CC0000000000000F22
+t1289393100
 s3874
 i<Foundation/Foundation.h>
 i<QuartzCore/QuartzCore.h>
@@ -718,8 +940,8 @@ i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsDeviceManager.h
-c000000004CD123C10000000000000585
-t1288774593
+c000000004CDA93CC0000000000000585
+t1289393100
 s1413
 i<Foundation/Foundation.h>
 i"System.h"
@@ -729,136 +951,136 @@ i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsEnums.h
-c000000004CD123C100000000000017B5
-t1288774593
+c000000004CDA93CC00000000000017B5
+t1289393100
 s6069
 i<OpenGLES/ES1/gl.h>
 i<OpenGLES/ES2/gl.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/GraphicsResource.h
-c000000004CD123C10000000000000299
-t1288774593
+c000000004CDA93CC0000000000000299
+t1289393100
 s665
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/HiDefGraphicsDevice.h
-c000000004CD123C100000000000000FF
-t1288774593
+c000000004CDA93CC00000000000000FF
+t1289393100
 s255
 i<Foundation/Foundation.h>
 i"GraphicsDevice.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IDrawable.h
-c000000004CD123C10000000000000132
-t1288774593
+c000000004CDA93CC0000000000000132
+t1289393100
 s306
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGameComponent.h
-c000000004CD123C1000000000000003F
-t1288774593
+c000000004CDA93CC000000000000003F
+t1289393100
 s63
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGraphicsDeviceManager.h
-c000000004CD123C10000000000000064
-t1288774593
+c000000004CDA93CC0000000000000064
+t1289393100
 s100
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IGraphicsDeviceService.h
-c000000004CD123C1000000000000018D
-t1288774593
+c000000004CDA93CC000000000000018D
+t1289393100
 s397
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IServiceProvider.h
-c000000004CD123C10000000000000045
-t1288774593
+c000000004CDA93CC0000000000000045
+t1289393100
 s69
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IUpdatable.h
-c000000004CD123C10000000000000139
-t1288774593
+c000000004CDA93CC0000000000000139
+t1289393100
 s313
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/IndexBuffer.h
-c000000004CD123C10000000000000132
-t1288774593
+c000000004CDA93CC0000000000000132
+t1289393100
 s306
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Matrix.h
-c000000004CD123C10000000000000BEA
-t1288774593
+c000000004CDA93CC0000000000000BEA
+t1289393100
 s3050
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/MatrixStruct.h
-c000000004CD123C10000000000002DC4
-t1288774593
+c000000004CDA93CC0000000000002DC4
+t1289393100
 s11716
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Protocols.h
-c000000004CD123C10000000000000115
-t1288774593
+c000000004CDA93CC0000000000000115
+t1289393100
 s277
 i<Foundation/Foundation.h>
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Quaternion.h
-c000000004CD123C10000000000000735
-t1288774593
+c000000004CDA93CC0000000000000735
+t1289393100
 s1845
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/RasterizerState.h
-c000000004CD123C1000000000000032C
-t1288774593
+c000000004CDA93CC000000000000032C
+t1289393100
 s812
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/ReachGraphicsDevice.h
-c000000004CD123C100000000000000FF
-t1288774593
+c000000004CDA93CC00000000000000FF
+t1289393100
 s255
 i<Foundation/Foundation.h>
 i"GraphicsDevice.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Rectangle.h
-c000000004CD123C100000000000003E0
-t1288774593
+c000000004CDA93CC00000000000003E0
+t1289393100
 s992
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/RectangleStruct.h
-c000000004CD123C100000000000001EF
-t1288774593
+c000000004CDA93CC00000000000001EF
+t1289393100
 s495
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Content.classes.h
-c000000004CD123C10000000000000076
-t1288774593
+c000000004CDA93CC0000000000000076
+t1289393100
 s118
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Graphics.classes.h
-c000000004CD123C100000000000002B6
-t1288774593
+c000000004CDA93CC00000000000002B6
+t1289393100
 s694
 i"GraphicsEnums.h"
 i"VertexStructs.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.Graphics.h
-c000000004CD123C100000000000003D4
-t1288774593
+c000000004CDA93CC00000000000003D4
+t1289393100
 s980
 i"GraphicsEnums.h"
 i"GraphicsResource.h"
@@ -896,8 +1118,8 @@ i"HiDefGraphicsDevice.h"
 i"SpriteBatch.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.classes.h
-c000000004CD123C1000000000000026C
-t1288774593
+c000000004CDA93CC000000000000026C
+t1289393100
 s620
 i"FrameworkEnums.h"
 i"RectangleStruct.h"
@@ -907,8 +1129,8 @@ i"Vector4Struct.h"
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Retronator.Xni.Framework.h
-c000000004CD123C1000000000000029D
-t1288774593
+c000000004CDA93CC000000000000029D
+t1289393100
 s669
 i"FrameworkEnums.h"
 i"Protocols.h"
@@ -935,36 +1157,36 @@ i"Quaternion.h"
 i"Matrix.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SamplerState.h
-c000000004CD123C100000000000003E4
-t1288774593
+c000000004CDA93CC00000000000003E4
+t1289393100
 s996
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SamplerStateCollection.h
-c000000004CD123C100000000000001EE
-t1288774593
+c000000004CDA93CC00000000000001EE
+t1289393100
 s494
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/SpriteBatch.h
-c000000004CD123C10000000000000B55
-t1288774593
-s2901
+c000000004CDA93CC0000000000000B43
+t1289393100
+s2883
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/System.classes.h
-c000000004CD123C10000000000000077
-t1288774593
+c000000004CDA93CC0000000000000077
+t1289393100
 s119
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/System.h
-c000000004CD123C10000000000000096
-t1288774593
+c000000004CDA93CC0000000000000096
+t1289393100
 s150
 i"IServiceProvider.h"
 i"Delegate.h"
@@ -973,152 +1195,152 @@ i"EventArgs.h"
 i"AdaptiveArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture.h
-c000000004CD123C1000000000000022E
-t1288774593
+c000000004CDA93CC000000000000022E
+t1289393100
 s558
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Texture2D.h
-c000000004CD123C100000000000005BA
-t1288774593
+c000000004CDA93CC00000000000005BA
+t1289393100
 s1466
 i<Foundation/Foundation.h>
 i"Texture.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/TextureCollection.h
-c000000004CD123C100000000000001CA
-t1288774593
+c000000004CDA93CC00000000000001CA
+t1289393100
 s458
 i<Foundation/Foundation.h>
 i"System.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector2.h
-c000000004CD123C10000000000000607
-t1288774593
+c000000004CDA93CC0000000000000607
+t1289393100
 s1543
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector2Struct.h
-c000000004CD123C1000000000000081B
-t1288774593
+c000000004CDA93CC000000000000081B
+t1289393100
 s2075
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector3.h
-c000000004CD123C100000000000006EA
-t1288774593
+c000000004CDA93CC00000000000006EA
+t1289393100
 s1770
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector3Struct.h
-c000000004CD123C10000000000000BC3
-t1288774593
+c000000004CDA93CC0000000000000BC3
+t1289393100
 s3011
 i"MatrixStruct.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector4.h
-c000000004CD123C100000000000005B4
-t1288774593
+c000000004CDA93CC00000000000005B4
+t1289393100
 s1460
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Vector4Struct.h
-c000000004CD123C10000000000000D2C
-t1288774593
+c000000004CDA93CC0000000000000D2C
+t1289393100
 s3372
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexArray.h
-c000000004CD123C10000000000000287
-t1288774593
+c000000004CDA93CC0000000000000287
+t1289393100
 s647
 i<Foundation/Foundation.h>
 i"System.classes.h"
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexBuffer.h
-c000000004CD123C100000000000001A4
-t1288774593
+c000000004CDA93CC00000000000001A4
+t1289393100
 s420
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexBufferBinding.h
-c000000004CD123C10000000000000326
-t1288774593
+c000000004CDA93CC0000000000000326
+t1289393100
 s806
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexDeclaration.h
-c000000004CD123C100000000000001CD
-t1288774593
+c000000004CDA93CC00000000000001CD
+t1289393100
 s461
 i<Foundation/Foundation.h>
 i"GraphicsResource.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexElement.h
-c000000004CD123C100000000000004B6
-t1288774593
+c000000004CDA93CC00000000000004B6
+t1289393100
 s1206
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.Graphics.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColor.h
-c000000004CD123C10000000000000128
-t1288774593
+c000000004CDA93CC0000000000000128
+t1289393100
 s296
 i<Foundation/Foundation.h>
 i"VertexElement.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorArray.h
-c000000004CD123C10000000000000171
-t1288774593
+c000000004CDA93CC0000000000000171
+t1289393100
 s369
 i<Foundation/Foundation.h>
 i"VertexArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorTexture.h
-c000000004CD123C10000000000000136
-t1288774593
+c000000004CDA93CC0000000000000136
+t1289393100
 s310
 i<Foundation/Foundation.h>
 i"VertexElement.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionColorTextureArray.h
-c000000004CD123C10000000000000186
-t1288774593
+c000000004CDA93CC0000000000000186
+t1289393100
 s390
 i<Foundation/Foundation.h>
 i"VertexArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionTexture.h
-c000000004CD123C1000000000000012C
-t1288774593
+c000000004CDA93CC000000000000012C
+t1289393100
 s300
 i<Foundation/Foundation.h>
 i"VertexElement.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexPositionTextureArray.h
-c000000004CD123C10000000000000177
-t1288774593
+c000000004CDA93CC0000000000000177
+t1289393100
 s375
 i<Foundation/Foundation.h>
 i"VertexArray.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/VertexStructs.h
-c000000004CD123C10000000000000263
-t1288774593
+c000000004CDA93CC0000000000000263
+t1289393100
 s611
 i"Retronator.Xni.Framework.classes.h"
 
 N/Users/Simpson/Desktop/Project/XNI/usr/local/include/Viewport.h
-c000000004CD123C10000000000000276
-t1288774593
+c000000004CDA93CC0000000000000276
+t1289393100
 s630
 i<Foundation/Foundation.h>
 i"Retronator.Xni.Framework.classes.h"
@@ -1132,7 +1354,7 @@ t1288635722
 s11524864
 
 N/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch.gch
-t1289344156
+t1289680422
 s11524864
 
 N/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-gvwfuvqhlpfduhcsgqppbnvtygpk/GameCore_Prefix.pch.gch
@@ -1232,9 +1454,67 @@ lSLF07#2@56"Analyze /Users/Simpson/Desktop/Project/GameCore/Sprite.m311037532#31
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies311039524#311039525#0(0"0(0#1#0"542832#0"0#
+lSLF07#2@18"Check dependencies311373655#311373655#0(0"0(0#1#0"542832#0"0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AALimit.o /Users/Simpson/Desktop/Project/GameCore/AALimit.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373370.028278
+e311373371.101154
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AALimit.o
+x/Users/Simpson/Desktop/Project/GameCore/AALimit.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/Simpson/Desktop/Project/GameCore/AALimit.m311373370#311373371#0(0"0(0#0#49"/Users/Simpson/Desktop/Project/GameCore/AALimit.m542832#2084"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/AALimit.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AALimit.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AxisAlignedHalfPlane.o /Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373371.103262
+e311373372.750452
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AxisAlignedHalfPlane.o
+x/Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m311373371#311373372#0(0"0(0#0#62"/Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m542832#2110"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/AxisAlignedHalfPlane.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/AxisAlignedHalfPlane.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Collision.o /Users/Simpson/Desktop/Project/GameCore/Collision.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373655.307001
+e311373656.897350
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Collision.o
+x/Users/Simpson/Desktop/Project/GameCore/Collision.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/Simpson/Desktop/Project/GameCore/Collision.m311373655#311373656#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/GameCore/Collision.m542832#2088"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Collision.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Collision.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ConvexPolygon.o /Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373232.811256
+e311373233.680104
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ConvexPolygon.o
+x/Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m311373232#311373233#0(0"0(0#0#55"/Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m542832#2096"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/ConvexPolygon.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ConvexPolygon.o0#
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Everywhere.o /Users/Simpson/Desktop/Project/GameCore/Everywhere.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Math.classes.o /Users/Simpson/Desktop/Project/GameCore/GameCore.Math.classes.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Math.o /Users/Simpson/Desktop/Project/GameCore/GameCore.Math.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Physics.o /Users/Simpson/Desktop/Project/GameCore/GameCore.Physics.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -1250,6 +1530,22 @@ CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-norm
 r0
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.Scene.o /Users/Simpson/Desktop/Project/GameCore/GameCore.Scene.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/HalfPlane.o /Users/Simpson/Desktop/Project/GameCore/HalfPlane.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373318.047436
+e311373321.425276
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/HalfPlane.o
+x/Users/Simpson/Desktop/Project/GameCore/HalfPlane.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/Simpson/Desktop/Project/GameCore/HalfPlane.m311373318#311373321#0(0"0(0#0#51"/Users/Simpson/Desktop/Project/GameCore/HalfPlane.m542832#2088"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/HalfPlane.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/HalfPlane.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/IAxisAlignedHalfPlaneCollider.o /Users/Simpson/Desktop/Project/GameCore/IAxisAlignedHalfPlaneCollider.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ICoefficientOfRestitution.o /Users/Simpson/Desktop/Project/GameCore/ICoefficientOfRestitution.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -1286,8 +1582,8 @@ CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-norm
 r0
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Lifetime.o /Users/Simpson/Desktop/Project/GameCore/Lifetime.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036960.246351
-e311036961.068401
+s311373226.942586
+e311373227.752681
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Lifetime.o
@@ -1296,11 +1592,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@58"Compile /Users/Simpson/Desktop/Project/GameCore/Lifetime.m311036960#311036961#0(0"0(0#0#50"/Users/Simpson/Desktop/Project/GameCore/Lifetime.m542832#2086"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Lifetime.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Lifetime.o0#
+lSLF07#2@58"Compile /Users/Simpson/Desktop/Project/GameCore/Lifetime.m311373226#311373227#0(0"0(0#0#50"/Users/Simpson/Desktop/Project/GameCore/Lifetime.m542832#2086"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Lifetime.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Lifetime.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MathEnum.o /Users/Simpson/Desktop/Project/GameCore/MathEnum.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MovementPhysics.o /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036958.570882
-e311036959.400361
+s311373366.340424
+e311373368.606524
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MovementPhysics.o
@@ -1309,11 +1608,37 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m311036958#311036959#0(0"0(0#0#57"/Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m542832#2100"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MovementPhysics.o0#
+lSLF07#2@65"Compile /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m311373366#311373368#0(0"0(0#0#57"/Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m542832#2100"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/MovementPhysics.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/MovementPhysics.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleAxisAlignedHalfPlaneCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373658.195729
+e311373659.038032
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleAxisAlignedHalfPlaneCollision.o
+x/Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m311373658#311373659#0(0"0(0#0#79"/Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m542832#2144"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/ParticleAxisAlignedHalfPlaneCollision.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleAxisAlignedHalfPlaneCollision.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleConvexCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373656.897729
+e311373658.195607
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleConvexCollision.o
+x/Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m311373656#311373658#0(0"0(0#0#65"/Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m542832#2116"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/ParticleConvexCollision.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleConvexCollision.o0#
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleParticleCollision.o /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036959.400481
-e311036960.246018
+s311373368.606868
+e311373370.027845
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleParticleCollision.o
@@ -1322,11 +1647,24 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m311036959#311036960#0(0"0(0#0#67"/Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m542832#2120"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleParticleCollision.o0#
+lSLF07#2@75"Compile /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m311373368#311373370#0(0"0(0#0#67"/Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m542832#2120"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/ParticleParticleCollision.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/ParticleParticleCollision.o0#
+
+CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Polygon.o /Users/Simpson/Desktop/Project/GameCore/Polygon.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311373232.006061
+e311373232.811140
+r1
+xCompileC
+xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Polygon.o
+x/Users/Simpson/Desktop/Project/GameCore/Polygon.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/Simpson/Desktop/Project/GameCore/Polygon.m311373232#311373232#0(0"0(0#0#49"/Users/Simpson/Desktop/Project/GameCore/Polygon.m542832#2084"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Polygon.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Polygon.o0#
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Random.o /Users/Simpson/Desktop/Project/GameCore/Random.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036961.841542
-e311036962.624214
+s311373228.610828
+e311373229.465029
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Random.o
@@ -1335,11 +1673,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/Simpson/Desktop/Project/GameCore/Random.m311036961#311036962#0(0"0(0#0#48"/Users/Simpson/Desktop/Project/GameCore/Random.m542832#2082"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Random.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Random.o0#
+lSLF07#2@56"Compile /Users/Simpson/Desktop/Project/GameCore/Random.m311373228#311373229#0(0"0(0#0#48"/Users/Simpson/Desktop/Project/GameCore/Random.m542832#2082"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Random.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Random.o0#
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Rectangle+Extensions.o /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036961.068520
-e311036961.841057
+s311373227.752796
+e311373228.610463
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Rectangle+Extensions.o
@@ -1348,11 +1686,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m311036961#311036961#0(0"0(0#0#62"/Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m542832#2110"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Rectangle+Extensions.o0#
+lSLF07#2@70"Compile /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m311373227#311373228#0(0"0(0#0#62"/Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m542832#2110"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Rectangle+Extensions.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Rectangle+Extensions.o0#
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Scene.o /Users/Simpson/Desktop/Project/GameCore/Scene.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036957.776276
-e311036958.570535
+s311373224.338607
+e311373225.164257
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Scene.o
@@ -1361,11 +1699,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/Simpson/Desktop/Project/GameCore/Scene.m311036957#311036958#0(0"0(0#0#47"/Users/Simpson/Desktop/Project/GameCore/Scene.m542832#2080"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Scene.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Scene.o0#
+lSLF07#2@55"Compile /Users/Simpson/Desktop/Project/GameCore/Scene.m311373224#311373225#0(0"0(0#0#47"/Users/Simpson/Desktop/Project/GameCore/Scene.m542832#2080"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Scene.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Scene.o0#
 
 CCompileC build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Sprite.o /Users/Simpson/Desktop/Project/GameCore/Sprite.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036956.869875
-e311036957.776157
+s311373223.179890
+e311373224.338491
 r1
 xCompileC
 xbuild/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Sprite.o
@@ -1374,7 +1712,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/Simpson/Desktop/Project/GameCore/Sprite.m311036956#311036957#0(0"0(0#0#48"/Users/Simpson/Desktop/Project/GameCore/Sprite.m542832#2082"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Sprite.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Sprite.o0#
+lSLF07#2@56"Compile /Users/Simpson/Desktop/Project/GameCore/Sprite.m311373223#311373224#0(0"0(0#0#48"/Users/Simpson/Desktop/Project/GameCore/Sprite.m542832#2082"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -include /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch -c /Users/Simpson/Desktop/Project/GameCore/Sprite.m -o /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/Sprite.o0#
 
 CCpHeader build/Debug-iphonesimulator/usr/local/include/GameCore.Graphics.classes.h GameCore.Graphics.classes.h
 s310329403.311567
@@ -1404,15 +1742,15 @@ xSprite.h
 lSLF07#2@13"Copy Sprite.h311036838#311036838#0(0"0(0#0#48"/Users/Simpson/Desktop/Project/GameCore/Sprite.h542832#523"    cd /Users/Simpson/Desktop/Project/GameCore    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Simpson/Desktop/Project/GameCore/Sprite.h /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/usr/local/include0#
 
 CLibtool /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a normal i386
-s311036962.624321
-e311036962.694339
+s311373659.038377
+e311373659.126139
 r1
 xLibtool
 x/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a
 xnormal
 xi386
 o/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF07#2@61"Libtool build/Debug-iphonesimulator/libGameCore.a normal i386311036962#311036962#0(136"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 0(0#0#0"542832#810"    cd /Users/Simpson/Desktop/Project/GameCore    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -filelist /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.LinkFileList -ObjC -framework Foundation -o /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a0#
+lSLF07#2@61"Libtool build/Debug-iphonesimulator/libGameCore.a normal i386311373659#311373659#0(136"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 0(0#0#0"542832#810"    cd /Users/Simpson/Desktop/Project/GameCore    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -filelist /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/Objects-normal/i386/GameCore.LinkFileList -ObjC -framework Foundation -o /Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/libGameCore.a0#
 
 CProcessPCH /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-agyjjidgpslewadvxpgdyascqqge/GameCore_Prefix.pch.pth GameCore_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
 s311037531.086773
@@ -1516,8 +1854,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile GameCore_Prefix.pch310328518#310328522#0(0"0(0#0#59"/Users/Simpson/Desktop/Project/GameCore/GameCore_Prefix.pch542832#1968"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -c /Users/Simpson/Desktop/Project/GameCore/GameCore_Prefix.pch -o /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fbaequmzcokqmtfhqyeeqajqxcpb/GameCore_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch.gch GameCore_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s311036953.859176
-e311036956.869354
+s311373220.413616
+e311373223.172765
 r1
 xProcessPCH
 x/var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch.gch
@@ -1526,7 +1864,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@30"Precompile GameCore_Prefix.pch311036953#311036956#0(0"0(0#0#59"/Users/Simpson/Desktop/Project/GameCore/GameCore_Prefix.pch542832#1968"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -c /Users/Simpson/Desktop/Project/GameCore/GameCore_Prefix.pch -o /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch.gch0#
+lSLF07#2@30"Precompile GameCore_Prefix.pch311373220#311373223#0(0"0(0#0#59"/Users/Simpson/Desktop/Project/GameCore/GameCore_Prefix.pch542832#1968"    cd /Users/Simpson/Desktop/Project/GameCore    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-generated-files.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-own-target-headers.hmap -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-all-target-headers.hmap -iquote /Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/GameCore-project-headers.hmap -F/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator -iquote/Users/Simpson/Desktop/Project/GameCore/../XNI/usr/local/include -I/Users/Simpson/Desktop/Project/GameCore/build/Debug-iphonesimulator/include -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources/i386 -I/Users/Simpson/Desktop/Project/GameCore/build/GameCore.build/Debug-iphonesimulator/GameCore.build/DerivedSources -c /Users/Simpson/Desktop/Project/GameCore/GameCore_Prefix.pch -o /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-fotgqnvrlsvydrgtvwwnesktgwcs/GameCore_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/iT/iTekBWxHEo8Ocy6lVogbmU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GameCore_Prefix-gvwfuvqhlpfduhcsgqppbnvtygpk/GameCore_Prefix.pch.gch GameCore_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s310328389.679109

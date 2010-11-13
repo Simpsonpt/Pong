@@ -6,9 +6,14 @@
 #import "IParticleCollider.h"
 #import "IParticle.h"
 
+#import "IHalfPlaneCollider.h"
+#import "IAxisAlignedHalfPlaneCollider.h"
+
 #import "IMass.h"
 
 #import "ICoefficientOfRestitution.h"
 
 #import "ILifetime.h"
 #import "Lifetime.h"
+
+#import "AALimit.h"

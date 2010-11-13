@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GameCore.Math.classes.h"
 
-@protocol IHalfPlaneCollider
+@protocol IHalfPlaneCollider <NSObject>
 
 @property (nonatomic, readonly) HalfPlane *halfPlane;
 

@@ -27,10 +27,10 @@
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime {
-	TouchCollection *touches = [[TouchPanel instance] getState];
+	TouchCollection *touches = [TouchPanel getState];
 	
 	// Remember old position for velocity calculation.
-	Vector2 *oldPosition = [Vector2 vectorWithVector:pad.position]; 
+	//Vector2 *oldPosition = [Vector2 vectorWithVector:pad.position]; 
 	
 	BOOL touchesInInputArea = NO;
 	for (TouchLocation *touch in touches) {
@@ -42,7 +42,10 @@
 				printf("Distance to Pad: %f\n",distanceToPad);
 				if (distanceToPad < 50) {
 					grabbed = YES;
+					bonusCheck = YES;
 				}
+				else
+					bonusCheck = NO;
 			}
 			
 			if (grabbed) {
@@ -56,20 +59,26 @@
 		grabbed = NO;
 	}
 	
-	// Calculate mallet velocity in reverse.
-	Vector2 *distance = [Vector2 subtract:pad.position by:oldPosition];
-	
-	// Velocity is distance over time
-	if (gameTime.elapsedGameTime > 0) {
-		[pad.velocity set:[distance multiplyBy:1.0f/gameTime.elapsedGameTime]];	
-	}
+	//Just for FriHockey
+//	// Calculate mallet velocity in reverse.
+//	Vector2 *distance = [Vector2 subtract:pad.position by:oldPosition];
+//	
+//	// Velocity is distance over time
+//	if (gameTime.elapsedGameTime > 0) {
+//		[pad.velocity set:[distance multiplyBy:1.0f/gameTime.elapsedGameTime]];	
+//	}
 	
 	//NSLog(@"%@", pad.velocity);
 }
 
+- (BOOL) getbonusCheck {
+	return bonusCheck;
+	}
+
 - (void) dealloc
 {
 	[inputArea release];
+	//[bonusCheck release];
 	[super dealloc];
 }
 
