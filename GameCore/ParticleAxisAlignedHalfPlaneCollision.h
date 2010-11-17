@@ -13,7 +13,7 @@
 	
 }
 
-+ (void) collisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane;
++ (BOOL) collisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane;
 
 + (BOOL) detectCollisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane;
 + (void) resolveCollisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane;

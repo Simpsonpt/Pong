@@ -12,7 +12,7 @@
 
 @implementation Collision
 
-+ (void) collisionBetween:(id)item1 and:(id)item2 {
++ (BOOL) collisionBetween:(id)item1 and:(id)item2 {
 	id<IParticleCollider> item1Particle = [item1 conformsToProtocol:@protocol(IParticleCollider)] ? item1 : nil;
 	id<IParticleCollider> item2Particle = [item2 conformsToProtocol:@protocol(IParticleCollider)] ? item2 : nil;
 	
@@ -20,12 +20,13 @@
 	id<IAxisAlignedHalfPlaneCollider> item2AAHalfPlaneCollider = [item2 conformsToProtocol:@protocol(IAxisAlignedHalfPlaneCollider)] ? item2 : nil;
 	
 	if (item1Particle && item2Particle) {
-		[ParticleParticleCollision collisionBetween:item1Particle and:item2Particle];
+		return [ParticleParticleCollision collisionBetween:item1Particle and:item2Particle];
 	} else if (item1Particle && item2AAHalfPlaneCollider) {
-		[ParticleAxisAlignedHalfPlaneCollision collisionBetween:item1Particle and:item2AAHalfPlaneCollider];
+		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item1Particle and:item2AAHalfPlaneCollider];
 	} else if (item2Particle && item1AAHalfPlaneCollider) {
-		[ParticleAxisAlignedHalfPlaneCollision collisionBetween:item2Particle and:item1AAHalfPlaneCollider];
+		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item2Particle and:item1AAHalfPlaneCollider];
 	}
+	return NO;
 }
 
 + (void) relaxCollisionBetween:(id)item1 and:(id)item2 by:(Vector2*)relaxDistance {

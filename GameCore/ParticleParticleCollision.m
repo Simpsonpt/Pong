@@ -11,10 +11,12 @@
 
 @implementation ParticleParticleCollision
 
-+ (void) collisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2 {
++ (BOOL) collisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2 {
 	if ([ParticleParticleCollision detectCollisionBetween:particle1 and:particle2]) {
 		[ParticleParticleCollision resolveCollisionBetween:particle1 and:particle2];
+		return YES;
 	}
+	return NO;
 }
 
 + (BOOL) detectCollisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2 {

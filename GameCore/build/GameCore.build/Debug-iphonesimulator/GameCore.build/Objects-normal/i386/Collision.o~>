@@ -1,4 +1,6 @@
 /Users/Simpson/Desktop/Project/GameCore/Collision.m: In function '+[Collision collisionBetween:and:]':
-/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: 'ParticleAxisAlignedHalfPlaneCollision' undeclared (first use in this function)
-/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: (Each undeclared identifier is reported only once
-/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: for each function it appears in.)
+/Users/Simpson/Desktop/Project/GameCore/Collision.m:15: warning: conflicting types for '+(BOOL)collisionBetween:(id)item1 and:(id)item2'
+/Users/Simpson/Desktop/Project/GameCore/Collision.h:16: warning: previous declaration of '+(void)collisionBetween:(id)item1 and:(id)item2'
+/Users/Simpson/Desktop/Project/GameCore/Collision.m:23: error: void value not ignored as it ought to be
+/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: void value not ignored as it ought to be
+/Users/Simpson/Desktop/Project/GameCore/Collision.m:27: error: void value not ignored as it ought to be

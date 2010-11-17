@@ -14,5 +14,6 @@
 }
 
 //- (void) addItem:(id)item;
+//- (void) removeObjectsAtIndex:(id)item;
 
 @end

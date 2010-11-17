@@ -14,7 +14,7 @@
 	
 }
 
-+ (void) collisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
++ (BOOL) collisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
 
 + (BOOL) detectCollisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
 + (void) resolveCollisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
