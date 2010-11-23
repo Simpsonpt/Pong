@@ -10,12 +10,11 @@
 #import "GameCore.Scene.Objects.h"
 #import "Retronator.Pong.classes.h"
 
-@interface Ball : NSObject <IParticle, ICoefficientOfRestitution> {
+@interface Ball : NSObject <IParticle> {
 	Vector2 *position;
 	Vector2 *velocity;
 	float radius;
 	float mass;
-	float coefficientOfRestitution;
 }
 
 @end

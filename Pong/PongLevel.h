@@ -10,8 +10,8 @@
 
 #import "Level.h"
 
-@interface PongLevel : Level {
+@interface PongLevel : Level {}
 
-}
+- (void) reset;
 
 @end

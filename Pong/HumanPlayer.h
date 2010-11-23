@@ -13,11 +13,8 @@
 	Rectangle *inputArea;
 	BOOL grabbed;
 	Vector2 *touchOffset;
-	BOOL bonusCheck;
 }
 
 - (id) initWithPad:(Pad *)thePad scene:(id <IScene>)theScene position:(PlayerPosition)thePosition game:(Game*)game;
-
-//- (BOOL) getbonusCheck;
 
 @end

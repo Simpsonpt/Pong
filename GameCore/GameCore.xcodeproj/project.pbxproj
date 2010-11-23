@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* GameCore_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* GameCore_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C6B7D37A12941ACD009A1B4E /* AnimatedSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D37812941ACD009A1B4E /* AnimatedSprite.h */; };
+		C6B7D37B12941ACD009A1B4E /* AnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7D37912941ACD009A1B4E /* AnimatedSprite.m */; };
+		C6B7D38312941B1F009A1B4E /* AnimatedSpriteFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D38112941B1F009A1B4E /* AnimatedSpriteFrame.h */; };
+		C6B7D38412941B1F009A1B4E /* AnimatedSpriteFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7D38212941B1F009A1B4E /* AnimatedSpriteFrame.m */; };
+		C6B7D39612941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D39412941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.h */; };
+		C6B7D39712941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7D39512941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.m */; };
+		C6B7D39C12941C83009A1B4E /* IAxisAlignedRectangleCollider.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D39A12941C83009A1B4E /* IAxisAlignedRectangleCollider.h */; };
+		C6B7D3A012941CAE009A1B4E /* IRectangleSize.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D39E12941CAE009A1B4E /* IRectangleSize.h */; };
+		C6B7D3AD12941D9C009A1B4E /* IRectangleCollider.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D3AB12941D9C009A1B4E /* IRectangleCollider.h */; };
+		C6B7D3B212941DC9009A1B4E /* ICustomCollider.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D3B012941DC9009A1B4E /* ICustomCollider.h */; };
+		C6B7D3BE12941EB5009A1B4E /* IRotation.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D3BC12941EB5009A1B4E /* IRotation.h */; };
+		C6B7D3C512941EEF009A1B4E /* IAngularVelocity.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D3C312941EEF009A1B4E /* IAngularVelocity.h */; };
+		C6B7D3CA12941F15009A1B4E /* IRotatable.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D3C812941F15009A1B4E /* IRotatable.h */; };
 		DA1AAB48127F51BD006E769D /* Scene.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1AAB46127F51BD006E769D /* Scene.h */; };
 		DA1AAB49127F51BD006E769D /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB47127F51BD006E769D /* Scene.m */; };
 		DA1AAB4D127F522C006E769D /* IScene.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1AAB4B127F522C006E769D /* IScene.h */; };
@@ -67,6 +80,19 @@
 /* Begin PBXFileReference section */
 		AA747D9E0F9514B9006C5449 /* GameCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6B7D37812941ACD009A1B4E /* AnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedSprite.h; sourceTree = "<group>"; };
+		C6B7D37912941ACD009A1B4E /* AnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedSprite.m; sourceTree = "<group>"; };
+		C6B7D38112941B1F009A1B4E /* AnimatedSpriteFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedSpriteFrame.h; sourceTree = "<group>"; };
+		C6B7D38212941B1F009A1B4E /* AnimatedSpriteFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedSpriteFrame.m; sourceTree = "<group>"; };
+		C6B7D39412941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleAxisAlignedRectangleCollision.h; sourceTree = "<group>"; };
+		C6B7D39512941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleAxisAlignedRectangleCollision.m; sourceTree = "<group>"; };
+		C6B7D39A12941C83009A1B4E /* IAxisAlignedRectangleCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAxisAlignedRectangleCollider.h; sourceTree = "<group>"; };
+		C6B7D39E12941CAE009A1B4E /* IRectangleSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRectangleSize.h; sourceTree = "<group>"; };
+		C6B7D3AB12941D9C009A1B4E /* IRectangleCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRectangleCollider.h; sourceTree = "<group>"; };
+		C6B7D3B012941DC9009A1B4E /* ICustomCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICustomCollider.h; sourceTree = "<group>"; };
+		C6B7D3BC12941EB5009A1B4E /* IRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRotation.h; sourceTree = "<group>"; };
+		C6B7D3C312941EEF009A1B4E /* IAngularVelocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAngularVelocity.h; sourceTree = "<group>"; };
+		C6B7D3C812941F15009A1B4E /* IRotatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRotatable.h; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libGameCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGameCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1AAB46127F51BD006E769D /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		DA1AAB47127F51BD006E769D /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
@@ -185,6 +211,58 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		C6B7D3A412941CC7009A1B4E /* Movement */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AAB90127F5E47006E769D /* IPosition.h */,
+				DA1AAB94127F5E65006E769D /* IVelocity.h */,
+				DA1AAB98127F5E74006E769D /* IMovable.h */,
+			);
+			name = Movement;
+			sourceTree = "<group>";
+		};
+		C6B7D3A512941CCF009A1B4E /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				C6B7D3BC12941EB5009A1B4E /* IRotation.h */,
+				C6B7D3C312941EEF009A1B4E /* IAngularVelocity.h */,
+				C6B7D3C812941F15009A1B4E /* IRotatable.h */,
+			);
+			name = Rotation;
+			sourceTree = "<group>";
+		};
+		C6B7D3A612941CDD009A1B4E /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AABA8127F5EB3006E769D /* IRadius.h */,
+				C6B7D39E12941CAE009A1B4E /* IRectangleSize.h */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		C6B7D3A712941CE3009A1B4E /* Colliders */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AABAC127F5EDB006E769D /* IParticleCollider.h */,
+				DA1AABB2127F5EFD006E769D /* IConvexCollider.h */,
+				DA1AABB6127F5F16006E769D /* IHalfPlaneCollider.h */,
+				DA9AA230128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h */,
+				C6B7D3AB12941D9C009A1B4E /* IRectangleCollider.h */,
+				C6B7D39A12941C83009A1B4E /* IAxisAlignedRectangleCollider.h */,
+				C6B7D3B012941DC9009A1B4E /* ICustomCollider.h */,
+			);
+			name = Colliders;
+			sourceTree = "<group>";
+		};
+		C6B7D3A812941D30009A1B4E /* Physical Properties */ = {
+			isa = PBXGroup;
+			children = (
+				DA1AABA4127F5EA2006E769D /* IMass.h */,
+				DA1AABBA127F5F39006E769D /* ICoefficientOfRestitution.h */,
+			);
+			name = "Physical Properties";
+			sourceTree = "<group>";
+		};
 		DA1AAB4A127F51C9006E769D /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +287,8 @@
 				DA9AA2A7128F2EED0096CFC5 /* ParticleConvexCollision.m */,
 				DA9AA2AB128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h */,
 				DA9AA2AC128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m */,
+				C6B7D39412941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.h */,
+				C6B7D39512941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.m */,
 			);
 			name = Collision;
 			sourceTree = "<group>";
@@ -218,22 +298,17 @@
 			children = (
 				DA1AAB88127F5DC2006E769D /* GameCore.Scene.Objects.classes.h */,
 				DA1AAB8C127F5DD0006E769D /* GameCore.Scene.Objects.h */,
-				DA1AAB90127F5E47006E769D /* IPosition.h */,
-				DA1AAB94127F5E65006E769D /* IVelocity.h */,
-				DA1AAB98127F5E74006E769D /* IMovable.h */,
+				C6B7D3A412941CC7009A1B4E /* Movement */,
+				C6B7D3A512941CCF009A1B4E /* Rotation */,
+				C6B7D3A612941CDD009A1B4E /* Shapes */,
+				C6B7D3A812941D30009A1B4E /* Physical Properties */,
+				C6B7D3A712941CE3009A1B4E /* Colliders */,
 				DA1AAB9C127F5E83006E769D /* ILifetime.h */,
 				DA1AABA0127F5E96006E769D /* Lifetime.h */,
 				DA1AABA1127F5E96006E769D /* Lifetime.m */,
-				DA1AABA4127F5EA2006E769D /* IMass.h */,
-				DA1AABA8127F5EB3006E769D /* IRadius.h */,
-				DA1AABAC127F5EDB006E769D /* IParticleCollider.h */,
 				DA1AABAE127F5EEB006E769D /* IParticle.h */,
-				DA1AABB2127F5EFD006E769D /* IConvexCollider.h */,
-				DA1AABB6127F5F16006E769D /* IHalfPlaneCollider.h */,
-				DA1AABBA127F5F39006E769D /* ICoefficientOfRestitution.h */,
 				DA9AA1EF128F29360096CFC5 /* AALimit.h */,
 				DA9AA1F0128F29360096CFC5 /* AALimit.m */,
-				DA9AA230128F2C5F0096CFC5 /* IAxisAlignedHalfPlaneCollider.h */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -245,6 +320,10 @@
 				DA6AB66B127F3A4D00FC4684 /* GameCore.Graphics.h */,
 				DA6AB661127F3A2900FC4684 /* Sprite.h */,
 				DA6AB662127F3A2900FC4684 /* Sprite.m */,
+				C6B7D37812941ACD009A1B4E /* AnimatedSprite.h */,
+				C6B7D37912941ACD009A1B4E /* AnimatedSprite.m */,
+				C6B7D38112941B1F009A1B4E /* AnimatedSpriteFrame.h */,
+				C6B7D38212941B1F009A1B4E /* AnimatedSpriteFrame.m */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -336,6 +415,16 @@
 				DA9AA29E128F2E6B0096CFC5 /* Collision.h in Headers */,
 				DA9AA2A8128F2EED0096CFC5 /* ParticleConvexCollision.h in Headers */,
 				DA9AA2AD128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.h in Headers */,
+				C6B7D37A12941ACD009A1B4E /* AnimatedSprite.h in Headers */,
+				C6B7D38312941B1F009A1B4E /* AnimatedSpriteFrame.h in Headers */,
+				C6B7D39612941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.h in Headers */,
+				C6B7D39C12941C83009A1B4E /* IAxisAlignedRectangleCollider.h in Headers */,
+				C6B7D3A012941CAE009A1B4E /* IRectangleSize.h in Headers */,
+				C6B7D3AD12941D9C009A1B4E /* IRectangleCollider.h in Headers */,
+				C6B7D3B212941DC9009A1B4E /* ICustomCollider.h in Headers */,
+				C6B7D3BE12941EB5009A1B4E /* IRotation.h in Headers */,
+				C6B7D3C512941EEF009A1B4E /* IAngularVelocity.h in Headers */,
+				C6B7D3CA12941F15009A1B4E /* IRotatable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +493,9 @@
 				DA9AA29F128F2E6B0096CFC5 /* Collision.m in Sources */,
 				DA9AA2A9128F2EED0096CFC5 /* ParticleConvexCollision.m in Sources */,
 				DA9AA2AE128F2F150096CFC5 /* ParticleAxisAlignedHalfPlaneCollision.m in Sources */,
+				C6B7D37B12941ACD009A1B4E /* AnimatedSprite.m in Sources */,
+				C6B7D38412941B1F009A1B4E /* AnimatedSpriteFrame.m in Sources */,
+				C6B7D39712941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,0 @@
-/Users/Simpson/Desktop/Project/GameCore/Collision.m: In function '+[Collision collisionBetween:and:]':
-/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: 'ParticleAxisAlignedHalfPlaneCollision' undeclared (first use in this function)
-/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: (Each undeclared identifier is reported only once
-/Users/Simpson/Desktop/Project/GameCore/Collision.m:25: error: for each function it appears in.)

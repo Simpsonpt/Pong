@@ -13,10 +13,12 @@
 
 @implementation ParticleAxisAlignedHalfPlaneCollision
 
-+ (void) collisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane {
++ (BOOL) collisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane {
 	if ([ParticleAxisAlignedHalfPlaneCollision detectCollisionBetween:particle and:axisAlignedHalfPlane]) {
 		[ParticleAxisAlignedHalfPlaneCollision resolveCollisionBetween:particle and:axisAlignedHalfPlane];
+		return YES;
 	}
+	return NO;
 }
 
 + (BOOL) detectCollisionBetween:(id<IParticleCollider>)particle and:(id<IAxisAlignedHalfPlaneCollider>)axisAlignedHalfPlane {
@@ -60,7 +62,6 @@
 	// For particles this is simply the line between both centers.
 	Vector2 *collisionNormal = [[Vector2 vectorWithVector:relaxDistance] normalize];
 	[Collision exchangeEnergyBetween:particle and:axisAlignedHalfPlane along:collisionNormal];
-	
 }
 
 @end

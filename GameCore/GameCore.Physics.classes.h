@@ -1,2 +1,2 @@
 @class MovementPhysics;
-@class Collision, ParticleParticleCollision, ParticleAxisAlignedHalfPlaneCollision, ParticleConvexCollision;
+@class Collision, ParticleParticleCollision, ParticleAxisAlignedHalfPlaneCollision, ParticleConvexCollision,ParticleAxisAlignedRectangleCollision.h;

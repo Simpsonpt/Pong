@@ -16,20 +16,19 @@
 		background.position.y = 0;
 		
 		md.position.x = 0;
-		md.position.y = 190;
+		md.position.y = 180;
 		
-		topPlayer.position.x = 190;
+		topPlayer.position.x = 155;
 		topPlayer.position.y = 70;
 
-		bottomPlayer.position.x = 0;
-		//455
+		bottomPlayer.position.x = 155;
 		bottomPlayer.position.y = 430;
 		
 		ball.position.x = 160;
-		ball.position.y = 230;
+		ball.position.y = 115;
 		
-		bonus.position.x = 120;
-		bonus.position.y = 120;
+		bonus.position.x = 0;
+		bonus.position.y = 0;
 }
 
 @end

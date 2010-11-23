@@ -6,5 +6,5 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-@class Sprite;
-//@class Sprite, AnimatedSprite, AnimatedSpriteFrame;
+//@class Sprite;
+@class Sprite, AnimatedSprite, AnimatedSpriteFrame;

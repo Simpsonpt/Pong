@@ -10,11 +10,10 @@
 #import "GameCore.Scene.Objects.h"
 #import "Retronator.Pong.classes.h"
 
-@interface Pad : NSObject <IParticle> {
+@interface Pad : NSObject <IAxisAlignedRectangleCollider, ICustomCollider> {
 	Vector2 *position;
-	Vector2 *velocity;
-	float radius;
-	float mass;
+	float width;
+	float height;
 }
 
 @end

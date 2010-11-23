@@ -18,23 +18,30 @@
 	// Resources
 	ContentManager *content;
 	Sprite *padSprite;
+	Sprite *SpadSprite;
+	Sprite *BpadSprite;
 	Sprite *ballSprite;
 	
 	//Texture2D *background;
-	//Vector2 *lightPosition;
 	
 	Sprite *backgroundSprite;
 	Sprite *middleSprite;
-	//Sprite *padSprite;
-	//Sprite *ballSprite;
-	Sprite *bonusSprite;
+	
+	/*Bonus Sprites*/
+	Sprite *bonusSprite1;
+	Sprite *bonusSprite2;
+	Sprite *bonusSprite3;
+	Sprite *bonusSprite4;
+	Sprite *bonusSprite5;
+	
+	//Sprite *gameover;
+	Sprite *bonusSprite6;
 	
 	//Graphics 
 	SpriteBatch *spriteBatch;
 	
 	//Level
 	Level *level;
-	
 }
 
 - (id) initWithGame:(Game*)theGame level:(Level*)theLevel;

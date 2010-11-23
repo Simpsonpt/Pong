@@ -11,12 +11,14 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		C6B7D44D129421F4009A1B4E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7D44C129421F4009A1B4E /* Constants.m */; };
 		DA1AAB0A127F4E6E006E769D /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB09127F4E6E006E769D /* Gameplay.m */; };
 		DA1AAB39127F4FBA006E769D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB38127F4FBA006E769D /* Player.m */; };
 		DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB6F127F5AFF006E769D /* PhysicsEngine.m */; };
 		DA1E00CA1275548300441AC2 /* libXNI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1E00C91275548300441AC2 /* libXNI.a */; };
 		DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65D00A12764CDF0052AF85 /* Bonus.m */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
+		DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7BEC41129C3B0F0030C09C /* bonus.png */; };
 		DA80C90512752B0000E0BF5A /* MyPong.png in Resources */ = {isa = PBXBuildFile; fileRef = DA80C90412752B0000E0BF5A /* MyPong.png */; };
 		DA80C90F12752B7E00E0BF5A /* Pong.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C90E12752B7E00E0BF5A /* Pong.m */; };
 		DA80C91712752BAB00E0BF5A /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91612752BAB00E0BF5A /* Level.m */; };
@@ -56,6 +58,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Pong_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pong-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pong-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C6B7D44B129421F4009A1B4E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C6B7D44C129421F4009A1B4E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		DA1AAB08127F4E6E006E769D /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
 		DA1AAB09127F4E6E006E769D /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		DA1AAB37127F4FBA006E769D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		DA65D00912764CDF0052AF85 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
 		DA65D00A12764CDF0052AF85 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bonus.m; sourceTree = "<group>"; };
 		DA6AB676127F3AE000FC4684 /* GameCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameCore.xcodeproj; path = ../GameCore/GameCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		DA7BEC41129C3B0F0030C09C /* bonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonus.png; path = ../Images/bonus.png; sourceTree = SOURCE_ROOT; };
 		DA80C90412752B0000E0BF5A /* MyPong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MyPong.png; path = ../Images/MyPong.png; sourceTree = SOURCE_ROOT; };
 		DA80C90B12752B5400E0BF5A /* Retronator.Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.h; sourceTree = "<group>"; };
 		DA80C90C12752B6700E0BF5A /* Retronator.Pong.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.classes.h; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 		28EEBF621118D79A00187D67 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA7BEC41129C3B0F0030C09C /* bonus.png */,
 				DA80C90412752B0000E0BF5A /* MyPong.png */,
 				8D1107310486CEB800E47090 /* Pong-Info.plist */,
 			);
@@ -220,6 +226,8 @@
 				DA80C90E12752B7E00E0BF5A /* Pong.m */,
 				DA1AAB08127F4E6E006E769D /* Gameplay.h */,
 				DA1AAB09127F4E6E006E769D /* Gameplay.m */,
+				C6B7D44B129421F4009A1B4E /* Constants.h */,
+				C6B7D44C129421F4009A1B4E /* Constants.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA80C90512752B0000E0BF5A /* MyPong.png in Resources */,
+				DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 				DA1AAB0A127F4E6E006E769D /* Gameplay.m in Sources */,
 				DA1AAB39127F4FBA006E769D /* Player.m in Sources */,
 				DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */,
+				C6B7D44D129421F4009A1B4E /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +439,7 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../GameCore/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include ${PROJECT_DIR}/../XNI/usr/local/include /Users/Simpson/Desktop/Project/GameCore//**";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../GameCore/ ${PROJECT_DIR}/../XNI/usr/local/include";
 			};
 			name = Debug;
 		};
@@ -446,6 +456,7 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../GameCore/ ${PROJECT_DIR}/../XNI/usr/local/include";
 			};
 			name = Release;
 		};

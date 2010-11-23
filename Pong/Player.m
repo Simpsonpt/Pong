@@ -23,7 +23,5 @@
 
 - (void) updateWithGameTime:(GameTime *)gameTime {}
 
-- (BOOL) getbonusCheck {}
-
 @end
 

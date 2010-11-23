@@ -13,6 +13,4 @@
 	NSMutableArray *items;
 }
 
-//- (void) addItem:(id)item;
-
 @end

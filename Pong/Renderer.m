@@ -22,7 +22,6 @@
 }
 
 - (void) initialize {
-	
 	[super initialize];
 }
 
@@ -41,13 +40,24 @@
 	middleSprite.sourceRectangle = [Rectangle rectangleWithX:500 y:120 width:320 height:160];
 	middleSprite.origin = [Vector2 vectorWithX:0 y:0];
 	
-	//Players Pad
+	/*Players Pad*/
+	
 	padSprite = [[Sprite alloc] init];
 	padSprite.texture = [self.game.content load:@"MyPong"];
 	//padSprite.sourceRectangle = [Rectangle rectangleWithX:100 y:20 width:60 height:60];
-	padSprite.sourceRectangle = [Rectangle rectangleWithX:500 y:90 width:130 height:100];
+	padSprite.sourceRectangle = [Rectangle rectangleWithX:500 y:90 width:130 height:50];
 	//padSprite.origin = [Vector2 vectorWithX:90 y:30];
-	padSprite.origin = [Vector2 vectorWithX:0 y:0];
+	padSprite.origin = [Vector2 vectorWithX:60 y:0];
+	
+	SpadSprite = [[Sprite alloc] init];
+	SpadSprite.texture = [self.game.content load:@"MyPong"];
+	SpadSprite.sourceRectangle = [Rectangle rectangleWithX:660 y:90 width:110 height:50];
+	SpadSprite.origin = [Vector2 vectorWithX:60 y:0];
+	
+	BpadSprite = [[Sprite alloc] init];
+	BpadSprite.texture = [self.game.content load:@"MyPong"];
+	BpadSprite.sourceRectangle = [Rectangle rectangleWithX:800 y:90 width:180 height:50];
+	BpadSprite.origin = [Vector2 vectorWithX:60 y:0];
 	
 	//Ball
 	ballSprite = [[Sprite alloc] init];
@@ -55,12 +65,42 @@
 	ballSprite.sourceRectangle = [Rectangle rectangleWithX:740 y:305 width:40 height:40];
 	ballSprite.origin = [Vector2 vectorWithX:20 y:20];
 	
-	//Bonus
-	bonusSprite = [[Sprite alloc] init];
-	bonusSprite.texture = [self.game.content load:@"MyPong"];
-	bonusSprite.sourceRectangle = [Rectangle rectangleWithX:640 y:305 width:40 height:40];
-	bonusSprite.origin = [Vector2 vectorWithX:20 y:10];
+	/*Bonus Types*/
 	
+	bonusSprite1 = [[Sprite alloc] init];
+	bonusSprite1.texture = [self.game.content load:@"MyPong"];
+	bonusSprite1.sourceRectangle = [Rectangle rectangleWithX:640 y:305 width:40 height:40];
+	bonusSprite1.origin = [Vector2 vectorWithX:20 y:10];
+	
+	//Cherry
+	bonusSprite2 = [[Sprite alloc] init];
+	bonusSprite2.texture = [self.game.content load:@"bonus"];
+	bonusSprite2.sourceRectangle = [Rectangle rectangleWithX:160 y:160 width:30 height:20];
+	bonusSprite2.origin = [Vector2 vectorWithX:0 y:0];
+	
+	//Morango
+	bonusSprite3 = [[Sprite alloc] init];
+	bonusSprite3.texture = [self.game.content load:@"bonus"];
+	bonusSprite3.sourceRectangle = [Rectangle rectangleWithX:160 y:177 width:30 height:20];
+	bonusSprite3.origin = [Vector2 vectorWithX:0 y:0];
+	
+	//Peachs
+	bonusSprite4 = [[Sprite alloc] init];
+	bonusSprite4.texture = [self.game.content load:@"bonus"];
+	bonusSprite4.sourceRectangle = [Rectangle rectangleWithX:160 y:199 width:30 height:20];
+	bonusSprite4.origin = [Vector2 vectorWithX:0 y:0];
+	
+	//Apple
+	bonusSprite5 = [[Sprite alloc] init];
+	bonusSprite5.texture = [self.game.content load:@"bonus"];
+	bonusSprite5.sourceRectangle = [Rectangle rectangleWithX:160 y:216 width:30 height:20];
+	bonusSprite5.origin = [Vector2 vectorWithX:0 y:0];
+	
+	//GameOver
+	bonusSprite6 = [[Sprite alloc] init];
+	bonusSprite6.texture = [self.game.content load:@"bonus"];
+	bonusSprite6.sourceRectangle = [Rectangle rectangleWithX:0 y:190 width:120 height:10];
+	bonusSprite6.origin = [Vector2 vectorWithX:0 y:0];
 	
 }
 
@@ -79,12 +119,31 @@
 		
 		Sprite *sprite = nil;
 		if ([item isKindOfClass:[Pad class]]) {
-			sprite = padSprite;
+			if(level.type==0)
+				sprite = padSprite;
+			if(level.type==1)
+				sprite = SpadSprite;
+			if(level.type==2)
+				sprite = BpadSprite;
 		} else if ([item isKindOfClass:[Ball class]]) {
 			sprite = ballSprite;
 		} else if ([item isKindOfClass:[Bonus class]]) {
-			//if()
-			sprite = bonusSprite;
+			if(level.bonusStatus)
+			{
+				//printf("Vai haver Bonus\n");
+				if(level.bonusType == 1)
+					sprite = bonusSprite1;
+				else if(level.bonusType == 2)
+					sprite = bonusSprite2;
+				else if(level.bonusType == 3)
+					sprite = bonusSprite3;
+				else if(level.bonusType == 4)
+					sprite = bonusSprite4;
+				else if(level.bonusType == 5)
+					sprite = bonusSprite5;
+				else if(level.bonusType == 6)
+					sprite = bonusSprite6;
+			}
 		} else if ([item isKindOfClass:[Bg class]]) {
 			sprite = backgroundSprite;
 		} else if ([item isKindOfClass:[Middle class]]) {

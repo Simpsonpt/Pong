@@ -17,5 +17,6 @@
 
 @class Pong;
 
-//@class Sprite;
 @class Renderer, PhysicsEngine;
+
+@class Constants;
