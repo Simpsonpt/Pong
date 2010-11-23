@@ -34,7 +34,7 @@
 - (void) updateWithGameTime:(GameTime *)gameTime 
 {
 	TouchCollection *touches = [TouchPanel getState];
-		
+
 	BOOL touchesInInputArea = NO;
 	for (TouchLocation *touch in touches) 
 	{

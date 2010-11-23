@@ -27,10 +27,15 @@
 		return [ParticleParticleCollision collisionBetween:item1Particle and:item2Particle];
 	} else if (item1Particle && item2AAHalfPlaneCollider) {
 		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item1Particle and:item2AAHalfPlaneCollider];
+<<<<<<< HEAD
 	} else if (item2Particle && item2AAHalfPlaneCollider) {
 		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item2Particle and:item2AAHalfPlaneCollider];
 	} else if (item1Particle && item2AARectangleCollider) {
 		return [ParticleAxisAlignedRectangleCollision collisionBetween:item1Particle and:item2AARectangleCollider];
+=======
+	} else if (item2Particle && item1AAHalfPlaneCollider) {
+		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item2Particle and:item1AAHalfPlaneCollider];
+>>>>>>> 81162655290a32b13e3cb5e94a1543c95a717c57
 	}
 	return NO;
 }

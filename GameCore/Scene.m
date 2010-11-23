@@ -23,6 +23,7 @@
 	[items addObject:item];
 }
 
+<<<<<<< HEAD
 - (void) removeItem:(id)item {
 	[items removeObject:item];
 }
@@ -31,6 +32,8 @@
 	[items removeAllObjects];
 }
 
+=======
+>>>>>>> 81162655290a32b13e3cb5e94a1543c95a717c57
 - (void) removeObjectsAtIndex:(NSMutableIndexSet*)set{
 	[items removeObjectsAtIndexes:set];
 }

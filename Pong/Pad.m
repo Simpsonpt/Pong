@@ -16,8 +16,14 @@
 	self = [super init];
 	if (self != nil) {
 		position = [[Vector2 alloc] init];
+<<<<<<< HEAD
 		width = 110;
 		height = 30;
+=======
+		velocity = [[Vector2 alloc] init];
+		mass = 40;
+		radius = 40;
+>>>>>>> 81162655290a32b13e3cb5e94a1543c95a717c57
 	}
 	return self;
 }
