@@ -45,7 +45,7 @@
 					level.contTouches++;
 				if(level.contTouches==3 && !level.bonusStatus)
 				{
-					printf("Entrei no TopPlayer\n");
+					//printf("Entrei no TopPlayer\n");
 					level.bonusStatus=YES;
 					level.contTouches=0;
 				}
@@ -57,7 +57,7 @@
 					level.contTouches++;
 				if(level.contTouches==3 && !level.bonusStatus)
 				{
-					printf("Entrei no BottomPlayer\n");
+					//printf("Entrei no BottomPlayer\n");
 					level.bonusStatus=YES;
 					level.contTouches=0;
 				}
