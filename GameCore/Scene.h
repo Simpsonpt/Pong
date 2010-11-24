@@ -13,10 +13,4 @@
 	NSMutableArray *items;
 }
 
-<<<<<<< HEAD
-=======
-//- (void) addItem:(id)item;
-//- (void) removeObjectsAtIndex:(id)item;
-
->>>>>>> 81162655290a32b13e3cb5e94a1543c95a717c57
 @end
