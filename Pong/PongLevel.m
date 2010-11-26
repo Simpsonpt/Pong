@@ -19,10 +19,10 @@
 		md.position.y = 180;
 		
 		topPlayer.position.x = 155;
-		topPlayer.position.y = 70;
+		topPlayer.position.y = 85;
 
 		bottomPlayer.position.x = 155;
-		bottomPlayer.position.y = 430;
+		bottomPlayer.position.y = 445;
 		
 		ball.position.x = 160;
 		ball.position.y = 115;

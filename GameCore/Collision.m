@@ -90,7 +90,7 @@
 	
 	// Make sure the objects are coming towards each other. If they are coming together the collision has already been delt with.
 	if (speedDifference < 0) {
-		NSLog(@"Second");
+		//NSLog(@"Second");
 		return;
 	}
 	

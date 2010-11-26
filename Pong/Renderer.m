@@ -27,6 +27,7 @@
 
 - (void) loadContent {
 	spriteBatch = [[SpriteBatch alloc] initWithGraphicsDevice:self.graphicsDevice];
+	primitiveBatch = [[PrimitiveBatch alloc] initWithGraphicsDevice:self.graphicsDevice];
 	
 	//Background
 	backgroundSprite = [[Sprite alloc] init];
@@ -45,14 +46,14 @@
 	padSprite = [[Sprite alloc] init];
 	padSprite.texture = [self.game.content load:@"MyPong"];
 	//padSprite.sourceRectangle = [Rectangle rectangleWithX:100 y:20 width:60 height:60];
-	padSprite.sourceRectangle = [Rectangle rectangleWithX:500 y:90 width:130 height:50];
+	padSprite.sourceRectangle = [Rectangle rectangleWithX:516 y:90 width:107 height:26];
 	//padSprite.origin = [Vector2 vectorWithX:90 y:30];
-	padSprite.origin = [Vector2 vectorWithX:60 y:0];
+	padSprite.origin = [Vector2 vectorWithX:54 y:13];
 	
 	SpadSprite = [[Sprite alloc] init];
 	SpadSprite.texture = [self.game.content load:@"MyPong"];
-	SpadSprite.sourceRectangle = [Rectangle rectangleWithX:660 y:90 width:110 height:50];
-	SpadSprite.origin = [Vector2 vectorWithX:60 y:0];
+	SpadSprite.sourceRectangle = [Rectangle rectangleWithX:673 y:88 width:91 height:30];
+	SpadSprite.origin = [Vector2 vectorWithX:46 y:15];
 	
 	BpadSprite = [[Sprite alloc] init];
 	BpadSprite.texture = [self.game.content load:@"MyPong"];
@@ -109,6 +110,7 @@
 	
 	//[spriteBatch begin];
 	[spriteBatch beginWithSortMode:SpriteSortModeBackToFront BlendState:nil];
+	[primitiveBatch begin];
 	
 	for (id item in level.scene) {
 		
@@ -119,6 +121,8 @@
 		
 		Sprite *sprite = nil;
 		if ([item isKindOfClass:[Pad class]]) {
+			Pad *pad = (Pad*)item;
+			[primitiveBatch drawRectangleAt:pad.position width:pad.width height:pad.height color:[Color white]];
 			if(level.type==0)
 				sprite = padSprite;
 			if(level.type==1)
@@ -165,6 +169,7 @@
 	}
 	
 	[spriteBatch end];
+	[primitiveBatch end];
 }
 
 - (void) unloadContent {

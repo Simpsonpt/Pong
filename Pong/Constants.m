@@ -33,7 +33,7 @@ static Constants *instance;
 }
 
 - (float) initialBallSpeed {
-	return 500;
+	return 200;
 }
 
 - (float) levelUpBallSpeedIncrease {

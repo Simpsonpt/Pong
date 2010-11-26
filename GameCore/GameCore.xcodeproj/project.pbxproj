@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003616E5129D59A600EC0EDD /* PrimitiveBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 003616E3129D59A600EC0EDD /* PrimitiveBatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003616E6129D59A600EC0EDD /* PrimitiveBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 003616E4129D59A600EC0EDD /* PrimitiveBatch.m */; };
 		AA747D9F0F9514B9006C5449 /* GameCore_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* GameCore_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		C6B7D37A12941ACD009A1B4E /* AnimatedSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B7D37812941ACD009A1B4E /* AnimatedSprite.h */; };
@@ -78,6 +80,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003616E3129D59A600EC0EDD /* PrimitiveBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimitiveBatch.h; sourceTree = "<group>"; };
+		003616E4129D59A600EC0EDD /* PrimitiveBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimitiveBatch.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* GameCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6B7D37812941ACD009A1B4E /* AnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedSprite.h; sourceTree = "<group>"; };
@@ -316,6 +320,8 @@
 		DA6AB666127F3A2C00FC4684 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				003616E3129D59A600EC0EDD /* PrimitiveBatch.h */,
+				003616E4129D59A600EC0EDD /* PrimitiveBatch.m */,
 				DA6AB66A127F3A4D00FC4684 /* GameCore.Graphics.classes.h */,
 				DA6AB66B127F3A4D00FC4684 /* GameCore.Graphics.h */,
 				DA6AB661127F3A2900FC4684 /* Sprite.h */,
@@ -425,6 +431,7 @@
 				C6B7D3BE12941EB5009A1B4E /* IRotation.h in Headers */,
 				C6B7D3C512941EEF009A1B4E /* IAngularVelocity.h in Headers */,
 				C6B7D3CA12941F15009A1B4E /* IRotatable.h in Headers */,
+				003616E5129D59A600EC0EDD /* PrimitiveBatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +503,7 @@
 				C6B7D37B12941ACD009A1B4E /* AnimatedSprite.m in Sources */,
 				C6B7D38412941B1F009A1B4E /* AnimatedSpriteFrame.m in Sources */,
 				C6B7D39712941BE2009A1B4E /* ParticleAxisAlignedRectangleCollision.m in Sources */,
+				003616E6129D59A600EC0EDD /* PrimitiveBatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

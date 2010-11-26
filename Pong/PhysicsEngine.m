@@ -43,7 +43,7 @@
 				level.lastPlayer=1;
 				if(!level.bonusStatus)
 					level.contTouches++;
-				if(level.contTouches==3 && !level.bonusStatus)
+				if(level.contTouches==6 && !level.bonusStatus)
 				{
 					//printf("Entrei no TopPlayer\n");
 					level.bonusStatus=YES;
@@ -55,7 +55,7 @@
 				level.lastPlayer=2;
 				if(!level.bonusStatus)
 					level.contTouches++;
-				if(level.contTouches==3 && !level.bonusStatus)
+				if(level.contTouches==6 && !level.bonusStatus)
 				{
 					//printf("Entrei no BottomPlayer\n");
 					level.bonusStatus=YES;

@@ -41,7 +41,7 @@
 	self = [super initWithGame:theGame];
 	if (self != nil) {
 		[self initWithGame:theGame LevelClass:levelClass];	
-		self.updateOrder = 3;
+		self.updateOrder = 4;
 		
 		// Create players
 		topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
@@ -55,6 +55,7 @@
 {
 	// Allocate and initialize a new level and add it to components.
 	level = [[levelClass alloc] initWithGame:self.game];
+	level.updateOrder=3;
 	[self.game.components addComponent:level];
 	
 	// Create a new renderer for the new scene and add it to components.
@@ -68,7 +69,7 @@
 	
 	level.p1_points,level.p2_points = [Constants getInstance].startPoints;
 	level.type=0;
-	[level resetLevelWithBallSpeed:500];
+	[level resetLevelWithBallSpeed:200];
 }
 
 - (void) resetL
@@ -113,7 +114,7 @@
 		}
 	
 		// Check Game Reset Condition.
-		if (level.p1_points >= 6 || level.p2_points >= 6)
+		if (level.p1_points >= 4 || level.p2_points >= 4)
 		{
 			[self resetL];
 			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];

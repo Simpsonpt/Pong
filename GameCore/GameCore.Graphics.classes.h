@@ -7,4 +7,4 @@
 //
 
 //@class Sprite;
-@class Sprite, AnimatedSprite, AnimatedSpriteFrame;
+@class Sprite, AnimatedSprite, AnimatedSpriteFrame, PrimitiveBatch;

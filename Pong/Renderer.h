@@ -39,6 +39,7 @@
 	
 	//Graphics 
 	SpriteBatch *spriteBatch;
+	PrimitiveBatch *primitiveBatch;
 	
 	//Level
 	Level *level;
