@@ -11,40 +11,38 @@
 #import "Retronator.Xni.Framework.Graphics.h"
 #import "Retronator.Pong.classes.h"
 #import "DrawableGameComponent.h"
-
 #import "GameCore.Graphics.h"
 
-@interface Renderer : DrawableGameComponent {
-	// Resources
-	ContentManager *content;
-	Sprite *padSprite;
-	Sprite *SpadSprite;
-	Sprite *BpadSprite;
-	Sprite *ballSprite;
+@interface Renderer : DrawableGameComponent 
+{	
+	AnimatedSprite *explosionSprite;
 	
-	//Texture2D *background;
+	/*Pads Types*/
+	Sprite *padSprite[3];
 	
+	/*Balls Types*/
+	Sprite *ballSprite[4];
+	
+	/*Static Images*/
+	Sprite *playerSprite;
 	Sprite *backgroundSprite;
 	Sprite *middleSprite;
 	
-	/*Bonus Sprites*/
-	Sprite *bonusSprite1;
-	Sprite *bonusSprite2;
-	Sprite *bonusSprite3;
-	Sprite *bonusSprite4;
-	Sprite *bonusSprite5;
+	/*Bonus Types*/
+	Sprite *bonusSprite[BonusTypes];
+
+	/*Gameover Sprite*/
+	Sprite *gameoverSprite;
 	
-	//Sprite *gameover;
-	Sprite *bonusSprite6;
-	
-	//Graphics 
+	/*Graphics*/ 
 	SpriteBatch *spriteBatch;
 	PrimitiveBatch *primitiveBatch;
 	
-	//Level
-	Level *level;
+	/*Gameplay Object*/
+	Gameplay *gameplay;
 }
 
-- (id) initWithGame:(Game*)theGame level:(Level*)theLevel;
+- (id) initWithGame:(Game*)theGame gameplay:(Gameplay*)theGameplay;
+
 
 @end

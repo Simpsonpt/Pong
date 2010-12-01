@@ -1,12 +1,16 @@
-//#import "Retronator.Pong.protocols.h"
-
-//@class Scene;
-
 @class Bg;
 @class Middle;
 @class Ball;
 @class Pad;
-@class Bonus;
+@class PlayerImg;
+@class CaughtBall;
+@class LevelLimit;
+
+@class Explosion;
+
+#import "BonusType.h"
+@class Bonus,BonusFactory;
+@class ExpandPadSizeBonus,ShrinkPadSizeBonus,PointsBonus,MultiBallBonus;
 
 #import "PlayerPosition.h"
 @class Player, HumanPlayer;

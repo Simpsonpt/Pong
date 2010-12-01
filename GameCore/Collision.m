@@ -6,34 +6,93 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#import "Collision.h"
 #import "GameCore.Scene.Objects.h"
 #import "GameCore.Physics.h"
-#import "Collision.h"
+
+@interface Collision ()
+
++ (void) collisionBetween:(id)item1 and:(id)item2 recurseInverse:(BOOL)recurse; 
+
+@end
+
 
 @implementation Collision
 
-+ (BOOL) collisionBetween:(id)item1 and:(id)item2 {
-	id<IParticleCollider> item1Particle = [item1 conformsToProtocol:@protocol(IParticleCollider)] ? item1 : nil;
-	id<IParticleCollider> item2Particle = [item2 conformsToProtocol:@protocol(IParticleCollider)] ? item2 : nil;
-	
-	//id<IAxisAlignedHalfPlaneCollider> item1AAHalfPlaneCollider = [item1 conformsToProtocol:@protocol(IAxisAlignedHalfPlaneCollider)] ? item1 : nil;
-	id<IAxisAlignedHalfPlaneCollider> item2AAHalfPlaneCollider = [item2 conformsToProtocol:@protocol(IAxisAlignedHalfPlaneCollider)] ? item2 : nil;
-	
-	//id<IAxisAlignedRectangleCollider> item1AARectangleCollider = [item1 conformsToProtocol:@protocol(IAxisAlignedRectangleCollider)] ? item1 : nil;
-	id<IAxisAlignedRectangleCollider> item2AARectangleCollider = [item2 conformsToProtocol:@protocol(IAxisAlignedRectangleCollider)] ? item2 : nil;
++ (void) collisionBetween:(id)item1 and:(id)item2 {
+	[Collision collisionBetween:item1 and:item2 recurseInverse:YES];
+}
 
++ (void) collisionBetween:(id)item1 and:(id)item2 recurseInverse:(BOOL)recurse {
+	id<IParticleCollider> item1Particle = [item1 conformsToProtocol:@protocol(IParticleCollider)] ? item1 : nil;
+	id<IAARectangleCollider> item1AARectangle = [item1 conformsToProtocol:@protocol(IAARectangleCollider)] ? item1 : nil;
+	
+	id<IParticleCollider> item2Particle = [item2 conformsToProtocol:@protocol(IParticleCollider)] ? item2 : nil;
+	id<IAAHalfPlaneCollider> item2AAHalfPlane = [item2 conformsToProtocol:@protocol(IAAHalfPlaneCollider)] ? item2 : nil;
+	id<IAARectangleCollider> item2AARectangle = [item2 conformsToProtocol:@protocol(IAARectangleCollider)] ? item2 : nil;
 	
 	if (item1Particle && item2Particle) {
-		return [ParticleParticleCollision collisionBetween:item1Particle and:item2Particle];
-	} else if (item1Particle && item2AAHalfPlaneCollider) {
-		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item1Particle and:item2AAHalfPlaneCollider];
-	} else if (item2Particle && item2AAHalfPlaneCollider) {
-		return [ParticleAxisAlignedHalfPlaneCollision collisionBetween:item2Particle and:item2AAHalfPlaneCollider];
-	} else if (item1Particle && item2AARectangleCollider) {
-		return [ParticleAxisAlignedRectangleCollision collisionBetween:item1Particle and:item2AARectangleCollider];
+		[ParticleParticleCollision collisionBetween:item1Particle and:item2Particle];
+		return;
+	} else if (item1Particle && item2AAHalfPlane) {
+		[ParticleAAHalfPlaneCollision collisionBetween:item1Particle and:item2AAHalfPlane];
+		return;
+	} else if (item1Particle && item2AARectangle) {
+		[ParticleAARectangleCollision collisionBetween:item1Particle and:item2AARectangle];
+		return;
+	} else if (item1AARectangle && item2AAHalfPlane) {
+		[AARectangleAAHalfPlaneCollision collisionBetween:item1AARectangle and:item2AAHalfPlane];
+		return;
+	} else if (item1AARectangle && item2AARectangle) {
+		[AARectangleAARectangleCollision collisionBetween:item1AARectangle and:item2AARectangle];
+		return;
 	}
-	return NO;
+	
+	if (recurse) {
+		[Collision collisionBetween:item2 and:item1 recurseInverse:NO];
+	}
 }
+
++ (void) collisionBetween:(id)item1 and:(id)item2 usingAlgorithm:(Class)collisionAlgorithm {
+	if ([collisionAlgorithm detectCollisionBetween:item1 and:item2]) {
+		if ([Collision shouldResolveCollisionBetween:item1 and:item2]) {
+			[collisionAlgorithm resolveCollisionBetween:item1 and:item2];
+			[Collision reportCollisionBetween:item1 and:item2];
+		}
+	}	
+}
+
+
++ (BOOL) shouldResolveCollisionBetween:(id)item1 and:(id)item2 {
+	id<ICustomCollider> customCollider1 = [item1 conformsToProtocol:@protocol(ICustomCollider)] ? item1 : nil;
+	id<ICustomCollider> customCollider2 = [item2 conformsToProtocol:@protocol(ICustomCollider)] ? item2 : nil;
+	
+	BOOL result = YES;
+	
+	if (customCollider1 && [customCollider1 respondsToSelector:@selector(collidingWithItem:)]) {
+		result &= [customCollider1 collidingWithItem:item2];
+	}
+	
+	if (customCollider2 && [customCollider2 respondsToSelector:@selector(collidingWithItem:)]) {
+		result &= [customCollider2 collidingWithItem:item1];
+	}
+	
+	return result;
+}
+
++ (void) reportCollisionBetween:(id)item1 and:(id)item2 {
+	id<ICustomCollider> customCollider1 = [item1 conformsToProtocol:@protocol(ICustomCollider)] ? item1 : nil;
+	id<ICustomCollider> customCollider2 = [item2 conformsToProtocol:@protocol(ICustomCollider)] ? item2 : nil;
+	
+	if (customCollider1 && [customCollider1 respondsToSelector:@selector(collidedWithItem:)]) {
+		[customCollider1 collidedWithItem:item2];
+	}
+	
+	if (customCollider2 && [customCollider2 respondsToSelector:@selector(collidedWithItem:)]) {
+		[customCollider2 collidedWithItem:item1];
+	}
+}
+
 
 + (void) relaxCollisionBetween:(id)item1 and:(id)item2 by:(Vector2*)relaxDistance {
 	// We have to ask, how far we move each item. The default is each half way, but we try to take
@@ -46,23 +105,32 @@
 	// So a heavier item will move a little and a lighter item more.
 	id<IMass> itemWithMass1 = [item1 conformsToProtocol:@protocol(IMass)] ? item1 : nil;
 	id<IMass> itemWithMass2 = [item2 conformsToProtocol:@protocol(IMass)] ? item2 : nil;
+	id<IPosition> itemWithPosition1 = [item1 conformsToProtocol:@protocol(IPosition)] ? ((id<IPosition>)item1) : nil;
+	id<IPosition> itemWithPosition2 = [item2 conformsToProtocol:@protocol(IPosition)] ? ((id<IPosition>)item2) : nil;
 	
 	if (itemWithMass1 && itemWithMass2) {
 		float mass1 = itemWithMass1.mass;
 		float mass2 = itemWithMass2.mass;
 		relaxPercentage1 = mass2 / (mass1 + mass2);
-		relaxPercentage1 = mass1 / (mass1 + mass2);
+		relaxPercentage2 = mass1 / (mass1 + mass2);
 	} else if (itemWithMass1) {
 		relaxPercentage1 = 1;
 		relaxPercentage2 = 0;
-	} else {
+	} else if (itemWithMass2) {
 		relaxPercentage1 = 0;
 		relaxPercentage2 = 1;
+	} else {
+		// No item has mass, do the same logic, but with positions.
+		if (itemWithPosition1 && !itemWithPosition2) {
+			relaxPercentage1 = 1;
+			relaxPercentage2 = 0;
+		} else if (!itemWithPosition1 && itemWithPosition2) {
+			relaxPercentage1 = 0;
+			relaxPercentage2 = 1;
+		} 
 	}
 	
 	// Now we need to turn the percentages into real distances.	
-	id<IPosition> itemWithPosition1 = [item1 conformsToProtocol:@protocol(IPosition)] ? ((id<IPosition>)item1) : nil;
-	id<IPosition> itemWithPosition2 = [item2 conformsToProtocol:@protocol(IPosition)] ? ((id<IPosition>)item2) : nil;
 	
 	if (itemWithPosition1) {
 		[itemWithPosition1.position subtract:[Vector2 multiply:relaxDistance by:relaxPercentage1]];
@@ -90,7 +158,6 @@
 	
 	// Make sure the objects are coming towards each other. If they are coming together the collision has already been delt with.
 	if (speedDifference < 0) {
-		//NSLog(@"Second");
 		return;
 	}
 	
@@ -115,41 +182,10 @@
 		[itemWithVelocity1.velocity add:[Vector2 multiply:collisionNormal by:impact * mass1inverse]];
 	}
 	
-	if (mass1inverse > 0 && itemWithVelocity2) {
+	if (mass2inverse > 0 && itemWithVelocity2) {
 		[itemWithVelocity2.velocity subtract:[Vector2 multiply:collisionNormal by:impact * mass2inverse]];
 	}	
 }
-
-+ (BOOL) shouldResolveCollisionBetween:(id)item1 and:(id)item2 {
-	id<ICustomCollider> customCollider1 = [item1 conformsToProtocol:@protocol(ICustomCollider)] ? item1 : nil;
-	id<ICustomCollider> customCollider2 = [item2 conformsToProtocol:@protocol(ICustomCollider)] ? item2 : nil;
-	
-	BOOL result = YES;
-	
-	if (customCollider1) {
-		result &= [customCollider1 collidingWithItem:item2];
-	}
-	
-	if (customCollider2) {
-		result &= [customCollider2 collidingWithItem:item1];
-	}
-	
-	return result;
-}
-
-+ (void) reportCollisionBetween:(id)item1 and:(id)item2 {
-	id<ICustomCollider> customCollider1 = [item1 conformsToProtocol:@protocol(ICustomCollider)] ? item1 : nil;
-	id<ICustomCollider> customCollider2 = [item2 conformsToProtocol:@protocol(ICustomCollider)] ? item2 : nil;
-	
-	if (customCollider1) {
-		[customCollider1 collidedWithItem:item2];
-	}
-	
-	if (customCollider2) {
-		[customCollider2 collidedWithItem:item1];
-	}
-}
-
 
 
 @end

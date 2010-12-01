@@ -1,7 +1,7 @@
 #import "MathEnum.h"
 
 #import "HalfPlane.h"
-#import "AxisAlignedHalfPlane.h"
+#import "AAHalfPlane.h"
 
 #import "Polygon.h"
 #import "ConvexPolygon.h"

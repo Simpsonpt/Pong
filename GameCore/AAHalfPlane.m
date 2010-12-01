@@ -1,15 +1,14 @@
 //
-//  AxisAlignedHalfPlane.m
+//  AAHalfPlane.m
 //  GameCore
 //
 //  Created by Renato Rodrigues on 11/13/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "AxisAlignedHalfPlane.h"
+#import "AAHalfPlane.h"
 
-
-@implementation AxisAlignedHalfPlane
+@implementation AAHalfPlane
 
 - (id) initWithDirection:(AxisDirection)theDirection distance:(float)theDistance
 {
@@ -37,8 +36,8 @@
 	return self;
 }
 
-+ (AxisAlignedHalfPlane*) axisAlignedHalfPlaneWithDirection:(AxisDirection)theDirection distance:(float)theDistance {
-	return [[[AxisAlignedHalfPlane alloc] initWithDirection:theDirection distance:theDistance] autorelease];
++ (AAHalfPlane*) aaHalfPlaneWithDirection:(AxisDirection)theDirection distance:(float)theDistance {
+	return [[[AAHalfPlane alloc] initWithDirection:theDirection distance:theDistance] autorelease];
 }
 
 @synthesize direction;

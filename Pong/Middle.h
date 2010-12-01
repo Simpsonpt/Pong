@@ -10,7 +10,7 @@
 #import "GameCore.Scene.Objects.h"
 #import "Retronator.Pong.classes.h"
 
-@interface Middle : NSObject <IParticle> {
+@interface Middle : NSObject <IPosition> {
 	Vector2 *position;
 }
 

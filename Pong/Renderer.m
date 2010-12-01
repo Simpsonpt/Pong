@@ -13,13 +13,13 @@
 
 @implementation Renderer
 
-- (id) initWithGame:(Game *)theGame level:(Level *)theLevel {
+- (id) initWithGame:(Game *)theGame gameplay:(Gameplay*)theGameplay {
 	if (self = [super initWithGame:theGame]) {
-		level = theLevel;
-		content = [[ContentManager alloc] initWithServiceProvider:self.game.services];
+		gameplay = theGameplay;
 	}
 	return self;
 }
+
 
 - (void) initialize {
 	[super initialize];
@@ -28,132 +28,165 @@
 - (void) loadContent {
 	spriteBatch = [[SpriteBatch alloc] initWithGraphicsDevice:self.graphicsDevice];
 	primitiveBatch = [[PrimitiveBatch alloc] initWithGraphicsDevice:self.graphicsDevice];
-	
+
 	//Background
 	backgroundSprite = [[Sprite alloc] init];
-	backgroundSprite.texture = [self.game.content load:@"MyPong"];
+	backgroundSprite.texture = [self.game.content load:@"PongU8"];
 	backgroundSprite.sourceRectangle = [Rectangle rectangleWithX:25 y:25 width:320 height:460];
 	backgroundSprite.origin = [Vector2 vectorWithX:0 y:0];
 	
 	//Middle
 	middleSprite = [[Sprite alloc] init];
-	middleSprite.texture = [self.game.content load:@"MyPong"];
-	middleSprite.sourceRectangle = [Rectangle rectangleWithX:500 y:120 width:320 height:160];
+	middleSprite.texture = [self.game.content load:@"PongU8"];
+	middleSprite.sourceRectangle = [Rectangle rectangleWithX:404 y:155 width:361 height:6];
 	middleSprite.origin = [Vector2 vectorWithX:0 y:0];
+
+	//Player Image
+	playerSprite = [[Sprite alloc] init];
+	playerSprite.texture = [self.game.content load:@"PongU8"];
+	playerSprite.sourceRectangle = [Rectangle rectangleWithX:670 y:317 width:60 height:42];
+	playerSprite.origin = [Vector2 vectorWithX:30 y:20];
+	
 	
 	/*Players Pad*/
 	
-	padSprite = [[Sprite alloc] init];
-	padSprite.texture = [self.game.content load:@"MyPong"];
-	//padSprite.sourceRectangle = [Rectangle rectangleWithX:100 y:20 width:60 height:60];
-	padSprite.sourceRectangle = [Rectangle rectangleWithX:516 y:90 width:107 height:26];
-	//padSprite.origin = [Vector2 vectorWithX:90 y:30];
-	padSprite.origin = [Vector2 vectorWithX:54 y:13];
+	//Normal
+	padSprite[0] = [[Sprite alloc] init];
+	padSprite[0].texture = [self.game.content load:@"PongU8"];
+	padSprite[0].sourceRectangle = [Rectangle rectangleWithX:404 y:70 width:84 height:21];
+	padSprite[0].origin = [Vector2 vectorWithX:41 y:9.5];
+	//Small
+	padSprite[1] = [[Sprite alloc] init];
+	padSprite[1].texture = [self.game.content load:@"PongU8"];
+	padSprite[1].sourceRectangle = [Rectangle rectangleWithX:534 y:70 width:53 height:22];
+	padSprite[1].origin = [Vector2 vectorWithX:25 y:10];
+	//Big
+	padSprite[2] = [[Sprite alloc] init];
+	padSprite[2].texture = [self.game.content load:@"PongU8"];
+	padSprite[2].sourceRectangle = [Rectangle rectangleWithX:634 y:70 width:125 height:21];
+	padSprite[2].origin = [Vector2 vectorWithX:61.5 y:9.5];
+
+	/*Balls*/
 	
-	SpadSprite = [[Sprite alloc] init];
-	SpadSprite.texture = [self.game.content load:@"MyPong"];
-	SpadSprite.sourceRectangle = [Rectangle rectangleWithX:673 y:88 width:91 height:30];
-	SpadSprite.origin = [Vector2 vectorWithX:46 y:15];
+	//Normal
+	ballSprite[0] = [[Sprite alloc] init];
+	ballSprite[0].texture = [self.game.content load:@"PongU8"];
+	ballSprite[0].sourceRectangle = [Rectangle rectangleWithX:585.5 y:241.5 width:23 height:20];
+	ballSprite[0].origin = [Vector2 vectorWithX:11 y:9.5];
 	
-	BpadSprite = [[Sprite alloc] init];
-	BpadSprite.texture = [self.game.content load:@"MyPong"];
-	BpadSprite.sourceRectangle = [Rectangle rectangleWithX:800 y:90 width:180 height:50];
-	BpadSprite.origin = [Vector2 vectorWithX:60 y:0];
+	//Green
+	ballSprite[1] = [[Sprite alloc] init];
+	ballSprite[1].texture = [self.game.content load:@"PongU8"];
+	ballSprite[1].sourceRectangle = [Rectangle rectangleWithX:443.5 y:241.5 width:23 height:20];
+	ballSprite[1].origin = [Vector2 vectorWithX:11 y:9.5];
 	
-	//Ball
-	ballSprite = [[Sprite alloc] init];
-	ballSprite.texture = [self.game.content load:@"MyPong"];
-	ballSprite.sourceRectangle = [Rectangle rectangleWithX:740 y:305 width:40 height:40];
-	ballSprite.origin = [Vector2 vectorWithX:20 y:20];
+	//Blue
+	ballSprite[2] = [[Sprite alloc] init];
+	ballSprite[2].texture = [self.game.content load:@"PongU8"];
+	ballSprite[2].sourceRectangle = [Rectangle rectangleWithX:396 y:241.5 width:23 height:20];
+	ballSprite[2].origin = [Vector2 vectorWithX:11 y:9.5];
+	
+	//Red
+	ballSprite[3] = [[Sprite alloc] init];
+	ballSprite[3].texture = [self.game.content load:@"PongU8"];
+	ballSprite[3].sourceRectangle = [Rectangle rectangleWithX:540 y:241.5 width:23 height:20];
+	ballSprite[3].origin = [Vector2 vectorWithX:11 y:9.5];
 	
 	/*Bonus Types*/
 	
-	bonusSprite1 = [[Sprite alloc] init];
-	bonusSprite1.texture = [self.game.content load:@"MyPong"];
-	bonusSprite1.sourceRectangle = [Rectangle rectangleWithX:640 y:305 width:40 height:40];
-	bonusSprite1.origin = [Vector2 vectorWithX:20 y:10];
+	//Star
+	bonusSprite[0] = [[Sprite alloc] init];
+	bonusSprite[0].texture = [self.game.content load:@"MyPong"];
+	bonusSprite[0].sourceRectangle = [Rectangle rectangleWithX:640 y:305 width:40 height:40];
+	bonusSprite[0].origin = [Vector2 vectorWithX:20 y:20];
 	
 	//Cherry
-	bonusSprite2 = [[Sprite alloc] init];
-	bonusSprite2.texture = [self.game.content load:@"bonus"];
-	bonusSprite2.sourceRectangle = [Rectangle rectangleWithX:160 y:160 width:30 height:20];
-	bonusSprite2.origin = [Vector2 vectorWithX:0 y:0];
+	bonusSprite[1] = [[Sprite alloc] init];
+	bonusSprite[1].texture = [self.game.content load:@"bonus"];
+	bonusSprite[1].sourceRectangle = [Rectangle rectangleWithX:160 y:160 width:30 height:20];
+	bonusSprite[1].origin = [Vector2 vectorWithX:15 y:10];
 	
 	//Morango
-	bonusSprite3 = [[Sprite alloc] init];
-	bonusSprite3.texture = [self.game.content load:@"bonus"];
-	bonusSprite3.sourceRectangle = [Rectangle rectangleWithX:160 y:177 width:30 height:20];
-	bonusSprite3.origin = [Vector2 vectorWithX:0 y:0];
+	bonusSprite[2] = [[Sprite alloc] init];
+	bonusSprite[2].texture = [self.game.content load:@"bonus"];
+	bonusSprite[2].sourceRectangle = [Rectangle rectangleWithX:160 y:177 width:30 height:20];
+	bonusSprite[2].origin = [Vector2 vectorWithX:15 y:10];
 	
 	//Peachs
-	bonusSprite4 = [[Sprite alloc] init];
-	bonusSprite4.texture = [self.game.content load:@"bonus"];
-	bonusSprite4.sourceRectangle = [Rectangle rectangleWithX:160 y:199 width:30 height:20];
-	bonusSprite4.origin = [Vector2 vectorWithX:0 y:0];
+	bonusSprite[3] = [[Sprite alloc] init];
+	bonusSprite[3].texture = [self.game.content load:@"bonus"];
+	bonusSprite[3].sourceRectangle = [Rectangle rectangleWithX:160 y:199 width:30 height:20];
+	bonusSprite[3].origin = [Vector2 vectorWithX:15 y:10];
 	
-	//Apple
-	bonusSprite5 = [[Sprite alloc] init];
-	bonusSprite5.texture = [self.game.content load:@"bonus"];
-	bonusSprite5.sourceRectangle = [Rectangle rectangleWithX:160 y:216 width:30 height:20];
-	bonusSprite5.origin = [Vector2 vectorWithX:0 y:0];
+	/*//Apple
+	bonusSprite[4] = [[Sprite alloc] init];
+	bonusSprite[4].texture = [self.game.content load:@"bonus"];
+	bonusSprite[4].sourceRectangle = [Rectangle rectangleWithX:160 y:216 width:30 height:20];
+	bonusSprite[4].origin = [Vector2 vectorWithX:0 y:0];*/
 	
-	//GameOver
-	bonusSprite6 = [[Sprite alloc] init];
-	bonusSprite6.texture = [self.game.content load:@"bonus"];
-	bonusSprite6.sourceRectangle = [Rectangle rectangleWithX:0 y:190 width:120 height:10];
-	bonusSprite6.origin = [Vector2 vectorWithX:0 y:0];
+	/*GameOver*/
+	gameoverSprite = [[Sprite alloc] init];
+	gameoverSprite.texture = [self.game.content load:@"bonus"];
+	gameoverSprite.sourceRectangle = [Rectangle rectangleWithX:0 y:190 width:120 height:10];
+	gameoverSprite.origin = [Vector2 vectorWithX:0 y:0];
 	
+	/*Load Explosion*/
+	Texture2D *explosionTexture = [[self.game.content load:@"exp"] autorelease];
+	explosionSprite = [[AnimatedSprite alloc] initWithDuration:1];
+	for (int i = 0; i < 16; i++) 
+	{
+		int row = i % 4;
+		int column = i / 4;
+		Sprite *sprite = [[[Sprite alloc] init] autorelease];
+		sprite.texture = explosionTexture;
+		sprite.sourceRectangle = [Rectangle rectangleWithX:column * 128 y:row * 128 width:128 height:128];
+		sprite.origin = [Vector2 vectorWithX:64 y:64];
+		AnimatedSpriteFrame *frame = [AnimatedSpriteFrame frameWithSprite:sprite start:explosionSprite.duration * (float)i / 16];
+		[explosionSprite addFrame:frame];
+	}
 }
 
 - (void) drawWithGameTime:(GameTime *)gameTime {
 	[self.graphicsDevice clearWithColor:[Color green]];
-	
-	//[spriteBatch begin];
-	[spriteBatch beginWithSortMode:SpriteSortModeBackToFront BlendState:nil];
+	//[spriteBatch beginWithSortMode:SpriteSortModeDeffered BlendState:nil SamplerState:nil 
+				 //DepthStencilState:nil RasterizerState:nil Effect:nil TransformMatrix:nil];
+
+	[spriteBatch begin];
+	//[spriteBatch beginWithSortMode:SpriteSortModeBackToFront BlendState:nil];
 	[primitiveBatch begin];
 	
-	for (id item in level.scene) {
-		
+	for (id item in gameplay.level.scene) 
+	{
 		id<IPosition> itemWithPosition;
 		if ([item conformsToProtocol:@protocol(IPosition)]) {
 			itemWithPosition = (id<IPosition>)item;
 		}
 		
 		Sprite *sprite = nil;
-		if ([item isKindOfClass:[Pad class]]) {
+		if ([item isKindOfClass:[Pad class]]) 
+		{
+			/*Just for Debug*/
 			Pad *pad = (Pad*)item;
-			[primitiveBatch drawRectangleAt:pad.position width:pad.width height:pad.height color:[Color white]];
-			if(level.type==0)
-				sprite = padSprite;
-			if(level.type==1)
-				sprite = SpadSprite;
-			if(level.type==2)
-				sprite = BpadSprite;
-		} else if ([item isKindOfClass:[Ball class]]) {
-			sprite = ballSprite;
-		} else if ([item isKindOfClass:[Bonus class]]) {
-			if(level.bonusStatus)
-			{
-				//printf("Vai haver Bonus\n");
-				if(level.bonusType == 1)
-					sprite = bonusSprite1;
-				else if(level.bonusType == 2)
-					sprite = bonusSprite2;
-				else if(level.bonusType == 3)
-					sprite = bonusSprite3;
-				else if(level.bonusType == 4)
-					sprite = bonusSprite4;
-				else if(level.bonusType == 5)
-					sprite = bonusSprite5;
-				else if(level.bonusType == 6)
-					sprite = bonusSprite6;
-			}
-		} else if ([item isKindOfClass:[Bg class]]) {
+			//[primitiveBatch drawRectangleAt:pad.position width:pad.width height:pad.height color:[Color white]];
+			sprite = padSprite[pad.type];
+		} else if ([item isKindOfClass:[Ball class]]) 
+		{
+			/*Just for Debug*/
+			//Ball *ball = (Ball*)item;
+			//[primitiveBatch drawCircleAt:ball.position radius:ball.radius divisions:32 color:[Color green]];
+			sprite = ballSprite[1];
+		} else if ([item isKindOfClass:[Bonus class]]) 
+		{
+			Bonus *bonus = (Bonus*)item;
+			sprite = bonusSprite[bonus.type];
+			//printf("Bonus Type: %d\n",bonus.type);
+		}else if ([item isKindOfClass:[Bg class]]) {
 			sprite = backgroundSprite;
 		} else if ([item isKindOfClass:[Middle class]]) {
 			sprite = middleSprite;
-		} 
-		
+		} else if ([item isKindOfClass:[PlayerImg class]]) {
+			sprite = playerSprite;
+		} 		
 		
 		if (itemWithPosition && sprite) {
 			[spriteBatch draw:sprite.texture 
@@ -170,15 +203,47 @@
 	
 	[spriteBatch end];
 	[primitiveBatch end];
+	
+	// Draw effects in additive mode.
+	//[spriteBatch beginWithSortMode:SpriteSortModeDeffered BlendState:[BlendState additive]];
+	[spriteBatch begin];
+	for (id item in gameplay.level.scene) 
+	{
+		id<IPosition> itemWithPosition;
+		if ([item conformsToProtocol:@protocol(IPosition)]) {
+			itemWithPosition = (id<IPosition>)item;
+		}
+
+		if ([item isKindOfClass:[Explosion class]]) 
+		{
+			Explosion *explosion = (Explosion*)item;
+			Sprite *sprite = [explosionSprite spriteAtTime:explosion.lifetime.progress];
+			SpriteEffects effects = explosion.random & (SpriteEffectsFlipHorizontally | SpriteEffectsFlipVertically);
+			if (sprite) 
+			{
+				[spriteBatch draw:sprite.texture to:explosion.position fromRectangle:sprite.sourceRectangle tintWithColor:[Color white]
+						 rotation:0 origin:sprite.origin scaleUniform:0.75 effects:effects layerDepth:0];
+			}
+		}
+	}
+	
+	[spriteBatch end];
+	
 }
 
 - (void) unloadContent {
-	[content unload];
+	[spriteBatch release];
+	[primitiveBatch release];
+	for (int i = 0; i < BonusTypes; i++) {
+		[bonusSprite[i] release];
+	}
+	for (int i = 0; i < 3; i++) {
+		[padSprite[i] release];
+	}
 }
 
 - (void) dealloc
 {
-	[spriteBatch release];
 	[super dealloc];
 }
 

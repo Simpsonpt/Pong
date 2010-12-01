@@ -17,89 +17,105 @@
 {
 	self = [super initWithGame:theGame];
 	if (self != nil) {
-
-		scene = [[Scene alloc] init];
-		//Background
+		scene = [[Scene alloc] initWithGame:theGame];
+		scene.updateOrder = 3;
+		[self.game.components addComponent:scene];
+		[scene.itemAdded subscribeDelegate:[Delegate delegateWithTarget:self Method:@selector(itemAddedToScene:eventArgs:)]];
+		[scene.itemRemoved subscribeDelegate:[Delegate delegateWithTarget:self Method:@selector(itemRemovedFromScene:eventArgs:)]];
+		
+		/*Init Scene Items*/
 		background = [[Bg alloc] init];
-		//Middle Bar
-		md = [[Middle alloc] init];		
-		//Players Bar
+		md = [[Middle alloc] init];	
+		pimg1 = [[PlayerImg alloc] init];
+		pimg2 = [[PlayerImg alloc] init];
 		topPlayer = [[Pad alloc] init];
+		topPlayer.top = YES;
 		bottomPlayer = [[Pad alloc] init];
-		//Game Ball
+		topPlayer.top = NO;
 		ball = [[Ball alloc] init];
-		//Random Objects
-		bonus = [[Bonus alloc] init];
-			
-		//Physic for Game Table
-		//AALimit *floor = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionNegativeY distance:-470]] autorelease];
-		AALimit *leftWall = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionPositiveX distance:-5]] autorelease];
-		AALimit *rightWall = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionNegativeX distance:-320]] autorelease];
-		//AALimit *ceiling = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionPositiveY distance:75]] autorelease];		
-				
+	
+		/*Add Level Limits	
+		[scene addItem:[[[LevelLimit alloc] initWithLimit:
+						 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionPositiveX distance:0] isDeadly:NO] autorelease]];
+		[scene addItem:[[[LevelLimit alloc] initWithLimit:
+						 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionNegativeX distance:-320] isDeadly:NO] autorelease]];
+		
+		/*Add Items to the Scene
 		[scene addItem:background];
 		[scene addItem:md];
+		[scene addItem:pimg1];
+		[scene addItem:pimg2];	
 		[scene addItem:topPlayer];
 		[scene addItem:bottomPlayer];
-		[scene addItem:ball];
-		[scene addItem:bonus];
-		
-		//[scene addItem:floor];
-		[scene addItem:leftWall];
-		[scene addItem:rightWall];
-		//[scene addItem:ceiling];
+		[scene addItem:ball];*/
 	}
 	return self;
 }
 
-@synthesize scene, topPlayer, bottomPlayer, ball, bonus, p1_points, p2_points, lastPlayer, type, bonusStatus,bonusType,contTouches,save,Lnum;
+//Falta Bonus
+@synthesize scene, topPlayer, bottomPlayer, ball, p1_points, p2_points, lastPlayer,PadType, bonusStatus,bonusType,contTouches,save,Lnum,numBalls;
 
-- (void) initialize {
+- (void) initialize 
+{
+	/*Pad Are Magnetic*/
+	topPlayer.magnetPower = 1;
+	
+	/*LastPlayer Counter*/
 	lastPlayer=1;
+	
+	/*There is no Bonus in the Game*/
 	bonusStatus=NO;
+	//Bonus Coords Not Calculated 
 	save=NO;
+	//Counter for Number of Ball Touches in Pad
 	contTouches=0;
-	bonusType=2;
+	//Type of Bonus
+	bonusType=0;
+	
+	/*Level Number*/
 	Lnum=0;
+	
 	[self reset];
 	[super initialize];
 }
 
-- (void) GO
+/*GameOver Method*/
+- (void) GameOver
 {
 	[scene clear];
 	bonusStatus=YES;
 	[scene addItem:background];
 	bonusType=6;
-	bonus.position.x=110;
-	bonus.position.y=250;
+	//bonus.position.x=110;
+	//bonus.position.y=250;
 	ball.velocity.x=0;
 	ball.velocity.y=0;
-	[scene addItem:bonus];
+	//[scene addItem:bonus];
 }
 
 - (void) reset {}
 
-- (void) resetLevelWithBallSpeed:(float)speed {
-	
-	//printf("Cona Crlssssss");
-	
-	// Remove everything from the scene.
+- (void) resetLevelWithBallSpeed:(float)speed 
+{
+	/*Remove Everything from the Scene.*/
 	[scene clear];
 	
-	// Add ball and paddle.
+	/*Add Items to the Scene*/
 	[scene addItem:background];
 	[scene addItem:md];
+	[scene addItem:pimg1];
+	[scene addItem:pimg2];
 	[scene addItem:topPlayer];
+	topPlayer.top=YES;
 	[scene addItem:bottomPlayer];
+	topPlayer.top=NO;
 	[scene addItem:ball];
-	[scene addItem:bonus];
 
-	AALimit *leftWall = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionPositiveX distance:-5]] autorelease];
-	AALimit *rightWall = [[[AALimit alloc] initWithLimit:[AxisAlignedHalfPlane axisAlignedHalfPlaneWithDirection:AxisDirectionNegativeX distance:-320]] autorelease];
-
-	[scene addItem:leftWall];
-	[scene addItem:rightWall];
+	/*Add Level Limits*/
+	[scene addItem:[[[LevelLimit alloc] initWithLimit:
+					 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionPositiveX distance:0] isDeadly:NO] autorelease]];
+	[scene addItem:[[[LevelLimit alloc] initWithLimit:
+					 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionNegativeX distance:-320] isDeadly:NO] autorelease]];
 
 	// Reset ball
 	//printf("Speed RLWBWS: %f\n",speed);
@@ -120,8 +136,9 @@
 		speed *= -1;
 	}
 	//printf("Speed RBWS: %f\n",speed);
+	
 	/*Velocity and Directions of the Ball*/
-	ball.velocity.x = ([Random float] - 0.5f) * 10;
+	//ball.velocity.x = ([Random float] - 0.5f) * 10;
 	ball.velocity.y = speed;
 }
 
@@ -136,13 +153,38 @@
 	printf("Player 2 Points: %d\n", p2_points);
 }
 
+- (void) itemAddedToScene:(id)sender eventArgs:(SceneEventArgs*)e {
+	if ([e.item isKindOfClass:[Ball class]]) {
+		numBalls++;
+	}
+}
+
+- (void) itemRemovedFromScene:(id)sender eventArgs:(SceneEventArgs*)e {
+	if ([e.item isKindOfClass:[Ball class]]) {
+		numBalls--;
+	}
+}
+
+/*For all Items with Custom Update*/
+- (void) updateWithGameTime:(GameTime *)gameTime 
+{
+	for (id item in scene) {
+		id<ICustomUpdate> updatable = [item conformsToProtocol:@protocol(ICustomUpdate)] ? item : nil;
+		
+		if (updatable)
+			[updatable updateWithGameTime:gameTime];	
+	}
+}
+
+
 - (void) dealloc
 {
 	[background release];
+	[pimg1 release];
+	[pimg2 release];	
 	[topPlayer release];
 	[bottomPlayer release];
 	[ball release];
-	[bonus release];
 	[scene release];
 	[super dealloc];
 }

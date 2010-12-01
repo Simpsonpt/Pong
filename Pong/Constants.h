@@ -13,11 +13,12 @@
 }
 
 @property (nonatomic, readonly) float minimumBallVerticalVelocity;
-@property (nonatomic, readonly) float maximumBallAngle;
+@property (nonatomic, readonly) float maximumBallAngle,ballSpeedUp;
 @property (nonatomic, readonly) int startPoints;
-@property (nonatomic, readonly) float initialBallSpeed;
+@property (nonatomic, readonly) float initialBallSpeed, bonusChance;
 @property (nonatomic, readonly) float levelUpBallSpeedIncrease;
-
+@property (nonatomic, readonly) NSTimeInterval changeSizeDuration;
+@property (nonatomic, readonly) int magnetPower;
 + (Constants*) getInstance;
 
 @end

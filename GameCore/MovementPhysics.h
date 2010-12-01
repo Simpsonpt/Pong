@@ -13,6 +13,6 @@
 	
 }
 
-+ (void) simulateMovementOn:(id<NSObject>)item withElapsed:(NSTimeInterval)elapsed;
++ (void) simulateMovementOn:(id)item withElapsed:(float)elapsed;
 
 @end

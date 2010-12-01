@@ -1,5 +1,5 @@
 //
-//  AxisAlignedHalfPlane.h
+//  AAHalfPlane.h
 //  GameCore
 //
 //  Created by Renato Rodrigues on 11/13/10.
@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "HalfPlane.h"
 
-@interface AxisAlignedHalfPlane : HalfPlane {
+@interface AAHalfPlane : HalfPlane {
 	AxisDirection direction;
 }
 
 - (id) initWithDirection:(AxisDirection)theDirection distance:(float)theDistance;
 
-+ (AxisAlignedHalfPlane*) axisAlignedHalfPlaneWithDirection:(AxisDirection)theDirection distance:(float)theDistance;
++ (AAHalfPlane*) aaHalfPlaneWithDirection:(AxisDirection)theDirection distance:(float)theDistance;
 
 @property (nonatomic) AxisDirection direction;
 

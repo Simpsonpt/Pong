@@ -11,10 +11,10 @@
 #import "GameCore.Scene.Objects.h"
 #import "GameCore.Math.h"
 
-@interface AALimit : NSObject <IAxisAlignedHalfPlaneCollider> {
-	AxisAlignedHalfPlane *limit;
+@interface AALimit : NSObject <IAAHalfPlaneCollider> {
+	AAHalfPlane *limit;
 }
 
-- (id) initWithLimit:(AxisAlignedHalfPlane*)theLimit;
+- (id) initWithLimit:(AAHalfPlane*)theLimit;
 
 @end

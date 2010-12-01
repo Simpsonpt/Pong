@@ -15,12 +15,15 @@
 #import "IParticleCollider.h"
 #import "IParticle.h"
 #import "IHalfPlaneCollider.h"
-#import "IAxisAlignedHalfPlaneCollider.h"
+#import "IAAHalfPlaneCollider.h"
 #import "IRectangleCollider.h"
-#import "IAxisAlignedRectangleCollider.h"
+#import "IAARectangleCollider.h"
 #import "ICustomCollider.h"
 
 #import "ILifetime.h"
 #import "Lifetime.h"
 
 #import "AALimit.h"
+
+#import "ISceneUser.h"
+#import "ICustomUpdate.h"

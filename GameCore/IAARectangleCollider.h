@@ -1,8 +1,8 @@
 //
-//  IAxisAlignedRectangleCollider.h
+//  IAARectangleCollider.h
 //  GameCore
 //
-//  Created by FRI Multimedija on 11/17/10.
+//  Created by Renato Rodrigues on 11/28/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 #import "IPosition.h"
 #import "IRectangleSize.h"
 
-@protocol IAxisAlignedRectangleCollider <IPosition, IRectangleSize>
+@protocol IAARectangleCollider <IPosition, IRectangleSize>
 
 @end

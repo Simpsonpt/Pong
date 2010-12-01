@@ -16,6 +16,12 @@
 		DA1AAB39127F4FBA006E769D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB38127F4FBA006E769D /* Player.m */; };
 		DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB6F127F5AFF006E769D /* PhysicsEngine.m */; };
 		DA1E00CA1275548300441AC2 /* libXNI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1E00C91275548300441AC2 /* libXNI.a */; };
+		DA6460FE12A326EB00D93ED7 /* LevelLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6460FD12A326EB00D93ED7 /* LevelLimit.m */; };
+		DA64618412A3387000D93ED7 /* BonusFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64618312A3387000D93ED7 /* BonusFactory.m */; };
+		DA64618F12A33B0B00D93ED7 /* ExpandPadSizeBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64618E12A33B0B00D93ED7 /* ExpandPadSizeBonus.m */; };
+		DA64619212A33B2B00D93ED7 /* ShrinkPadSizeBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619112A33B2B00D93ED7 /* ShrinkPadSizeBonus.m */; };
+		DA64619512A33B3B00D93ED7 /* PointsBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619412A33B3B00D93ED7 /* PointsBonus.m */; };
+		DA64619812A33B5700D93ED7 /* MultiBallBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619712A33B5700D93ED7 /* MultiBallBonus.m */; };
 		DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65D00A12764CDF0052AF85 /* Bonus.m */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
 		DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7BEC41129C3B0F0030C09C /* bonus.png */; };
@@ -30,7 +36,12 @@
 		DA8EAD5A127717090098E373 /* Middle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8EAD59127717090098E373 /* Middle.m */; };
 		DAAFE82712752A1F003CF29B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAFE82612752A1F003CF29B /* OpenGLES.framework */; };
 		DAAFE82B12752A26003CF29B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAFE82A12752A26003CF29B /* QuartzCore.framework */; };
+		DAB3863F12A4A9AA0098DDCB /* exp.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB3863E12A4A9AA0098DDCB /* exp.png */; };
+		DAB3867912A4AC160098DDCB /* Explosion.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB3867812A4AC160098DDCB /* Explosion.m */; };
 		DAC8DC2D12764F6F00B2E374 /* Bg.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8DC2C12764F6F00B2E374 /* Bg.m */; };
+		DAE2AE1412A06AB40020FBA5 /* PongU8.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE2AE1312A06AB40020FBA5 /* PongU8.png */; };
+		DAE2AEE112A07D9C0020FBA5 /* PlayerImg.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE2AEE012A07D9C0020FBA5 /* PlayerImg.m */; };
+		DAE2AFD312A08BA20020FBA5 /* CaughtBall.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE2AFD212A08BA20020FBA5 /* CaughtBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +81,19 @@
 		DA1AABEE127F615A006E769D /* HumanPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanPlayer.h; sourceTree = "<group>"; };
 		DA1AABEF127F615A006E769D /* HumanPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanPlayer.m; sourceTree = "<group>"; };
 		DA1E00C91275548300441AC2 /* libXNI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXNI.a; path = ../XNI/libXNI.a; sourceTree = SOURCE_ROOT; };
+		DA6460FC12A326EB00D93ED7 /* LevelLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelLimit.h; sourceTree = "<group>"; };
+		DA6460FD12A326EB00D93ED7 /* LevelLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelLimit.m; sourceTree = "<group>"; };
+		DA64618212A3387000D93ED7 /* BonusFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusFactory.h; sourceTree = "<group>"; };
+		DA64618312A3387000D93ED7 /* BonusFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusFactory.m; sourceTree = "<group>"; };
+		DA64618512A3388700D93ED7 /* BonusType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusType.h; sourceTree = "<group>"; };
+		DA64618D12A33B0B00D93ED7 /* ExpandPadSizeBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandPadSizeBonus.h; sourceTree = "<group>"; };
+		DA64618E12A33B0B00D93ED7 /* ExpandPadSizeBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandPadSizeBonus.m; sourceTree = "<group>"; };
+		DA64619012A33B2B00D93ED7 /* ShrinkPadSizeBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkPadSizeBonus.h; sourceTree = "<group>"; };
+		DA64619112A33B2B00D93ED7 /* ShrinkPadSizeBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkPadSizeBonus.m; sourceTree = "<group>"; };
+		DA64619312A33B3B00D93ED7 /* PointsBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointsBonus.h; sourceTree = "<group>"; };
+		DA64619412A33B3B00D93ED7 /* PointsBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointsBonus.m; sourceTree = "<group>"; };
+		DA64619612A33B5700D93ED7 /* MultiBallBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiBallBonus.h; sourceTree = "<group>"; };
+		DA64619712A33B5700D93ED7 /* MultiBallBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiBallBonus.m; sourceTree = "<group>"; };
 		DA65D00912764CDF0052AF85 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
 		DA65D00A12764CDF0052AF85 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bonus.m; sourceTree = "<group>"; };
 		DA6AB676127F3AE000FC4684 /* GameCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameCore.xcodeproj; path = ../GameCore/GameCore.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -93,8 +117,16 @@
 		DA8EAD59127717090098E373 /* Middle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Middle.m; sourceTree = "<group>"; };
 		DAAFE82612752A1F003CF29B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		DAAFE82A12752A26003CF29B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DAB3863E12A4A9AA0098DDCB /* exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exp.png; path = ../Images/exp.png; sourceTree = SOURCE_ROOT; };
+		DAB3867712A4AC160098DDCB /* Explosion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Explosion.h; sourceTree = "<group>"; };
+		DAB3867812A4AC160098DDCB /* Explosion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Explosion.m; sourceTree = "<group>"; };
 		DAC8DC2B12764F6F00B2E374 /* Bg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bg.h; sourceTree = "<group>"; };
 		DAC8DC2C12764F6F00B2E374 /* Bg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bg.m; sourceTree = "<group>"; };
+		DAE2AE1312A06AB40020FBA5 /* PongU8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PongU8.png; path = ../Images/PongU8.png; sourceTree = SOURCE_ROOT; };
+		DAE2AEDF12A07D9C0020FBA5 /* PlayerImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerImg.h; sourceTree = "<group>"; };
+		DAE2AEE012A07D9C0020FBA5 /* PlayerImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerImg.m; sourceTree = "<group>"; };
+		DAE2AFD112A08BA20020FBA5 /* CaughtBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaughtBall.h; sourceTree = "<group>"; };
+		DAE2AFD212A08BA20020FBA5 /* CaughtBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaughtBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +158,8 @@
 		28EEBF621118D79A00187D67 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DAB3863E12A4A9AA0098DDCB /* exp.png */,
+				DAE2AE1312A06AB40020FBA5 /* PongU8.png */,
 				DA7BEC41129C3B0F0030C09C /* bonus.png */,
 				DA80C90412752B0000E0BF5A /* MyPong.png */,
 				8D1107310486CEB800E47090 /* Pong-Info.plist */,
@@ -205,6 +239,21 @@
 			name = Physics;
 			sourceTree = "<group>";
 		};
+		DA64618812A3389900D93ED7 /* Bonus */ = {
+			isa = PBXGroup;
+			children = (
+				DA64618D12A33B0B00D93ED7 /* ExpandPadSizeBonus.h */,
+				DA64618E12A33B0B00D93ED7 /* ExpandPadSizeBonus.m */,
+				DA64619012A33B2B00D93ED7 /* ShrinkPadSizeBonus.h */,
+				DA64619112A33B2B00D93ED7 /* ShrinkPadSizeBonus.m */,
+				DA64619312A33B3B00D93ED7 /* PointsBonus.h */,
+				DA64619412A33B3B00D93ED7 /* PointsBonus.m */,
+				DA64619612A33B5700D93ED7 /* MultiBallBonus.h */,
+				DA64619712A33B5700D93ED7 /* MultiBallBonus.m */,
+			);
+			name = Bonus;
+			sourceTree = "<group>";
+		};
 		DA6AB677127F3AE000FC4684 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,16 +304,28 @@
 		DA80C91312752B9600E0BF5A /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				DA6460FC12A326EB00D93ED7 /* LevelLimit.h */,
+				DA6460FD12A326EB00D93ED7 /* LevelLimit.m */,
 				DA80C91E12752BCA00E0BF5A /* Ball.h */,
 				DA80C91F12752BCA00E0BF5A /* Ball.m */,
 				DA80C92112752BD200E0BF5A /* Pad.h */,
 				DA80C92212752BD200E0BF5A /* Pad.m */,
-				DA65D00912764CDF0052AF85 /* Bonus.h */,
-				DA65D00A12764CDF0052AF85 /* Bonus.m */,
 				DAC8DC2B12764F6F00B2E374 /* Bg.h */,
 				DAC8DC2C12764F6F00B2E374 /* Bg.m */,
 				DA8EAD58127717090098E373 /* Middle.h */,
 				DA8EAD59127717090098E373 /* Middle.m */,
+				DAE2AEDF12A07D9C0020FBA5 /* PlayerImg.h */,
+				DAE2AEE012A07D9C0020FBA5 /* PlayerImg.m */,
+				DAE2AFD112A08BA20020FBA5 /* CaughtBall.h */,
+				DAE2AFD212A08BA20020FBA5 /* CaughtBall.m */,
+				DAB3867712A4AC160098DDCB /* Explosion.h */,
+				DAB3867812A4AC160098DDCB /* Explosion.m */,
+				DA64618212A3387000D93ED7 /* BonusFactory.h */,
+				DA64618312A3387000D93ED7 /* BonusFactory.m */,
+				DA64618512A3388700D93ED7 /* BonusType.h */,
+				DA65D00912764CDF0052AF85 /* Bonus.h */,
+				DA65D00A12764CDF0052AF85 /* Bonus.m */,
+				DA64618812A3389900D93ED7 /* Bonus */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -349,6 +410,8 @@
 			files = (
 				DA80C90512752B0000E0BF5A /* MyPong.png in Resources */,
 				DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */,
+				DAE2AE1412A06AB40020FBA5 /* PongU8.png in Resources */,
+				DAB3863F12A4A9AA0098DDCB /* exp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +437,15 @@
 				DA1AAB39127F4FBA006E769D /* Player.m in Sources */,
 				DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */,
 				C6B7D44D129421F4009A1B4E /* Constants.m in Sources */,
+				DAE2AEE112A07D9C0020FBA5 /* PlayerImg.m in Sources */,
+				DAE2AFD312A08BA20020FBA5 /* CaughtBall.m in Sources */,
+				DA6460FE12A326EB00D93ED7 /* LevelLimit.m in Sources */,
+				DA64618412A3387000D93ED7 /* BonusFactory.m in Sources */,
+				DA64618F12A33B0B00D93ED7 /* ExpandPadSizeBonus.m in Sources */,
+				DA64619212A33B2B00D93ED7 /* ShrinkPadSizeBonus.m in Sources */,
+				DA64619512A33B3B00D93ED7 /* PointsBonus.m in Sources */,
+				DA64619812A33B5700D93ED7 /* MultiBallBonus.m in Sources */,
+				DAB3867912A4AC160098DDCB /* Explosion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

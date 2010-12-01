@@ -11,7 +11,7 @@
 
 @implementation AALimit
 
-- (id) initWithLimit:(AxisAlignedHalfPlane *)theLimit
+- (id) initWithLimit:(AAHalfPlane *)theLimit
 {
 	self = [super init];
 	if (self != nil) {
@@ -20,7 +20,7 @@
 	return self;
 }
 
-- (AxisAlignedHalfPlane *) axisAlignedHalfPlane {
+- (AAHalfPlane *) axisAlignedHalfPlane {
 	return limit;
 }
 
@@ -34,6 +34,7 @@
 	[super dealloc];
 }
 
+@synthesize aaHalfPlane;
 
 @end
 

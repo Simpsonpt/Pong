@@ -33,11 +33,29 @@ static Constants *instance;
 }
 
 - (float) initialBallSpeed {
-	return 200;
+	return 400;
+}
+
+- (float) ballSpeedUp {
+	return 1.01f;
 }
 
 - (float) levelUpBallSpeedIncrease {
 	return 100;
+}
+
+- (int) magnetPower {
+	return 5;
+}
+
+/*Bonus Stuff*/
+
+- (float) bonusChance {
+	return 0.2f;
+}
+
+- (NSTimeInterval) changeSizeDuration {
+	return 10;
 }
 
 @end

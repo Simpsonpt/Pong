@@ -1,3 +1,3 @@
 #import "MathEnum.h"
 
-@class HalfPlane, AxisAlignedHalfPlane, Polygon, ConvexPolygon;
+@class HalfPlane, AAHalfPlane, Polygon, ConvexPolygon;

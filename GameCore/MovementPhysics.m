@@ -12,8 +12,8 @@
 
 @implementation MovementPhysics
 
-+ (void) simulateMovementOn:(id<NSObject>)item withElapsed:(NSTimeInterval)elapsed {
-	id<IMovable> movable = [item conformsToProtocol:@protocol(IMovable)] ? (id<IMovable>)item : nil;
++ (void) simulateMovementOn:(id)item withElapsed:(float)elapsed {
+	id<IMovable> movable = [item conformsToProtocol:@protocol(IMovable)] ? item : nil;
 	
 	if (movable) {
 		[movable.position add:[Vector2 multiply:movable.velocity by:elapsed]];

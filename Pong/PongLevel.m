@@ -11,24 +11,29 @@
 
 @implementation PongLevel
 
-- (void) reset {
+/*Items Positions*/
+- (void) reset 
+{
 		background.position.x = 0;
 		background.position.y = 0;
 		
 		md.position.x = 0;
-		md.position.y = 180;
+		md.position.y = 250;
+	
+		pimg1.position.x=30;
+		pimg1.position.y=22;
+	
+		pimg2.position.x=307;
+		pimg2.position.y=22;
 		
 		topPlayer.position.x = 155;
-		topPlayer.position.y = 85;
+		topPlayer.position.y = 63;
 
 		bottomPlayer.position.x = 155;
 		bottomPlayer.position.y = 445;
 		
 		ball.position.x = 160;
 		ball.position.y = 115;
-		
-		bonus.position.x = 0;
-		bonus.position.y = 0;
 }
 
 @end

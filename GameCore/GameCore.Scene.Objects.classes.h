@@ -7,8 +7,8 @@
 @protocol ICoefficientOfRestition;
 
 @protocol IParticleCollider;
-@protocol IHalfPlaneCollider, IAxisAlignedHalfPlaneCollider;
-@protocol IRectangleCollider, IAxisAlignedRectangleCollider;
+@protocol IHalfPlaneCollider, IAAHalfPlaneCollider;
+@protocol IRectangleCollider, IAARectangleCollider;
 @protocol ICustomCollider;
 
 @protocol IParticle;
@@ -16,3 +16,8 @@
 @protocol ILifetime;
 
 @class Lifetime,AALimit;
+
+@protocol ISceneUser;
+@protocol ICustomUpdate;
+
+

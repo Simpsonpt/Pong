@@ -9,13 +9,11 @@
 #import "Gameplay.h"
 #import "Retronator.Pong.h"
 
-
 @interface Gameplay ()
 
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass;
 
 @end
-
 
 @implementation Gameplay
 
@@ -24,23 +22,21 @@
 	self = [super initWithGame:theGame];
 	if (self != nil) {
 		[self initWithGame:theGame LevelClass:levelClass];
-		self.updateOrder = 4;
 		
-		// Create players
+		/*Create Players*/
 		topPlayer = [[HumanPlayer alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop game:self.game];
 		bottomPlayer = [[HumanPlayer alloc] initWithPad:level.bottomPlayer scene:level.scene position:PlayerPositionBottom game:self.game];
-		
 	}
 	return self;
 }
 
 @synthesize level;
 
-- (id) initSinglePlayerWithGame:(Game *)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass
+/*- (id) initSinglePlayerWithGame:(Game *)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass
 {
 	self = [super initWithGame:theGame];
 	if (self != nil) {
-		[self initWithGame:theGame LevelClass:levelClass];	
+		[self initWithGame:theGame];	
 		self.updateOrder = 4;
 		
 		// Create players
@@ -49,37 +45,74 @@
 		
 	}
 	return self;
-}
+}*/
 
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass
 {
-	// Allocate and initialize a new level and add it to components.
-	level = [[levelClass alloc] initWithGame:self.game];
-	level.updateOrder=3;
-	[self.game.components addComponent:level];
+	self = [super initWithGame:theGame];
+	if (self != nil) 
+	{
+		level = [[levelClass alloc] initWithGame:self.game];
+		physics = [[PhysicsEngine alloc] initWithGame:self.game level:level];
+		renderer = [[Renderer alloc] initWithGame:self.game gameplay:self];
 	
-	// Create a new renderer for the new scene and add it to components.
-	renderer = [[Renderer alloc] initWithGame:self.game level:level];
-	renderer.updateOrder = 2;
-	[self.game.components addComponent:renderer];
-	
-	physics = [[PhysicsEngine alloc] initWithGame:self.game level:level];
-	physics.updateOrder = 1;
-	[self.game.components addComponent:physics];
-	
-	level.p1_points,level.p2_points = [Constants getInstance].startPoints;
-	level.type=0;
-	[level resetLevelWithBallSpeed:200];
+		/*Update Orders*/
+		topPlayer.updateOrder = 0;	
+		bottomPlayer.updateOrder = 0;
+		physics.updateOrder = 1;
+		level.updateOrder = 2;
+		self.updateOrder = 4;
+		
+		[self.game.components addComponent:level];
+		[self.game.components addComponent:physics];
+		[self.game.components addComponent:renderer];	
+	}
 }
 
-- (void) resetL
+- (void) initialize 
+{
+	//[player setCamera:renderer.camera];
+	[self reset];
+	[super initialize];
+}
+
+- (void) reset 
+{
+	/*Initial Pad (Normal)*/
+	level.PadType=0;
+	
+	[level resetLevelWithBallSpeed:400];
+	
+	printf("#*# Level %d #*#\n", level.Lnum);
+}
+
+- (void) resetLevel
 {
 	level.p1_points = [Constants getInstance].startPoints;
 	level.p2_points = [Constants getInstance].startPoints;
 	//printf("P1: %d P2: %d",level.p1_points,level.p2_points);
+	
+	printf("#*# Level %d #*#\n", level.Lnum+1);
 	level.Lnum++;
+	
 	//Just for the Pads
-	level.type++;
+	level.PadType++;
+	
+	if (level.Lnum == 1) 
+	{
+		level.topPlayer.width = 53;
+		level.topPlayer.height = 22;
+		
+		level.bottomPlayer.width = 53;
+		level.bottomPlayer.height = 22;
+	} else if (level.Lnum == 2)
+	{
+		level.topPlayer.width = 125;
+		level.topPlayer.height = 20;
+		
+		level.bottomPlayer.width = 125;
+		level.bottomPlayer.height = 20;
+	}
 	
 	level.save=NO;
 	level.bonusStatus=NO;
@@ -87,7 +120,7 @@
 	level.lastPlayer=1;
 	
 	level.topPlayer.position.x = 155;
-	level.topPlayer.position.y = 70;
+	level.topPlayer.position.y = 63;
 	
 	level.bottomPlayer.position.x = 155;
 	level.bottomPlayer.position.y = 430;
@@ -99,44 +132,104 @@
 	if (level.Lnum==3) 
 	{
 		[self.game.components removeComponent:physics];
-		[level GO];
+		[level GameOver];
 	}
 	else 
 	{
+		/*Move Pads In The Game*/
 		[topPlayer updateWithGameTime:gameTime];
 		[bottomPlayer updateWithGameTime:gameTime];
 
 		/*Check Lose Condition.*/
-		if (level.ball.position.y > 530 || level.ball.position.y < 65) 
+		for (id item in level.scene)
 		{
+			if ([item isKindOfClass:[Ball class]]) 
+			{
+				Ball *temp = (Ball*)item;
+				if (temp.position.y > 530)
+				{
+					level.lastPlayer=1;
+					[level updatePlayerPoints:1];
+					[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];
+				} else if(temp.position.y < 65) 
+				{
+					level.lastPlayer=2;
+					[level updatePlayerPoints:1];
+					[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];			
+				}				
+			}
+		}
+		/*if (level.ball.position.y > 530)
+		{
+			level.lastPlayer=1;
 			[level updatePlayerPoints:1];
 			[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];
-		}
-	
-		// Check Game Reset Condition.
-		if (level.p1_points >= 4 || level.p2_points >= 4)
+		} else if(level.ball.position.y < 65) 
 		{
-			[self resetL];
+			level.lastPlayer=2;
+			[level updatePlayerPoints:1];
+			[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];			
+		}*/
+	
+		/*Check Game Reset Condition.*/
+		if (level.p1_points >= 26 || level.p2_points >= 26)
+		{
+			[self resetLevel];
 			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];
 		}
-	
-		/*Condition for Random Bonus, Init Always NO*/
-		if(level.bonusStatus && !level.save)
+		/*One Bonus in the Game*/
+		if(level.bonusStatus)
 		{
-			//320 420
-			level.bonus.position.x = [Random intLessThan:250];
-			level.bonus.position.y = [Random intLessThan:300];
-			if(level.bonus.position.y < 70)
-				level.bonus.position.y += 90;
-			level.bonusType=[Random intLessThan:5];
-			level.save=YES;
-		} else if(!level.save) {
-			//printf("Uiii!");
-			level.bonus.position.x = 0;
-			level.bonus.position.y = 0;
+			for (id item in level.scene)
+			{
+				if ([item isKindOfClass:[Pad class]]) 
+				{
+					//printf("Stop Bonus YES\n");
+					Pad *temp = (Pad*)item;
+					temp.stopBonus=YES;
+				}
+			}
 		}
-		//printf("Calculei as Coord do Bonus! X: %f Y: %f \n", level.bonus.position.x,level.bonus.position.y);	
-		//printf("Pos: %f\n",level.ball.position.y);
+		else
+		{
+			for (id item in level.scene)
+			{
+				if ([item isKindOfClass:[Pad class]]) 
+				{
+					//printf("Stop Bonus NO\n");
+					Pad *temp = (Pad*)item;
+					temp.stopBonus=NO;
+				}
+			}
+		}
+		
+		/*Kind of Bonus Try
+		if(level.ball.bumm)
+		{
+			for (id item in level.scene)
+			{
+				if ([item isKindOfClass:[ExpandPadSizeBonus class]]) 
+				{
+					printf("Expanding\n");
+					for (id item in level.scene)
+					{
+						if ([item isKindOfClass:[Pad class]]) 
+						{
+							Pad *temp = (Pad*)item;
+							if(temp.top)
+								level.topPlayer.type=2;
+							else {
+								level.bottomPlayer.type=2;
+							}
+
+						}
+					}
+				}
+			}
+		}*/
+		
+		
+		
 	}
 }
 
@@ -149,6 +242,7 @@
 	[self.game.components removeComponent:level];
 	[self.game.components removeComponent:renderer];
 	[self.game.components removeComponent:physics];
+	
 	[level release];
 	[renderer release];
 	[physics release];

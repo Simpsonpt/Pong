@@ -13,15 +13,16 @@
 	
 }
 
-+ (BOOL) collisionBetween:(id)item1 and:(id)item2;
++ (void) collisionBetween:(id)item1 and:(id)item2;
+
++ (BOOL) shouldResolveCollisionBetween:(id)item1 and:(id)item2;
++ (void) reportCollisionBetween:(id)item1 and:(id)item2;
+
++ (void) collisionBetween:(id)item1 and:(id)item2 usingAlgorithm:(Class)collisionAlgorithm;
 
 + (void) relaxCollisionBetween:(id)item1 and:(id)item2 by:(Vector2*)relaxDistance;
 
 + (void) exchangeEnergyBetween:(id)item1 and:(id)item2 along:(Vector2*)collisionNormal;
-
-+ (BOOL) shouldResolveCollisionBetween:(id)item1 and:(id)item2;
-
-+ (void) reportCollisionBetween:(id)item1 and:(id)item2;
 
 @end
 

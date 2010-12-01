@@ -9,12 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Retronator.Pong.classes.h"
 
-@interface Gameplay : GameComponent {
+@interface Gameplay:GameComponent {
 	Level *level;	
-	
 	Player *topPlayer;
 	Player *bottomPlayer;
-	
 	Renderer *renderer;	
 	PhysicsEngine *physics;
 }
@@ -22,9 +20,10 @@
 @property (nonatomic, readonly) Level *level;
 
 - (id) initMultiplayerWithGame:(Game*)theGame levelClass:(Class)levelClass;
-- (id) initSinglePlayerWithGame:(Game*)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass;
+//- (id) initSinglePlayerWithGame:(Game*)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass;
 - (float) calculateCurrentBallSpeed;
-- (void) resetL;
+- (void) resetLevel;
+- (void) reset;
 
 @end
 

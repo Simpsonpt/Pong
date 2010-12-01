@@ -7,31 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "Retronator.Xni.Framework.Graphics.h"
 #import "Retronator.Xni.Framework.h"
 #import "Retronator.Xni.Framework.Content.h"
 #import "Retronator.Xni.Framework.Input.Touch.h"
-
 #import "Retronator.Pong.classes.h"
 
-@interface Pong : Game {
+@interface Pong : Game 
+{
 	GraphicsDeviceManager *graphics;
-	
-	Renderer *renderer;
-	
-	// Gameplay
+	/*Gameplay*/
 	Gameplay *currentGameplay;
-	
-	//Level *currentLevel;
-	
-	// Levels
-	//NSMutableArray *levels;
-	NSMutableArray *levelClasses;
+	/*Diferent Levels*/
+	NSMutableArray *levels;
 }
 
-//- (void) loadLevel:(Level*) level;
-- (void) loadMultiplayerLevel:(Class) levelClass;
+- (void) loadMultiplayerLevel:(Class)levelClass;
 
 @end
 

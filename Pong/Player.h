@@ -10,7 +10,7 @@
 #import "GameCore.Scene.h"
 #import "Retronator.Pong.classes.h"
 
-@interface Player : NSObject {
+@interface Player : GameComponent {
 	Pad *pad;
 	id<IScene> scene;
 	PlayerPosition position;

@@ -7,16 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CollisionAlgorithm.h"
 
-#import "GameCore.Scene.Objects.classes.h"
-
-@interface ParticleParticleCollision : NSObject {
+@interface ParticleParticleCollision : CollisionAlgorithm {
 	
 }
-
-+ (BOOL) collisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
-
-+ (BOOL) detectCollisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
-+ (void) resolveCollisionBetween:(id<IParticleCollider>)particle1 and:(id<IParticleCollider>)particle2;
 
 @end
