@@ -25,6 +25,9 @@
 	Ball *ball;
 	int p1_points,p2_points,lastPlayer,PadType,bonusType,contTouches,Lnum,numBalls;
 	BOOL bonusStatus,save;
+	
+	NSMutableArray *defenseSpots;
+	NSMutableArray *offenseSpots;
 }
 
 @property (nonatomic, readonly) id<IScene> scene;
@@ -33,6 +36,9 @@
 @property (nonatomic, readonly) Ball *ball;
 @property (nonatomic) int p1_points,p2_points,lastPlayer,PadType,bonusType,contTouches,Lnum,numBalls;
 @property (nonatomic) BOOL bonusStatus,save;
+
+@property (nonatomic, readonly) NSMutableArray *defenseSpots;
+@property (nonatomic, readonly) NSMutableArray *offenseSpots;
 
 - (void)reset;
 - (void)updatePlayerPoints:(NSInteger)point;

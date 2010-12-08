@@ -20,7 +20,7 @@
 @property (nonatomic, readonly) Level *level;
 
 - (id) initMultiplayerWithGame:(Game*)theGame levelClass:(Class)levelClass;
-//- (id) initSinglePlayerWithGame:(Game*)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass;
+- (id) initSinglePlayerWithGame:(Game*)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass;
 - (float) calculateCurrentBallSpeed;
 - (void) resetLevel;
 - (void) reset;

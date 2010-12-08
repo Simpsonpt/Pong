@@ -24,8 +24,16 @@
 	levels = [[NSMutableArray alloc] init];
 	[levels addObject:[PongLevel class]];
 	
-	/*Start in First Level*/
-	[self loadMultiplayerLevel:[levels objectAtIndex:0]];
+	/*Start in First Level - MultiPlayer Type*/
+	//[self loadMultiplayerLevel:[levels objectAtIndex:0]];
+	
+	// Add all opponent classes.
+	opponentClasses = [[NSMutableArray alloc] init];
+	[opponentClasses addObject:[Bot class]];
+	
+	// Start in first level.
+	[self loadSinglePlayerLevel:[levels objectAtIndex:0] opponentClass:[opponentClasses objectAtIndex:0]];
+	
 	
 	/*Initialize All Components*/
 	[super initialize];
@@ -44,11 +52,22 @@
 	[self.components addComponent:currentGameplay];
 }
 
+- (void) loadSinglePlayerLevel:(Class) levelClass opponentClass:(Class)opponentClass {
+	// Unload the current gameplay.
+	if (currentGameplay) {
+		[self.components removeComponent:currentGameplay];
+		[currentGameplay release];
+	}
+	
+	// Allocate and initialize new gameplay object and add it to components.
+	currentGameplay = [[Gameplay alloc] initSinglePlayerWithGame:self levelClass:levelClass aiClass:opponentClass];
+	[self.components addComponent:currentGameplay];	
+}
 
 - (void) dealloc
 {
 	[self.components removeComponent:currentGameplay];
-		
+	[opponentClasses release];	
     [graphics release];
 	[levels release];
 	[currentGameplay release];

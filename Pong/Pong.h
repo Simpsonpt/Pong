@@ -20,9 +20,11 @@
 	Gameplay *currentGameplay;
 	/*Diferent Levels*/
 	NSMutableArray *levels;
+	// Opponents
+	NSMutableArray *opponentClasses;
 }
 
-- (void) loadMultiplayerLevel:(Class)levelClass;
+- (void) loadMultiplayerLevel:(Class) levelClass;
+- (void) loadSinglePlayerLevel:(Class) levelClass opponentClass:(Class)opponentClass;
 
 @end
-

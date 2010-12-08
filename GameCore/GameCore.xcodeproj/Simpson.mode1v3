@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,7 +267,7 @@
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
-								<string>DA82C57C128A016700026869</string>
+								<string>DA6AB666127F3A2C00FC4684</string>
 								<string>0867D69AFE84028FC02AAC07</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -273,8 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>2</integer>
+									<integer>14</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -299,7 +301,7 @@
 							<real>303</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>8 59 1016 687 0 0 1024 746 </string>
+						<string>-2 -7 1016 687 0 0 1024 746 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -310,14 +312,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Random.m</string>
+								<string>AnimatedSprite.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Random.m</string>
+										<string>AnimatedSprite.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DA67C68612A59ECD00C91241</string>
+										<string>DAB055A112A6198100F0AF40</string>
 										<key>history</key>
 										<array>
 											<string>DA6AB816127F469A00FC4684</string>
@@ -387,7 +387,9 @@
 											<string>DAB3868E12A4ADED0098DDCB</string>
 											<string>DAB3868F12A4ADED0098DDCB</string>
 											<string>DA67C68512A59ECD00C91241</string>
-											<string>DA0B3C7112A36D57004005D4</string>
+											<string>DAB0559E12A6198100F0AF40</string>
+											<string>DAB0559F12A6198100F0AF40</string>
+											<string>DAB055A012A6198100F0AF40</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -401,7 +403,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {691, 627}}</string>
 								<key>RubberWindowFrame</key>
-								<string>8 59 1016 687 0 0 1024 746 </string>
+								<string>-2 -7 1016 687 0 0 1024 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -421,7 +423,7 @@
 								<key>Frame</key>
 								<string>{{0, 632}, {691, 14}}</string>
 								<key>RubberWindowFrame</key>
-								<string>8 59 1016 687 0 0 1024 746 </string>
+								<string>-2 -7 1016 687 0 0 1024 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -445,9 +447,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>DA67C68712A59ECD00C91241</string>
+				<string>DAB0558D12A618E800F0AF40</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>DA67C68812A59ECD00C91241</string>
+				<string>DAB0558E12A618E800F0AF40</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -589,7 +591,7 @@
 		<string>/Users/Simpson/Desktop/Project/GameCore/GameCore.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>8 59 1016 687 0 0 1024 746 </string>
+	<string>-2 -7 1016 687 0 0 1024 746 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -666,7 +668,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>DA6AB65D127F3A1A00FC4684</string>
-				<string>DA67C68912A59ECD00C91241</string>
+				<string>DAB0558F12A618E800F0AF40</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

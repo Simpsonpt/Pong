@@ -18,6 +18,8 @@
 
 - (id) initWithPad:(Pad*)thePad scene:(id<IScene>)theScene position:(PlayerPosition)thePosition;
 
+- (id) initWithGame:(Game *)theGame scene:(id <IScene>)theScene pad:(Pad*)thePad position:(PlayerPosition)thePosition;
+
 - (void) updateWithGameTime:(GameTime*)gameTime;
 
 @end

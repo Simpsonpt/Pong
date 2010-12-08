@@ -21,6 +21,17 @@
 	return self;
 }
 
+- (id) initWithGame:(Game *)theGame scene:(id <IScene>)theScene pad:(Pad*)thePad position:(PlayerPosition)thePosition
+{
+	self = [super initWithGame:theGame];
+	if (self != nil) {
+		pad = thePad;
+		position = thePosition;
+	}
+	return self;
+}
+
+
 - (void) updateWithGameTime:(GameTime *)gameTime {}
 
 @end

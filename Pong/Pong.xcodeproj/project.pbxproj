@@ -24,6 +24,10 @@
 		DA64619812A33B5700D93ED7 /* MultiBallBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619712A33B5700D93ED7 /* MultiBallBonus.m */; };
 		DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65D00A12764CDF0052AF85 /* Bonus.m */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
+		DA730C9712AF188A0048188B /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730C9612AF188A0048188B /* AIPlayer.m */; };
+		DA730C9B12AF18F00048188B /* ReflexAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730C9A12AF18F00048188B /* ReflexAgent.m */; };
+		DA730CAA12AF1C6B0048188B /* Bot.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CA912AF1C6B0048188B /* Bot.m */; };
+		DA730CBC12AF1F330048188B /* AIRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CBB12AF1F330048188B /* AIRenderer.m */; };
 		DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7BEC41129C3B0F0030C09C /* bonus.png */; };
 		DA80C90512752B0000E0BF5A /* MyPong.png in Resources */ = {isa = PBXBuildFile; fileRef = DA80C90412752B0000E0BF5A /* MyPong.png */; };
 		DA80C90F12752B7E00E0BF5A /* Pong.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C90E12752B7E00E0BF5A /* Pong.m */; };
@@ -97,6 +101,14 @@
 		DA65D00912764CDF0052AF85 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
 		DA65D00A12764CDF0052AF85 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bonus.m; sourceTree = "<group>"; };
 		DA6AB676127F3AE000FC4684 /* GameCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameCore.xcodeproj; path = ../GameCore/GameCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		DA730C9512AF188A0048188B /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
+		DA730C9612AF188A0048188B /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
+		DA730C9912AF18F00048188B /* ReflexAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflexAgent.h; sourceTree = "<group>"; };
+		DA730C9A12AF18F00048188B /* ReflexAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflexAgent.m; sourceTree = "<group>"; };
+		DA730CA812AF1C6B0048188B /* Bot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bot.h; sourceTree = "<group>"; };
+		DA730CA912AF1C6B0048188B /* Bot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bot.m; sourceTree = "<group>"; };
+		DA730CBA12AF1F330048188B /* AIRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRenderer.h; sourceTree = "<group>"; };
+		DA730CBB12AF1F330048188B /* AIRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRenderer.m; sourceTree = "<group>"; };
 		DA7BEC41129C3B0F0030C09C /* bonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonus.png; path = ../Images/bonus.png; sourceTree = SOURCE_ROOT; };
 		DA80C90412752B0000E0BF5A /* MyPong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MyPong.png; path = ../Images/MyPong.png; sourceTree = SOURCE_ROOT; };
 		DA80C90B12752B5400E0BF5A /* Retronator.Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.h; sourceTree = "<group>"; };
@@ -217,6 +229,10 @@
 		DA1AAB35127F4F89006E769D /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				DA730C9512AF188A0048188B /* AIPlayer.h */,
+				DA730C9612AF188A0048188B /* AIPlayer.m */,
+				DA730C9812AF18C10048188B /* Agents */,
+				DA730CA712AF1C4B0048188B /* Opponents */,
 			);
 			name = AI;
 			sourceTree = "<group>";
@@ -262,6 +278,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DA730C9812AF18C10048188B /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				DA730C9912AF18F00048188B /* ReflexAgent.h */,
+				DA730C9A12AF18F00048188B /* ReflexAgent.m */,
+			);
+			name = Agents;
+			sourceTree = "<group>";
+		};
+		DA730CA712AF1C4B0048188B /* Opponents */ = {
+			isa = PBXGroup;
+			children = (
+				DA730CA812AF1C6B0048188B /* Bot.h */,
+				DA730CA912AF1C6B0048188B /* Bot.m */,
+			);
+			name = Opponents;
+			sourceTree = "<group>";
+		};
 		DA80C90612752B0400E0BF5A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +320,8 @@
 			children = (
 				DA80C92612752C2A00E0BF5A /* Renderer.h */,
 				DA80C92712752C2A00E0BF5A /* Renderer.m */,
+				DA730CBA12AF1F330048188B /* AIRenderer.h */,
+				DA730CBB12AF1F330048188B /* AIRenderer.m */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -446,6 +482,10 @@
 				DA64619512A33B3B00D93ED7 /* PointsBonus.m in Sources */,
 				DA64619812A33B5700D93ED7 /* MultiBallBonus.m in Sources */,
 				DAB3867912A4AC160098DDCB /* Explosion.m in Sources */,
+				DA730C9712AF188A0048188B /* AIPlayer.m in Sources */,
+				DA730C9B12AF18F00048188B /* ReflexAgent.m in Sources */,
+				DA730CAA12AF1C6B0048188B /* Bot.m in Sources */,
+				DA730CBC12AF1F330048188B /* AIRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,10 @@
 #import "HumanPlayer.h"
 #import "PlayerPosition.h"
 
+#import "AIPlayer.h"
+#import "ReflexAgent.h"
+#import "Bot.h"
+
 #import "Level.h"
 #import "PongLevel.h"
 #import "Gameplay.h"
@@ -28,6 +32,7 @@
 #import "Pong.h"
 
 #import "Renderer.h"
+#import "AIRenderer.h"
 #import "PhysicsEngine.h"
 
 #import "Constants.h"

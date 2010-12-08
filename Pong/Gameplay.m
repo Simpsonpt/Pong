@@ -12,6 +12,8 @@
 @interface Gameplay ()
 
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass;
+//- (void) startInitWithLevelClass:(Class)levelClass;
+//- (void) finishInit;
 
 @end
 
@@ -32,19 +34,75 @@
 
 @synthesize level;
 
-/*- (id) initSinglePlayerWithGame:(Game *)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass
+- (id) initSinglePlayerWithGame:(Game *)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass
 {
 	self = [super initWithGame:theGame];
 	if (self != nil) {
-		[self initWithGame:theGame];	
-		self.updateOrder = 4;
-		
+		//[self initWithGame:theGame];	
+		//self.updateOrder = 4;
+		[self initWithGame:theGame LevelClass:levelClass];
+
 		// Create players
-		topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
+		//topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
+//		topPlayer = [[aiClass alloc] initWithGame:self.game pad:level.topPlayer level:level position:PlayerPositionTop];
+		topPlayer = [[aiClass alloc] initWithGame:self.game scene:level.scene 
+											  pad:level.topPlayer level:level position:PlayerPositionTop];
+
 		bottomPlayer = [[HumanPlayer alloc] initWithPad:level.bottomPlayer scene:level.scene position:PlayerPositionBottom game:self.game];		
 		
 	}
 	return self;
+}
+
+/*- (id) initSinglePlayerWithGame:(Game *)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass
+{
+	self = [super initWithGame:theGame];
+	if (self != nil) {		
+		[self startInitWithLevelClass:levelClass];
+		
+		// Create an ai and a human player.
+		topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
+		bottomPlayer = [[HumanPlayer alloc] initWithPad:level.bottomPlayer scene:level.scene position:PlayerPositionBottom game:self.game];
+		
+		// Add AI renderer for debugging.
+		AIRenderer *aiRenderer = [[[AIRenderer alloc] initWithGame:self.game aiPlayer:(AIPlayer*)topPlayer] autorelease];
+		aiRenderer.drawOrder = 1;
+		[self.game.components addComponent:aiRenderer];
+		
+		[self finishInit];
+	}
+	return self;
+}*/
+
+/*- (void) finishInit
+{
+	// Add players to components.
+	[self.game.components addComponent:topPlayer];
+	[self.game.components addComponent:bottomPlayer];
+	
+	// Create a physics engine and add it to components.
+	physics = [[PhysicsEngine alloc] initWithGame:self.game level:level];
+	physics.updateOrder = 20;
+	[self.game.components addComponent:physics];
+	
+	// Create a new renderer for the new level and add it to components.
+	renderer = [[Renderer alloc] initWithGame:self.game level:level];
+	[self.game.components addComponent:renderer];
+	
+	// Create a debug renderer for physics debugging.
+//	DebugRenderer *debugRenderer = [[[DebugRenderer alloc] initWithGame:self.game scene:level.scene] autorelease];
+//	debugRenderer.itemColor = [Color red];
+//	debugRenderer.movementColor = [Color gray];
+
+	//[self.game.components addComponent:debugRenderer];
+	
+	// Setup correct update order.
+	bottomPlayer.updateOrder = 0;
+	topPlayer.updateOrder = 1;
+	physics.updateOrder = 2;
+	level.updateOrder = 3;
+	//level.scene.updateOrder = 4;
+	self.updateOrder = 5;
 }*/
 
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass

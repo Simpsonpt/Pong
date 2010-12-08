@@ -14,6 +14,8 @@
 
 #import "PlayerPosition.h"
 @class Player, HumanPlayer;
+@class AIPlayer, ReflexAgent;
+@class Bot;
 
 @class Level;
 @class PongLevel;
@@ -21,6 +23,6 @@
 
 @class Pong;
 
-@class Renderer, PhysicsEngine;
+@class Renderer, AIRenderer, PhysicsEngine;
 
 @class Constants;
