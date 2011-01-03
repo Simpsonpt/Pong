@@ -31,7 +31,7 @@
 		topPlayer = [[Pad alloc] init];
 		topPlayer.top = YES;
 		bottomPlayer = [[Pad alloc] init];
-		topPlayer.top = NO;
+		bottomPlayer.top = NO;
 		ball = [[Ball alloc] init];
 	
 		defenseSpots = [[NSMutableArray alloc] init];

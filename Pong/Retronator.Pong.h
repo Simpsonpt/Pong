@@ -31,6 +31,9 @@
 
 #import "Pong.h"
 
+#import "SoundEffectTypes.h"
+#import "SoundEngine.h"
+
 #import "Renderer.h"
 #import "AIRenderer.h"
 #import "PhysicsEngine.h"

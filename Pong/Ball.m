@@ -52,6 +52,7 @@
 		[self addBonus:item];
 		[scene removeItem:item];
 		bumm=YES;
+		[SoundEngine play:SoundEffectTypeExplo];
 		return NO;
 	}
 	/*Bounce off the rest.*/
@@ -60,16 +61,16 @@
 
 - (void) collidedWithItem:(id)item 
 {
-	// Make sure the vertical velocity is big enough after collision,
+	/*// Make sure the vertical velocity is big enough after collision,
 	// so we don't have to endlesly wait for the ball to come down.
 	float minY = [Constants getInstance].minimumBallVerticalVelocity;
-	if (fabsf(velocity.y) < minY) 
+	if(fabsf(velocity.y) < minY) 
 	{
 		float speed = [velocity length];
 		float x = sqrtf(speed * speed - minY * minY);
 		velocity.y = velocity.y < 0 ? -minY : minY;
 		velocity.x = velocity.x < 0 ? -x : x;
-	}
+	}*/
 }
 
 

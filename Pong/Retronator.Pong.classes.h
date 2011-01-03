@@ -23,6 +23,9 @@
 
 @class Pong;
 
+#import "SoundEffectTypes.h"
+@class SoundEngine;
+
 @class Renderer, AIRenderer, PhysicsEngine;
 
 @class Constants;

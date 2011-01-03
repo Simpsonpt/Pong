@@ -11,6 +11,13 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		6AA3A8D112C1047200E674EF /* SoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3A8D012C1047200E674EF /* SoundEngine.m */; };
+		6AA3A8DE12C10B3C00E674EF /* Explo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A8DD12C10B3C00E674EF /* Explo.wav */; };
+		6AA3A92C12C11F4D00E674EF /* Loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A92B12C11F4D00E674EF /* Loop.wav */; };
+		6AA3A96E12C1361800E674EF /* Pad.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A96D12C1361800E674EF /* Pad.wav */; };
+		C65FE9A412B8FBDA00F1C37F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */; };
+		C65FE9B712B8FC0A00F1C37F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9B612B8FC0A00F1C37F /* OpenAL.framework */; };
+		C65FE9E912B8FC8900F1C37F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9E812B8FC8900F1C37F /* GameKit.framework */; };
 		C6B7D44D129421F4009A1B4E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7D44C129421F4009A1B4E /* Constants.m */; };
 		DA1AAB0A127F4E6E006E769D /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB09127F4E6E006E769D /* Gameplay.m */; };
 		DA1AAB39127F4FBA006E769D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB38127F4FBA006E769D /* Player.m */; };
@@ -72,7 +79,16 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Pong_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong_Prefix.pch; sourceTree = "<group>"; };
+		6AA3A8CF12C1047200E674EF /* SoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEngine.h; sourceTree = "<group>"; };
+		6AA3A8D012C1047200E674EF /* SoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEngine.m; sourceTree = "<group>"; };
+		6AA3A8D212C1048500E674EF /* SoundEffectTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffectTypes.h; sourceTree = "<group>"; };
+		6AA3A8DD12C10B3C00E674EF /* Explo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Explo.wav; sourceTree = "<group>"; };
+		6AA3A92B12C11F4D00E674EF /* Loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Loop.wav; sourceTree = "<group>"; };
+		6AA3A96D12C1361800E674EF /* Pad.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pad.wav; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pong-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pong-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C65FE9B612B8FC0A00F1C37F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		C65FE9E812B8FC8900F1C37F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C6B7D44B129421F4009A1B4E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		C6B7D44C129421F4009A1B4E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		DA1AAB08127F4E6E006E769D /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
@@ -153,6 +169,9 @@
 				DAAFE82712752A1F003CF29B /* OpenGLES.framework in Frameworks */,
 				DAAFE82B12752A26003CF29B /* QuartzCore.framework in Frameworks */,
 				DA1E00CA1275548300441AC2 /* libXNI.a in Frameworks */,
+				C65FE9A412B8FBDA00F1C37F /* AudioToolbox.framework in Frameworks */,
+				C65FE9B712B8FC0A00F1C37F /* OpenAL.framework in Frameworks */,
+				C65FE9E912B8FC8900F1C37F /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +189,7 @@
 		28EEBF621118D79A00187D67 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6AA3A7D912C1024400E674EF /* Sounds */,
 				DAB3863E12A4A9AA0098DDCB /* exp.png */,
 				DAE2AE1312A06AB40020FBA5 /* PongU8.png */,
 				DA7BEC41129C3B0F0030C09C /* bonus.png */,
@@ -204,14 +224,37 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C65FE9E812B8FC8900F1C37F /* GameKit.framework */,
+				C65FE9B612B8FC0A00F1C37F /* OpenAL.framework */,
 				DA1E00C91275548300441AC2 /* libXNI.a */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				DAAFE82612752A1F003CF29B /* OpenGLES.framework */,
 				DAAFE82A12752A26003CF29B /* QuartzCore.framework */,
+				C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AA3A7D912C1024400E674EF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6AA3A96D12C1361800E674EF /* Pad.wav */,
+				6AA3A92B12C11F4D00E674EF /* Loop.wav */,
+				6AA3A8DD12C10B3C00E674EF /* Explo.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		6AA3A8CE12C1045E00E674EF /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6AA3A8D212C1048500E674EF /* SoundEffectTypes.h */,
+				6AA3A8CF12C1047200E674EF /* SoundEngine.h */,
+				6AA3A8D012C1047200E674EF /* SoundEngine.m */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 		DA1AAB33127F4F7A006E769D /* Players */ = {
@@ -305,6 +348,7 @@
 				DA80C90812752B2300E0BF5A /* Graphics */,
 				DA80C90A12752B3500E0BF5A /* Scene */,
 				DA1AAB33127F4F7A006E769D /* Players */,
+				6AA3A8CE12C1045E00E674EF /* Audio */,
 				DA80C90D12752B7E00E0BF5A /* Pong.h */,
 				DA80C90E12752B7E00E0BF5A /* Pong.m */,
 				DA1AAB08127F4E6E006E769D /* Gameplay.h */,
@@ -448,6 +492,9 @@
 				DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */,
 				DAE2AE1412A06AB40020FBA5 /* PongU8.png in Resources */,
 				DAB3863F12A4A9AA0098DDCB /* exp.png in Resources */,
+				6AA3A8DE12C10B3C00E674EF /* Explo.wav in Resources */,
+				6AA3A92C12C11F4D00E674EF /* Loop.wav in Resources */,
+				6AA3A96E12C1361800E674EF /* Pad.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +533,7 @@
 				DA730C9B12AF18F00048188B /* ReflexAgent.m in Sources */,
 				DA730CAA12AF1C6B0048188B /* Bot.m in Sources */,
 				DA730CBC12AF1F330048188B /* AIRenderer.m in Sources */,
+				6AA3A8D112C1047200E674EF /* SoundEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +597,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../GameCore/ ${PROJECT_DIR}/../XNI/usr/local/include";
 			};

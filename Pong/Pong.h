@@ -12,6 +12,7 @@
 #import "Retronator.Xni.Framework.Content.h"
 #import "Retronator.Xni.Framework.Input.Touch.h"
 #import "Retronator.Pong.classes.h"
+#import "Retronator.Xni.Framework.Audio.h"
 
 @interface Pong : Game 
 {
@@ -22,6 +23,8 @@
 	NSMutableArray *levels;
 	// Opponents
 	NSMutableArray *opponentClasses;
+	
+	//SoundEffect *sfx;
 }
 
 - (void) loadMultiplayerLevel:(Class) levelClass;

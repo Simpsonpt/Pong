@@ -14,6 +14,7 @@
 - (id) init {
     if (self = [super init]) {
         graphics = [[GraphicsDeviceManager alloc] initWithGame:self];
+		[SoundEngine initializeWithGame:self];
 	}
     return self;
 }
@@ -34,6 +35,7 @@
 	// Start in first level.
 	[self loadSinglePlayerLevel:[levels objectAtIndex:0] opponentClass:[opponentClasses objectAtIndex:0]];
 	
+	//sfx = [self.content load:@"loop"];
 	
 	/*Initialize All Components*/
 	[super initialize];
@@ -63,6 +65,14 @@
 	currentGameplay = [[Gameplay alloc] initSinglePlayerWithGame:self levelClass:levelClass aiClass:opponentClass];
 	[self.components addComponent:currentGameplay];	
 }
+
+/*- (void) updateWithGameTime:(GameTime *)gameTime
+{
+	[sfx play];
+	SoundEffectInstance *sfxInstance = [sfx createInstance];
+	sfxInstance.isLooped = YES;
+	[sfxInstance play];	
+}*/
 
 - (void) dealloc
 {

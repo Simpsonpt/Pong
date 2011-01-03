@@ -40,8 +40,9 @@
 
 - (void) collidedWithItem:(id)item {
 	Ball *ball = [item isKindOfClass:[Ball class]] ? item : nil;
-	if (ball) 
+	if(ball) 
 	{
+		[SoundEngine play:SoundEffectTypePad];
 		// Calculate horizontal velocity depending on where the paddle was hit.
 		
 		// First save the current speed and add speedup.
@@ -64,7 +65,7 @@
 		
 		if(!stopBonus)
 		{
-			/*Condition for Random Bonus*/
+			//Condition for Random Bonus
 			if([Random float] < [Constants getInstance].bonusChance) 
 			{
 				//printf("Entrei no Random Bonus!\n");
@@ -79,6 +80,30 @@
 		}
 		
 	}
+	
+	/* // Calculate horizontal velocity depending on where the paddle was hit.
+	 Ball *ball = [item isKindOfClass:[Ball class]] ? item : nil;
+	 if (ball) {
+	 float speed = [ball.velocity length];
+	 
+	 // Calculate where on the paddle we were hit, from -1 to 1.
+	 float hitPosition = (ball.position.x - position.x) / width * 2;
+	 
+	 // Calculate angle.
+	 float angle = hitPosition * [Constants getInstance].maximumBallAngle;
+	 
+	 // Rebound ball in desired direction.
+	 ball.velocity.x = sinf(angle);
+	 ball.velocity.y = -cosf(angle);
+	 [ball.velocity multiplyBy:speed];
+	 
+	 // Make sure the vertical velocity is big enough after collision.
+	 float minY = [Constants getInstance].minimumBallVerticalVelocity;
+	 if (fabsf(ball.velocity.y) < minY) {
+	 ball.velocity.y = ball.velocity.y < 0 ? -minY : minY;
+	 }
+	 }*/
+	 	
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime 

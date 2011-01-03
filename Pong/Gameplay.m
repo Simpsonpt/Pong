@@ -74,37 +74,6 @@
 	return self;
 }*/
 
-/*- (void) finishInit
-{
-	// Add players to components.
-	[self.game.components addComponent:topPlayer];
-	[self.game.components addComponent:bottomPlayer];
-	
-	// Create a physics engine and add it to components.
-	physics = [[PhysicsEngine alloc] initWithGame:self.game level:level];
-	physics.updateOrder = 20;
-	[self.game.components addComponent:physics];
-	
-	// Create a new renderer for the new level and add it to components.
-	renderer = [[Renderer alloc] initWithGame:self.game level:level];
-	[self.game.components addComponent:renderer];
-	
-	// Create a debug renderer for physics debugging.
-//	DebugRenderer *debugRenderer = [[[DebugRenderer alloc] initWithGame:self.game scene:level.scene] autorelease];
-//	debugRenderer.itemColor = [Color red];
-//	debugRenderer.movementColor = [Color gray];
-
-	//[self.game.components addComponent:debugRenderer];
-	
-	// Setup correct update order.
-	bottomPlayer.updateOrder = 0;
-	topPlayer.updateOrder = 1;
-	physics.updateOrder = 2;
-	level.updateOrder = 3;
-	//level.scene.updateOrder = 4;
-	self.updateOrder = 5;
-}*/
-
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass
 {
 	self = [super initWithGame:theGame];
@@ -139,7 +108,7 @@
 	/*Initial Pad (Normal)*/
 	level.PadType=0;
 	
-	[level resetLevelWithBallSpeed:400];
+	[level resetLevelWithBallSpeed:200];
 	
 	printf("#*# Level %d #*#\n", level.Lnum);
 }

@@ -604,7 +604,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../XNI/usr/local/include";
 			};
 			name = Debug;

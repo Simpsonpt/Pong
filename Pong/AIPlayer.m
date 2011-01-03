@@ -105,7 +105,7 @@
 	if (target) 
 	{
 //		by:mallet.position
-		Vector2 *difference = [Vector2 subtract:target by:level.topPlayer.position];
+		//Vector2 *difference = [Vector2 subtract:target by:level.topPlayer.position];
 		//Ver esta merda CRL
 //ª		float distance = [difference length];
 //ª		float maxMove = (attack ? attackSpeed : speed) * gameTime.elapsedGameTime;
