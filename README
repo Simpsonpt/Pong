@@ -1,13 +1,12 @@
-
 Project Name: Pong
-Type: Clone
-Why: Project for Game Technology and Virtual Reality
+Type: Base Clone, Mix Features
+Why: Project for Game Technology and Virtual Reality @FRI-LJ
 Platform: IPhone
 Development: 
 - Objective-C
 - XNI Framework (IPhone/IPad XNA port)
 
 Credits:
-- Retronator (XNI creator and base code)
-- Renato Rodrigues
+- Matej Jan (Retronator: XNI Creator and Base Code)
+- Renato Rodrigues (SiMpS0N @PTNet)
 
