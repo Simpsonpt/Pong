@@ -19,6 +19,8 @@
 		velocity = [[Vector2 alloc] init];
 		mass = 1;
 		radius = 11;
+		coefficientOfRestitution = [Constants padCoefficientOfRestitution];
+
 		
 		BonusArray = [[NSMutableArray alloc] init];
 		
@@ -27,7 +29,7 @@
 	return self;
 }
 
-@synthesize position, velocity, mass, radius,scene, bumm;
+@synthesize position, velocity, mass, radius,scene, bumm,coefficientOfRestitution;
 
 - (void) addBonus:(Bonus*)bonus 
 {
@@ -49,10 +51,17 @@
 {
 	if([item isKindOfClass:[Bonus class]]) 
 	{
+		Bonus *temp=(Bonus*)item;
 		[self addBonus:item];
 		[scene removeItem:item];
+		Explosion *explosion = [[[Explosion alloc] init] autorelease];
+		explosion.position = [[Vector2 vectorWithVector:temp.position] add:[Vector2 vectorWithX:[Random float] * 40 - 20 y:[Random float] * 80 - 40]];
+		[scene addItem:explosion];
+		
+
+		
 		bumm=YES;
-		[SoundEngine play:SoundEffectTypeExplo];
+		//[SoundEngine play:SoundEffectTypeExplo];
 		return NO;
 	}
 	/*Bounce off the rest.*/
@@ -70,7 +79,7 @@
 		float x = sqrtf(speed * speed - minY * minY);
 		velocity.y = velocity.y < 0 ? -minY : minY;
 		velocity.x = velocity.x < 0 ? -x : x;
-	}*/
+	}*/	
 }
 
 
@@ -80,9 +89,6 @@
 		[extra updateWithGameTime:gameTime];
 		if(bumm)
 		{
-			Explosion *explosion = [[[Explosion alloc] initWithGameTime:gameTime] autorelease];
-			explosion.position = [[Vector2 vectorWithVector:extra.position] add:[Vector2 vectorWithX:[Random float] * 40 - 20 y:[Random float] * 80 - 40]];
-			[scene addItem:explosion];
 			bumm=NO;
 		}
 	}

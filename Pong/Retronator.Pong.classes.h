@@ -12,13 +12,18 @@
 @class Bonus,BonusFactory;
 @class ExpandPadSizeBonus,ShrinkPadSizeBonus,PointsBonus,MultiBallBonus;
 
+@class Button,GameHud;
+
 #import "PlayerPosition.h"
 @class Player, HumanPlayer;
 @class AIPlayer, ReflexAgent;
 @class Bot;
 
+#import "LevelType.h"
 @class Level;
 @class PongLevel;
+
+@class GameState;
 @class Gameplay;
 
 @class Pong;
@@ -26,6 +31,8 @@
 #import "SoundEffectTypes.h"
 @class SoundEngine;
 
-@class Renderer, AIRenderer, PhysicsEngine;
+@class Renderer, AIRenderer, GuiRenderer;
 
-@class Constants;
+@class PhysicsEngine;
+
+@class Constants, GameProgress;

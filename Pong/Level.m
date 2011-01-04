@@ -61,7 +61,7 @@
 - (void) initialize 
 {
 	/*Pad Are Magnetic*/
-	topPlayer.magnetPower = 1;
+	//topPlayer.magnetPower = 1;
 	
 	/*LastPlayer Counter*/
 	lastPlayer=1;

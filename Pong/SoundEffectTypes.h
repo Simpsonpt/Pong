@@ -7,8 +7,8 @@
 //
 
 typedef enum {
-	SoundEffectTypeLoop,
 	SoundEffectTypeExplo,
+	SoundEffectTypeLoop,
 	SoundEffectTypePad,
 	//SoundEffectTypeWin,
 	//SoundEffectTypeLose,

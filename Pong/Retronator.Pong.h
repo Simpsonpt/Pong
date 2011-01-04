@@ -17,6 +17,9 @@
 #import "PointsBonus.h"
 #import "MultiBallBonus.h"
 
+#import "Button.h"
+#import "GameHud.h"
+
 #import "Player.h"
 #import "HumanPlayer.h"
 #import "PlayerPosition.h"
@@ -25,9 +28,11 @@
 #import "ReflexAgent.h"
 #import "Bot.h"
 
+#import "LevelType.h"
 #import "Level.h"
 #import "PongLevel.h"
 #import "Gameplay.h"
+#import "GameState.h"
 
 #import "Pong.h"
 
@@ -36,6 +41,9 @@
 
 #import "Renderer.h"
 #import "AIRenderer.h"
+#import "GuiRenderer.h"
+
 #import "PhysicsEngine.h"
 
 #import "Constants.h"
+#import "GameProgress.h"

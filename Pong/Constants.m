@@ -58,4 +58,23 @@ static Constants *instance;
 	return 10;
 }
 
++ (float) velocitySmoothing {
+	return 0.5;
+}
+
+//0.9
++ (float) padCoefficientOfRestitution {
+	return 1;
+}
+
+/*Game Rules*/
++ (int) winScore {
+	return 3;
+}
+
++ (NSString*) progressFilePath {
+	return @"PongSave";
+}
+
+
 @end

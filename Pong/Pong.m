@@ -8,16 +8,25 @@
 
 #import "Pong.h"
 #import "Retronator.Pong.h"
+#import "GameCore.Control.h"
 
 @implementation Pong
 
 - (id) init {
     if (self = [super init]) {
         graphics = [[GraphicsDeviceManager alloc] initWithGame:self];
-		[SoundEngine initializeWithGame:self];
+		//[SoundEngine initializeWithGame:self];
+		
+		[self.components addComponent:[[[TouchPanelHelper alloc] initWithGame:self] autorelease]];
+		
+		stateStack = [[NSMutableArray alloc] init];
+		
+		progress = [[GameProgress loadProgress] retain];
 	}
     return self;
 }
+
+@synthesize progress;
 
 - (void) initialize 
 {
@@ -40,6 +49,35 @@
 	/*Initialize All Components*/
 	[super initialize];
 }
+
+- (void) pushState:(GameState *)gameState {
+	GameState *currentActiveState = [stateStack lastObject];
+	[currentActiveState deactivate];
+	[self.components removeComponent:currentActiveState];
+	
+	[stateStack addObject:gameState];
+	[self.components addComponent:gameState];
+	[gameState activate];
+}
+
+- (void) popState {
+	GameState *currentActiveState = [stateStack lastObject];
+	[stateStack removeLastObject];
+	[currentActiveState deactivate];
+	[self.components removeComponent:currentActiveState];
+	
+	currentActiveState = [stateStack lastObject];
+	[self.components addComponent:currentActiveState];	
+	[currentActiveState activate];
+}
+
+/*- (Class) getLevelClass:(LevelType)type {
+	return levels[type];
+}*/
+
+/*- (Class) getOpponentClass:(OpponentType)type {
+	return opponentClasses[type];
+}*/
 
 - (void) loadMultiplayerLevel:(Class)levelClass 
 {	
@@ -66,6 +104,10 @@
 	[self.components addComponent:currentGameplay];	
 }
 
+
+- (void) updateWithGameTime:(GameTime *)gameTime {
+	[super updateWithGameTime:gameTime];
+}
 /*- (void) updateWithGameTime:(GameTime *)gameTime
 {
 	[sfx play];
@@ -74,10 +116,17 @@
 	[sfxInstance play];	
 }*/
 
+- (void) drawWithGameTime:(GameTime *)gameTime {
+	[self.graphicsDevice clearWithColor:[Color black]];
+	[super drawWithGameTime:gameTime];
+}
+
 - (void) dealloc
 {
 	[self.components removeComponent:currentGameplay];
 	[opponentClasses release];	
+	[stateStack release];
+	[progress release];
     [graphics release];
 	[levels release];
 	[currentGameplay release];

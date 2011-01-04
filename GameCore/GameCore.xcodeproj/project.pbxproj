@@ -51,6 +51,21 @@
 		DA6AB664127F3A2900FC4684 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AB662127F3A2900FC4684 /* Sprite.m */; };
 		DA6AB66C127F3A4D00FC4684 /* GameCore.Graphics.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6AB66A127F3A4D00FC4684 /* GameCore.Graphics.classes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6AB66D127F3A4D00FC4684 /* GameCore.Graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6AB66B127F3A4D00FC4684 /* GameCore.Graphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6CE03512D2B59300F01F76 /* GameCore.Control.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE03312D2B59300F01F76 /* GameCore.Control.classes.h */; };
+		DA6CE03A12D2B5EF00F01F76 /* GameCore.Control.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE03812D2B5EF00F01F76 /* GameCore.Control.h */; };
+		DA6CE03E12D2B64100F01F76 /* TouchPanelHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE03C12D2B64100F01F76 /* TouchPanelHelper.h */; };
+		DA6CE03F12D2B64100F01F76 /* TouchPanelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE03D12D2B64100F01F76 /* TouchPanelHelper.m */; };
+		DA6CE04212D2B68200F01F76 /* Fader.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE04012D2B68200F01F76 /* Fader.h */; };
+		DA6CE04312D2B68200F01F76 /* Fader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE04112D2B68200F01F76 /* Fader.m */; };
+		DA6CE04C12D2B88300F01F76 /* GameCore.Mirage.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE04A12D2B88300F01F76 /* GameCore.Mirage.classes.h */; };
+		DA6CE05012D2B8EF00F01F76 /* GameCore.Mirage.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE04E12D2B8EF00F01F76 /* GameCore.Mirage.h */; };
+		DA6CE05412D2B91100F01F76 /* MirageEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE05212D2B91100F01F76 /* MirageEnums.h */; };
+		DA6CE05812D2B92B00F01F76 /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE05612D2B92B00F01F76 /* Label.h */; };
+		DA6CE05912D2B92B00F01F76 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE05712D2B92B00F01F76 /* Label.m */; };
+		DA6CE05C12D2B94600F01F76 /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE05A12D2B94600F01F76 /* Image.h */; };
+		DA6CE05D12D2B94600F01F76 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE05B12D2B94600F01F76 /* Image.m */; };
+		DA6CE09212D2BA9800F01F76 /* GridScene.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6CE09012D2BA9800F01F76 /* GridScene.h */; };
+		DA6CE09312D2BA9800F01F76 /* GridScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE09112D2BA9800F01F76 /* GridScene.m */; };
 		DA82C57A128A012D00026869 /* Rectangle+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA82C578128A012D00026869 /* Rectangle+Extensions.h */; };
 		DA82C57B128A012D00026869 /* Rectangle+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82C579128A012D00026869 /* Rectangle+Extensions.m */; };
 		DA82C57F128A017600026869 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = DA82C57D128A017600026869 /* Random.h */; };
@@ -140,6 +155,21 @@
 		DA6AB662127F3A2900FC4684 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		DA6AB66A127F3A4D00FC4684 /* GameCore.Graphics.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Graphics.classes.h; sourceTree = "<group>"; };
 		DA6AB66B127F3A4D00FC4684 /* GameCore.Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Graphics.h; sourceTree = "<group>"; };
+		DA6CE03312D2B59300F01F76 /* GameCore.Control.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Control.classes.h; sourceTree = "<group>"; };
+		DA6CE03812D2B5EF00F01F76 /* GameCore.Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Control.h; sourceTree = "<group>"; };
+		DA6CE03C12D2B64100F01F76 /* TouchPanelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPanelHelper.h; sourceTree = "<group>"; };
+		DA6CE03D12D2B64100F01F76 /* TouchPanelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPanelHelper.m; sourceTree = "<group>"; };
+		DA6CE04012D2B68200F01F76 /* Fader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fader.h; sourceTree = "<group>"; };
+		DA6CE04112D2B68200F01F76 /* Fader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fader.m; sourceTree = "<group>"; };
+		DA6CE04A12D2B88300F01F76 /* GameCore.Mirage.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Mirage.classes.h; sourceTree = "<group>"; };
+		DA6CE04E12D2B8EF00F01F76 /* GameCore.Mirage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCore.Mirage.h; sourceTree = "<group>"; };
+		DA6CE05212D2B91100F01F76 /* MirageEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirageEnums.h; sourceTree = "<group>"; };
+		DA6CE05612D2B92B00F01F76 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		DA6CE05712D2B92B00F01F76 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		DA6CE05A12D2B94600F01F76 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		DA6CE05B12D2B94600F01F76 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		DA6CE09012D2BA9800F01F76 /* GridScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridScene.h; sourceTree = "<group>"; };
+		DA6CE09112D2BA9800F01F76 /* GridScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridScene.m; sourceTree = "<group>"; };
 		DA82C578128A012D00026869 /* Rectangle+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rectangle+Extensions.h"; sourceTree = "<group>"; };
 		DA82C579128A012D00026869 /* Rectangle+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rectangle+Extensions.m"; sourceTree = "<group>"; };
 		DA82C57D128A017600026869 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
@@ -223,6 +253,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DA6CE03212D2B56800F01F76 /* Control */,
+				DA6CE04912D2B85F00F01F76 /* Mirage */,
 				DA82C57C128A016700026869 /* Math */,
 				DA82C577128A010000026869 /* Extensions */,
 				DA1AAB4A127F51C9006E769D /* Scene */,
@@ -306,6 +338,8 @@
 				DA86DE0912A2B53400CB2CCE /* SceneAction.m */,
 				DA86DE0C12A2B5D100CB2CCE /* SceneEventArgs.h */,
 				DA86DE0D12A2B5D100CB2CCE /* SceneEventArgs.m */,
+				DA6CE09012D2BA9800F01F76 /* GridScene.h */,
+				DA6CE09112D2BA9800F01F76 /* GridScene.m */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -383,6 +417,33 @@
 				DA1AAB7B127F5C4E006E769D /* Collision */,
 			);
 			name = Physics;
+			sourceTree = "<group>";
+		};
+		DA6CE03212D2B56800F01F76 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CE03312D2B59300F01F76 /* GameCore.Control.classes.h */,
+				DA6CE03812D2B5EF00F01F76 /* GameCore.Control.h */,
+				DA6CE03C12D2B64100F01F76 /* TouchPanelHelper.h */,
+				DA6CE03D12D2B64100F01F76 /* TouchPanelHelper.m */,
+				DA6CE04012D2B68200F01F76 /* Fader.h */,
+				DA6CE04112D2B68200F01F76 /* Fader.m */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		DA6CE04912D2B85F00F01F76 /* Mirage */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CE04A12D2B88300F01F76 /* GameCore.Mirage.classes.h */,
+				DA6CE04E12D2B8EF00F01F76 /* GameCore.Mirage.h */,
+				DA6CE05212D2B91100F01F76 /* MirageEnums.h */,
+				DA6CE05612D2B92B00F01F76 /* Label.h */,
+				DA6CE05712D2B92B00F01F76 /* Label.m */,
+				DA6CE05A12D2B94600F01F76 /* Image.h */,
+				DA6CE05B12D2B94600F01F76 /* Image.m */,
+			);
+			name = Mirage;
 			sourceTree = "<group>";
 		};
 		DA82C577128A010000026869 /* Extensions */ = {
@@ -479,6 +540,16 @@
 				DA86DE2812A2B95C00CB2CCE /* AARectangleAARectangleCollision.h in Headers */,
 				DA86DE7F12A2BE4500CB2CCE /* IAAHalfPlaneCollider.h in Headers */,
 				DA86DE8312A2BE7E00CB2CCE /* IAARectangleCollider.h in Headers */,
+				DA6CE03512D2B59300F01F76 /* GameCore.Control.classes.h in Headers */,
+				DA6CE03A12D2B5EF00F01F76 /* GameCore.Control.h in Headers */,
+				DA6CE03E12D2B64100F01F76 /* TouchPanelHelper.h in Headers */,
+				DA6CE04212D2B68200F01F76 /* Fader.h in Headers */,
+				DA6CE04C12D2B88300F01F76 /* GameCore.Mirage.classes.h in Headers */,
+				DA6CE05012D2B8EF00F01F76 /* GameCore.Mirage.h in Headers */,
+				DA6CE05412D2B91100F01F76 /* MirageEnums.h in Headers */,
+				DA6CE05812D2B92B00F01F76 /* Label.h in Headers */,
+				DA6CE05C12D2B94600F01F76 /* Image.h in Headers */,
+				DA6CE09212D2BA9800F01F76 /* GridScene.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +627,11 @@
 				DA86DE2112A2B88E00CB2CCE /* CollisionAlgorithm.m in Sources */,
 				DA86DE2512A2B90500CB2CCE /* AARectangleAAHalfPlaneCollision.m in Sources */,
 				DA86DE2912A2B95C00CB2CCE /* AARectangleAARectangleCollision.m in Sources */,
+				DA6CE03F12D2B64100F01F76 /* TouchPanelHelper.m in Sources */,
+				DA6CE04312D2B68200F01F76 /* Fader.m in Sources */,
+				DA6CE05912D2B92B00F01F76 /* Label.m in Sources */,
+				DA6CE05D12D2B94600F01F76 /* Image.m in Sources */,
+				DA6CE09312D2BA9800F01F76 /* GridScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +680,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphonesimulator4.1;
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../XNI/usr/local/include";
 			};
 			name = Debug;
@@ -618,7 +694,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphonesimulator4.1;
 			};
 			name = Release;
 		};

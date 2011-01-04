@@ -21,7 +21,5 @@
 
 @property (nonatomic, readonly) int random;
 
-- (id) initWithGameTime:(GameTime*)gameTime;
-
 @end
 

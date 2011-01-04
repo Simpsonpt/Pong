@@ -13,22 +13,32 @@
 
 @interface Pad : NSObject <IAARectangleCollider, ICustomCollider, ISceneUser, ICustomUpdate> {
 	Vector2 *position;
+
+	Vector2 *velocity;
+	
 	float width;
 	float height;
-	int magnetPower;
+	//int magnetPower;
 	
 	/*Top or Bottom*/
 	BOOL top, stopBonus;
 	int type;
 	
-	NSMutableArray *caughtBalls;
+	// We store previous position for velocity calculation.
+	Vector2 *previousPosition;
+
+	//NSMutableArray *caughtBalls;
 	id<IScene> scene;
 }
 
-@property (nonatomic) int magnetPower,type;
+//magnetPower
+@property (nonatomic) int type;
 @property (nonatomic) float width,height;
 @property (nonatomic) BOOL top,stopBonus;
 
-- (void) releaseBalls;
+@property (nonatomic, retain) Vector2 *previousPosition;
+
+- (void) resetVelocity;
+//- (void) releaseBalls;
 
 @end

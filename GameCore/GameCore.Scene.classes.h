@@ -1,4 +1,4 @@
 @protocol IScene;
 @class SceneEventArgs;
 
-@class Scene;
+@class Scene, GridScene;

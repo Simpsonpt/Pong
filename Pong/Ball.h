@@ -10,11 +10,12 @@
 #import "GameCore.Scene.Objects.h"
 #import "Retronator.Pong.classes.h"
 
-@interface Ball : NSObject <IParticle,ISceneUser,ICustomUpdate,ICustomCollider> {
+@interface Ball : NSObject <IParticle,ISceneUser,ICustomUpdate,ICoefficientOfRestitution,ICustomCollider> {
 	Vector2 *position;
 	Vector2 *velocity;
 	float radius;
 	float mass;
+	float coefficientOfRestitution;
 	
 	id<IScene> scene;
 	BOOL bumm;

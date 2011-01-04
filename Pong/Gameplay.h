@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Retronator.Pong.classes.h"
+#import "GameState.h"
 
 @interface Gameplay:GameComponent {
-	Level *level;	
+	Level *level;
+	GameHud *hud;
 	Player *topPlayer;
 	Player *bottomPlayer;
+
+	GuiRenderer *hudRenderer;
 	Renderer *renderer;	
 	PhysicsEngine *physics;
 }
@@ -21,6 +25,7 @@
 
 - (id) initMultiplayerWithGame:(Game*)theGame levelClass:(Class)levelClass;
 - (id) initSinglePlayerWithGame:(Game*)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass;
+
 - (float) calculateCurrentBallSpeed;
 - (void) resetLevel;
 - (void) reset;

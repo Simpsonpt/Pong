@@ -153,7 +153,7 @@
 
 	[spriteBatch begin];
 	//[spriteBatch beginWithSortMode:SpriteSortModeBackToFront BlendState:nil];
-	//[primitiveBatch begin];
+	[primitiveBatch begin];
 	
 	for (id item in gameplay.level.scene) 
 	{
@@ -167,13 +167,14 @@
 		{
 			/*Just for Debug*/
 			Pad *pad = (Pad*)item;
-			//[primitiveBatch drawRectangleAt:pad.position width:pad.width height:pad.height color:[Color white]];
+			[primitiveBatch drawRectangleAt:pad.position width:pad.width height:pad.height color:[Color white]];
 			sprite = padSprite[pad.type];
 		} else if ([item isKindOfClass:[Ball class]]) 
 		{
 			/*Just for Debug*/
-			//Ball *ball = (Ball*)item;
-			//[primitiveBatch drawCircleAt:ball.position radius:ball.radius divisions:32 color:[Color green]];
+			Ball *ball = (Ball*)item;
+			[primitiveBatch drawCircleAt:ball.position radius:ball.radius divisions:32 color:[Color green]];
+			[primitiveBatch drawLineFrom:ball.position to:[Vector2 add:ball.position to:ball.velocity] color:[Color red]];
 			sprite = ballSprite[1];
 		} else if ([item isKindOfClass:[Bonus class]]) 
 		{
@@ -202,7 +203,7 @@
 	}
 	
 	[spriteBatch end];
-	//[primitiveBatch end];
+	[primitiveBatch end];
 	
 	// Draw effects in additive mode.
 	//[spriteBatch beginWithSortMode:SpriteSortModeDeffered BlendState:[BlendState additive]];

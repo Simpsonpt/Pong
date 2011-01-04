@@ -17,6 +17,12 @@
 @interface Pong : Game 
 {
 	GraphicsDeviceManager *graphics;
+	
+	// Progress
+	GameProgress *progress;
+	// Game state
+	NSMutableArray *stateStack;
+	
 	/*Gameplay*/
 	Gameplay *currentGameplay;
 	/*Diferent Levels*/
@@ -26,6 +32,14 @@
 	
 	//SoundEffect *sfx;
 }
+
+@property (nonatomic, readonly) GameProgress *progress;
+
+- (void) pushState:(GameState*)gameState;
+- (void) popState;
+
+//- (Class) getLevelClass:(LevelType)type;
+//- (Class) getOpponentClass:(OpponentType)type;
 
 - (void) loadMultiplayerLevel:(Class) levelClass;
 - (void) loadSinglePlayerLevel:(Class) levelClass opponentClass:(Class)opponentClass;

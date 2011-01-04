@@ -20,32 +20,42 @@
 		height = 20;
 		type=0;
 		stopBonus=NO;
-		caughtBalls = [[NSMutableArray alloc] init];		
+		//caughtBalls = [[NSMutableArray alloc] init];		
+		velocity = [[Vector2 alloc] init];
+		previousPosition = [[Vector2 alloc] init];
+		
 	}
 	return self;
 }
-
-@synthesize position, width, height, magnetPower, scene, type, top,stopBonus;
+// magnetPower,
+@synthesize position, width, height, scene, type, top,stopBonus,previousPosition;
 
 - (BOOL) collidingWithItem:(id)item {
 	return YES;
 }
 
-- (void) releaseBalls {
+- (void) resetVelocity {
+	[previousPosition set:position];
+	[velocity set:[Vector2 zero]];
+}
+
+/*- (void) releaseBalls {
 	if (magnetPower) {
 		magnetPower--;
 		[caughtBalls removeAllObjects];
 	}
-}
+}*/
 
 - (void) collidedWithItem:(id)item {
 	Ball *ball = [item isKindOfClass:[Ball class]] ? item : nil;
 	if(ball) 
 	{
-		[SoundEngine play:SoundEffectTypePad];
+		//[SoundEngine play:SoundEffectTypePad];
 		// Calculate horizontal velocity depending on where the paddle was hit.
 		
 		// First save the current speed and add speedup.
+		float sign=ball.velocity.y >0 ? 1 : -1 ;
+		
 		float speed = [ball.velocity length] * [Constants getInstance].ballSpeedUp;
 		
 		// Calculate where on the paddle we were hit, from -1 to 1.
@@ -57,7 +67,7 @@
 		
 		// Rebound ball in desired direction.
 		ball.velocity.x = sinf(angle);
-		ball.velocity.y = -cosf(angle);
+		ball.velocity.y = cosf(angle)*sign;
 		[ball.velocity multiplyBy:speed];
 		
 		//if (magnetPower)
@@ -113,11 +123,31 @@
 		caughtBall.ball.position.x = position.x + caughtBall.offset;
 		caughtBall.ball.position.y = position.y - height/2 - caughtBall.ball.radius;
 	}*/
+	// Avoid division by zero.
+	if (gameTime.elapsedGameTime == 0) {
+		return;
+	}
+	
+	// Calculate mallet velocity in reverse.
+	Vector2 *distance = [Vector2 subtract:position by:previousPosition];
+	
+	// Velocity is distance over time
+	Vector2 *newVelocity = [Vector2 multiply:distance by:1.0f/gameTime.elapsedGameTime];
+	
+	// Use smoothing to make up for jerky pixel unit movement.
+	// v = vOld * s + vNew * (1-s)
+	float s = [Constants velocitySmoothing];
+	[[velocity multiplyBy:s] add:[Vector2 multiply:newVelocity by:1-s]];	
+	
+	// Store position for next frame.
+	[previousPosition set:position];
+	
 }
 
 - (void) dealloc
 {
 	[position release];
+	[velocity release];
 	[super dealloc];
 }
 

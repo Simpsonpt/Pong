@@ -44,7 +44,7 @@
 
 		// Create players
 		//topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
-//		topPlayer = [[aiClass alloc] initWithGame:self.game pad:level.topPlayer level:level position:PlayerPositionTop];
+		//topPlayer = [[aiClass alloc] initWithGame:self.game pad:level.topPlayer level:level position:PlayerPositionTop];
 		topPlayer = [[aiClass alloc] initWithGame:self.game scene:level.scene 
 											  pad:level.topPlayer level:level position:PlayerPositionTop];
 
@@ -96,9 +96,28 @@
 	}
 }
 
+- (void) activate {
+	[self.game.components addComponent:level];	
+	[self.game.components addComponent:hud];
+	[self.game.components addComponent:hudRenderer];
+	[self.game.components addComponent:renderer];
+	[self.game.components addComponent:physics];
+	//[self.game.components addComponent:topPlayer[PlayerPositionTop]];
+	//[self.game.components addComponent:bottomPlayer[PlayerPositionBottom]];	
+}
+
+- (void) deactivate {
+	[self.game.components removeComponent:hud];
+	[self.game.components removeComponent:hudRenderer];
+	[self.game.components removeComponent:level];
+	[self.game.components removeComponent:renderer];
+	[self.game.components removeComponent:physics];	
+	//[self.game.components removeComponent:topPlayer[PlayerPositionTop]];
+	//[self.game.components removeComponent:bottomPlayer[PlayerPositionBottom]];	
+}
+
 - (void) initialize 
 {
-	//[player setCamera:renderer.camera];
 	[self reset];
 	[super initialize];
 }
