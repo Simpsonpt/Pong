@@ -10,6 +10,9 @@
 #import "Retronator.Pong.h"
 #import "GameCore.Scene.Objects.h"
 
+#import "Menu.h"
+#import "Retronator.Xni.Framework.Content.h"
+#import "Retronator.Xni.Framework.Content.Pipeline.Processors.h"
 
 @implementation Level
 
@@ -51,6 +54,32 @@
 		[scene addItem:topPlayer];
 		[scene addItem:bottomPlayer];
 		[scene addItem:ball];*/
+		
+		
+		/*Score*/
+		FontTextureProcessor *fontProcessor = [[[FontTextureProcessor alloc] init] autorelease];
+		retrotype = [self.game.content load:@"Retrotype" processor:fontProcessor];
+		fivexfive = [self.game.content load:@"5x5" processor:fontProcessor];
+		fivexfive.lineSpacing = 14;
+		
+		p1P = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:50 y:10]];
+		p1P.horizontalAlign = HorizontalAlignCenter;
+		
+		p2P = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:270 y:10]];
+		p2P.horizontalAlign = HorizontalAlignCenter;
+		
+		/*Restart*/
+		buttonBackground = [self.game.content load:@"Button"];
+		reset = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:210 y:240 width:55 height:32] 
+											  background:buttonBackground font:retrotype text:@"Restart"];
+		[reset.backgroundImage setScaleUniform:2];
+		
+		/*Image*/
+		Texture2D *dukeTexture = [[self.game.content load:@"Darth"] autorelease];	
+		duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:120 y:0]];	
+		[duke setScaleUniform: 0.2];
+		resetDuke=FALSE;
+		
 	}
 	return self;
 }
@@ -102,7 +131,7 @@
 {
 	/*Remove Everything from the Scene.*/
 	[scene clear];
-	
+
 	/*Add Items to the Scene*/
 	[scene addItem:background];
 	[scene addItem:md];
@@ -122,6 +151,13 @@
 
 	// Reset ball
 	//printf("Speed RLWBWS: %f\n",speed);
+	
+	[scene addItem:p1P];
+	[scene addItem:p2P];
+	//[scene addItem:reset];
+	if(resetDuke)
+		[scene addItem:duke];	
+	
 	[self resetBallWithSpeed:speed];
 }
 
@@ -176,6 +212,23 @@
 		
 		if (updatable)
 			[updatable updateWithGameTime:gameTime];	
+	}
+	p1P.text = [NSString stringWithFormat:@"%i", p1_points];
+	p2P.text = [NSString stringWithFormat:@"%i", p2_points];
+	
+	for (id item in scene) {
+		Button *button = [item isKindOfClass:[Button class]] ? item : nil;
+		
+		if (button) {
+			[button update];
+		}
+	}
+	if (reset.wasReleased) 
+	{
+		p1_points=0;
+		p2_points=0;
+		resetDuke=TRUE;
+		[self resetLevelWithBallSpeed:400];
 	}
 }
 

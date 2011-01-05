@@ -25,6 +25,8 @@
 
 @class GameState;
 @class Gameplay;
+@class Menu,MainMenu,LevelSelection,Options;
+
 
 @class Pong;
 

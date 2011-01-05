@@ -187,8 +187,17 @@
 			sprite = middleSprite;
 		} else if ([item isKindOfClass:[PlayerImg class]]) {
 			sprite = playerSprite;
-		} 		
-		
+		} else if ([item isKindOfClass:[Label class]])
+		{
+			Label *label = item;
+			[spriteBatch drawStringWithSpriteFont:label.font text:label.text to:label.position tintWithColor:label.color
+											 rotation:label.rotation origin:label.origin scale:label.scale effects:SpriteEffectsNone layerDepth:label.layerDepth];
+		} else if ([item isKindOfClass:[Image class]])
+		{
+			Image *image = item;
+			[spriteBatch draw:image.texture to:image.position fromRectangle:image.sourceRectangle tintWithColor:image.color
+					 rotation:image.rotation origin:image.origin scale:image.scale effects:SpriteEffectsNone layerDepth:image.layerDepth];
+		}
 		if (itemWithPosition && sprite) {
 			[spriteBatch draw:sprite.texture 
 						   to:itemWithPosition.position

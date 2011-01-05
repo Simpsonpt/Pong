@@ -33,6 +33,10 @@
 #import "PongLevel.h"
 #import "Gameplay.h"
 #import "GameState.h"
+#import "Menu.h"
+#import "MainMenu.h"
+#import "LevelSelection.h"
+#import "Options.h"
 
 #import "Pong.h"
 

@@ -30,6 +30,13 @@
 		DA64619512A33B3B00D93ED7 /* PointsBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619412A33B3B00D93ED7 /* PointsBonus.m */; };
 		DA64619812A33B5700D93ED7 /* MultiBallBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619712A33B5700D93ED7 /* MultiBallBonus.m */; };
 		DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65D00A12764CDF0052AF85 /* Bonus.m */; };
+		DA697ED012D3E463002BD1BB /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ECF12D3E463002BD1BB /* Menu.m */; };
+		DA697ED312D3E4EE002BD1BB /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED212D3E4EE002BD1BB /* MainMenu.m */; };
+		DA697ED612D3E520002BD1BB /* LevelSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED512D3E520002BD1BB /* LevelSelection.m */; };
+		DA697ED912D3E55D002BD1BB /* Options.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED812D3E55D002BD1BB /* Options.m */; };
+		DA697EFA12D3E9B0002BD1BB /* TheDuke.png in Resources */ = {isa = PBXBuildFile; fileRef = DA697EF912D3E9B0002BD1BB /* TheDuke.png */; };
+		DA697EFC12D3E9BB002BD1BB /* TablePlain.png in Resources */ = {isa = PBXBuildFile; fileRef = DA697EFB12D3E9BB002BD1BB /* TablePlain.png */; };
+		DA699EED12D418AA00145C81 /* Darth.png in Resources */ = {isa = PBXBuildFile; fileRef = DA699EEC12D418AA00145C81 /* Darth.png */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
 		DA6CE13F12D2C2BC00F01F76 /* 5x5.bmp in Resources */ = {isa = PBXBuildFile; fileRef = DA6CE13E12D2C2BC00F01F76 /* 5x5.bmp */; };
 		DA6CE14112D2C2C900F01F76 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA6CE14012D2C2C900F01F76 /* Button.png */; };
@@ -124,6 +131,17 @@
 		DA64619712A33B5700D93ED7 /* MultiBallBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiBallBonus.m; sourceTree = "<group>"; };
 		DA65D00912764CDF0052AF85 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
 		DA65D00A12764CDF0052AF85 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bonus.m; sourceTree = "<group>"; };
+		DA697ECE12D3E463002BD1BB /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		DA697ECF12D3E463002BD1BB /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		DA697ED112D3E4EE002BD1BB /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		DA697ED212D3E4EE002BD1BB /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		DA697ED412D3E520002BD1BB /* LevelSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelection.h; sourceTree = "<group>"; };
+		DA697ED512D3E520002BD1BB /* LevelSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelection.m; sourceTree = "<group>"; };
+		DA697ED712D3E55D002BD1BB /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
+		DA697ED812D3E55D002BD1BB /* Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Options.m; sourceTree = "<group>"; };
+		DA697EF912D3E9B0002BD1BB /* TheDuke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TheDuke.png; path = ../Images/TheDuke.png; sourceTree = SOURCE_ROOT; };
+		DA697EFB12D3E9BB002BD1BB /* TablePlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TablePlain.png; path = ../Images/TablePlain.png; sourceTree = SOURCE_ROOT; };
+		DA699EEC12D418AA00145C81 /* Darth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Darth.png; path = ../Images/Darth.png; sourceTree = SOURCE_ROOT; };
 		DA6AB676127F3AE000FC4684 /* GameCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameCore.xcodeproj; path = ../GameCore/GameCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 		DA6CE13E12D2C2BC00F01F76 /* 5x5.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 5x5.bmp; path = ../Images/5x5.bmp; sourceTree = SOURCE_ROOT; };
 		DA6CE14012D2C2C900F01F76 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = ../Images/Button.png; sourceTree = SOURCE_ROOT; };
@@ -343,6 +361,7 @@
 		DA6CE13012D2C24400F01F76 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DA699EEC12D418AA00145C81 /* Darth.png */,
 				DA6CE14412D2C2E500F01F76 /* Gameplay */,
 				DA6CE13112D2C28B00F01F76 /* GUI */,
 			);
@@ -352,6 +371,8 @@
 		DA6CE13112D2C28B00F01F76 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA697EFB12D3E9BB002BD1BB /* TablePlain.png */,
+				DA697EF912D3E9B0002BD1BB /* TheDuke.png */,
 				DA6CE14212D2C2D200F01F76 /* Retrotype.bmp */,
 				DA6CE14012D2C2C900F01F76 /* Button.png */,
 				DA6CE13E12D2C2BC00F01F76 /* 5x5.bmp */,
@@ -404,6 +425,14 @@
 		DA6CE17312D2C67300F01F76 /* Menus */ = {
 			isa = PBXGroup;
 			children = (
+				DA697ECE12D3E463002BD1BB /* Menu.h */,
+				DA697ECF12D3E463002BD1BB /* Menu.m */,
+				DA697ED112D3E4EE002BD1BB /* MainMenu.h */,
+				DA697ED212D3E4EE002BD1BB /* MainMenu.m */,
+				DA697ED412D3E520002BD1BB /* LevelSelection.h */,
+				DA697ED512D3E520002BD1BB /* LevelSelection.m */,
+				DA697ED712D3E55D002BD1BB /* Options.h */,
+				DA697ED812D3E55D002BD1BB /* Options.m */,
 			);
 			name = Menus;
 			sourceTree = "<group>";
@@ -598,6 +627,9 @@
 				DA6CE13F12D2C2BC00F01F76 /* 5x5.bmp in Resources */,
 				DA6CE14112D2C2C900F01F76 /* Button.png in Resources */,
 				DA6CE14312D2C2D200F01F76 /* Retrotype.bmp in Resources */,
+				DA697EFA12D3E9B0002BD1BB /* TheDuke.png in Resources */,
+				DA697EFC12D3E9BB002BD1BB /* TablePlain.png in Resources */,
+				DA699EED12D418AA00145C81 /* Darth.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +674,10 @@
 				DA6CE17812D2C6F300F01F76 /* GuiRenderer.m in Sources */,
 				DA6CE24812D2D46C00F01F76 /* Button.m in Sources */,
 				DA6CE24F12D2D4E400F01F76 /* GameHud.m in Sources */,
+				DA697ED012D3E463002BD1BB /* Menu.m in Sources */,
+				DA697ED312D3E4EE002BD1BB /* MainMenu.m in Sources */,
+				DA697ED612D3E520002BD1BB /* LevelSelection.m in Sources */,
+				DA697ED912D3E55D002BD1BB /* Options.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

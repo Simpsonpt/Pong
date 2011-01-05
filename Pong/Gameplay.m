@@ -127,7 +127,7 @@
 	/*Initial Pad (Normal)*/
 	level.PadType=0;
 	
-	[level resetLevelWithBallSpeed:200];
+	[level resetLevelWithBallSpeed:400];
 	
 	printf("#*# Level %d #*#\n", level.Lnum);
 }

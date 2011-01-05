@@ -44,6 +44,9 @@
 	// Start in first level.
 	[self loadSinglePlayerLevel:[levels objectAtIndex:0] opponentClass:[opponentClasses objectAtIndex:0]];
 	
+	//MainMenu *mainMenu = [[[MainMenu alloc] initWithGame:self] autorelease];
+	//[self pushState:mainMenu];
+	
 	//sfx = [self.content load:@"loop"];
 	
 	/*Initialize All Components*/
@@ -72,12 +75,12 @@
 }
 
 /*- (Class) getLevelClass:(LevelType)type {
-	return levels[type];
-}*/
+ return levels[type];
+ }*/
 
 /*- (Class) getOpponentClass:(OpponentType)type {
-	return opponentClasses[type];
-}*/
+ return opponentClasses[type];
+ }*/
 
 - (void) loadMultiplayerLevel:(Class)levelClass 
 {	
@@ -109,12 +112,12 @@
 	[super updateWithGameTime:gameTime];
 }
 /*- (void) updateWithGameTime:(GameTime *)gameTime
-{
-	[sfx play];
-	SoundEffectInstance *sfxInstance = [sfx createInstance];
-	sfxInstance.isLooped = YES;
-	[sfxInstance play];	
-}*/
+ {
+ [sfx play];
+ SoundEffectInstance *sfxInstance = [sfx createInstance];
+ sfxInstance.isLooped = YES;
+ [sfxInstance play];	
+ }*/
 
 - (void) drawWithGameTime:(GameTime *)gameTime {
 	[self.graphicsDevice clearWithColor:[Color black]];

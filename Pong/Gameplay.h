@@ -10,7 +10,7 @@
 #import "Retronator.Pong.classes.h"
 #import "GameState.h"
 
-@interface Gameplay:GameComponent {
+@interface Gameplay:GameState {
 	Level *level;
 	GameHud *hud;
 	Player *topPlayer;

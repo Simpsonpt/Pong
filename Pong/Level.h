@@ -10,6 +10,8 @@
 #import "GameCore.Scene.h"
 #import "Retronator.Pong.classes.h"
 
+#import "GameCore.Mirage.h"
+
 @interface Level : GameComponent {
 	
 	Scene *scene;
@@ -28,7 +30,19 @@
 	
 	NSMutableArray *defenseSpots;
 	NSMutableArray *offenseSpots;
+	
+	/*Score*/
+	SpriteFont *retrotype, *fivexfive;
+	Label *p1P,*p2P;
+	
+	Texture2D *buttonBackground;
+	Button *reset;
+	
+	Image *duke;
+	BOOL resetDuke;
+	
 }
+
 
 @property (nonatomic, readonly) id<IScene> scene;
 @property (nonatomic, readonly) Pad *topPlayer;
@@ -40,8 +54,8 @@
 @property (nonatomic, readonly) NSMutableArray *defenseSpots;
 @property (nonatomic, readonly) NSMutableArray *offenseSpots;
 
-- (void)reset;
-- (void)updatePlayerPoints:(NSInteger)point;
+- (void) reset;
+- (void) updatePlayerPoints:(NSInteger)point;
 - (void) resetBallWithSpeed:(float)speed;
 - (void) resetLevelWithBallSpeed:(float)speed;
 - (void) GameOver;
