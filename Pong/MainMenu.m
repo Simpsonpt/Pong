@@ -62,24 +62,26 @@
 	[scene addItem:options];
 }
 
-- (void) updateWithGameTime:(GameTime *)gameTime {
+- (void) updateWithGameTime:(GameTime *)gameTime 
+{
 	[super updateWithGameTime:gameTime];
 	
 	GameState *newState = nil;
 	
 	if (singleplayer.wasReleased) 
 	{
-		//[self.game loadSinglePlayerLevel:[self.game.levels objectAtIndex:0] opponentClass:[self.opponentClasses objectAtIndex:0]];
-	//	[Pong pushState:gameplay];		
-	} else if (multiplayer.wasReleased) {	
-		//newState = [[[LevelSelection alloc] initWithGame:self.game] autorelease];
+		Gameplay* temp = [pong loadSinglePlayerLevel];
+		[pong pushState:temp];		
+	} else if (multiplayer.wasReleased) 
+	{	
+		Gameplay* temp = [pong loadMultiplayerLevel];
+		[pong pushState:temp];		
 	} else if (options.wasReleased) {
 		newState = [[[Options alloc] initWithGame:self.game] autorelease];
 	}
 	
-	if (newState) {
+	if (newState)
 		[pong pushState:newState];
-	}
 }
 
 - (void) dealloc

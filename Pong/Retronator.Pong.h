@@ -26,6 +26,7 @@
 
 #import "AIPlayer.h"
 #import "ReflexAgent.h"
+#import "OpponentType.h"
 #import "Bot.h"
 
 #import "LevelType.h"

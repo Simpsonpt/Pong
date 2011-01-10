@@ -166,6 +166,7 @@
 		DA730CBA12AF1F330048188B /* AIRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRenderer.h; sourceTree = "<group>"; };
 		DA730CBB12AF1F330048188B /* AIRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRenderer.m; sourceTree = "<group>"; };
 		DA7BEC41129C3B0F0030C09C /* bonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonus.png; path = ../Images/bonus.png; sourceTree = SOURCE_ROOT; };
+		DA7D722712DB8F1D007D54B3 /* OpponentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpponentType.h; sourceTree = "<group>"; };
 		DA80C90412752B0000E0BF5A /* MyPong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MyPong.png; path = ../Images/MyPong.png; sourceTree = SOURCE_ROOT; };
 		DA80C90B12752B5400E0BF5A /* Retronator.Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.h; sourceTree = "<group>"; };
 		DA80C90C12752B6700E0BF5A /* Retronator.Pong.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.classes.h; sourceTree = "<group>"; };
@@ -460,6 +461,7 @@
 		DA730CA712AF1C4B0048188B /* Opponents */ = {
 			isa = PBXGroup;
 			children = (
+				DA7D722712DB8F1D007D54B3 /* OpponentType.h */,
 				DA730CA812AF1C6B0048188B /* Bot.h */,
 				DA730CA912AF1C6B0048188B /* Bot.m */,
 			);

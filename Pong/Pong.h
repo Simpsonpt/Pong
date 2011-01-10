@@ -26,9 +26,14 @@
 	/*Gameplay*/
 	Gameplay *currentGameplay;
 	/*Diferent Levels*/
-	NSMutableArray *levels;
+	//NSMutableArray *levels;
 	// Opponents
-	NSMutableArray *opponentClasses;
+	//NSMutableArray *opponentClasses;
+	// Levels
+	Class levelClasses[LevelTypes];
+	
+	// Opponents
+	Class opponentClasses[OpponentTypes];
 	
 	//SoundEffect *sfx;
 }
@@ -38,10 +43,10 @@
 - (void) pushState:(GameState*)gameState;
 - (void) popState;
 
-//- (Class) getLevelClass:(LevelType)type;
-//- (Class) getOpponentClass:(OpponentType)type;
+- (Class) getLevelClass:(LevelType)type;
+- (Class) getOpponentClass:(OpponentType)type;
 
-- (void) loadMultiplayerLevel:(Class) levelClass;
-- (void) loadSinglePlayerLevel:(Class) levelClass opponentClass:(Class)opponentClass;
+- (Gameplay*) loadMultiplayerLevel;
+- (Gameplay*) loadSinglePlayerLevel;
 
 @end

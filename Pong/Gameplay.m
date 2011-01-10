@@ -98,8 +98,8 @@
 
 - (void) activate {
 	[self.game.components addComponent:level];	
-	[self.game.components addComponent:hud];
-	[self.game.components addComponent:hudRenderer];
+	//[self.game.components addComponent:hud];
+	//[self.game.components addComponent:hudRenderer];
 	[self.game.components addComponent:renderer];
 	[self.game.components addComponent:physics];
 	//[self.game.components addComponent:topPlayer[PlayerPositionTop]];
@@ -107,8 +107,8 @@
 }
 
 - (void) deactivate {
-	[self.game.components removeComponent:hud];
-	[self.game.components removeComponent:hudRenderer];
+	//[self.game.components removeComponent:hud];
+	//[self.game.components removeComponent:hudRenderer];
 	[self.game.components removeComponent:level];
 	[self.game.components removeComponent:renderer];
 	[self.game.components removeComponent:physics];	

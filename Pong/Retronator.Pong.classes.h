@@ -17,6 +17,7 @@
 #import "PlayerPosition.h"
 @class Player, HumanPlayer;
 @class AIPlayer, ReflexAgent;
+#import "OpponentType.h"
 @class Bot;
 
 #import "LevelType.h"

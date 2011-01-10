@@ -26,32 +26,41 @@
     return self;
 }
 
-@synthesize progress;
+
 
 - (void) initialize 
 {
-	/*Create All Levels*/
+	/*Create All Levels
 	levels = [[NSMutableArray alloc] init];
 	[levels addObject:[PongLevel class]];
 	
-	/*Start in First Level - MultiPlayer Type*/
+	/*Start in First Level - MultiPlayer Type
 	//[self loadMultiplayerLevel:[levels objectAtIndex:0]];
 	
 	// Add all opponent classes.
 	opponentClasses = [[NSMutableArray alloc] init];
-	[opponentClasses addObject:[Bot class]];
+	 [opponentClasses addObject:[Bot class]];*/
+	
+	levelClasses[LevelTypePong] = [PongLevel class];
+	//levelClasses[LevelTypeBullfrog] = [BullfrogLevel class];
+	 
+	// Add all opponents.
+	opponentClasses[OpponentTypeBot] = [Bot class];
+	 //opponentClasses[OpponentTypeShaman] = [Shaman class]
+	 
 	
 	// Start in first level.
-	[self loadSinglePlayerLevel:[levels objectAtIndex:0] opponentClass:[opponentClasses objectAtIndex:0]];
+	//[self loadSinglePlayerLevel:[levels objectAtIndex:0] opponentClass:[opponentClasses objectAtIndex:0]];
 	
-	//MainMenu *mainMenu = [[[MainMenu alloc] initWithGame:self] autorelease];
-	//[self pushState:mainMenu];
+	MainMenu *mainMenu = [[[MainMenu alloc] initWithGame:self] autorelease];
+	[self pushState:mainMenu];
 	
 	//sfx = [self.content load:@"loop"];
 	
 	/*Initialize All Components*/
 	[super initialize];
 }
+@synthesize progress;
 
 - (void) pushState:(GameState *)gameState {
 	GameState *currentActiveState = [stateStack lastObject];
@@ -74,15 +83,15 @@
 	[currentActiveState activate];
 }
 
-/*- (Class) getLevelClass:(LevelType)type {
- return levels[type];
- }*/
+- (Class) getLevelClass:(LevelType)type {
+ return levelClasses[type];
+}
 
-/*- (Class) getOpponentClass:(OpponentType)type {
+- (Class) getOpponentClass:(OpponentType)type {
  return opponentClasses[type];
- }*/
+}
 
-- (void) loadMultiplayerLevel:(Class)levelClass 
+- (Gameplay*) loadMultiplayerLevel
 {	
 	/*Unload The Current Gameplay.*/
 	if (currentGameplay) 
@@ -91,11 +100,12 @@
 		[currentGameplay release];
 	}
 	/*Allocate and Initialize New Gameplay object and add it to components.*/
-	currentGameplay = [[Gameplay alloc] initMultiplayerWithGame:self levelClass:levelClass];
-	[self.components addComponent:currentGameplay];
+	currentGameplay = [[Gameplay alloc] initMultiplayerWithGame:self levelClass:levelClasses[LevelTypePong]];
+	//[self.components addComponent:currentGameplay];
+	return currentGameplay;
 }
 
-- (void) loadSinglePlayerLevel:(Class) levelClass opponentClass:(Class)opponentClass {
+- (Gameplay*) loadSinglePlayerLevel {
 	// Unload the current gameplay.
 	if (currentGameplay) {
 		[self.components removeComponent:currentGameplay];
@@ -103,8 +113,9 @@
 	}
 	
 	// Allocate and initialize new gameplay object and add it to components.
-	currentGameplay = [[Gameplay alloc] initSinglePlayerWithGame:self levelClass:levelClass aiClass:opponentClass];
-	[self.components addComponent:currentGameplay];	
+	currentGameplay = [[Gameplay alloc] initSinglePlayerWithGame:self levelClass:levelClasses[LevelTypePong] aiClass:opponentClasses[OpponentTypeBot]];
+	//[self.components addComponent:currentGameplay];	
+	return currentGameplay;
 }
 
 
@@ -127,11 +138,11 @@
 - (void) dealloc
 {
 	[self.components removeComponent:currentGameplay];
-	[opponentClasses release];	
+	//[opponentClasses release];	
 	[stateStack release];
 	[progress release];
     [graphics release];
-	[levels release];
+	//[levelClasses release];
 	[currentGameplay release];
 	
     [super dealloc];
