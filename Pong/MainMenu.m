@@ -17,7 +17,11 @@
 	[super initialize];
 	
 	// Background
-	Texture2D *tableTexture = [[self.game.content load:@"TablePlain"] autorelease];	
+	Texture2D *tableTexture = [[self.game.content load:@"MainMenu"] autorelease];	
+	table = [[Image alloc] initWithTexture:tableTexture position:[Vector2 vectorWithX:0 y:0]];	
+	[table setScaleUniform: 1];
+	[scene addItem:table];
+	/*Texture2D *tableTexture = [[self.game.content load:@"TablePlain"] autorelease];	
 	table = [[Image alloc] initWithTexture:tableTexture position:[Vector2 vectorWithX:-60 y:0]];	
 	[table setScaleUniform: 2];
 	[scene addItem:table];
@@ -25,10 +29,10 @@
 	Texture2D *dukeTexture = [[self.game.content load:@"TheDuke"] autorelease];	
 	duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:0 y:0]];	
 	[duke setScaleUniform: 2];
-	[scene addItem:duke];
+	[scene addItem:duke];*/
 	
 	// Text
-	title = [[Label alloc] initWithFont:retrotype text:@"Pong" position:[Vector2 vectorWithX:160 y:10]];
+	/*title = [[Label alloc] initWithFont:retrotype text:@"Pong" position:[Vector2 vectorWithX:160 y:10]];
 	title.horizontalAlign = HorizontalAlignCenter;
 	[scene addItem:title];
 	
@@ -43,22 +47,26 @@
 				 "Copyright 2011 Razum d.o.o.\n"
 				 "All Rights Reserved v0.4" position:[Vector2 vectorWithX:4 y:462]];
 	copyright.verticalAlign = VerticalAlignBottom;
-	[scene addItem:copyright];
+	[scene addItem:copyright];*/
 	
 	// Buttons
-	singleplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:180 y:150 width:140 height:32] 
+	singleplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:-150 y:115 width:200 height:32] 
 										  background:buttonBackground font:retrotype text:@"Single"];
-	[singleplayer.backgroundImage setScaleUniform:2];
+	[singleplayer.backgroundImage setScaleUniform:1.8];
+	singleplayer.label.position.x=5;
+	[singleplayer.label setScaleUniform:0.9];
 	[scene addItem:singleplayer];
 	
-	multiplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:180 y:200 width:140 height:32] 
+	multiplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:250 y:115 width:140 height:32] 
 										 background:buttonBackground font:retrotype text:@"Multi"];
-	[multiplayer.backgroundImage setScaleUniform:2];
+	[multiplayer.backgroundImage setScaleUniform:1.8];
+	[multiplayer.label setScaleUniform:0.9];
 	[scene addItem:multiplayer];
 	
-	options = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:180 y:250 width:140 height:32]
+	options = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:230 y:250 width:140 height:32]
 									 background:buttonBackground font:retrotype text:@"Options"];
-	[options.backgroundImage setScaleUniform:2];
+	[options.backgroundImage setScaleUniform:1.8];
+	[options.label setScaleUniform:0.9];	
 	[scene addItem:options];
 }
 

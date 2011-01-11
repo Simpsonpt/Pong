@@ -43,7 +43,7 @@
 	// Buttons
 	buttonBackground = [self.game.content load:@"Button"];
 	
-	back = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:0 y:428 width:320 height:32]
+	back = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:0 y:404 width:320 height:32]
 								  background:nil font:retrotype text:@"Back"];
 	back.labelColor = [Color white];
 	back.labelHoverColor = [Color gray];

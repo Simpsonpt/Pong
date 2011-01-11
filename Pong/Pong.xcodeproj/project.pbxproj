@@ -46,6 +46,8 @@
 		DA6CE17812D2C6F300F01F76 /* GuiRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE17712D2C6F300F01F76 /* GuiRenderer.m */; };
 		DA6CE24812D2D46C00F01F76 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE24712D2D46C00F01F76 /* Button.m */; };
 		DA6CE24F12D2D4E400F01F76 /* GameHud.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE24E12D2D4E400F01F76 /* GameHud.m */; };
+		DA6E754912DCC974001351D0 /* MainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DA6E754812DCC974001351D0 /* MainMenu.png */; };
+		DA6E759B12DCD5DE001351D0 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA6E759A12DCD5DE001351D0 /* Logo.png */; };
 		DA730C9712AF188A0048188B /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730C9612AF188A0048188B /* AIPlayer.m */; };
 		DA730C9B12AF18F00048188B /* ReflexAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730C9A12AF18F00048188B /* ReflexAgent.m */; };
 		DA730CAA12AF1C6B0048188B /* Bot.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CA912AF1C6B0048188B /* Bot.m */; };
@@ -157,6 +159,8 @@
 		DA6CE24712D2D46C00F01F76 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
 		DA6CE24D12D2D4E400F01F76 /* GameHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHud.h; sourceTree = "<group>"; };
 		DA6CE24E12D2D4E400F01F76 /* GameHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHud.m; sourceTree = "<group>"; };
+		DA6E754812DCC974001351D0 /* MainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MainMenu.png; path = ../Images/MainMenu.png; sourceTree = SOURCE_ROOT; };
+		DA6E759A12DCD5DE001351D0 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../Images/Logo.png; sourceTree = SOURCE_ROOT; };
 		DA730C9512AF188A0048188B /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
 		DA730C9612AF188A0048188B /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
 		DA730C9912AF18F00048188B /* ReflexAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflexAgent.h; sourceTree = "<group>"; };
@@ -372,6 +376,8 @@
 		DA6CE13112D2C28B00F01F76 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA6E759A12DCD5DE001351D0 /* Logo.png */,
+				DA6E754812DCC974001351D0 /* MainMenu.png */,
 				DA697EFB12D3E9BB002BD1BB /* TablePlain.png */,
 				DA697EF912D3E9B0002BD1BB /* TheDuke.png */,
 				DA6CE14212D2C2D200F01F76 /* Retrotype.bmp */,
@@ -632,6 +638,8 @@
 				DA697EFA12D3E9B0002BD1BB /* TheDuke.png in Resources */,
 				DA697EFC12D3E9BB002BD1BB /* TablePlain.png in Resources */,
 				DA699EED12D418AA00145C81 /* Darth.png in Resources */,
+				DA6E754912DCC974001351D0 /* MainMenu.png in Resources */,
+				DA6E759B12DCD5DE001351D0 /* Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

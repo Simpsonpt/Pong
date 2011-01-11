@@ -75,9 +75,13 @@
 		[reset.backgroundImage setScaleUniform:2];
 		
 		/*Image*/
-		Texture2D *dukeTexture = [[self.game.content load:@"Darth"] autorelease];	
+		/*Texture2D *dukeTexture = [[self.game.content load:@"Darth"] autorelease];	
 		duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:120 y:0]];	
 		[duke setScaleUniform: 0.2];
+		resetDuke=FALSE;*/
+		Texture2D *dukeTexture = [[self.game.content load:@"Logo"] autorelease];	
+		duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:88 y:0]];	
+		[duke setScaleUniform: 0.9];
 		resetDuke=FALSE;
 		
 	}
@@ -155,7 +159,7 @@
 	[scene addItem:p1P];
 	[scene addItem:p2P];
 	//[scene addItem:reset];
-	if(resetDuke)
+	//if(resetDuke)
 		[scene addItem:duke];	
 	
 	[self resetBallWithSpeed:speed];

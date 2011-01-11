@@ -12,6 +12,7 @@
 
 @interface Options : Menu {
 	Label *title;
+	Image *background;
 }
 
 @end
