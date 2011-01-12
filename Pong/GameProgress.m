@@ -95,12 +95,12 @@
 	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
 	[NSKeyedArchiver archiveRootObject:self toFile:archivePath];
 }*/
-+ (void) saveProgress 
++ (void) saveProgress:(int)points
 {
 	// Save game progress to file.
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
-	[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:5] toFile:archivePath];
+	[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:points] toFile:archivePath];
 }
 
 - (BOOL) isLevelUnlocked:(LevelType)type {

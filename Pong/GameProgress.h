@@ -17,7 +17,7 @@
 //+ (GameProgress *) loadProgress;
 + (NSNumber *) loadProgress;
 + (void) deleteProgress;
-+ (void) saveProgress;
++ (void) saveProgress:(int)points;
 
 - (BOOL) isLevelUnlocked:(LevelType)type;
 //- (BOOL) isOpponentUnlocked:(OpponentType)type;
