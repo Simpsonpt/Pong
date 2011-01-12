@@ -33,7 +33,7 @@ static Constants *instance;
 }
 
 - (float) initialBallSpeed {
-	return 200;
+	return 400;
 }
 
 - (float) ballSpeedUp {
@@ -42,10 +42,6 @@ static Constants *instance;
 
 - (float) levelUpBallSpeedIncrease {
 	return 100;
-}
-
-- (int) magnetPower {
-	return 5;
 }
 
 /*Bonus Stuff*/

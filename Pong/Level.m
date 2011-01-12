@@ -73,7 +73,7 @@
 }
 
 //Falta Bonus
-@synthesize scene, topPlayer, bottomPlayer, ball, p1_points, p2_points, lastPlayer,PadType, bonusStatus,bonusType,contTouches,save,Lnum,numBalls, defenseSpots, offenseSpots;
+@synthesize scene, topPlayer, bottomPlayer, ball, p1_points, p2_points, lastPlayer,PadType, bonusStatus,contTouches,save,Lnum,numBalls, defenseSpots, offenseSpots;
 
 - (void) initialize 
 {	
@@ -86,9 +86,6 @@
 	save=NO;
 	//Counter for Number of Ball Touches in Pad
 	contTouches=0;
-	//Type of Bonus
-	bonusType=0;
-	
 	/*Level Number*/
 	Lnum=0;
 	
@@ -99,15 +96,18 @@
 /*GameOver Method*/
 - (void) GameOver
 {
+	// Text
+	str = [[Label alloc] initWithFont:retrotype text:@"GameOver" position:[Vector2 vectorWithX:160 y:210]];
+	str.horizontalAlign = HorizontalAlignCenter;
+	str.color = [Color red];
+	
 	[scene clear];
-	bonusStatus=YES;
+	
 	[scene addItem:background];
-	bonusType=6;
-	//bonus.position.x=110;
-	//bonus.position.y=250;
-	ball.velocity.x=0;
-	ball.velocity.y=0;
-	//[scene addItem:bonus];
+	[scene addItem:str];
+	[scene addItem:logoIcon];
+	[scene addItem:backMenu];
+	[scene addItem:reset];
 }
 
 - (void) reset {}
@@ -143,6 +143,8 @@
 	[scene addItem:logoIcon];
 	[scene addItem:backMenu];
 	
+	printf("Estou em loop");
+	
 	[self resetBallWithSpeed:speed];
 }
 
@@ -159,10 +161,10 @@
 		ball.position.y = bottomPlayer.position.y + -30;
 		speed *= -1;
 	}
-	//printf("Speed RBWS: %f\n",speed);
+	printf("Speed RBWS: %f\n",speed);
 	
 	/*Velocity and Directions of the Ball*/
-	//ball.velocity.x = ([Random float] - 0.5f) * 10;
+	ball.velocity.x = ([Random float] - 0.5f) * 10;
 	ball.velocity.y = speed;
 }
 
@@ -187,6 +189,10 @@
 	if ([e.item isKindOfClass:[Ball class]]) {
 		numBalls--;
 	}
+	
+	if ([e.item isKindOfClass:[PointsBonus class]]) {
+		numBalls--;
+	}
 }
 
 /*For all Items with Custom Update*/
@@ -208,17 +214,30 @@
 			[button update];
 		}
 	}
-	if (reset.wasReleased) 
+	if(reset.wasReleased) 
 	{
 		p1_points=0;
 		p2_points=0;
+		
+		//Lnum=0;
+		self.topPlayer.type=0;
+		self.topPlayer.width = 84;
+		self.topPlayer.height = 21;
+		
+		self.bottomPlayer.type=0;
+		self.bottomPlayer.width = 84;
+		self.bottomPlayer.height = 21;
+		
+		self.ball.type=0;
+		
+		[self initialize]; 
 		[self resetLevelWithBallSpeed:400];
 	}
 	/*Back To MainMenu*/
-	if (backMenu.wasReleased) 
+	if(backMenu.wasReleased) 
 	{
 		//Stop Music ?
-		[self.game popState];
+		[(Pong*)self.game popState];
 	}
 }
 

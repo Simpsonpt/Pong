@@ -69,13 +69,11 @@
 	{
 		[SoundEngine play:SoundEffectTypeClick];
 		Gameplay* temp = [pong loadSinglePlayerLevel];
-		[SoundEngine play:SoundEffectTypeGameSound];
 		[pong pushState:temp];		
 	} else if (multiplayer.wasReleased) 
 	{	
 		[SoundEngine play:SoundEffectTypeClick];
 		Gameplay* temp = [pong loadMultiplayerLevel];
-		[SoundEngine play:SoundEffectTypeGameSound];
 		[pong pushState:temp];		
 	} else if (options.wasReleased) {
 		[SoundEngine play:SoundEffectTypeClick];

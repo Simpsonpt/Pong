@@ -29,7 +29,6 @@
 	id<IScene> scene;
 }
 
-//magnetPower
 @property (nonatomic) int type;
 @property (nonatomic) float width,height;
 @property (nonatomic) BOOL top,stopBonus;

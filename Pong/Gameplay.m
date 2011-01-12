@@ -73,10 +73,16 @@
 	[self.game.components addComponent:level];	
 	[self.game.components addComponent:renderer];
 	[self.game.components addComponent:physics];
+	
+	backgroundMusic = [[SoundEngine createInstance:SoundEffectTypeGameSound] retain];
+	[backgroundMusic play];
 }
 
 - (void) deactivate 
 {
+	[backgroundMusic stop];
+	[backgroundMusic release];
+	
 	[self.game.components removeComponent:level];
 	[self.game.components removeComponent:renderer];
 	[self.game.components removeComponent:physics];	
@@ -117,6 +123,10 @@
 		
 		level.bottomPlayer.width = 53;
 		level.bottomPlayer.height = 22;
+		
+		level.ball.type=3;
+		level.topPlayer.type=1;
+		level.bottomPlayer.type=1;
 	} else if (level.Lnum == 2)
 	{
 		level.topPlayer.width = 125;
@@ -124,6 +134,10 @@
 		
 		level.bottomPlayer.width = 125;
 		level.bottomPlayer.height = 20;
+		
+		level.ball.type=2;
+		level.topPlayer.type=2;
+		level.bottomPlayer.type=2;
 	}
 	
 	level.save=NO;
@@ -135,8 +149,7 @@
 	level.topPlayer.position.y = 63;
 	
 	level.bottomPlayer.position.x = 155;
-	level.bottomPlayer.position.y = 430;
-	
+	level.bottomPlayer.position.y = 445;
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime 
@@ -173,7 +186,7 @@
 		}
 	
 		/*Check Game Reset Condition.*/
-		if (level.p1_points >= 2 || level.p2_points >= 26)
+		if (level.p1_points >= 2 || level.p2_points >= 2)
 		{
 			[self resetLevel];
 			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];

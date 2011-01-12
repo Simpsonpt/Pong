@@ -175,7 +175,7 @@
 			Ball *ball = (Ball*)item;
 			[primitiveBatch drawCircleAt:ball.position radius:ball.radius divisions:32 color:[Color green]];
 			[primitiveBatch drawLineFrom:ball.position to:[Vector2 add:ball.position to:ball.velocity] color:[Color red]];
-			sprite = ballSprite[1];
+			sprite = ballSprite[ball.type];
 		} else if ([item isKindOfClass:[Bonus class]]) 
 		{
 			Bonus *bonus = (Bonus*)item;

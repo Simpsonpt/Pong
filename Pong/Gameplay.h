@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Retronator.Pong.classes.h"
 #import "GameState.h"
+#import "Retronator.Xni.Framework.Audio.h"
 
 @interface Gameplay:GameState {
 	Level *level;
@@ -18,6 +19,8 @@
 	GuiRenderer *hudRenderer;
 	Renderer *renderer;	
 	PhysicsEngine *physics;
+	
+	SoundEffectInstance *backgroundMusic;
 }
 
 @property (nonatomic, readonly) Level *level;

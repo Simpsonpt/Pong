@@ -21,14 +21,14 @@
 		radius = 11;
 		coefficientOfRestitution = [Constants padCoefficientOfRestitution];
 
-		
+		type=0;
 		BonusArray = [[NSMutableArray alloc] init];
 
 	}
 	return self;
 }
 
-@synthesize position, velocity, mass, radius,scene, bumm,coefficientOfRestitution;
+@synthesize position, velocity, mass, radius,scene,coefficientOfRestitution,type;
 
 - (void) addBonus:(Bonus*)bonus 
 {

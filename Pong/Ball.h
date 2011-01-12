@@ -18,11 +18,11 @@
 	float coefficientOfRestitution;
 	
 	id<IScene> scene;
-
+	int type;
 	NSMutableArray *BonusArray;
 }
 
-@property (nonatomic) BOOL bumm;
+@property (nonatomic) int type;
 
 - (void) addBonus:(Bonus*)bonus;
 - (void) removeAllBonus;

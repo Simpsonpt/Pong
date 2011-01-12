@@ -18,9 +18,9 @@
 {
 	GraphicsDeviceManager *graphics;
 	
-	// Progress
+	/*Progress*/
 	GameProgress *progress;
-	// Game state
+	/*Game state*/
 	NSMutableArray *stateStack;
 	
 	/*Gameplay*/
@@ -29,7 +29,7 @@
 	/*Diferent Levels*/
 	Class levelClasses[LevelTypes];
 	
-	// Opponents
+	/*Opponents*/
 	Class opponentClasses[OpponentTypes];
 	
 	BOOL sfxSounds,gameSounds;

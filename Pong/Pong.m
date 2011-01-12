@@ -110,7 +110,7 @@
  SoundEffectInstance *sfxInstance = [sfx createInstance];
  sfxInstance.isLooped = YES;
  [sfxInstance play];	
- }*/
+}*/
 
 - (void) drawWithGameTime:(GameTime *)gameTime {
 	[self.graphicsDevice clearWithColor:[Color black]];

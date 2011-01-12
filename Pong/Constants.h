@@ -21,7 +21,6 @@
 @property (nonatomic, readonly) float initialBallSpeed, bonusChance;
 @property (nonatomic, readonly) float levelUpBallSpeedIncrease;
 @property (nonatomic, readonly) NSTimeInterval changeSizeDuration;
-@property (nonatomic, readonly) int magnetPower;
 + (Constants*) getInstance;
 
 + (int) winScore;

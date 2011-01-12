@@ -32,6 +32,10 @@ SoundEngine *instance;
 	[soundEffects[type] play];
 }
 
+- (SoundEffectInstance*) createInstance:(SoundEffectType)type {
+	return [soundEffects[type] createInstance];
+}
+
 /*- (void) playWith:(SoundEffectType)type vol:(NSInteger)volume
 {
 	[soundEffects[type] playWithVolume:volume];
@@ -40,6 +44,10 @@ SoundEngine *instance;
 
 + (void) play:(SoundEffectType)type {
 	[instance play:type];
+}
+
++ (SoundEffectInstance*) createInstance:(SoundEffectType)type {
+	return [instance createInstance:type];
 }
 
 - (void) dealloc

@@ -25,7 +25,7 @@
 	Pad *bottomPlayer;
 	
 	Ball *ball;
-	int p1_points,p2_points,lastPlayer,PadType,bonusType,contTouches,Lnum,numBalls;
+	int p1_points,p2_points,lastPlayer,PadType,contTouches,Lnum,numBalls;
 	BOOL bonusStatus,save;
 	
 	NSMutableArray *defenseSpots;
@@ -33,7 +33,7 @@
 	
 	/*Score*/
 	SpriteFont *retrotype, *fivexfive;
-	Label *p1P,*p2P;
+	Label *p1P,*p2P,*str;
 	
 	Texture2D *buttonBackground;
 	Button *reset;
@@ -47,7 +47,7 @@
 @property (nonatomic, readonly) Pad *topPlayer;
 @property (nonatomic, readonly) Pad *bottomPlayer;
 @property (nonatomic, readonly) Ball *ball;
-@property (nonatomic) int p1_points,p2_points,lastPlayer,PadType,bonusType,contTouches,Lnum,numBalls;
+@property (nonatomic) int p1_points,p2_points,lastPlayer,PadType,contTouches,Lnum,numBalls;
 @property (nonatomic) BOOL bonusStatus,save;
 
 @property (nonatomic, readonly) NSMutableArray *defenseSpots;
