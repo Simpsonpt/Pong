@@ -3,7 +3,6 @@
 #import "Ball.h"
 #import "Pad.h"
 #import "PlayerImg.h"
-#import "CaughtBall.h"
 #import "LevelLimit.h"
 
 #import "Explosion.h"
@@ -18,7 +17,6 @@
 #import "MultiBallBonus.h"
 
 #import "Button.h"
-#import "GameHud.h"
 
 #import "Player.h"
 #import "HumanPlayer.h"

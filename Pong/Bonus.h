@@ -15,7 +15,6 @@
 	Vector2 *position;
 	/*Just For The Interface*/
 	Vector2 *velocity;
-	
 	float radius;
 	float mass;
 	

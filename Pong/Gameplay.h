@@ -12,7 +12,6 @@
 
 @interface Gameplay:GameState {
 	Level *level;
-	GameHud *hud;
 	Player *topPlayer;
 	Player *bottomPlayer;
 

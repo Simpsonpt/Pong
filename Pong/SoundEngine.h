@@ -18,4 +18,7 @@
 + (void) initializeWithGame:(Game*)game;
 + (void) play:(SoundEffectType)type;
 
+/*- (void) playWith:(SoundEffectType)type vol:(NSInteger)volume;*/
+
+
 @end

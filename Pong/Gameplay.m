@@ -12,8 +12,6 @@
 @interface Gameplay ()
 
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass;
-//- (void) startInitWithLevelClass:(Class)levelClass;
-//- (void) finishInit;
 
 @end
 
@@ -38,41 +36,15 @@
 {
 	self = [super initWithGame:theGame];
 	if (self != nil) {
-		//[self initWithGame:theGame];	
-		//self.updateOrder = 4;
 		[self initWithGame:theGame LevelClass:levelClass];
 
-		// Create players
-		//topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
-		//topPlayer = [[aiClass alloc] initWithGame:self.game pad:level.topPlayer level:level position:PlayerPositionTop];
-		topPlayer = [[aiClass alloc] initWithGame:self.game scene:level.scene 
-											  pad:level.topPlayer level:level position:PlayerPositionTop];
+		topPlayer = [[aiClass alloc] initWithGame:self.game scene:level.scene pad:level.topPlayer level:level position:PlayerPositionTop];
 
 		bottomPlayer = [[HumanPlayer alloc] initWithPad:level.bottomPlayer scene:level.scene position:PlayerPositionBottom game:self.game];		
 		
 	}
 	return self;
 }
-
-/*- (id) initSinglePlayerWithGame:(Game *)theGame levelClass:(Class)levelClass aiClass:(Class)aiClass
-{
-	self = [super initWithGame:theGame];
-	if (self != nil) {		
-		[self startInitWithLevelClass:levelClass];
-		
-		// Create an ai and a human player.
-		topPlayer = [[aiClass alloc] initWithPad:level.topPlayer scene:level.scene position:PlayerPositionTop];
-		bottomPlayer = [[HumanPlayer alloc] initWithPad:level.bottomPlayer scene:level.scene position:PlayerPositionBottom game:self.game];
-		
-		// Add AI renderer for debugging.
-		AIRenderer *aiRenderer = [[[AIRenderer alloc] initWithGame:self.game aiPlayer:(AIPlayer*)topPlayer] autorelease];
-		aiRenderer.drawOrder = 1;
-		[self.game.components addComponent:aiRenderer];
-		
-		[self finishInit];
-	}
-	return self;
-}*/
 
 - (void) initWithGame:(Game *)theGame LevelClass:(Class)levelClass
 {
@@ -90,30 +62,24 @@
 		level.updateOrder = 2;
 		self.updateOrder = 4;
 		
-		[self.game.components addComponent:level];
-		[self.game.components addComponent:physics];
-		[self.game.components addComponent:renderer];	
+		//[self.game.components addComponent:level];
+		//[self.game.components addComponent:physics];
+		//[self.game.components addComponent:renderer];	
 	}
 }
 
-- (void) activate {
+- (void) activate 
+{
 	[self.game.components addComponent:level];	
-	//[self.game.components addComponent:hud];
-	//[self.game.components addComponent:hudRenderer];
 	[self.game.components addComponent:renderer];
 	[self.game.components addComponent:physics];
-	//[self.game.components addComponent:topPlayer[PlayerPositionTop]];
-	//[self.game.components addComponent:bottomPlayer[PlayerPositionBottom]];	
 }
 
-- (void) deactivate {
-	//[self.game.components removeComponent:hud];
-	//[self.game.components removeComponent:hudRenderer];
+- (void) deactivate 
+{
 	[self.game.components removeComponent:level];
 	[self.game.components removeComponent:renderer];
 	[self.game.components removeComponent:physics];	
-	//[self.game.components removeComponent:topPlayer[PlayerPositionTop]];
-	//[self.game.components removeComponent:bottomPlayer[PlayerPositionBottom]];	
 }
 
 - (void) initialize 
@@ -205,20 +171,9 @@
 				}				
 			}
 		}
-		/*if (level.ball.position.y > 530)
-		{
-			level.lastPlayer=1;
-			[level updatePlayerPoints:1];
-			[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];
-		} else if(level.ball.position.y < 65) 
-		{
-			level.lastPlayer=2;
-			[level updatePlayerPoints:1];
-			[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];			
-		}*/
 	
 		/*Check Game Reset Condition.*/
-		if (level.p1_points >= 26 || level.p2_points >= 26)
+		if (level.p1_points >= 2 || level.p2_points >= 26)
 		{
 			[self resetLevel];
 			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];
@@ -248,34 +203,6 @@
 				}
 			}
 		}
-		
-		/*Kind of Bonus Try
-		if(level.ball.bumm)
-		{
-			for (id item in level.scene)
-			{
-				if ([item isKindOfClass:[ExpandPadSizeBonus class]]) 
-				{
-					printf("Expanding\n");
-					for (id item in level.scene)
-					{
-						if ([item isKindOfClass:[Pad class]]) 
-						{
-							Pad *temp = (Pad*)item;
-							if(temp.top)
-								level.topPlayer.type=2;
-							else {
-								level.bottomPlayer.type=2;
-							}
-
-						}
-					}
-				}
-			}
-		}*/
-		
-		
-		
 	}
 }
 

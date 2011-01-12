@@ -18,8 +18,7 @@
 	float coefficientOfRestitution;
 	
 	id<IScene> scene;
-	BOOL bumm;
-	
+
 	NSMutableArray *BonusArray;
 }
 

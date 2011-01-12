@@ -15,13 +15,18 @@
 - (id) init {
     if (self = [super init]) {
         graphics = [[GraphicsDeviceManager alloc] initWithGame:self];
-		//[SoundEngine initializeWithGame:self];
+		
+		[SoundEngine initializeWithGame:self];
 		
 		[self.components addComponent:[[[TouchPanelHelper alloc] initWithGame:self] autorelease]];
 		
 		stateStack = [[NSMutableArray alloc] init];
 		
 		progress = [[GameProgress loadProgress] retain];
+		
+		/*Sounds Globals*/
+		sfxSounds=TRUE;
+		gameSounds=TRUE;
 	}
     return self;
 }
@@ -30,37 +35,22 @@
 
 - (void) initialize 
 {
-	/*Create All Levels
-	levels = [[NSMutableArray alloc] init];
-	[levels addObject:[PongLevel class]];
-	
-	/*Start in First Level - MultiPlayer Type
-	//[self loadMultiplayerLevel:[levels objectAtIndex:0]];
-	
-	// Add all opponent classes.
-	opponentClasses = [[NSMutableArray alloc] init];
-	 [opponentClasses addObject:[Bot class]];*/
-	
+	/*All evels*/	
 	levelClasses[LevelTypePong] = [PongLevel class];
 	//levelClasses[LevelTypeBullfrog] = [BullfrogLevel class];
 	 
-	// Add all opponents.
+	/*All Opponents*/
 	opponentClasses[OpponentTypeBot] = [Bot class];
-	 //opponentClasses[OpponentTypeShaman] = [Shaman class]
+	//opponentClasses[OpponentTypeShaman] = [Shaman class]
 	 
-	
-	// Start in first level.
-	//[self loadSinglePlayerLevel:[levels objectAtIndex:0] opponentClass:[opponentClasses objectAtIndex:0]];
-	
 	MainMenu *mainMenu = [[[MainMenu alloc] initWithGame:self] autorelease];
 	[self pushState:mainMenu];
-	
-	//sfx = [self.content load:@"loop"];
 	
 	/*Initialize All Components*/
 	[super initialize];
 }
-@synthesize progress;
+
+@synthesize progress,sfxSounds,gameSounds;
 
 - (void) pushState:(GameState *)gameState {
 	GameState *currentActiveState = [stateStack lastObject];
@@ -81,14 +71,6 @@
 	currentActiveState = [stateStack lastObject];
 	[self.components addComponent:currentActiveState];	
 	[currentActiveState activate];
-}
-
-- (Class) getLevelClass:(LevelType)type {
- return levelClasses[type];
-}
-
-- (Class) getOpponentClass:(OpponentType)type {
- return opponentClasses[type];
 }
 
 - (Gameplay*) loadMultiplayerLevel
@@ -137,12 +119,10 @@
 
 - (void) dealloc
 {
-	[self.components removeComponent:currentGameplay];
-	//[opponentClasses release];	
+	[self.components removeComponent:currentGameplay];	
 	[stateStack release];
 	[progress release];
     [graphics release];
-	//[levelClasses release];
 	[currentGameplay release];
 	
     [super dealloc];

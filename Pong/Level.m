@@ -26,6 +26,11 @@
 		[scene.itemAdded subscribeDelegate:[Delegate delegateWithTarget:self Method:@selector(itemAddedToScene:eventArgs:)]];
 		[scene.itemRemoved subscribeDelegate:[Delegate delegateWithTarget:self Method:@selector(itemRemovedFromScene:eventArgs:)]];
 		
+		/*Back Button*/
+		backMenu = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:93 y:18 width:125 height:32] 
+										  background:buttonBackground font:retrotype text:@""];
+		[backMenu.backgroundImage setScaleUniform:1];
+		
 		/*Init Scene Items*/
 		background = [[Bg alloc] init];
 		md = [[Middle alloc] init];	
@@ -39,22 +44,6 @@
 	
 		defenseSpots = [[NSMutableArray alloc] init];
 		offenseSpots = [[NSMutableArray alloc] init];
-		
-		/*Add Level Limits	
-		[scene addItem:[[[LevelLimit alloc] initWithLimit:
-						 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionPositiveX distance:0] isDeadly:NO] autorelease]];
-		[scene addItem:[[[LevelLimit alloc] initWithLimit:
-						 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionNegativeX distance:-320] isDeadly:NO] autorelease]];
-		
-		/*Add Items to the Scene
-		[scene addItem:background];
-		[scene addItem:md];
-		[scene addItem:pimg1];
-		[scene addItem:pimg2];	
-		[scene addItem:topPlayer];
-		[scene addItem:bottomPlayer];
-		[scene addItem:ball];*/
-		
 		
 		/*Score*/
 		FontTextureProcessor *fontProcessor = [[[FontTextureProcessor alloc] init] autorelease];
@@ -74,15 +63,10 @@
 											  background:buttonBackground font:retrotype text:@"Restart"];
 		[reset.backgroundImage setScaleUniform:2];
 		
-		/*Image*/
-		/*Texture2D *dukeTexture = [[self.game.content load:@"Darth"] autorelease];	
-		duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:120 y:0]];	
-		[duke setScaleUniform: 0.2];
-		resetDuke=FALSE;*/
-		Texture2D *dukeTexture = [[self.game.content load:@"Logo"] autorelease];	
-		duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:88 y:0]];	
-		[duke setScaleUniform: 0.9];
-		resetDuke=FALSE;
+		/*Logo*/
+		Texture2D *logo = [[self.game.content load:@"Logo"] autorelease];	
+		logoIcon = [[Image alloc] initWithTexture:logo position:[Vector2 vectorWithX:88 y:0]];	
+		[logoIcon setScaleUniform: 0.9];
 		
 	}
 	return self;
@@ -92,10 +76,7 @@
 @synthesize scene, topPlayer, bottomPlayer, ball, p1_points, p2_points, lastPlayer,PadType, bonusStatus,bonusType,contTouches,save,Lnum,numBalls, defenseSpots, offenseSpots;
 
 - (void) initialize 
-{
-	/*Pad Are Magnetic*/
-	//topPlayer.magnetPower = 1;
-	
+{	
 	/*LastPlayer Counter*/
 	lastPlayer=1;
 	
@@ -135,7 +116,7 @@
 {
 	/*Remove Everything from the Scene.*/
 	[scene clear];
-
+	
 	/*Add Items to the Scene*/
 	[scene addItem:background];
 	[scene addItem:md];
@@ -159,8 +140,8 @@
 	[scene addItem:p1P];
 	[scene addItem:p2P];
 	//[scene addItem:reset];
-	//if(resetDuke)
-		[scene addItem:duke];	
+	[scene addItem:logoIcon];
+	[scene addItem:backMenu];
 	
 	[self resetBallWithSpeed:speed];
 }
@@ -192,8 +173,8 @@
 	else if(lastPlayer==2)
 		p2_points+=point;
 	
-	printf("Player 1 Points: %d\n", p1_points);
-	printf("Player 2 Points: %d\n", p2_points);
+	//printf("Player 1 Points: %d\n", p1_points);
+	//printf("Player 2 Points: %d\n", p2_points);
 }
 
 - (void) itemAddedToScene:(id)sender eventArgs:(SceneEventArgs*)e {
@@ -210,7 +191,7 @@
 
 /*For all Items with Custom Update*/
 - (void) updateWithGameTime:(GameTime *)gameTime 
-{
+{	
 	for (id item in scene) {
 		id<ICustomUpdate> updatable = [item conformsToProtocol:@protocol(ICustomUpdate)] ? item : nil;
 		
@@ -231,8 +212,13 @@
 	{
 		p1_points=0;
 		p2_points=0;
-		resetDuke=TRUE;
 		[self resetLevelWithBallSpeed:400];
+	}
+	/*Back To MainMenu*/
+	if (backMenu.wasReleased) 
+	{
+		//Stop Music ?
+		[self.game popState];
 	}
 }
 

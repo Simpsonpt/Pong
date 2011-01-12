@@ -65,6 +65,7 @@
 	}	
 	
 	if (back.wasReleased) {
+		[SoundEngine play:SoundEffectTypeClick];
 		[pong popState];
 	}
 }

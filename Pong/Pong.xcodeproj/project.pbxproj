@@ -11,9 +11,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		644103AB12DCF43E006D7CBA /* menu1.png in Resources */ = {isa = PBXBuildFile; fileRef = 644103A912DCF43E006D7CBA /* menu1.png */; };
+		644103AC12DCF43E006D7CBA /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 644103AA12DCF43E006D7CBA /* menu2.png */; };
+		644104A712DD012D006D7CBA /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 644104A612DD012D006D7CBA /* Click.wav */; };
 		6AA3A8D112C1047200E674EF /* SoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3A8D012C1047200E674EF /* SoundEngine.m */; };
 		6AA3A8DE12C10B3C00E674EF /* Explo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A8DD12C10B3C00E674EF /* Explo.wav */; };
-		6AA3A92C12C11F4D00E674EF /* Loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A92B12C11F4D00E674EF /* Loop.wav */; };
+		6AA3A92C12C11F4D00E674EF /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A92B12C11F4D00E674EF /* GameSound.wav */; };
 		6AA3A96E12C1361800E674EF /* Pad.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A96D12C1361800E674EF /* Pad.wav */; };
 		C65FE9A412B8FBDA00F1C37F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */; };
 		C65FE9B712B8FC0A00F1C37F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9B612B8FC0A00F1C37F /* OpenAL.framework */; };
@@ -34,8 +37,6 @@
 		DA697ED312D3E4EE002BD1BB /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED212D3E4EE002BD1BB /* MainMenu.m */; };
 		DA697ED612D3E520002BD1BB /* LevelSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED512D3E520002BD1BB /* LevelSelection.m */; };
 		DA697ED912D3E55D002BD1BB /* Options.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED812D3E55D002BD1BB /* Options.m */; };
-		DA697EFA12D3E9B0002BD1BB /* TheDuke.png in Resources */ = {isa = PBXBuildFile; fileRef = DA697EF912D3E9B0002BD1BB /* TheDuke.png */; };
-		DA697EFC12D3E9BB002BD1BB /* TablePlain.png in Resources */ = {isa = PBXBuildFile; fileRef = DA697EFB12D3E9BB002BD1BB /* TablePlain.png */; };
 		DA699EED12D418AA00145C81 /* Darth.png in Resources */ = {isa = PBXBuildFile; fileRef = DA699EEC12D418AA00145C81 /* Darth.png */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
 		DA6CE13F12D2C2BC00F01F76 /* 5x5.bmp in Resources */ = {isa = PBXBuildFile; fileRef = DA6CE13E12D2C2BC00F01F76 /* 5x5.bmp */; };
@@ -45,7 +46,6 @@
 		DA6CE16F12D2C5DA00F01F76 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE16E12D2C5DA00F01F76 /* GameState.m */; };
 		DA6CE17812D2C6F300F01F76 /* GuiRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE17712D2C6F300F01F76 /* GuiRenderer.m */; };
 		DA6CE24812D2D46C00F01F76 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE24712D2D46C00F01F76 /* Button.m */; };
-		DA6CE24F12D2D4E400F01F76 /* GameHud.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CE24E12D2D4E400F01F76 /* GameHud.m */; };
 		DA6E754912DCC974001351D0 /* MainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DA6E754812DCC974001351D0 /* MainMenu.png */; };
 		DA6E759B12DCD5DE001351D0 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA6E759A12DCD5DE001351D0 /* Logo.png */; };
 		DA730C9712AF188A0048188B /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730C9612AF188A0048188B /* AIPlayer.m */; };
@@ -53,7 +53,6 @@
 		DA730CAA12AF1C6B0048188B /* Bot.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CA912AF1C6B0048188B /* Bot.m */; };
 		DA730CBC12AF1F330048188B /* AIRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CBB12AF1F330048188B /* AIRenderer.m */; };
 		DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7BEC41129C3B0F0030C09C /* bonus.png */; };
-		DA80C90512752B0000E0BF5A /* MyPong.png in Resources */ = {isa = PBXBuildFile; fileRef = DA80C90412752B0000E0BF5A /* MyPong.png */; };
 		DA80C90F12752B7E00E0BF5A /* Pong.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C90E12752B7E00E0BF5A /* Pong.m */; };
 		DA80C91712752BAB00E0BF5A /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91612752BAB00E0BF5A /* Level.m */; };
 		DA80C91D12752BBF00E0BF5A /* PongLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91C12752BBF00E0BF5A /* PongLevel.m */; };
@@ -69,7 +68,6 @@
 		DAC8DC2D12764F6F00B2E374 /* Bg.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8DC2C12764F6F00B2E374 /* Bg.m */; };
 		DAE2AE1412A06AB40020FBA5 /* PongU8.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE2AE1312A06AB40020FBA5 /* PongU8.png */; };
 		DAE2AEE112A07D9C0020FBA5 /* PlayerImg.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE2AEE012A07D9C0020FBA5 /* PlayerImg.m */; };
-		DAE2AFD312A08BA20020FBA5 /* CaughtBall.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE2AFD212A08BA20020FBA5 /* CaughtBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,11 +94,14 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Pong_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong_Prefix.pch; sourceTree = "<group>"; };
+		644103A912DCF43E006D7CBA /* menu1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu1.png; path = ../Images/menu1.png; sourceTree = SOURCE_ROOT; };
+		644103AA12DCF43E006D7CBA /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2.png; path = ../Images/menu2.png; sourceTree = SOURCE_ROOT; };
+		644104A612DD012D006D7CBA /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
 		6AA3A8CF12C1047200E674EF /* SoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEngine.h; sourceTree = "<group>"; };
 		6AA3A8D012C1047200E674EF /* SoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEngine.m; sourceTree = "<group>"; };
 		6AA3A8D212C1048500E674EF /* SoundEffectTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffectTypes.h; sourceTree = "<group>"; };
 		6AA3A8DD12C10B3C00E674EF /* Explo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Explo.wav; sourceTree = "<group>"; };
-		6AA3A92B12C11F4D00E674EF /* Loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Loop.wav; sourceTree = "<group>"; };
+		6AA3A92B12C11F4D00E674EF /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
 		6AA3A96D12C1361800E674EF /* Pad.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pad.wav; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pong-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pong-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -141,8 +142,6 @@
 		DA697ED512D3E520002BD1BB /* LevelSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelection.m; sourceTree = "<group>"; };
 		DA697ED712D3E55D002BD1BB /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
 		DA697ED812D3E55D002BD1BB /* Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Options.m; sourceTree = "<group>"; };
-		DA697EF912D3E9B0002BD1BB /* TheDuke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TheDuke.png; path = ../Images/TheDuke.png; sourceTree = SOURCE_ROOT; };
-		DA697EFB12D3E9BB002BD1BB /* TablePlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TablePlain.png; path = ../Images/TablePlain.png; sourceTree = SOURCE_ROOT; };
 		DA699EEC12D418AA00145C81 /* Darth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Darth.png; path = ../Images/Darth.png; sourceTree = SOURCE_ROOT; };
 		DA6AB676127F3AE000FC4684 /* GameCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GameCore.xcodeproj; path = ../GameCore/GameCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 		DA6CE13E12D2C2BC00F01F76 /* 5x5.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 5x5.bmp; path = ../Images/5x5.bmp; sourceTree = SOURCE_ROOT; };
@@ -157,8 +156,6 @@
 		DA6CE17712D2C6F300F01F76 /* GuiRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiRenderer.m; sourceTree = "<group>"; };
 		DA6CE24612D2D46C00F01F76 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
 		DA6CE24712D2D46C00F01F76 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
-		DA6CE24D12D2D4E400F01F76 /* GameHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHud.h; sourceTree = "<group>"; };
-		DA6CE24E12D2D4E400F01F76 /* GameHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHud.m; sourceTree = "<group>"; };
 		DA6E754812DCC974001351D0 /* MainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MainMenu.png; path = ../Images/MainMenu.png; sourceTree = SOURCE_ROOT; };
 		DA6E759A12DCD5DE001351D0 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../Images/Logo.png; sourceTree = SOURCE_ROOT; };
 		DA730C9512AF188A0048188B /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
@@ -171,7 +168,6 @@
 		DA730CBB12AF1F330048188B /* AIRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRenderer.m; sourceTree = "<group>"; };
 		DA7BEC41129C3B0F0030C09C /* bonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonus.png; path = ../Images/bonus.png; sourceTree = SOURCE_ROOT; };
 		DA7D722712DB8F1D007D54B3 /* OpponentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpponentType.h; sourceTree = "<group>"; };
-		DA80C90412752B0000E0BF5A /* MyPong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MyPong.png; path = ../Images/MyPong.png; sourceTree = SOURCE_ROOT; };
 		DA80C90B12752B5400E0BF5A /* Retronator.Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.h; sourceTree = "<group>"; };
 		DA80C90C12752B6700E0BF5A /* Retronator.Pong.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.classes.h; sourceTree = "<group>"; };
 		DA80C90D12752B7E00E0BF5A /* Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong.h; sourceTree = "<group>"; };
@@ -198,8 +194,6 @@
 		DAE2AE1312A06AB40020FBA5 /* PongU8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PongU8.png; path = ../Images/PongU8.png; sourceTree = SOURCE_ROOT; };
 		DAE2AEDF12A07D9C0020FBA5 /* PlayerImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerImg.h; sourceTree = "<group>"; };
 		DAE2AEE012A07D9C0020FBA5 /* PlayerImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerImg.m; sourceTree = "<group>"; };
-		DAE2AFD112A08BA20020FBA5 /* CaughtBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaughtBall.h; sourceTree = "<group>"; };
-		DAE2AFD212A08BA20020FBA5 /* CaughtBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaughtBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,8 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				6AA3A96D12C1361800E674EF /* Pad.wav */,
-				6AA3A92B12C11F4D00E674EF /* Loop.wav */,
 				6AA3A8DD12C10B3C00E674EF /* Explo.wav */,
+				6AA3A92B12C11F4D00E674EF /* GameSound.wav */,
+				644104A612DD012D006D7CBA /* Click.wav */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -376,10 +371,10 @@
 		DA6CE13112D2C28B00F01F76 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				644103A912DCF43E006D7CBA /* menu1.png */,
+				644103AA12DCF43E006D7CBA /* menu2.png */,
 				DA6E759A12DCD5DE001351D0 /* Logo.png */,
 				DA6E754812DCC974001351D0 /* MainMenu.png */,
-				DA697EFB12D3E9BB002BD1BB /* TablePlain.png */,
-				DA697EF912D3E9B0002BD1BB /* TheDuke.png */,
 				DA6CE14212D2C2D200F01F76 /* Retrotype.bmp */,
 				DA6CE14012D2C2C900F01F76 /* Button.png */,
 				DA6CE13E12D2C2BC00F01F76 /* 5x5.bmp */,
@@ -393,7 +388,6 @@
 				DAB3863E12A4A9AA0098DDCB /* exp.png */,
 				DAE2AE1312A06AB40020FBA5 /* PongU8.png */,
 				DA7BEC41129C3B0F0030C09C /* bonus.png */,
-				DA80C90412752B0000E0BF5A /* MyPong.png */,
 			);
 			name = Gameplay;
 			sourceTree = "<group>";
@@ -449,8 +443,6 @@
 			children = (
 				DA6CE24612D2D46C00F01F76 /* Button.h */,
 				DA6CE24712D2D46C00F01F76 /* Button.m */,
-				DA6CE24D12D2D4E400F01F76 /* GameHud.h */,
-				DA6CE24E12D2D4E400F01F76 /* GameHud.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -533,8 +525,6 @@
 				DA8EAD59127717090098E373 /* Middle.m */,
 				DAE2AEDF12A07D9C0020FBA5 /* PlayerImg.h */,
 				DAE2AEE012A07D9C0020FBA5 /* PlayerImg.m */,
-				DAE2AFD112A08BA20020FBA5 /* CaughtBall.h */,
-				DAE2AFD212A08BA20020FBA5 /* CaughtBall.m */,
 				DAB3867712A4AC160098DDCB /* Explosion.h */,
 				DAB3867812A4AC160098DDCB /* Explosion.m */,
 				DA64618212A3387000D93ED7 /* BonusFactory.h */,
@@ -625,21 +615,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA80C90512752B0000E0BF5A /* MyPong.png in Resources */,
 				DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */,
 				DAE2AE1412A06AB40020FBA5 /* PongU8.png in Resources */,
 				DAB3863F12A4A9AA0098DDCB /* exp.png in Resources */,
 				6AA3A8DE12C10B3C00E674EF /* Explo.wav in Resources */,
-				6AA3A92C12C11F4D00E674EF /* Loop.wav in Resources */,
+				6AA3A92C12C11F4D00E674EF /* GameSound.wav in Resources */,
 				6AA3A96E12C1361800E674EF /* Pad.wav in Resources */,
 				DA6CE13F12D2C2BC00F01F76 /* 5x5.bmp in Resources */,
 				DA6CE14112D2C2C900F01F76 /* Button.png in Resources */,
 				DA6CE14312D2C2D200F01F76 /* Retrotype.bmp in Resources */,
-				DA697EFA12D3E9B0002BD1BB /* TheDuke.png in Resources */,
-				DA697EFC12D3E9BB002BD1BB /* TablePlain.png in Resources */,
 				DA699EED12D418AA00145C81 /* Darth.png in Resources */,
 				DA6E754912DCC974001351D0 /* MainMenu.png in Resources */,
 				DA6E759B12DCD5DE001351D0 /* Logo.png in Resources */,
+				644103AB12DCF43E006D7CBA /* menu1.png in Resources */,
+				644103AC12DCF43E006D7CBA /* menu2.png in Resources */,
+				644104A712DD012D006D7CBA /* Click.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +656,6 @@
 				DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */,
 				C6B7D44D129421F4009A1B4E /* Constants.m in Sources */,
 				DAE2AEE112A07D9C0020FBA5 /* PlayerImg.m in Sources */,
-				DAE2AFD312A08BA20020FBA5 /* CaughtBall.m in Sources */,
 				DA6460FE12A326EB00D93ED7 /* LevelLimit.m in Sources */,
 				DA64618412A3387000D93ED7 /* BonusFactory.m in Sources */,
 				DA64618F12A33B0B00D93ED7 /* ExpandPadSizeBonus.m in Sources */,
@@ -683,7 +672,6 @@
 				DA6CE16F12D2C5DA00F01F76 /* GameState.m in Sources */,
 				DA6CE17812D2C6F300F01F76 /* GuiRenderer.m in Sources */,
 				DA6CE24812D2D46C00F01F76 /* Button.m in Sources */,
-				DA6CE24F12D2D4E400F01F76 /* GameHud.m in Sources */,
 				DA697ED012D3E463002BD1BB /* Menu.m in Sources */,
 				DA697ED312D3E4EE002BD1BB /* MainMenu.m in Sources */,
 				DA697ED612D3E520002BD1BB /* LevelSelection.m in Sources */,

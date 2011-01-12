@@ -12,6 +12,7 @@
 
 @interface Options : Menu {
 	Label *title;
+	Button *sfx,*sounds;
 	Image *background;
 }
 

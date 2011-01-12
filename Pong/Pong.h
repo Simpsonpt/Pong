@@ -25,26 +25,21 @@
 	
 	/*Gameplay*/
 	Gameplay *currentGameplay;
+
 	/*Diferent Levels*/
-	//NSMutableArray *levels;
-	// Opponents
-	//NSMutableArray *opponentClasses;
-	// Levels
 	Class levelClasses[LevelTypes];
 	
 	// Opponents
 	Class opponentClasses[OpponentTypes];
 	
-	//SoundEffect *sfx;
+	BOOL sfxSounds,gameSounds;
 }
 
 @property (nonatomic, readonly) GameProgress *progress;
+@property (nonatomic) BOOL sfxSounds,gameSounds;
 
 - (void) pushState:(GameState*)gameState;
 - (void) popState;
-
-- (Class) getLevelClass:(LevelType)type;
-- (Class) getOpponentClass:(OpponentType)type;
 
 - (Gameplay*) loadMultiplayerLevel;
 - (Gameplay*) loadSinglePlayerLevel;

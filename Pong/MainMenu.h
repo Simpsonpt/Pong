@@ -12,9 +12,9 @@
 
 @interface MainMenu : Menu 
 {
-	Image *table, *duke;
-	Label *title, *subtitle, *copyright;
+	Image *background;
 	Button *singleplayer, *multiplayer, *options;
+	Label *highS,*max;
 }
 
 @end

@@ -3,7 +3,6 @@
 @class Ball;
 @class Pad;
 @class PlayerImg;
-@class CaughtBall;
 @class LevelLimit;
 
 @class Explosion;
@@ -12,7 +11,7 @@
 @class Bonus,BonusFactory;
 @class ExpandPadSizeBonus,ShrinkPadSizeBonus,PointsBonus,MultiBallBonus;
 
-@class Button,GameHud;
+@class Button;
 
 #import "PlayerPosition.h"
 @class Player, HumanPlayer;

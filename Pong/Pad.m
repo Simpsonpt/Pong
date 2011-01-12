@@ -19,15 +19,14 @@
 		width = 84;
 		height = 20;
 		type=0;
-		stopBonus=NO;
-		//caughtBalls = [[NSMutableArray alloc] init];		
+		stopBonus=NO;		
 		velocity = [[Vector2 alloc] init];
 		previousPosition = [[Vector2 alloc] init];
 		
 	}
 	return self;
 }
-// magnetPower,
+
 @synthesize position, width, height, scene, type, top,stopBonus,previousPosition;
 
 - (BOOL) collidingWithItem:(id)item {
@@ -39,18 +38,12 @@
 	[velocity set:[Vector2 zero]];
 }
 
-/*- (void) releaseBalls {
-	if (magnetPower) {
-		magnetPower--;
-		[caughtBalls removeAllObjects];
-	}
-}*/
 
 - (void) collidedWithItem:(id)item {
 	Ball *ball = [item isKindOfClass:[Ball class]] ? item : nil;
 	if(ball) 
 	{
-		//[SoundEngine play:SoundEffectTypePad];
+		[SoundEngine play:SoundEffectTypePad];
 		// Calculate horizontal velocity depending on where the paddle was hit.
 		
 		// First save the current speed and add speedup.
@@ -70,9 +63,6 @@
 		ball.velocity.y = cosf(angle)*sign;
 		[ball.velocity multiplyBy:speed];
 		
-		//if (magnetPower)
-		//	[caughtBalls addObject:[CaughtBall caughtBallWithBall:ball offset:offset]];
-		
 		if(!stopBonus)
 		{
 			//Condition for Random Bonus
@@ -80,7 +70,7 @@
 			{
 				//printf("Entrei no Random Bonus!\n");
 				Bonus *extra = [BonusFactory createRandomBonus];
-				//Bonus *extra = [BonusFactory createBonus:_MultiBallBonus];
+				//Bonus *extra = [BonusFactory createBonus:_ExpandPadSizeBonus];
 				extra.position.x = [Random intLessThan:250];
 				extra.position.y = [Random intGreaterThanOrEqual:75 lessThan:300];
 				//[extra.position set:position];
@@ -90,39 +80,10 @@
 		}
 		
 	}
-	
-	/* // Calculate horizontal velocity depending on where the paddle was hit.
-	 Ball *ball = [item isKindOfClass:[Ball class]] ? item : nil;
-	 if (ball) {
-	 float speed = [ball.velocity length];
-	 
-	 // Calculate where on the paddle we were hit, from -1 to 1.
-	 float hitPosition = (ball.position.x - position.x) / width * 2;
-	 
-	 // Calculate angle.
-	 float angle = hitPosition * [Constants getInstance].maximumBallAngle;
-	 
-	 // Rebound ball in desired direction.
-	 ball.velocity.x = sinf(angle);
-	 ball.velocity.y = -cosf(angle);
-	 [ball.velocity multiplyBy:speed];
-	 
-	 // Make sure the vertical velocity is big enough after collision.
-	 float minY = [Constants getInstance].minimumBallVerticalVelocity;
-	 if (fabsf(ball.velocity.y) < minY) {
-	 ball.velocity.y = ball.velocity.y < 0 ? -minY : minY;
-	 }
-	 }*/
-	 	
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime 
 {
-	/*for (CaughtBall *caughtBall in caughtBalls) 
-	{
-		caughtBall.ball.position.x = position.x + caughtBall.offset;
-		caughtBall.ball.position.y = position.y - height/2 - caughtBall.ball.radius;
-	}*/
 	// Avoid division by zero.
 	if (gameTime.elapsedGameTime == 0) {
 		return;

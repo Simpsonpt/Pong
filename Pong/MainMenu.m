@@ -17,49 +17,23 @@
 	[super initialize];
 	
 	// Background
-	Texture2D *tableTexture = [[self.game.content load:@"MainMenu"] autorelease];	
-	table = [[Image alloc] initWithTexture:tableTexture position:[Vector2 vectorWithX:0 y:0]];	
-	[table setScaleUniform: 1];
-	[scene addItem:table];
-	/*Texture2D *tableTexture = [[self.game.content load:@"TablePlain"] autorelease];	
-	table = [[Image alloc] initWithTexture:tableTexture position:[Vector2 vectorWithX:-60 y:0]];	
-	[table setScaleUniform: 2];
-	[scene addItem:table];
-	
-	Texture2D *dukeTexture = [[self.game.content load:@"TheDuke"] autorelease];	
-	duke = [[Image alloc] initWithTexture:dukeTexture position:[Vector2 vectorWithX:0 y:0]];	
-	[duke setScaleUniform: 2];
-	[scene addItem:duke];*/
-	
-	// Text
-	/*title = [[Label alloc] initWithFont:retrotype text:@"Pong" position:[Vector2 vectorWithX:160 y:10]];
-	title.horizontalAlign = HorizontalAlignCenter;
-	[scene addItem:title];
-	
-	subtitle = [[Label alloc] initWithFont:fivexfive text:@"by Renato Rodrigues" position:[Vector2 vectorWithX:320 y:50]];
-	subtitle.horizontalAlign = HorizontalAlignRight;
-	[scene addItem:subtitle];
-	
-	copyright = [[Label alloc] initWithFont:fivexfive text:@""
-				 "3D modeling by\n"
-				 "Matjaz Lamut\n"
-				 "Published by GameTeam, Fri\n"
-				 "Copyright 2011 Razum d.o.o.\n"
-				 "All Rights Reserved v0.4" position:[Vector2 vectorWithX:4 y:462]];
-	copyright.verticalAlign = VerticalAlignBottom;
-	[scene addItem:copyright];*/
+	Texture2D *bgTexture = [[self.game.content load:@"MainMenu"] autorelease];	
+	background = [[Image alloc] initWithTexture:bgTexture position:[Vector2 vectorWithX:-3 y:0]];	
+	[background setScaleUniform: 1];
+	[scene addItem:background];
 	
 	// Buttons
-	singleplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:-150 y:115 width:200 height:32] 
+	singleplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:-138 y:115 width:220 height:32] 
 										  background:buttonBackground font:retrotype text:@"Single"];
 	[singleplayer.backgroundImage setScaleUniform:1.8];
-	singleplayer.label.position.x=5;
+	singleplayer.label.position.x=9;
 	[singleplayer.label setScaleUniform:0.9];
 	[scene addItem:singleplayer];
 	
-	multiplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:250 y:115 width:140 height:32] 
+	multiplayer = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:223 y:115 width:140 height:32] 
 										 background:buttonBackground font:retrotype text:@"Multi"];
 	[multiplayer.backgroundImage setScaleUniform:1.8];
+	multiplayer.label.position.x=249;
 	[multiplayer.label setScaleUniform:0.9];
 	[scene addItem:multiplayer];
 	
@@ -68,6 +42,21 @@
 	[options.backgroundImage setScaleUniform:1.8];
 	[options.label setScaleUniform:0.9];	
 	[scene addItem:options];
+	
+	//Text
+	highS = [[Label alloc] initWithFont:retrotype text:@"High Score" position:[Vector2 vectorWithX:10 y:320]];
+	//highS.horizontalAlign = HorizontalAlignCenter;
+	//[highS setScaleUniform:0.8];
+	highS.color = [Color black];
+	[scene addItem:highS];
+	
+	max = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:137 y:323]];
+	//highS.horizontalAlign = HorizontalAlignCenter;
+	[max setScaleUniform:0.9];
+	max.color = [Color blue];
+	[scene addItem:max];
+	
+	
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime 
@@ -78,13 +67,18 @@
 	
 	if (singleplayer.wasReleased) 
 	{
+		[SoundEngine play:SoundEffectTypeClick];
 		Gameplay* temp = [pong loadSinglePlayerLevel];
+		[SoundEngine play:SoundEffectTypeGameSound];
 		[pong pushState:temp];		
 	} else if (multiplayer.wasReleased) 
 	{	
+		[SoundEngine play:SoundEffectTypeClick];
 		Gameplay* temp = [pong loadMultiplayerLevel];
+		[SoundEngine play:SoundEffectTypeGameSound];
 		[pong pushState:temp];		
 	} else if (options.wasReleased) {
+		[SoundEngine play:SoundEffectTypeClick];
 		newState = [[[Options alloc] initWithGame:self.game] autorelease];
 	}
 	
@@ -94,12 +88,7 @@
 
 - (void) dealloc
 {
-	[table release];
-	[duke release];
-	
-	[title release];
-	[subtitle release];
-	[copyright release];
+	[background release];
 	
 	[singleplayer release];
 	[multiplayer release];

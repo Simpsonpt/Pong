@@ -13,7 +13,6 @@
 @interface AIPlayer ()
 
 - (void) moveTowards:(Vector2 *)theTarget attack:(BOOL)isAttack;
-//- (id) initWithPad:(Pad *)thePad level:theLevel scene:(id <IScene>)theScene position:(PlayerPosition)thePosition game:(Game*)game;
 
 @end
 
@@ -21,9 +20,7 @@
 @implementation AIPlayer
 
 - (id) initWithGame:(Game *)theGame scene:(id <IScene>)theScene pad:(Pad *)thePad level:(Level *)theLevel position:(PlayerPosition)thePosition
-//- (id) initWithPad:(Pad *)thePad level:theLevel scene:(id <IScene>)theScene position:(PlayerPosition)thePosition game:(Game*)game
 {
-	//self = [super initWithGame:theGame pad:thePad position:thePosition];
 	self = [super initWithPad:thePad scene:theScene position:thePosition];
 	if (self != nil) {
 		level = theLevel;
@@ -123,7 +120,6 @@
 		}ª*/
 //		ª[level.topPlayer.position set:target];
 		level.topPlayer.position.x = target.x;
-		//printf("Cona CRL\n");
 		[target release];
 		target = nil;
 		

@@ -38,9 +38,8 @@
 	Texture2D *buttonBackground;
 	Button *reset;
 	
-	Image *duke;
-	BOOL resetDuke;
-	
+	Image *logoIcon;
+	Button *backMenu;
 }
 
 

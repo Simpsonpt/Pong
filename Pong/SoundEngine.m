@@ -21,8 +21,9 @@ SoundEngine *instance;
 
 - (void) initialize {
 	soundEffects[SoundEffectTypeExplo] = [self.game.content load:@"Explo"];
-	soundEffects[SoundEffectTypeExplo] = [self.game.content load:@"Loop"];
 	soundEffects[SoundEffectTypePad] = [self.game.content load:@"Pad"];
+	soundEffects[SoundEffectTypeGameSound] = [self.game.content load:@"GameSound"];
+	soundEffects[SoundEffectTypeClick] = [self.game.content load:@"Click"];
 //	soundEffects[SoundEffectTypeLose] = [self.game.content load:@"Lose"];
 //	soundEffects[SoundEffectTypeWin] = [self.game.content load:@"Win"];
 }
@@ -31,13 +32,20 @@ SoundEngine *instance;
 	[soundEffects[type] play];
 }
 
+/*- (void) playWith:(SoundEffectType)type vol:(NSInteger)volume
+{
+	[soundEffects[type] playWithVolume:volume];
+}*/
+
+
 + (void) play:(SoundEffectType)type {
 	[instance play:type];
 }
 
 - (void) dealloc
 {
-	for (int i = 0; i < SoundEffectTypes; i++) {
+	for (int i=0;i<SoundEffectTypes;i++) 
+	{
 		[soundEffects[i] release];
 	}
 	[super dealloc];

@@ -11,14 +11,13 @@
 #import "Retronator.Pong.classes.h"
 #import "Level.h"
 
-@interface Pad : NSObject <IAARectangleCollider, ICustomCollider, ISceneUser, ICustomUpdate> {
+@interface Pad : NSObject <IAARectangleCollider, ICustomCollider, ISceneUser, ICustomUpdate> 
+{
 	Vector2 *position;
-
 	Vector2 *velocity;
 	
 	float width;
 	float height;
-	//int magnetPower;
 	
 	/*Top or Bottom*/
 	BOOL top, stopBonus;
@@ -27,7 +26,6 @@
 	// We store previous position for velocity calculation.
 	Vector2 *previousPosition;
 
-	//NSMutableArray *caughtBalls;
 	id<IScene> scene;
 }
 
@@ -39,6 +37,5 @@
 @property (nonatomic, retain) Vector2 *previousPosition;
 
 - (void) resetVelocity;
-//- (void) releaseBalls;
 
 @end

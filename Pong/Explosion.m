@@ -37,7 +37,6 @@
 			[lifetime release];
 			lifetime = nil;
 			[scene removeItem:self];
-			//printf("Matei-me\n");
 		}
 	}
 	

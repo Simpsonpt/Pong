@@ -13,10 +13,10 @@
 
 @implementation PhysicsEngine
 
-- (id) initWithGame:(Game *)theGame level:(Level *)theLevel {
-	if (self = [super initWithGame:theGame]) {
+- (id) initWithGame:(Game *)theGame level:(Level *)theLevel 
+{
+	if (self = [super initWithGame:theGame]) 
 		level = theLevel;
-	}
 	return self;
 }
 
@@ -32,27 +32,12 @@
 		else
 			level.bonusStatus=NO;
 	}
-	
-	/*for (id item1 in level.scene) 
-	{
-		/*Only Balls and Pads Check Collisions
-		if ([item1 isKindOfClass:[Ball class]] || [item1 isKindOfClass:[Pad class]]) 
-		{
-			for (id item2 in level.scene) 
-			{	
-				if (item1 != item2)
-					[Collision collisionBetween:item1 and:item2];
-			}
-		}
-	 }*/
-	
 	// Now we do collision detection. We compare puck and mallets with all other items.
 	for (id item1 in level.scene) {
 		if ([item1 isKindOfClass:[Pad class]] || [item1 isKindOfClass:[Ball class]]) {
 			for (id item2 in level.scene) {
-				if (item1 != item2) {
+				if (item1 != item2)
 					[Collision collisionBetween:item1 and:item2];
-				}
 			}
 		}
 	}	

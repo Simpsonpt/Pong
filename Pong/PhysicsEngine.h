@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Retronator.Pong.classes.h"
 
-@interface PhysicsEngine : GameComponent {
-	// Level
+@interface PhysicsEngine : GameComponent 
+{
 	Level *level;
 }
 

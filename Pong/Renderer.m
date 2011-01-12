@@ -96,27 +96,27 @@
 	
 	//Star
 	bonusSprite[0] = [[Sprite alloc] init];
-	bonusSprite[0].texture = [self.game.content load:@"MyPong"];
-	bonusSprite[0].sourceRectangle = [Rectangle rectangleWithX:640 y:305 width:40 height:40];
-	bonusSprite[0].origin = [Vector2 vectorWithX:20 y:20];
+	bonusSprite[0].texture = [self.game.content load:@"PongU8"];
+	bonusSprite[0].sourceRectangle = [Rectangle rectangleWithX:500 y:241 width:34 height:22];
+	bonusSprite[0].origin = [Vector2 vectorWithX:17 y:11];
 	
 	//Cherry
 	bonusSprite[1] = [[Sprite alloc] init];
 	bonusSprite[1].texture = [self.game.content load:@"bonus"];
-	bonusSprite[1].sourceRectangle = [Rectangle rectangleWithX:160 y:160 width:30 height:20];
-	bonusSprite[1].origin = [Vector2 vectorWithX:15 y:10];
+	bonusSprite[1].sourceRectangle = [Rectangle rectangleWithX:160 y:160 width:35 height:25];
+	bonusSprite[1].origin = [Vector2 vectorWithX:18 y:12];
 	
 	//Morango
 	bonusSprite[2] = [[Sprite alloc] init];
 	bonusSprite[2].texture = [self.game.content load:@"bonus"];
-	bonusSprite[2].sourceRectangle = [Rectangle rectangleWithX:160 y:177 width:30 height:20];
-	bonusSprite[2].origin = [Vector2 vectorWithX:15 y:10];
+	bonusSprite[2].sourceRectangle = [Rectangle rectangleWithX:160 y:177 width:35 height:25];
+	bonusSprite[2].origin = [Vector2 vectorWithX:18 y:12];
 	
 	//Peachs
 	bonusSprite[3] = [[Sprite alloc] init];
 	bonusSprite[3].texture = [self.game.content load:@"bonus"];
-	bonusSprite[3].sourceRectangle = [Rectangle rectangleWithX:160 y:199 width:30 height:20];
-	bonusSprite[3].origin = [Vector2 vectorWithX:15 y:10];
+	bonusSprite[3].sourceRectangle = [Rectangle rectangleWithX:160 y:199 width:35 height:25];
+	bonusSprite[3].origin = [Vector2 vectorWithX:18 y:12];
 	
 	/*//Apple
 	bonusSprite[4] = [[Sprite alloc] init];
@@ -179,6 +179,7 @@
 		} else if ([item isKindOfClass:[Bonus class]]) 
 		{
 			Bonus *bonus = (Bonus*)item;
+			[primitiveBatch drawCircleAt:bonus.position radius:bonus.radius divisions:32 color:[Color green]];
 			sprite = bonusSprite[bonus.type];
 			//printf("Bonus Type: %d\n",bonus.type);
 		}else if ([item isKindOfClass:[Bg class]]) {

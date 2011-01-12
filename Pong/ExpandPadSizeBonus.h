@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Bonus.h"
 
-@interface ExpandPadSizeBonus : Bonus {
+@interface ExpandPadSizeBonus : Bonus 
+{
 	id<IScene> savedscene;
 }
 

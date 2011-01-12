@@ -29,6 +29,9 @@
 		{
 			Pad *dass = (Pad*)item;
 			dass.type=1;
+			
+			dass.width = 53;
+			dass.height = 22;
 		}
 	}
 	savedscene = scene;
@@ -42,6 +45,9 @@
 		{
 			Pad *dass = (Pad*)item;
 			dass.type=0;
+		
+			dass.width = 84;
+			dass.height = 21;
 		}
 	}
 }
