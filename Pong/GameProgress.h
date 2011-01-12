@@ -14,14 +14,15 @@
 	//BOOL opponentUnlocked[OpponentTypes];
 }
 
-+ (GameProgress *) loadProgress;
+//+ (GameProgress *) loadProgress;
++ (NSNumber *) loadProgress;
 + (void) deleteProgress;
-- (void) saveProgress;
++ (void) saveProgress;
 
 - (BOOL) isLevelUnlocked:(LevelType)type;
 //- (BOOL) isOpponentUnlocked:(OpponentType)type;
 
-- (void) unlockLevel:(LevelType)type;
+/*- (void) unlockLevel:(LevelType)type;*/
 //- (void) unlockOpponent:(OpponentType)type;
 
 @end

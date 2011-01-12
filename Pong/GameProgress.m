@@ -44,9 +44,28 @@
 	}*/	
 }
 
-+ (GameProgress *) loadProgress {
+/*+ (GameProgress *) loadProgress {
 	// Load game progress from file.
 	GameProgress *progress = nil;
+	
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];		
+	progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
+	
+	// If there is no progress file, create a fresh instance.
+	if (!progress) {
+		progress = [[[GameProgress alloc] init] autorelease];
+	}
+	
+	NSLog(@"Progress retain count:", [progress retainCount]);
+	
+	return progress;
+}*/
+
++ (NSNumber *) loadProgress 
+{
+	// Load game progress from file.
+	NSNumber *progress = nil;
 	
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];		
@@ -70,11 +89,18 @@
 	[[NSFileManager defaultManager] removeItemAtPath:archivePath error:&error];
 }
 
-- (void) saveProgress {
+/*- (void) saveProgress {
 	// Save game progress to file.
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
 	[NSKeyedArchiver archiveRootObject:self toFile:archivePath];
+}*/
++ (void) saveProgress 
+{
+	// Save game progress to file.
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
+	[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:5] toFile:archivePath];
 }
 
 - (BOOL) isLevelUnlocked:(LevelType)type {
@@ -85,10 +111,10 @@
 	return opponentUnlocked[type];
 }*/
 
-- (void) unlockLevel:(LevelType)type {
+/*- (void) unlockLevel:(LevelType)type {
 	levelUnlocked[type] = YES;
 	[self saveProgress];
-}
+}*/
 
 /*- (void) unlockOpponent:(OpponentType)type {
 	opponentUnlocked[type] = YES;

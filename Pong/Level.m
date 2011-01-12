@@ -143,7 +143,7 @@
 	[scene addItem:logoIcon];
 	[scene addItem:backMenu];
 	
-	printf("Estou em loop");
+	//printf("Estou em loop");
 	
 	[self resetBallWithSpeed:speed];
 }
@@ -161,7 +161,7 @@
 		ball.position.y = bottomPlayer.position.y + -30;
 		speed *= -1;
 	}
-	printf("Speed RBWS: %f\n",speed);
+	//printf("Speed RBWS: %f\n",speed);
 	
 	/*Velocity and Directions of the Ball*/
 	ball.velocity.x = ([Random float] - 0.5f) * 10;
@@ -175,8 +175,8 @@
 	else if(lastPlayer==2)
 		p2_points+=point;
 	
-	//printf("Player 1 Points: %d\n", p1_points);
-	//printf("Player 2 Points: %d\n", p2_points);
+	printf("Player 1 Points: %d\n", p1_points);
+	printf("Player 2 Points: %d\n", p2_points);
 }
 
 - (void) itemAddedToScene:(id)sender eventArgs:(SceneEventArgs*)e {
@@ -190,8 +190,10 @@
 		numBalls--;
 	}
 	
-	if ([e.item isKindOfClass:[PointsBonus class]]) {
-		numBalls--;
+	if([e.item isKindOfClass:[PointsBonus class]]) 
+	{
+		//if(e.item.catched)
+		[self updatePlayerPoints:5];
 	}
 }
 

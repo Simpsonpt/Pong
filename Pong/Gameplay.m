@@ -157,6 +157,7 @@
 	if (level.Lnum==3) 
 	{
 		[self.game.components removeComponent:physics];
+		[GameProgress saveProgress];
 		[level GameOver];
 	}
 	else 
@@ -186,7 +187,7 @@
 		}
 	
 		/*Check Game Reset Condition.*/
-		if (level.p1_points >= 2 || level.p2_points >= 2)
+		if (level.p1_points >= 20 || level.p2_points >= 20)
 		{
 			[self resetLevel];
 			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];

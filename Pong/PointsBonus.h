@@ -10,7 +10,7 @@
 #import "Bonus.h"
 
 @interface PointsBonus : Bonus {
-
+	BOOL catched;
 }
 
 @end

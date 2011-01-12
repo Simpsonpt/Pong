@@ -15,7 +15,7 @@
 {
 	self = [super initWithType:_PointsBonus];
 	if (self != nil) {
-		
+		catched=FALSE;
 	}
 	return self;
 }
@@ -24,6 +24,7 @@
 {
 		[super activateWithParent:theParent];
 		printf("Points Bonus\n");
+		catched=TRUE;
 }
 
 

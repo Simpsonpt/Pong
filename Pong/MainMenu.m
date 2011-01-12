@@ -50,10 +50,13 @@
 	highS.color = [Color black];
 	[scene addItem:highS];
 	
-	max = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:137 y:323]];
+	max = [[Label alloc] initWithFont:retrotype text:@"" position:[Vector2 vectorWithX:137 y:323]];
 	//highS.horizontalAlign = HorizontalAlignCenter;
 	[max setScaleUniform:0.9];
 	max.color = [Color blue];
+	NSNumber *temp=[GameProgress loadProgress];
+	int cona =[temp integerValue];
+	max.text = @"%d",cona;
 	[scene addItem:max];
 	
 	

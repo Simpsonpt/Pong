@@ -70,7 +70,7 @@
 			{
 				//printf("Entrei no Random Bonus!\n");
 				Bonus *extra = [BonusFactory createRandomBonus];
-				//Bonus *extra = [BonusFactory createBonus:_ExpandPadSizeBonus];
+				//Bonus *extra = [BonusFactory createBonus:_PointsBonus];
 				extra.position.x = [Random intLessThan:250];
 				extra.position.y = [Random intGreaterThanOrEqual:75 lessThan:300];
 				//[extra.position set:position];
