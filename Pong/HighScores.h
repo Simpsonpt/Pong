@@ -1,5 +1,5 @@
 //
-//  LevelSelection.h
+//  HighScores.h
 //  Pong
 //
 //  Created by Renato Rodrigues on 1/4/11.
@@ -10,9 +10,10 @@
 
 #import "Menu.h"
 
-@interface LevelSelection : Menu {
-	Label *title;
-	
+@interface HighScores : Menu {
+	Label *title,*maxSingle,*maxMulti,*single,*multi;
+	Image *background,*hsImg;
+	Button *reset;
 }
 
 @end

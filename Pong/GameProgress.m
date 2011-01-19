@@ -39,68 +39,61 @@
 	for (int i = 0; i < LevelTypes; i++) {
 		[aCoder encodeBool:levelUnlocked[i] forKey:[NSString stringWithFormat:@"levelUnlocked%i", i]];
 	}
-	/*for (int i = 0; i < OpponentTypes; i++) {
-		[aCoder encodeBool:opponentUnlocked[i] forKey:[NSString stringWithFormat:@"opponentUnlocked%i", i]];
-	}*/	
 }
 
-/*+ (GameProgress *) loadProgress {
-	// Load game progress from file.
-	GameProgress *progress = nil;
-	
-	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];		
-	progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
-	
-	// If there is no progress file, create a fresh instance.
-	if (!progress) {
-		progress = [[[GameProgress alloc] init] autorelease];
-	}
-	
-	NSLog(@"Progress retain count:", [progress retainCount]);
-	
-	return progress;
-}*/
-
-+ (NSNumber *) loadProgress 
++ (NSNumber *) loadProgress:(int)option
 {
 	// Load game progress from file.
 	NSNumber *progress = nil;
-	
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];		
-	progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
-	
-	// If there is no progress file, create a fresh instance.
-	if (!progress) {
-		progress = [[[GameProgress alloc] init] autorelease];
+	printf("Entrei e a option é: %i",option);
+	if(option==1)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathSingle]];		
+		progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
+	}else if(option==2)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathMulti]];		
+		progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
 	}
-	
-	NSLog(@"Progress retain count:", [progress retainCount]);
-	
+	if(!progress)
+		return 0;
+
 	return progress;
 }
 
-+ (void) deleteProgress {
++ (void) deleteProgress:(int)option 
+{
 	// Delete game progress file.
-	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
-	NSError *error;
-	[[NSFileManager defaultManager] removeItemAtPath:archivePath error:&error];
+	if(option==1)
+	{
+		NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathSingle]];
+		NSError *error;
+		[[NSFileManager defaultManager] removeItemAtPath:archivePath error:&error];
+	}
+	else if(option==2)
+	{
+		NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathMulti]];
+		NSError *error;
+		[[NSFileManager defaultManager] removeItemAtPath:archivePath error:&error];
+	}
 }
 
-/*- (void) saveProgress {
-	// Save game progress to file.
-	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
-	[NSKeyedArchiver archiveRootObject:self toFile:archivePath];
-}*/
-+ (void) saveProgress:(int)points
++ (void) saveProgress:(int)points option:(int)op 
 {
 	// Save game progress to file.
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePath]];
-	[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:points] toFile:archivePath];
+	if(op==1)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathSingle]];
+		[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:points] toFile:archivePath];
+	} else if(op==2)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathMulti]];
+		[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:points] toFile:archivePath];
+	}
 }
 
 - (BOOL) isLevelUnlocked:(LevelType)type {

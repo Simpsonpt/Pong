@@ -169,6 +169,10 @@
 			Pad *pad = (Pad*)item;
 			[primitiveBatch drawRectangleAt:pad.position width:pad.width height:pad.height color:[Color white]];
 			sprite = padSprite[pad.type];
+		} else if ([item isKindOfClass:[Block class]]) 
+		{
+			Block *block=(Block*)item;
+			[primitiveBatch drawRectangleAt:block.position width:block.width height:block.height color:[Color red]];
 		} else if ([item isKindOfClass:[Ball class]]) 
 		{
 			/*Just for Debug*/

@@ -12,8 +12,8 @@
 
 @interface MainMenu : Menu 
 {
-	Image *background;
-	Button *singleplayer, *multiplayer, *options;
+	Image *background,*highscore;
+	Button *singleplayer, *multiplayer, *options, *hs;
 	Label *highS,*max;
 }
 

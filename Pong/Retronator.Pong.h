@@ -2,6 +2,7 @@
 #import "Middle.h"
 #import "Ball.h"
 #import "Pad.h"
+#import "Block.h"
 #import "PlayerImg.h"
 #import "LevelLimit.h"
 
@@ -34,7 +35,7 @@
 #import "GameState.h"
 #import "Menu.h"
 #import "MainMenu.h"
-#import "LevelSelection.h"
+#import "HighScores.h"
 #import "Options.h"
 
 #import "Pong.h"

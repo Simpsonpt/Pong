@@ -18,8 +18,6 @@
 {
 	GraphicsDeviceManager *graphics;
 	
-	/*Progress*/
-	GameProgress *progress;
 	/*Game state*/
 	NSMutableArray *stateStack;
 	
@@ -32,11 +30,13 @@
 	/*Opponents*/
 	Class opponentClasses[OpponentTypes];
 	
-	BOOL sfxSounds,gameSounds;
+	int sSingle,sMulti;
+	BOOL sfxSounds,gameSounds,sp,mp;
 }
 
-@property (nonatomic, readonly) GameProgress *progress;
-@property (nonatomic) BOOL sfxSounds,gameSounds;
+@property (nonatomic, readonly) Gameplay *currentGameplay;
+@property (nonatomic) BOOL sfxSounds,gameSounds,sp,mp;
+@property (nonatomic) int sSingle,sMulti;
 
 - (void) pushState:(GameState*)gameState;
 - (void) popState;

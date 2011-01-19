@@ -72,5 +72,13 @@ static Constants *instance;
 	return @"PongSave";
 }
 
++ (NSString*) progressFilePathSingle {
+	return @"PongSaveSingle";
+}
+
++ (NSString*) progressFilePathMulti {
+	return @"PongSaveMulti";
+}
+
 
 @end

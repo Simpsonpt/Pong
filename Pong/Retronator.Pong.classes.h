@@ -2,6 +2,7 @@
 @class Middle;
 @class Ball;
 @class Pad;
+@class Block;
 @class PlayerImg;
 @class LevelLimit;
 
@@ -25,7 +26,7 @@
 
 @class GameState;
 @class Gameplay;
-@class Menu,MainMenu,LevelSelection,Options;
+@class Menu,MainMenu,HighScores,Options;
 
 
 @class Pong;

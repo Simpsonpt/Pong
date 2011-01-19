@@ -22,7 +22,19 @@
 		
 		stateStack = [[NSMutableArray alloc] init];
 		
-		progress = [[GameProgress loadProgress] retain];
+		/*Get High Scores*/
+		NSNumber *temp;
+		temp=[GameProgress loadProgress:1];
+		sSingle=[temp integerValue];
+		
+		temp=[GameProgress loadProgress:2];
+		sMulti=[temp integerValue];
+		
+		printf("Li do File: %i,%i",sSingle,sMulti);
+		
+		/*Game Type*/
+		sp=FALSE;
+		mp=FALSE;
 		
 		/*Sounds Globals*/
 		sfxSounds=TRUE;
@@ -50,7 +62,7 @@
 	[super initialize];
 }
 
-@synthesize progress,sfxSounds,gameSounds;
+@synthesize sfxSounds,gameSounds,currentGameplay,sSingle,sMulti,sp,mp;
 
 - (void) pushState:(GameState *)gameState {
 	GameState *currentActiveState = [stateStack lastObject];
@@ -104,13 +116,6 @@
 - (void) updateWithGameTime:(GameTime *)gameTime {
 	[super updateWithGameTime:gameTime];
 }
-/*- (void) updateWithGameTime:(GameTime *)gameTime
- {
- [sfx play];
- SoundEffectInstance *sfxInstance = [sfx createInstance];
- sfxInstance.isLooped = YES;
- [sfxInstance play];	
-}*/
 
 - (void) drawWithGameTime:(GameTime *)gameTime {
 	[self.graphicsDevice clearWithColor:[Color black]];
@@ -121,7 +126,6 @@
 {
 	[self.components removeComponent:currentGameplay];	
 	[stateStack release];
-	[progress release];
     [graphics release];
 	[currentGameplay release];
 	

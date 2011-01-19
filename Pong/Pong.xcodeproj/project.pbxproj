@@ -33,9 +33,11 @@
 		DA64619512A33B3B00D93ED7 /* PointsBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619412A33B3B00D93ED7 /* PointsBonus.m */; };
 		DA64619812A33B5700D93ED7 /* MultiBallBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA64619712A33B5700D93ED7 /* MultiBallBonus.m */; };
 		DA65D00B12764CDF0052AF85 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65D00A12764CDF0052AF85 /* Bonus.m */; };
+		DA65EB9512E60507002526DD /* medal.png in Resources */ = {isa = PBXBuildFile; fileRef = DA65EB9412E60507002526DD /* medal.png */; };
+		DA65ED9712E68D79002526DD /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65ED9612E68D79002526DD /* Block.m */; };
 		DA697ED012D3E463002BD1BB /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ECF12D3E463002BD1BB /* Menu.m */; };
 		DA697ED312D3E4EE002BD1BB /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED212D3E4EE002BD1BB /* MainMenu.m */; };
-		DA697ED612D3E520002BD1BB /* LevelSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED512D3E520002BD1BB /* LevelSelection.m */; };
+		DA697ED612D3E520002BD1BB /* HighScores.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED512D3E520002BD1BB /* HighScores.m */; };
 		DA697ED912D3E55D002BD1BB /* Options.m in Sources */ = {isa = PBXBuildFile; fileRef = DA697ED812D3E55D002BD1BB /* Options.m */; };
 		DA699EED12D418AA00145C81 /* Darth.png in Resources */ = {isa = PBXBuildFile; fileRef = DA699EEC12D418AA00145C81 /* Darth.png */; };
 		DA6AB79A127F406B00FC4684 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6AB67E127F3AE000FC4684 /* libGameCore.a */; };
@@ -134,12 +136,15 @@
 		DA64619712A33B5700D93ED7 /* MultiBallBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiBallBonus.m; sourceTree = "<group>"; };
 		DA65D00912764CDF0052AF85 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonus.h; sourceTree = "<group>"; };
 		DA65D00A12764CDF0052AF85 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bonus.m; sourceTree = "<group>"; };
+		DA65EB9412E60507002526DD /* medal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medal.png; path = ../Images/medal.png; sourceTree = SOURCE_ROOT; };
+		DA65ED9512E68D79002526DD /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		DA65ED9612E68D79002526DD /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
 		DA697ECE12D3E463002BD1BB /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		DA697ECF12D3E463002BD1BB /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		DA697ED112D3E4EE002BD1BB /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		DA697ED212D3E4EE002BD1BB /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
-		DA697ED412D3E520002BD1BB /* LevelSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelection.h; sourceTree = "<group>"; };
-		DA697ED512D3E520002BD1BB /* LevelSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelection.m; sourceTree = "<group>"; };
+		DA697ED412D3E520002BD1BB /* HighScores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScores.h; sourceTree = "<group>"; };
+		DA697ED512D3E520002BD1BB /* HighScores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScores.m; sourceTree = "<group>"; };
 		DA697ED712D3E55D002BD1BB /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
 		DA697ED812D3E55D002BD1BB /* Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Options.m; sourceTree = "<group>"; };
 		DA699EEC12D418AA00145C81 /* Darth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Darth.png; path = ../Images/Darth.png; sourceTree = SOURCE_ROOT; };
@@ -371,6 +376,7 @@
 		DA6CE13112D2C28B00F01F76 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA65EB9412E60507002526DD /* medal.png */,
 				644103A912DCF43E006D7CBA /* menu1.png */,
 				644103AA12DCF43E006D7CBA /* menu2.png */,
 				DA6E759A12DCD5DE001351D0 /* Logo.png */,
@@ -430,8 +436,8 @@
 				DA697ECF12D3E463002BD1BB /* Menu.m */,
 				DA697ED112D3E4EE002BD1BB /* MainMenu.h */,
 				DA697ED212D3E4EE002BD1BB /* MainMenu.m */,
-				DA697ED412D3E520002BD1BB /* LevelSelection.h */,
-				DA697ED512D3E520002BD1BB /* LevelSelection.m */,
+				DA697ED412D3E520002BD1BB /* HighScores.h */,
+				DA697ED512D3E520002BD1BB /* HighScores.m */,
 				DA697ED712D3E55D002BD1BB /* Options.h */,
 				DA697ED812D3E55D002BD1BB /* Options.m */,
 			);
@@ -519,6 +525,8 @@
 				DA80C91F12752BCA00E0BF5A /* Ball.m */,
 				DA80C92112752BD200E0BF5A /* Pad.h */,
 				DA80C92212752BD200E0BF5A /* Pad.m */,
+				DA65ED9512E68D79002526DD /* Block.h */,
+				DA65ED9612E68D79002526DD /* Block.m */,
 				DAC8DC2B12764F6F00B2E374 /* Bg.h */,
 				DAC8DC2C12764F6F00B2E374 /* Bg.m */,
 				DA8EAD58127717090098E373 /* Middle.h */,
@@ -630,6 +638,7 @@
 				644103AB12DCF43E006D7CBA /* menu1.png in Resources */,
 				644103AC12DCF43E006D7CBA /* menu2.png in Resources */,
 				644104A712DD012D006D7CBA /* Click.wav in Resources */,
+				DA65EB9512E60507002526DD /* medal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,8 +683,9 @@
 				DA6CE24812D2D46C00F01F76 /* Button.m in Sources */,
 				DA697ED012D3E463002BD1BB /* Menu.m in Sources */,
 				DA697ED312D3E4EE002BD1BB /* MainMenu.m in Sources */,
-				DA697ED612D3E520002BD1BB /* LevelSelection.m in Sources */,
+				DA697ED612D3E520002BD1BB /* HighScores.m in Sources */,
 				DA697ED912D3E55D002BD1BB /* Options.m in Sources */,
+				DA65ED9712E68D79002526DD /* Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

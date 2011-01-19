@@ -106,8 +106,8 @@
 
 - (void) resetLevel
 {
-	level.p1_points = [Constants getInstance].startPoints;
-	level.p2_points = [Constants getInstance].startPoints;
+	//level.p1_points = [Constants getInstance].startPoints;
+	//level.p2_points = [Constants getInstance].startPoints;
 	//printf("P1: %d P2: %d",level.p1_points,level.p2_points);
 	
 	printf("#*# Level %d #*#\n", level.Lnum+1);
@@ -118,6 +118,10 @@
 	
 	if (level.Lnum == 1) 
 	{
+		level.p1_points = [Constants getInstance].startPoints;
+		level.p2_points = [Constants getInstance].startPoints;
+
+		
 		level.topPlayer.width = 53;
 		level.topPlayer.height = 22;
 		
@@ -129,6 +133,9 @@
 		level.bottomPlayer.type=1;
 	} else if (level.Lnum == 2)
 	{
+		level.p1_points = [Constants getInstance].startPoints;
+		level.p2_points = [Constants getInstance].startPoints;
+		
 		level.topPlayer.width = 125;
 		level.topPlayer.height = 20;
 		
@@ -157,7 +164,38 @@
 	if (level.Lnum==3) 
 	{
 		[self.game.components removeComponent:physics];
-		[GameProgress saveProgress:level.p1_points];
+		int points=0;
+		if(pong.sp)
+		{
+			if(level.p1_points>pong.sSingle)
+			{
+				pong.sSingle=level.p1_points;
+				points=level.p1_points;
+				[GameProgress saveProgress:points option:1];
+			}
+			else if(level.p2_points>pong.sSingle)
+			{
+				pong.sSingle=level.p2_points;
+				points=level.p2_points;
+				[GameProgress saveProgress:points option:1];
+			}
+		}
+		else if(pong.mp)
+		{
+			if(level.p1_points>pong.sMulti)
+			{
+				pong.sMulti=level.p1_points;
+				points=level.p1_points;
+				[GameProgress saveProgress:points option:2];
+			}
+			else if(level.p2_points>pong.sMulti)
+			{
+				pong.sMulti=level.p2_points;
+				points=level.p2_points;
+				[GameProgress saveProgress:points option:2];
+			}
+			
+		}
 		[level GameOver];
 	}
 	else 

@@ -35,6 +35,9 @@
 		ball.position.x = 160;
 		ball.position.y = 115;
 	
+		block.position.x=20;
+		block.position.y=445;
+	
 		// AI helpers
 		//X:160 y:0
 		[defenseSpots addObject:[[Vector2 alloc] initWithX:150 y:70]];      

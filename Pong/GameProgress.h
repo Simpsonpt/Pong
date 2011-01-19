@@ -11,18 +11,13 @@
 
 @interface GameProgress : NSObject <NSCoding> {
 	BOOL levelUnlocked[LevelTypes];
-	//BOOL opponentUnlocked[OpponentTypes];
 }
 
-//+ (GameProgress *) loadProgress;
-+ (NSNumber *) loadProgress;
-+ (void) deleteProgress;
-+ (void) saveProgress:(int)points;
++ (NSNumber *) loadProgress:(int)option;
++ (void) deleteProgress:(int)option;
++ (void) saveProgress:(int)points option:(int)op;
 
 - (BOOL) isLevelUnlocked:(LevelType)type;
-//- (BOOL) isOpponentUnlocked:(OpponentType)type;
 
-/*- (void) unlockLevel:(LevelType)type;*/
-//- (void) unlockOpponent:(OpponentType)type;
 
 @end

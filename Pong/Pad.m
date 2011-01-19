@@ -80,6 +80,13 @@
 		}
 		
 	}
+	/*Block *block = [item isKindOfClass:[Block class]] ? item : nil;
+	if(block)
+	{
+		block.position.x=0;
+		block.position.y=447;
+		printf("Conaaaaaaaaaaaaaaaa\n");
+	}*/
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime 

@@ -41,7 +41,8 @@
 		bottomPlayer = [[Pad alloc] init];
 		bottomPlayer.top = NO;
 		ball = [[Ball alloc] init];
-	
+		block = [[Block alloc] init];
+		
 		defenseSpots = [[NSMutableArray alloc] init];
 		offenseSpots = [[NSMutableArray alloc] init];
 		
@@ -73,7 +74,7 @@
 }
 
 //Falta Bonus
-@synthesize scene, topPlayer, bottomPlayer, ball, p1_points, p2_points, lastPlayer,PadType, bonusStatus,contTouches,save,Lnum,numBalls, defenseSpots, offenseSpots;
+@synthesize scene, topPlayer, bottomPlayer, ball, p1_points, p2_points, lastPlayer,PadType, bonusStatus,contTouches,save,Lnum,numBalls, defenseSpots, offenseSpots,HSsingle,HSmulti;
 
 - (void) initialize 
 {	
@@ -127,7 +128,7 @@
 	[scene addItem:bottomPlayer];
 	topPlayer.top=NO;
 	[scene addItem:ball];
-
+	[scene addItem:block];
 	/*Add Level Limits*/
 	[scene addItem:[[[LevelLimit alloc] initWithLimit:
 					 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionPositiveX distance:0] isDeadly:NO] autorelease]];

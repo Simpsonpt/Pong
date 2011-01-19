@@ -26,6 +26,8 @@
 + (int) winScore;
 
 + (NSString*) progressFilePath;
++ (NSString*) progressFilePathSingle;
++ (NSString*) progressFilePathMulti;
 
 @end
 
