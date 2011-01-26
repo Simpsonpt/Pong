@@ -10,7 +10,8 @@
 #import "Bonus.h"
 
 @interface MultiBallBonus : Bonus {
-
+	id<IScene> savedscene;
+	Ball *one,*two;
 }
 
 @end

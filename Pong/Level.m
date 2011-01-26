@@ -41,7 +41,9 @@
 		bottomPlayer = [[Pad alloc] init];
 		bottomPlayer.top = NO;
 		ball = [[Ball alloc] init];
+		ball2  = [[Ball alloc] init];
 		block = [[Block alloc] init];
+		block2 = [[Block alloc] init];
 		
 		defenseSpots = [[NSMutableArray alloc] init];
 		offenseSpots = [[NSMutableArray alloc] init];
@@ -128,7 +130,9 @@
 	[scene addItem:bottomPlayer];
 	bottomPlayer.top=FALSE;
 	[scene addItem:ball];
+	//[scene addItem:ball2];
 	[scene addItem:block];
+	[scene addItem:block2];
 	/*Add Level Limits*/
 	[scene addItem:[[[LevelLimit alloc] initWithLimit:
 					 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionPositiveX distance:0] isDeadly:NO] autorelease]];

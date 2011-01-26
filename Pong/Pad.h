@@ -31,7 +31,7 @@
 
 @property (nonatomic) int type;
 @property (nonatomic) float width,height;
-@property (nonatomic) BOOL top,stopBonus;
+@property (nonatomic) BOOL top,stopBonus; 
 
 @property (nonatomic, retain) Vector2 *previousPosition;
 

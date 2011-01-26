@@ -172,7 +172,7 @@
 		} else if ([item isKindOfClass:[Block class]]) 
 		{
 			Block *block=(Block*)item;
-			[primitiveBatch drawRectangleAt:block.position width:block.width height:block.height color:[Color red]];
+			[primitiveBatch drawRectangleAt:block.position width:block.width height:block.height color:[Color blue]];
 		} else if ([item isKindOfClass:[Ball class]]) 
 		{
 			/*Just for Debug*/

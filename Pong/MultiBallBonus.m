@@ -14,7 +14,7 @@
 
 - (id) init
 {
-	self = [super initWithType:_MultiBallBonus duration:5];
+	self = [super initWithType:_MultiBallBonus duration:2];
 	if (self != nil) {
 		
 	}
@@ -24,6 +24,7 @@
 - (void) activateWithParent:(Ball *)theParent {
 	[super activateWithParent:theParent];
 	printf("Multiball Bonus\n");
+		savedscene = scene;
 	for (id item in scene) {
 		if ([item isKindOfClass:[Ball class]]) 
 		{
@@ -31,20 +32,28 @@
 			Ball *ball = (Ball*)item;
 			
 			/*Create Two Copies with Flipped Speed*/
-			Ball *copy = [[[Ball alloc] init] autorelease];
-			[copy.position set:ball.position];
-			copy.velocity.x = -ball.position.x;
-			copy.velocity.y = ball.position.y;
-			[scene addItem:copy];
+			one = [[[Ball alloc] init] autorelease];
+			[one.position set:ball.position];
+			one.velocity.x = -ball.position.x;
+			one.velocity.y = ball.position.y;
+			[scene addItem:one];
 			
 			
-			copy = [[[Ball alloc] init] autorelease];
-			[copy.position set:ball.position];
-			copy.velocity.x = ball.position.x;
-			copy.velocity.y = -ball.position.y;
-			[scene addItem:copy];
+			two = [[[Ball alloc] init] autorelease];
+			[two.position set:ball.position];
+			two.velocity.x = ball.position.x;
+			two.velocity.y = -ball.position.y;
+			[scene addItem:two];
 			
 		}
 	}	
+
 }
+
+- (void) deactivate
+{
+	[super deactivate];
+	scene=savedscene;
+}
+
 @end

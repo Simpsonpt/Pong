@@ -17,7 +17,7 @@
 	if (self != nil) {
 		position = [[Vector2 alloc] init];
 		velocity = [[Vector2 alloc] init];
-		width = 84;
+		width = 40;
 		height = 20;
 		
 		//velocity.y=400;
@@ -36,21 +36,24 @@
 	Pad *pad = [item isKindOfClass:[Pad class]] ? item : nil;
 	if(pad) 
 	{
-		float offset = pad.position.x - position.x;
-		float hitPosition = (offset) / width * 2;
-		
-		// Calculate angle.
-		float angle = hitPosition * [Constants getInstance].maximumBallAngle;
-		
-		pad.position.x=sinf(angle+180);
-		//pad.position.x=84;
-		printf("Offset: %f\n",offset);
+		pad.position.x=155;
+		//printf("Offset: %f\n",offset);
 		pad.position.y=445;
 		
 		//printf("Pad Position: X: %f Y: %f",pad.position.x,pad.position.y);
+		if(position.x<100)
+		{
+			position.x=20;
+			position.y=445;
+		}
+		else 
+		{
+			position.x=299;
+			position.y=445;
+		}
 		
-		position.x=20;
-		position.y=445;
+		
+
 	}
 }
 

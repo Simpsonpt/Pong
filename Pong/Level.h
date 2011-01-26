@@ -23,8 +23,8 @@
 	
 	Pad *topPlayer;
 	Pad *bottomPlayer;
-	Block *block;
-	Ball *ball;
+	Block *block,*block2;
+	Ball *ball,*ball2;
 	int p1_points,p2_points,lastPlayer,PadType,contTouches,Lnum,numBalls;
 	int HSsingle,HSmulti;
 	BOOL bonusStatus,save;
@@ -47,7 +47,7 @@
 @property (nonatomic, readonly) id<IScene> scene;
 @property (nonatomic, readonly) Pad *topPlayer;
 @property (nonatomic, readonly) Pad *bottomPlayer;
-@property (nonatomic, readonly) Ball *ball;
+@property (nonatomic, readonly) Ball *ball,*ball2;
 @property (nonatomic) int p1_points,p2_points,lastPlayer,PadType,contTouches,Lnum,numBalls,HSsingle,HSmulti;
 @property (nonatomic) BOOL bonusStatus,save;
 
