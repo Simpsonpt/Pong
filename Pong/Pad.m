@@ -39,11 +39,13 @@
 }
 
 
-- (void) collidedWithItem:(id)item {
+- (void) collidedWithItem:(id)item 
+{
 	Ball *ball = [item isKindOfClass:[Ball class]] ? item : nil;
 	if(ball) 
 	{
 		[SoundEngine play:SoundEffectTypePad];
+		
 		// Calculate horizontal velocity depending on where the paddle was hit.
 		
 		// First save the current speed and add speedup.
@@ -71,6 +73,7 @@
 				//printf("Entrei no Random Bonus!\n");
 				Bonus *extra = [BonusFactory createRandomBonus];
 				//Bonus *extra = [BonusFactory createBonus:_PointsBonus];
+				//Bonus *extra = [BonusFactory createBonus:_ExpandPadSizeBonus];
 				extra.position.x = [Random intLessThan:250];
 				extra.position.y = [Random intGreaterThanOrEqual:75 lessThan:300];
 				//[extra.position set:position];
@@ -92,9 +95,8 @@
 - (void) updateWithGameTime:(GameTime *)gameTime 
 {
 	// Avoid division by zero.
-	if (gameTime.elapsedGameTime == 0) {
+	if (gameTime.elapsedGameTime == 0)
 		return;
-	}
 	
 	// Calculate mallet velocity in reverse.
 	Vector2 *distance = [Vector2 subtract:position by:previousPosition];

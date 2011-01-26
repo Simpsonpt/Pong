@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Bonus.h"
 
-@interface PointsBonus : Bonus {
+@interface PointsBonus : Bonus 
+{
 	BOOL catched;
 }
+
+@property (nonatomic) BOOL catched;
 
 @end

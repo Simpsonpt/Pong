@@ -26,11 +26,9 @@
 		NSNumber *temp;
 		temp=[GameProgress loadProgress:1];
 		sSingle=[temp integerValue];
-		
 		temp=[GameProgress loadProgress:2];
 		sMulti=[temp integerValue];
-		
-		printf("Li do File: %i,%i",sSingle,sMulti);
+		//printf("Li do File: %i,%i",sSingle,sMulti);
 		
 		/*Game Type*/
 		sp=FALSE;

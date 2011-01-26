@@ -23,4 +23,6 @@
 	Event *itemRemoved;
 }
 
+@property (nonatomic,retain) NSMutableArray *items;
+
 @end

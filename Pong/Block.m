@@ -42,8 +42,12 @@
 		// Calculate angle.
 		float angle = hitPosition * [Constants getInstance].maximumBallAngle;
 		
-		pad.position.x=sinf(angle+90);
+		pad.position.x=sinf(angle+180);
+		//pad.position.x=84;
+		printf("Offset: %f\n",offset);
 		pad.position.y=445;
+		
+		//printf("Pad Position: X: %f Y: %f",pad.position.x,pad.position.y);
 		
 		position.x=20;
 		position.y=445;

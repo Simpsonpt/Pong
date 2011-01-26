@@ -22,6 +22,7 @@
 		C65FE9B712B8FC0A00F1C37F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9B612B8FC0A00F1C37F /* OpenAL.framework */; };
 		C65FE9E912B8FC8900F1C37F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9E812B8FC8900F1C37F /* GameKit.framework */; };
 		C6B7D44D129421F4009A1B4E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7D44C129421F4009A1B4E /* Constants.m */; };
+		C6EB37A112E71A2A00636AEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EB37A012E71A2A00636AEF /* AVFoundation.framework */; };
 		DA1AAB0A127F4E6E006E769D /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB09127F4E6E006E769D /* Gameplay.m */; };
 		DA1AAB39127F4FBA006E769D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB38127F4FBA006E769D /* Player.m */; };
 		DA1AAB70127F5AFF006E769D /* PhysicsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1AAB6F127F5AFF006E769D /* PhysicsEngine.m */; };
@@ -111,6 +112,7 @@
 		C65FE9E812B8FC8900F1C37F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C6B7D44B129421F4009A1B4E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		C6B7D44C129421F4009A1B4E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		C6EB37A012E71A2A00636AEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DA1AAB08127F4E6E006E769D /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
 		DA1AAB09127F4E6E006E769D /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		DA1AAB37127F4FBA006E769D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				C65FE9A412B8FBDA00F1C37F /* AudioToolbox.framework in Frameworks */,
 				C65FE9B712B8FC0A00F1C37F /* OpenAL.framework in Frameworks */,
 				C65FE9E912B8FC8900F1C37F /* GameKit.framework in Frameworks */,
+				C6EB37A112E71A2A00636AEF /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +277,7 @@
 				DAAFE82612752A1F003CF29B /* OpenGLES.framework */,
 				DAAFE82A12752A26003CF29B /* QuartzCore.framework */,
 				C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */,
+				C6EB37A012E71A2A00636AEF /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

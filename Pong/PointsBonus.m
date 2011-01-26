@@ -20,6 +20,8 @@
 	return self;
 }
 
+@synthesize catched;
+
 - (void) activateWithParent:(Ball *)theParent 
 {
 		[super activateWithParent:theParent];

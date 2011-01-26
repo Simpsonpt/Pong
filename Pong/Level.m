@@ -124,9 +124,9 @@
 	[scene addItem:pimg1];
 	[scene addItem:pimg2];
 	[scene addItem:topPlayer];
-	topPlayer.top=YES;
+	topPlayer.top=TRUE;
 	[scene addItem:bottomPlayer];
-	topPlayer.top=NO;
+	bottomPlayer.top=FALSE;
 	[scene addItem:ball];
 	[scene addItem:block];
 	/*Add Level Limits*/
@@ -165,7 +165,7 @@
 	//printf("Speed RBWS: %f\n",speed);
 	
 	/*Velocity and Directions of the Ball*/
-	ball.velocity.x = ([Random float] - 0.5f) * 10;
+	//ball.velocity.x = ([Random float] - 0.5f) * 10;
 	ball.velocity.y = speed;
 }
 
@@ -191,10 +191,30 @@
 		numBalls--;
 	}
 	
+	/*if([e.item isKindOfClass:[ExpandPadSizeBonus class]]) 
+	{
+		for (id item in self.scene)
+		{
+			if ([item isKindOfClass:[Pad class]]) 
+			{
+				Pad *aux=(Pad*)item;
+				if(lastPlayer==1)
+				{
+					aux.top=TRUE;
+				} else if(lastPlayer==2)
+					aux.top=FALSE;
+			}
+		}
+	}*/
+	
 	if([e.item isKindOfClass:[PointsBonus class]]) 
 	{
-		//if(e.item.catched)
-		[self updatePlayerPoints:5];
+		PointsBonus *temp=(PointsBonus*)e.item;
+		if(temp.catched)
+		{
+			[self updatePlayerPoints:5];
+			temp.catched=FALSE;
+		}
 	}
 }
 
@@ -213,9 +233,8 @@
 	for (id item in scene) {
 		Button *button = [item isKindOfClass:[Button class]] ? item : nil;
 		
-		if (button) {
+		if (button)
 			[button update];
-		}
 	}
 	if(reset.wasReleased) 
 	{
@@ -236,10 +255,10 @@
 		[self initialize]; 
 		[self resetLevelWithBallSpeed:400];
 	}
+	
 	/*Back To MainMenu*/
 	if(backMenu.wasReleased) 
 	{
-		//Stop Music ?
 		[(Pong*)self.game popState];
 	}
 }

@@ -46,7 +46,6 @@
 	// Load game progress from file.
 	NSNumber *progress = nil;
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	printf("Entrei e a option é: %i",option);
 	if(option==1)
 	{
 		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathSingle]];		

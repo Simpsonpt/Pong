@@ -39,8 +39,12 @@
 		block.position.y=445;
 	
 		// AI helpers
-		//X:160 y:0
-		[defenseSpots addObject:[[Vector2 alloc] initWithX:150 y:70]];      
+		//X:160 y:0 (Ver melhor os Spots)
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:0 y:70]]; 
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:75 y:70]]; 
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:150 y:70]];
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:225 y:70]]; 
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:300 y:70]]; 
 	
 		[offenseSpots addObject:[[Vector2 alloc] initWithX:160 y:460]]; 
 		[offenseSpots addObject:[[Vector2 alloc] initWithX:130 y:460]]; 

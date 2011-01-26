@@ -4,7 +4,7 @@ Why: Project for Game Technology and Virtual Reality @FRI-LJ
 Platform: IPhone
 Development: 
 - Objective-C
-- XNI Framework (IPhone/IPad XNA port)
+- XNI 0.4.2 Framework (IPhone/IPad XNA port)
 
 Credits:
 - Matej Jan (Retronator: XNI Creator and Base Code)

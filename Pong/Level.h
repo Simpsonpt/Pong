@@ -12,8 +12,8 @@
 
 #import "GameCore.Mirage.h"
 
-@interface Level : GameComponent {
-	
+@interface Level : GameComponent 
+{	
 	Scene *scene;
 	
 	Bg *background;

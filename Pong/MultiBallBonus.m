@@ -25,7 +25,8 @@
 	[super activateWithParent:theParent];
 	printf("Multiball Bonus\n");
 	for (id item in scene) {
-		if ([item isKindOfClass:[Ball class]]) {
+		if ([item isKindOfClass:[Ball class]]) 
+		{
 			printf("I Found a ball\n");
 			Ball *ball = (Ball*)item;
 			

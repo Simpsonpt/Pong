@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -298,7 +300,7 @@
 							<real>252</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>295 24 1692 923 0 0 1920 1178 </string>
+						<string>228 146 1692 923 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -326,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C6C11D6912DDFDE500A31976</string>
+										<string>C6EB38BF12E7338300636AEF</string>
 										<key>history</key>
 										<array>
 											<string>C6B7D3D212941F7F009A1B4E</string>
@@ -363,8 +365,10 @@
 											<string>C65FEA6F12B9035D00F1C37F</string>
 											<string>C65FEA7212B9035D00F1C37F</string>
 											<string>C6C11D6712DDFDE500A31976</string>
-											<string>C6C11D6812DDFDE500A31976</string>
-											<string>C6B7D30C12941357009A1B4E</string>
+											<string>C6EB38BB12E7338300636AEF</string>
+											<string>C6EB38BC12E7338300636AEF</string>
+											<string>C6EB38BD12E7338300636AEF</string>
+											<string>C6EB38BE12E7338300636AEF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -376,18 +380,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1418, 672}}</string>
+								<string>{{0, 0}, {1418, 667}}</string>
 								<key>RubberWindowFrame</key>
-								<string>295 24 1692 923 0 0 1920 1178 </string>
+								<string>228 146 1692 923 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>672pt</string>
+							<string>667pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -398,14 +400,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 677}, {1418, 205}}</string>
+								<string>{{0, 672}, {1418, 210}}</string>
 								<key>RubberWindowFrame</key>
-								<string>295 24 1692 923 0 0 1920 1178 </string>
+								<string>228 146 1692 923 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>205pt</string>
+							<string>210pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -424,9 +426,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C6C11D6A12DDFDE500A31976</string>
+				<string>C6EB38C012E7338300636AEF</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>C6C11D6B12DDFDE500A31976</string>
+				<string>C6EB38C112E7338300636AEF</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -565,10 +567,10 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>C6B7D29D129409AD009A1B4E</string>
-		<string>/Users/frimultimedija/Desktop/Simpsonpt-Pong-6219dd9/GameCore/GameCore.xcodeproj</string>
+		<string>/Users/frimultimedija/Desktop/Simpsonpt-Pong-e63ad51/GameCore/GameCore.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>295 24 1692 923 0 0 1920 1178 </string>
+	<string>228 146 1692 923 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -589,7 +591,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>Scene.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -606,6 +608,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -645,7 +649,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>C6B7D29D129409AD009A1B4E</string>
-				<string>C6C11D6C12DDFDE500A31976</string>
+				<string>C6EB386F12E72F3700636AEF</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

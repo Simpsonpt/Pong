@@ -26,7 +26,7 @@
 	return self;
 }
 
-@synthesize itemAdded, itemRemoved;
+@synthesize itemAdded, itemRemoved,items;
 
 - (void) addItem:(id)item {
 	[actions addObject:[SceneAction actionWithOperation:SceneOperationAdd item:item]];

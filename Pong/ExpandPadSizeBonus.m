@@ -24,14 +24,19 @@
 {
 	[super activateWithParent:theParent];
 	printf("Expand Player\n");
-	for (id item in scene) {
+	for (id item in scene) 
+	{
 		if ([item isKindOfClass:[Pad class]]) 
 		{
 			Pad *dass = (Pad*)item;
-			dass.type=2;
+			if(dass.top)
+			{
+				dass.type=2;
 			
-			dass.width = 125;
-			dass.height = 20;
+				dass.width = 125;
+				dass.height = 20;
+				//break;
+			}
 		}
 	}
 	savedscene = scene;
@@ -45,7 +50,7 @@
 		{
 			Pad *dass = (Pad*)item;
 			dass.type=0;
-			
+		
 			dass.width = 84;
 			dass.height = 21;
 		}

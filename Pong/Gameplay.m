@@ -74,6 +74,7 @@
 	[self.game.components addComponent:renderer];
 	[self.game.components addComponent:physics];
 	
+	
 	backgroundMusic = [[SoundEngine createInstance:SoundEffectTypeGameSound] retain];
 	[backgroundMusic play];
 }
@@ -164,6 +165,15 @@
 	if (level.Lnum==3) 
 	{
 		[self.game.components removeComponent:physics];
+		[level GameOver];
+	}
+	else 
+	{
+		/*Move Pads In The Game*/
+		[topPlayer updateWithGameTime:gameTime];
+		[bottomPlayer updateWithGameTime:gameTime];
+		
+		/*Saving High Scores*/
 		int points=0;
 		if(pong.sp)
 		{
@@ -196,15 +206,8 @@
 			}
 			
 		}
-		[level GameOver];
-	}
-	else 
-	{
-		/*Move Pads In The Game*/
-		[topPlayer updateWithGameTime:gameTime];
-		[bottomPlayer updateWithGameTime:gameTime];
-
-		/*Check Lose Condition.*/
+		
+		/*Check Lose Condition and Last Player*/
 		for (id item in level.scene)
 		{
 			if ([item isKindOfClass:[Ball class]]) 
@@ -212,20 +215,26 @@
 				Ball *temp = (Ball*)item;
 				if (temp.position.y > 530)
 				{
-					level.lastPlayer=1;
+					//level.lastPlayer=1;
 					[level updatePlayerPoints:1];
 					[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];
 				} else if(temp.position.y < 65) 
 				{
-					level.lastPlayer=2;
+					//level.lastPlayer=2;
 					[level updatePlayerPoints:1];
 					[level resetBallWithSpeed:[self calculateCurrentBallSpeed]];			
-				}				
+				}
+				
+				if(temp.velocity.y>0)
+					level.lastPlayer=1;
+				else if(temp.velocity.y<0)
+					level.lastPlayer=2;
+				//printf("Velocity Ball: %f ! %f\n",temp.velocity.x,temp.velocity.y);
 			}
 		}
 	
 		/*Check Game Reset Condition.*/
-		if (level.p1_points >= 2 || level.p2_points >= 2)
+		if (level.p1_points >= 20 || level.p2_points >= 20)
 		{
 			[self resetLevel];
 			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];
