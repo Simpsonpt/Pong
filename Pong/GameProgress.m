@@ -61,6 +61,26 @@
 	return progress;
 }
 
++ (NSNumber *) loadOptions:(int)option
+{
+	// Load game progress from file.
+	NSNumber *progress = nil;
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	if(option==1)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpS]];		
+		progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
+	}else if(option==2)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpM]];		
+		progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
+	}
+	if(!progress)
+		return 0;
+	
+	return progress;
+}
+
 + (void) deleteProgress:(int)option 
 {
 	// Delete game progress file.
@@ -92,6 +112,23 @@
 	{
 		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathMulti]];
 		[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:points] toFile:archivePath];
+	}
+}
+
++ (void) saveOptions:(int)check option:(int)op 
+{
+	// Save game progress to file.
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	if(op==1)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpS]];
+		[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:check] toFile:archivePath];
+		//printf("Vou guardar %i\n",check);
+	} else if(op==2)
+	{
+		NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpM]];
+		[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:check] toFile:archivePath];
+		//printf("Vou guardar %i\n",check);
 	}
 }
 

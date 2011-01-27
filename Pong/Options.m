@@ -80,12 +80,14 @@
 			//[SoundEngine playWith:SoundEffectTypeClick vol:0];
 			sfx.label.text=@"SFX Sounds OFF";
 			pong.sfxSounds=FALSE;
+			[GameProgress saveOptions:0 option:1];
 		}
 		else
 		{
 			
 			sfx.label.text=@"SFX Sounds ON";
 			pong.sfxSounds=TRUE;
+			[GameProgress saveOptions:1 option:1];
 		}
 	}
 	
@@ -97,12 +99,14 @@
 			[SoundEffect setMasterVolume:0];
 			sounds.label.text=@"Game Sounds OFF";
 			pong.gameSounds=FALSE;
+			[GameProgress saveOptions:0 option:2];
 		}
 		else
 		{
 			[SoundEffect setMasterVolume:1];
 			sounds.label.text=@"Game Sounds ON";
 			pong.gameSounds=TRUE;
+			[GameProgress saveOptions:1 option:2];
 		}
 	}
 }

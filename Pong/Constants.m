@@ -80,5 +80,11 @@ static Constants *instance;
 	return @"PongSaveMulti";
 }
 
++ (NSString*) progressFilePathOpS {
+	return @"PongSaveOpS";
+}
++ (NSString*) progressFilePathOpM {
+	return @"PongSaveOpM";
+}
 
 @end

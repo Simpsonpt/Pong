@@ -12,8 +12,10 @@
 
 @implementation Pong
 
-- (id) init {
-    if (self = [super init]) {
+- (id) init 
+{
+    if (self = [super init]) 
+	{
         graphics = [[GraphicsDeviceManager alloc] initWithGame:self];
 		
 		[SoundEngine initializeWithGame:self];
@@ -35,8 +37,12 @@
 		mp=FALSE;
 		
 		/*Sounds Globals*/
-		sfxSounds=TRUE;
-		gameSounds=TRUE;
+		temp=[GameProgress loadOptions:1];
+		sfxSounds=[temp integerValue];
+		temp=[GameProgress loadOptions:2];
+		gameSounds=[temp integerValue];
+		
+		printf("SFX: %i Music: %i\n",sfxSounds,gameSounds);
 	}
     return self;
 }
