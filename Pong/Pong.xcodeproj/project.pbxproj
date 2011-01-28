@@ -55,6 +55,8 @@
 		DA730C9B12AF18F00048188B /* ReflexAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730C9A12AF18F00048188B /* ReflexAgent.m */; };
 		DA730CAA12AF1C6B0048188B /* Bot.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CA912AF1C6B0048188B /* Bot.m */; };
 		DA730CBC12AF1F330048188B /* AIRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA730CBB12AF1F330048188B /* AIRenderer.m */; };
+		DA78B05212F3483400E817EC /* gsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA78B05112F3483400E817EC /* gsound.mp3 */; };
+		DA78B0D512F3622A00E817EC /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78B0D412F3622A00E817EC /* wall.png */; };
 		DA7BEC42129C3B0F0030C09C /* bonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7BEC41129C3B0F0030C09C /* bonus.png */; };
 		DA80C90F12752B7E00E0BF5A /* Pong.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C90E12752B7E00E0BF5A /* Pong.m */; };
 		DA80C91712752BAB00E0BF5A /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = DA80C91612752BAB00E0BF5A /* Level.m */; };
@@ -173,6 +175,8 @@
 		DA730CA912AF1C6B0048188B /* Bot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bot.m; sourceTree = "<group>"; };
 		DA730CBA12AF1F330048188B /* AIRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRenderer.h; sourceTree = "<group>"; };
 		DA730CBB12AF1F330048188B /* AIRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRenderer.m; sourceTree = "<group>"; };
+		DA78B05112F3483400E817EC /* gsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gsound.mp3; sourceTree = "<group>"; };
+		DA78B0D412F3622A00E817EC /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wall.png; path = ../Images/wall.png; sourceTree = SOURCE_ROOT; };
 		DA7BEC41129C3B0F0030C09C /* bonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bonus.png; path = ../Images/bonus.png; sourceTree = SOURCE_ROOT; };
 		DA7D722712DB8F1D007D54B3 /* OpponentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpponentType.h; sourceTree = "<group>"; };
 		DA80C90B12752B5400E0BF5A /* Retronator.Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Retronator.Pong.h; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 		6AA3A7D912C1024400E674EF /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DA78B05112F3483400E817EC /* gsound.mp3 */,
 				6AA3A96D12C1361800E674EF /* Pad.wav */,
 				6AA3A8DD12C10B3C00E674EF /* Explo.wav */,
 				6AA3A92B12C11F4D00E674EF /* GameSound.wav */,
@@ -395,6 +400,7 @@
 		DA6CE14412D2C2E500F01F76 /* Gameplay */ = {
 			isa = PBXGroup;
 			children = (
+				DA78B0D412F3622A00E817EC /* wall.png */,
 				DAB3863E12A4A9AA0098DDCB /* exp.png */,
 				DAE2AE1312A06AB40020FBA5 /* PongU8.png */,
 				DA7BEC41129C3B0F0030C09C /* bonus.png */,
@@ -643,6 +649,8 @@
 				644103AC12DCF43E006D7CBA /* menu2.png in Resources */,
 				644104A712DD012D006D7CBA /* Click.wav in Resources */,
 				DA65EB9512E60507002526DD /* medal.png in Resources */,
+				DA78B05212F3483400E817EC /* gsound.mp3 in Resources */,
+				DA78B0D512F3622A00E817EC /* wall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,7 +41,6 @@
 		bottomPlayer = [[Pad alloc] init];
 		bottomPlayer.top = NO;
 		ball = [[Ball alloc] init];
-		ball2  = [[Ball alloc] init];
 		block = [[Block alloc] init];
 		block2 = [[Block alloc] init];
 		
@@ -57,7 +56,7 @@
 		p1P = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:50 y:10]];
 		p1P.horizontalAlign = HorizontalAlignCenter;
 		
-		p2P = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:270 y:10]];
+		p2P = [[Label alloc] initWithFont:retrotype text:@"0" position:[Vector2 vectorWithX:267 y:10]];
 		p2P.horizontalAlign = HorizontalAlignCenter;
 		
 		/*Restart*/
@@ -130,9 +129,11 @@
 	[scene addItem:bottomPlayer];
 	bottomPlayer.top=FALSE;
 	[scene addItem:ball];
-	//[scene addItem:ball2];
-	[scene addItem:block];
-	[scene addItem:block2];
+	if(Lnum==0)
+	{
+		[scene addItem:block];
+		[scene addItem:block2];
+	}
 	/*Add Level Limits*/
 	[scene addItem:[[[LevelLimit alloc] initWithLimit:
 					 [AAHalfPlane aaHalfPlaneWithDirection:AxisDirectionPositiveX distance:0] isDeadly:NO] autorelease]];
@@ -180,8 +181,8 @@
 	else if(lastPlayer==2)
 		p2_points+=point;
 	
-	printf("Player 1 Points: %d\n", p1_points);
-	printf("Player 2 Points: %d\n", p2_points);
+	//printf("Player 1 Points: %d\n", p1_points);
+	//printf("Player 2 Points: %d\n", p2_points);
 }
 
 - (void) itemAddedToScene:(id)sender eventArgs:(SceneEventArgs*)e {

@@ -20,7 +20,7 @@
 	Renderer *renderer;	
 	PhysicsEngine *physics;
 	
-	SoundEffectInstance *backgroundMusic;
+	//SoundEffectInstance *backgroundMusic;
 }
 
 @property (nonatomic, readonly) Level *level;

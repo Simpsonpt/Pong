@@ -8,6 +8,8 @@
 
 #import "Gameplay.h"
 #import "Retronator.Pong.h"
+#import "Retronator.Xni.Framework.Content.h"
+#import "Retronator.Xni.Framework.Media.h"
 
 @interface Gameplay ()
 
@@ -75,14 +77,21 @@
 	[self.game.components addComponent:physics];
 	
 	
-	backgroundMusic = [[SoundEngine createInstance:SoundEffectTypeGameSound] retain];
-	[backgroundMusic play];
+	//backgroundMusic = [[SoundEngine createInstance:SoundEffectTypeGameSound] retain];
+	//[backgroundMusic play];
+	if(pong.gameSounds)
+	{
+		Song *menuSong = [self.game.content load:@"gsound"];
+		[MediaPlayer playSong:menuSong];
+	}
 }
 
 - (void) deactivate 
 {
-	[backgroundMusic stop];
-	[backgroundMusic release];
+	//[backgroundMusic stop];
+	//[backgroundMusic release];
+	if(pong.gameSounds)
+		[MediaPlayer stop];
 	
 	[self.game.components removeComponent:level];
 	[self.game.components removeComponent:renderer];
@@ -232,13 +241,17 @@
 				//printf("Velocity Ball: %f ! %f\n",temp.velocity.x,temp.velocity.y);
 			}
 		}
-	
-		/*Check Game Reset Condition.*/
-		if (level.p1_points >= 20 || level.p2_points >= 20)
+		
+		if(!pong.infiniteGP)
 		{
-			[self resetLevel];
-			[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];
+			/*Check Game Reset Condition.*/
+			if (level.p1_points >= 20 || level.p2_points >= 20)
+			{
+				[self resetLevel];
+				[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];
+			}
 		}
+		
 		/*One Bonus in the Game*/
 		if(level.bonusStatus)
 		{

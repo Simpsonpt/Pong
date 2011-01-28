@@ -11,8 +11,8 @@
 #import "Menu.h"
 
 @interface Options : Menu {
-	Label *title;
-	Button *sfx,*sounds;
+	Label *title,*type;
+	Button *sfx,*sounds,*infiniteGPB;
 	Image *background;
 }
 

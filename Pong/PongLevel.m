@@ -35,11 +35,9 @@
 		ball.position.x = 160;
 		ball.position.y = 115;
 	
-	ball2.position.x = 160;
-	ball2.position.y = 300;
-	
-		block.position.x=80;
-		block.position.y=445;
+		//80
+		block.position.x=40;
+		block.position.y=250;
 	
 		block2.position.x=240;
 		block2.position.y=445;

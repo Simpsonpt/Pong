@@ -47,6 +47,11 @@
 	playerSprite.sourceRectangle = [Rectangle rectangleWithX:670 y:317 width:60 height:42];
 	playerSprite.origin = [Vector2 vectorWithX:30 y:20];
 	
+	//Wall
+	wall = [[Sprite alloc] init];
+	wall.texture = [self.game.content load:@"wall"];
+	wall.sourceRectangle = [Rectangle rectangleWithX:35 y:2 width:60 height:35];
+	wall.origin = [Vector2 vectorWithX:30 y:17];	
 	
 	/*Players Pad*/
 	
@@ -173,6 +178,7 @@
 		{
 			Block *block=(Block*)item;
 			[primitiveBatch drawRectangleAt:block.position width:block.width height:block.height color:[Color blue]];
+			sprite=wall;
 		} else if ([item isKindOfClass:[Ball class]]) 
 		{
 			/*Just for Debug*/

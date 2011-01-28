@@ -31,11 +31,11 @@
 	Class opponentClasses[OpponentTypes];
 	
 	int sSingle,sMulti;
-	BOOL sfxSounds,gameSounds,sp,mp;
+	BOOL sfxSounds,gameSounds,sp,mp,infiniteGP;
 }
 
 @property (nonatomic, readonly) Gameplay *currentGameplay;
-@property (nonatomic) BOOL sfxSounds,gameSounds,sp,mp;
+@property (nonatomic) BOOL sfxSounds,gameSounds,sp,mp,infiniteGP;
 @property (nonatomic) int sSingle,sMulti;
 
 - (void) pushState:(GameState*)gameState;

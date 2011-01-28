@@ -27,6 +27,7 @@
 	Sprite *playerSprite;
 	Sprite *backgroundSprite;
 	Sprite *middleSprite;
+	Sprite *wall;
 	
 	/*Bonus Types*/
 	Sprite *bonusSprite[BonusTypes];

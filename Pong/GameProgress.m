@@ -81,6 +81,20 @@
 	return progress;
 }
 
+/*Load Gameplay Type*/
++ (NSNumber *) loadGP
+{
+	NSNumber *progress = nil;
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpGP]];		
+	progress = [NSKeyedUnarchiver unarchiveObjectWithFile:archivePath];
+
+	if(!progress)
+		return 0;
+	printf("Vou Returnar: %i\n",[progress integerValue]);
+	return progress;
+}
+
 + (void) deleteProgress:(int)option 
 {
 	// Delete game progress file.
@@ -98,6 +112,15 @@
 		NSError *error;
 		[[NSFileManager defaultManager] removeItemAtPath:archivePath error:&error];
 	}
+}
+
++ (void) saveGP:(int)check
+{
+	// Save gameplay type.
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpGP]];
+	[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:check] toFile:archivePath];
+	printf("Guardei: %i\n",check);
 }
 
 + (void) saveProgress:(int)points option:(int)op 

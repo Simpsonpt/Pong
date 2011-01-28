@@ -36,13 +36,17 @@
 		sp=FALSE;
 		mp=FALSE;
 		
+		temp=[GameProgress loadGP];
+		infiniteGP=[temp integerValue];
+		printf("Gameplay: %i\n",infiniteGP);
+		
 		/*Sounds Globals*/
 		temp=[GameProgress loadOptions:1];
 		sfxSounds=[temp integerValue];
 		temp=[GameProgress loadOptions:2];
 		gameSounds=[temp integerValue];
 		
-		printf("SFX: %i Music: %i\n",sfxSounds,gameSounds);
+		//printf("SFX: %i Music: %i\n",sfxSounds,gameSounds);
 	}
     return self;
 }
@@ -51,8 +55,10 @@
 
 - (void) initialize 
 {
-	/*All evels*/	
+	/*All Levels*/	
 	levelClasses[LevelTypePong] = [PongLevel class];
+	//levelClasses[LevelTypePong2] = [LevelPong2 class];
+
 	//levelClasses[LevelTypeBullfrog] = [BullfrogLevel class];
 	 
 	/*All Opponents*/
@@ -66,7 +72,7 @@
 	[super initialize];
 }
 
-@synthesize sfxSounds,gameSounds,currentGameplay,sSingle,sMulti,sp,mp;
+@synthesize sfxSounds,gameSounds,currentGameplay,sSingle,sMulti,sp,mp,infiniteGP;
 
 - (void) pushState:(GameState *)gameState {
 	GameState *currentActiveState = [stateStack lastObject];

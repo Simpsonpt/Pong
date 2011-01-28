@@ -15,9 +15,11 @@
 
 + (NSNumber *) loadProgress:(int)option;
 + (NSNumber *) loadOptions:(int)option;
++ (NSNumber *) loadGP;
 + (void) deleteProgress:(int)option;
 + (void) saveProgress:(int)points option:(int)op;
 + (void) saveOptions:(int)check option:(int)op;
++ (void) saveGP:(int)check;
 
 - (BOOL) isLevelUnlocked:(LevelType)type;
 

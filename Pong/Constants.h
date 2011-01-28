@@ -30,6 +30,7 @@
 + (NSString*) progressFilePathMulti;
 + (NSString*) progressFilePathOpS;
 + (NSString*) progressFilePathOpM;
++ (NSString*) progressFilePathOpGP;
 
 @end
 

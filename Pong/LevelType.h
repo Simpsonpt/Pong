@@ -1,6 +1,6 @@
 typedef enum {
 	LevelTypePong,
-	//LevelTypeBullfrog,
+	LevelTypePong2,
 	//LevelTypeSims,
 	//LevelTypePool,
 	LevelTypes
