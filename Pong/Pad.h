@@ -20,7 +20,7 @@
 	float height;
 	
 	/*Top or Bottom*/
-	BOOL top, stopBonus;
+	BOOL top, stopBonus,bonus;
 	int type;
 	
 	// We store previous position for velocity calculation.
@@ -31,7 +31,7 @@
 
 @property (nonatomic) int type;
 @property (nonatomic) float width,height;
-@property (nonatomic) BOOL top,stopBonus; 
+@property (nonatomic) BOOL top,stopBonus,bonus; 
 
 @property (nonatomic, retain) Vector2 *previousPosition;
 

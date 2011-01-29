@@ -240,6 +240,17 @@
 					level.lastPlayer=2;
 				//printf("Velocity Ball: %f ! %f\n",temp.velocity.x,temp.velocity.y);
 			}
+			if([item isKindOfClass:[Pad class]])
+			{
+				Pad *aux=(Pad*)item;
+				aux.bonus=FALSE;
+				if(level.lastPlayer==1&&aux.top)
+					aux.bonus=TRUE;
+				else if(level.lastPlayer==2&&!aux.top)
+					aux.bonus=TRUE;
+					
+					
+			}
 		}
 		
 		if(!pong.infiniteGP)

@@ -50,8 +50,8 @@
 	//Wall
 	wall = [[Sprite alloc] init];
 	wall.texture = [self.game.content load:@"wall"];
-	wall.sourceRectangle = [Rectangle rectangleWithX:35 y:2 width:60 height:35];
-	wall.origin = [Vector2 vectorWithX:30 y:17];	
+	wall.sourceRectangle = [Rectangle rectangleWithX:0 y:2 width:35 height:35];
+	wall.origin = [Vector2 vectorWithX:17 y:17];	
 	
 	/*Players Pad*/
 	

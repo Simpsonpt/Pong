@@ -19,7 +19,8 @@
 		width = 84;
 		height = 20;
 		type=0;
-		stopBonus=NO;		
+		stopBonus=NO;
+		bonus=FALSE;
 		velocity = [[Vector2 alloc] init];
 		previousPosition = [[Vector2 alloc] init];
 		
@@ -27,7 +28,7 @@
 	return self;
 }
 
-@synthesize position, width, height, scene, type, top,stopBonus,previousPosition;
+@synthesize position, width, height, scene, type, top,stopBonus,previousPosition,bonus;
 
 - (BOOL) collidingWithItem:(id)item {
 	return YES;
@@ -71,9 +72,9 @@
 			if([Random float] < [Constants getInstance].bonusChance) 
 			{
 				//printf("Entrei no Random Bonus!\n");
-				Bonus *extra = [BonusFactory createRandomBonus];
-				//Bonus *extra = [BonusFactory createBonus:_PointsBonus];
-				//Bonus *extra = [BonusFactory createBonus:_MultiBallBonus];
+				//Bonus *extra = [BonusFactory createRandomBonus];
+				//Bonus *extra = [BonusFactory createBonus:_ExpandPadSizeBonus];
+				Bonus *extra = [BonusFactory createBonus:_MultiBallBonus];
 				extra.position.x = [Random intLessThan:250];
 				extra.position.y = [Random intGreaterThanOrEqual:75 lessThan:300];
 				//[extra.position set:position];

@@ -39,7 +39,7 @@
 		block.position.x=40;
 		block.position.y=250;
 	
-		block2.position.x=240;
+		block2.position.x=270;
 		block2.position.y=445;
 	
 		// AI helpers

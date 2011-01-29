@@ -13,7 +13,7 @@
 
 - (id) init
 {
-	self = [super initWithType:_ExpandPadSizeBonus duration:5];
+	self = [super initWithType:_ExpandPadSizeBonus duration:4];
 	if (self != nil) {
 		
 	}
@@ -28,10 +28,13 @@
 		if ([item isKindOfClass:[Pad class]]) 
 		{
 			Pad *dass = (Pad*)item;
-			dass.type=1;
+			if(dass.bonus)
+			{
+				dass.type=1;
 			
-			dass.width = 53;
-			dass.height = 22;
+				dass.width = 53;
+				dass.height = 22;
+			}
 		}
 	}
 	savedscene = scene;
@@ -45,7 +48,7 @@
 		{
 			Pad *dass = (Pad*)item;
 			dass.type=0;
-		
+			
 			dass.width = 84;
 			dass.height = 21;
 		}

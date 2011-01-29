@@ -17,7 +17,7 @@
 	if (self != nil) {
 		position = [[Vector2 alloc] init];
 		velocity = [[Vector2 alloc] init];
-		width = 48;
+		width = 35;
 		height = 30;
 		
 		//velocity.y=400;
@@ -56,6 +56,8 @@
 	if(ball) 
 	{
 		position.x+=10;
+		if(position.x>335)
+			position.x=30;
 	}
 }
 

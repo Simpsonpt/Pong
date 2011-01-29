@@ -30,20 +30,22 @@
 		{
 			printf("I Found a ball\n");
 			Ball *ball = (Ball*)item;
-			
+			ball.type=2;
 			/*Create Two Copies with Flipped Speed*/
-			one = [[[Ball alloc] init] autorelease];
-			[one.position set:ball.position];
-			one.velocity.x = -ball.position.x;
-			one.velocity.y = ball.position.y;
-			[scene addItem:one];
+			ball = [[[Ball alloc] init] autorelease];
+			[ball.position set:ball.position];
+			ball.velocity.x = -ball.position.x;
+			ball.velocity.y = ball.position.y;
+			ball.type=1;
+			[scene addItem:ball];
 			
 			
-			two = [[[Ball alloc] init] autorelease];
-			[two.position set:ball.position];
-			two.velocity.x = ball.position.x;
-			two.velocity.y = -ball.position.y;
-			[scene addItem:two];
+			ball = [[[Ball alloc] init] autorelease];
+			[ball.position set:ball.position];
+			ball.velocity.x = ball.position.x;
+			ball.velocity.y = -ball.position.y;
+			ball.type=1;
+			[scene addItem:ball];
 			
 		}
 	}	

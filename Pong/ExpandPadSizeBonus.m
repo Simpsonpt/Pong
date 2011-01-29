@@ -29,7 +29,7 @@
 		if ([item isKindOfClass:[Pad class]]) 
 		{
 			Pad *dass = (Pad*)item;
-			if(dass.top)
+			if(dass.bonus)
 			{
 				dass.type=2;
 			
