@@ -91,7 +91,6 @@
 
 	if(!progress)
 		return 0;
-	printf("Vou Returnar: %i\n",[progress integerValue]);
 	return progress;
 }
 
@@ -120,7 +119,6 @@
 	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *archivePath = [rootPath stringByAppendingPathComponent:[Constants progressFilePathOpGP]];
 	[NSKeyedArchiver archiveRootObject:[NSNumber numberWithInt:check] toFile:archivePath];
-	printf("Guardei: %i\n",check);
 }
 
 + (void) saveProgress:(int)points option:(int)op 

@@ -36,23 +36,28 @@
 		ball.position.y = 115;
 	
 		//80
-		block.position.x=40;
+		/*block.position.x=40;
 		block.position.y=250;
 	
 		block2.position.x=270;
-		block2.position.y=445;
+		block2.position.y=445;*/
 	
 		// AI helpers
 		//X:160 y:0 (Ver melhor os Spots)
-		[defenseSpots addObject:[[Vector2 alloc] initWithX:0 y:70]]; 
-		[defenseSpots addObject:[[Vector2 alloc] initWithX:75 y:70]]; 
-		[defenseSpots addObject:[[Vector2 alloc] initWithX:150 y:70]];
-		[defenseSpots addObject:[[Vector2 alloc] initWithX:225 y:70]]; 
-		[defenseSpots addObject:[[Vector2 alloc] initWithX:300 y:70]]; 
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:155 y:70]];
+		/*[defenseSpots addObject:[[Vector2 alloc] initWithX:40 y:70]];
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:80 y:70]];
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:120 y:70]];
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:160 y:70]];  
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:200 y:70]];
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:240 y:70]]; 
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:280 y:70]]; 
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:320 y:70]];
+		[defenseSpots addObject:[[Vector2 alloc] initWithX:360 y:70]];*/
 	
-		[offenseSpots addObject:[[Vector2 alloc] initWithX:160 y:460]]; 
-		[offenseSpots addObject:[[Vector2 alloc] initWithX:130 y:460]]; 
-		[offenseSpots addObject:[[Vector2 alloc] initWithX:190 y:460]]; 
+		[offenseSpots addObject:[[Vector2 alloc] initWithX:0 y:445]]; 
+		[offenseSpots addObject:[[Vector2 alloc] initWithX:155 y:445]]; 
+		[offenseSpots addObject:[[Vector2 alloc] initWithX:350 y:445]]; 
 	
 }
 

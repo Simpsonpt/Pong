@@ -158,7 +158,7 @@
 
 	[spriteBatch begin];
 	//[spriteBatch beginWithSortMode:SpriteSortModeBackToFront BlendState:nil];
-	[primitiveBatch begin];
+	//[primitiveBatch begin];
 	
 	for (id item in gameplay.level.scene) 
 	{
@@ -223,7 +223,7 @@
 	}
 	
 	[spriteBatch end];
-	[primitiveBatch end];
+	//[primitiveBatch end];
 	
 	// Draw effects in additive mode.
 	//[spriteBatch beginWithSortMode:SpriteSortModeDeffered BlendState:[BlendState additive]];

@@ -21,12 +21,12 @@ static BonusType randomTypeLookup[100];
 	BonusClasses[_ExpandPadSizeBonus] = [ExpandPadSizeBonus class];
 	BonusClasses[_ShrinkPadSizeBonus] = [ShrinkPadSizeBonus class];
 	BonusClasses[_PointsBonus] = [PointsBonus class];
-	BonusClasses[_MultiBallBonus] = [MultiBallBonus class];
+	//BonusClasses[_MultiBallBonus] = [MultiBallBonus class];
 	
 	frequency[_ExpandPadSizeBonus] = 3;
 	frequency[_ShrinkPadSizeBonus] = 2;
 	frequency[_PointsBonus] = 2;
-	frequency[_MultiBallBonus] = 1;
+	//frequency[_MultiBallBonus] = 1;
 	
 	totalFrequency = 0;
 	for (int i = 0; i < BonusTypes; i++) {

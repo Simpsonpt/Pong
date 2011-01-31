@@ -23,12 +23,11 @@
 		bonus=FALSE;
 		velocity = [[Vector2 alloc] init];
 		previousPosition = [[Vector2 alloc] init];
-		
 	}
 	return self;
 }
 
-@synthesize position, width, height, scene, type, top,stopBonus,previousPosition,bonus;
+@synthesize position, width, height, scene, type, top,stopBonus,previousPosition,bonus,calc;
 
 - (BOOL) collidingWithItem:(id)item {
 	return YES;
@@ -66,15 +65,15 @@
 		ball.velocity.y = cosf(angle)*sign;
 		[ball.velocity multiplyBy:speed];
 		
-		if(!stopBonus)
+		if(!stopBonus && !calc)
 		{
 			//Condition for Random Bonus
 			if([Random float] < [Constants getInstance].bonusChance) 
 			{
 				//printf("Entrei no Random Bonus!\n");
-				//Bonus *extra = [BonusFactory createRandomBonus];
+				Bonus *extra = [BonusFactory createRandomBonus];
 				//Bonus *extra = [BonusFactory createBonus:_ExpandPadSizeBonus];
-				Bonus *extra = [BonusFactory createBonus:_MultiBallBonus];
+				//Bonus *extra = [BonusFactory createBonus:_MultiBallBonus];
 				extra.position.x = [Random intLessThan:250];
 				extra.position.y = [Random intGreaterThanOrEqual:75 lessThan:300];
 				//[extra.position set:position];

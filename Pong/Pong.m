@@ -38,7 +38,7 @@
 		
 		temp=[GameProgress loadGP];
 		infiniteGP=[temp integerValue];
-		printf("Gameplay: %i\n",infiniteGP);
+		//printf("Gameplay: %i\n",infiniteGP);
 		
 		/*Sounds Globals*/
 		temp=[GameProgress loadOptions:1];
@@ -46,6 +46,10 @@
 		temp=[GameProgress loadOptions:2];
 		gameSounds=[temp integerValue];
 		
+		if(sfxSounds==0)
+			[SoundEffect setMasterVolume:0];
+		else
+			[SoundEffect setMasterVolume:1];
 		//printf("SFX: %i Music: %i\n",sfxSounds,gameSounds);
 	}
     return self;

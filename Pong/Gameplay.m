@@ -109,7 +109,7 @@
 	/*Initial Pad (Normal)*/
 	level.PadType=0;
 	
-	[level resetLevelWithBallSpeed:400];
+	[level resetLevelWithBallSpeed:200];
 	
 	printf("#*# Level %d #*#\n", level.Lnum);
 }
@@ -132,29 +132,29 @@
 		level.p2_points = [Constants getInstance].startPoints;
 
 		
-		level.topPlayer.width = 53;
-		level.topPlayer.height = 22;
+		//level.topPlayer.width = 53;
+		//level.topPlayer.height = 22;
 		
-		level.bottomPlayer.width = 53;
-		level.bottomPlayer.height = 22;
+		//level.bottomPlayer.width = 53;
+		//level.bottomPlayer.height = 22;
 		
 		level.ball.type=3;
-		level.topPlayer.type=1;
-		level.bottomPlayer.type=1;
+		level.topPlayer.type=0;
+		level.bottomPlayer.type=0;
 	} else if (level.Lnum == 2)
 	{
 		level.p1_points = [Constants getInstance].startPoints;
 		level.p2_points = [Constants getInstance].startPoints;
 		
-		level.topPlayer.width = 125;
-		level.topPlayer.height = 20;
+		//level.topPlayer.width = 125;
+		//level.topPlayer.height = 20;
 		
-		level.bottomPlayer.width = 125;
-		level.bottomPlayer.height = 20;
+		//level.bottomPlayer.width = 125;
+		//level.bottomPlayer.height = 20;
 		
 		level.ball.type=2;
-		level.topPlayer.type=2;
-		level.bottomPlayer.type=2;
+		level.topPlayer.type=0;
+		level.bottomPlayer.type=0;
 	}
 	
 	level.save=NO;
@@ -167,6 +167,8 @@
 	
 	level.bottomPlayer.position.x = 155;
 	level.bottomPlayer.position.y = 445;
+	
+	[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]+200];
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime 
@@ -249,7 +251,10 @@
 				else if(level.lastPlayer==2&&!aux.top)
 					aux.bonus=TRUE;
 					
-					
+				if(pong.infiniteGP)
+					aux.calc=TRUE;
+				else
+					aux.calc=FALSE;
 			}
 		}
 		
@@ -257,10 +262,7 @@
 		{
 			/*Check Game Reset Condition.*/
 			if (level.p1_points >= 20 || level.p2_points >= 20)
-			{
 				[self resetLevel];
-				[level resetLevelWithBallSpeed:[self calculateCurrentBallSpeed]];
-			}
 		}
 		
 		/*One Bonus in the Game*/

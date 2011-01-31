@@ -12,6 +12,7 @@
 @interface MultiBallBonus : Bonus {
 	id<IScene> savedscene;
 	Ball *one,*two;
+	float old_vel;
 }
 
 @end

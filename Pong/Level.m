@@ -61,8 +61,8 @@
 		
 		/*Restart*/
 		buttonBackground = [self.game.content load:@"Button"];
-		reset = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:210 y:240 width:55 height:32] 
-											  background:buttonBackground font:retrotype text:@"Restart"];
+		reset = [[Button alloc] initWithInputArea:[Rectangle rectangleWithX:210 y:240 width:85 height:32] 
+											  background:buttonBackground font:retrotype text:@"MainMenu"];
 		[reset.backgroundImage setScaleUniform:2];
 		
 		/*Logo*/
@@ -99,7 +99,7 @@
 - (void) GameOver
 {
 	// Text
-	str = [[Label alloc] initWithFont:retrotype text:@"GameOver" position:[Vector2 vectorWithX:160 y:210]];
+	str = [[Label alloc] initWithFont:retrotype text:@"GameOver" position:[Vector2 vectorWithX:175 y:210]];
 	str.horizontalAlign = HorizontalAlignCenter;
 	str.color = [Color red];
 	
@@ -129,8 +129,12 @@
 	[scene addItem:bottomPlayer];
 	bottomPlayer.top=FALSE;
 	[scene addItem:ball];
-	if(Lnum==0)
+	if(Lnum==2)
 	{
+		block.position.x= [Random intLessThan:250];
+		block.position.y= [Random intGreaterThanOrEqual:95 lessThan:300];
+		block2.position.x= [Random intLessThan:250];
+		block2.position.y= [Random intGreaterThanOrEqual:95 lessThan:300];
 		[scene addItem:block];
 		[scene addItem:block2];
 	}
@@ -242,28 +246,12 @@
 			[button update];
 	}
 	if(reset.wasReleased) 
-	{
-		p1_points=0;
-		p2_points=0;
-		
-		//Lnum=0;
-		self.topPlayer.type=0;
-		self.topPlayer.width = 84;
-		self.topPlayer.height = 21;
-		
-		self.bottomPlayer.type=0;
-		self.bottomPlayer.width = 84;
-		self.bottomPlayer.height = 21;
-		
-		self.ball.type=0;
-		
-		[self initialize]; 
-		[self resetLevelWithBallSpeed:400];
-	}
+		[(Pong*)self.game popState];
 	
 	/*Back To MainMenu*/
 	if(backMenu.wasReleased) 
 	{
+		[SoundEngine play:SoundEffectTypeClick];
 		[(Pong*)self.game popState];
 	}
 }

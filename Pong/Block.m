@@ -56,7 +56,7 @@
 	if(ball) 
 	{
 		position.x+=10;
-		if(position.x>335)
+		if(position.x>320)
 			position.x=30;
 	}
 }
