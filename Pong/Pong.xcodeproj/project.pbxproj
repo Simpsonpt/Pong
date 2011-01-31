@@ -16,7 +16,6 @@
 		644104A712DD012D006D7CBA /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 644104A612DD012D006D7CBA /* Click.wav */; };
 		6AA3A8D112C1047200E674EF /* SoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3A8D012C1047200E674EF /* SoundEngine.m */; };
 		6AA3A8DE12C10B3C00E674EF /* Explo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A8DD12C10B3C00E674EF /* Explo.wav */; };
-		6AA3A92C12C11F4D00E674EF /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A92B12C11F4D00E674EF /* GameSound.wav */; };
 		6AA3A96E12C1361800E674EF /* Pad.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3A96D12C1361800E674EF /* Pad.wav */; };
 		C65FE9A412B8FBDA00F1C37F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */; };
 		C65FE9B712B8FC0A00F1C37F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65FE9B612B8FC0A00F1C37F /* OpenAL.framework */; };
@@ -106,7 +105,6 @@
 		6AA3A8D012C1047200E674EF /* SoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEngine.m; sourceTree = "<group>"; };
 		6AA3A8D212C1048500E674EF /* SoundEffectTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffectTypes.h; sourceTree = "<group>"; };
 		6AA3A8DD12C10B3C00E674EF /* Explo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Explo.wav; sourceTree = "<group>"; };
-		6AA3A92B12C11F4D00E674EF /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
 		6AA3A96D12C1361800E674EF /* Pad.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pad.wav; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pong-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pong-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C65FE9A312B8FBDA00F1C37F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -292,7 +290,6 @@
 				DA78B05112F3483400E817EC /* gsound.mp3 */,
 				6AA3A96D12C1361800E674EF /* Pad.wav */,
 				6AA3A8DD12C10B3C00E674EF /* Explo.wav */,
-				6AA3A92B12C11F4D00E674EF /* GameSound.wav */,
 				644104A612DD012D006D7CBA /* Click.wav */,
 			);
 			name = Sounds;
@@ -637,7 +634,6 @@
 				DAE2AE1412A06AB40020FBA5 /* PongU8.png in Resources */,
 				DAB3863F12A4A9AA0098DDCB /* exp.png in Resources */,
 				6AA3A8DE12C10B3C00E674EF /* Explo.wav in Resources */,
-				6AA3A92C12C11F4D00E674EF /* GameSound.wav in Resources */,
 				6AA3A96E12C1361800E674EF /* Pad.wav in Resources */,
 				DA6CE13F12D2C2BC00F01F76 /* 5x5.bmp in Resources */,
 				DA6CE14112D2C2C900F01F76 /* Button.png in Resources */,
